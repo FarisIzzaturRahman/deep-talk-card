@@ -35,9 +35,17 @@ export function Card() {
 
                             {/* Top Metadata */}
                             <div className="absolute top-8 w-full px-8 flex justify-between items-center z-20">
-                                <span className="px-3 py-1 rounded-full bg-white/10 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-white/90 backdrop-blur-md border border-white/20">
-                                    {currentCategory.label}
-                                </span>
+                                <div className="flex items-center gap-2">
+                                    <span className="px-3 py-1 rounded-full bg-white/10 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-white/90 backdrop-blur-md border border-white/20">
+                                        {currentCategory.label}
+                                    </span>
+                                    {currentQuestion.depth === 3 && (
+                                        <span className="px-2 py-0.5 rounded-full bg-black/10 text-[10px] font-bold uppercase tracking-widest text-white/80 border border-white/10 flex items-center gap-1.5 backdrop-blur-sm">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-rose-300 shadow-[0_0_8px_rgba(251,113,133,0.8)]" />
+                                            Deep
+                                        </span>
+                                    )}
+                                </div>
                                 <button
                                     onClick={() => toggleFavorite(currentQuestion.id)}
                                     className="p-2 rounded-full hover:bg-white/10 transition-colors"
