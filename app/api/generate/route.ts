@@ -62,26 +62,38 @@ export async function POST(req: Request) {
       const data = JSON.parse(jsonStr);
       const questions = data.questions;
 
-      // Save to server-side JSON file
-      const historyPath = path.join(process.cwd(), "data", "ai_history.json");
-      const aiCategory = {
-        id: `ai-custom-${Date.now()}`,
-        label: "AI Magic ✨",
-        description: `Hasil generate untuk: ${context}`,
-        color: "bg-amber-500",
-        gradient: "from-amber-400 to-amber-600"
-      };
+      // Save to server-side JSON file (Optional for Vercel/Serverless)
+      try {
+        const historyPath = path.join(process.cwd(), "data", "ai_history.json");
+        const aiCategory = {
+          id: `ai-custom-${Date.now()}`,
+          label: "AI Magic ✨",
+          description: `Hasil generate untuk: ${context}`,
+          color: "bg-amber-500",
+          gradient: "from-amber-400 to-amber-600"
+        };
 
-      let history = [];
-      if (fs.existsSync(historyPath)) {
-        const fileContent = fs.readFileSync(historyPath, "utf-8");
-        history = JSON.parse(fileContent || "[]");
+        let history = [];
+        if (fs.existsSync(historyPath)) {
+          const fileContent = fs.readFileSync(historyPath, "utf-8");
+          history = JSON.parse(fileContent || "[]");
+        }
+
+        const newSession = { category: aiCategory, questions };
+        history.unshift(newSession);
+
+        // Ensure data directory exists
+        const dataDir = path.join(process.cwd(), "data");
+        if (!fs.existsSync(dataDir)) {
+          fs.mkdirSync(dataDir, { recursive: true });
+        }
+
+        fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
+        console.log("AI history logged successfully.");
+      } catch (fsError) {
+        console.warn("Failed to log AI history (expected on Vercel):", fsError);
+        // Continue regardless of logging failure
       }
-
-      const newSession = { category: aiCategory, questions };
-      history.unshift(newSession);
-
-      fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
 
       return NextResponse.json(data);
     } catch (parseError) {
