@@ -1,6 +1,137 @@
 [
   {
     "category": {
+      "id": "ai-custom-1767363437558",
+      "label": "AI Magic ✨",
+      "description": "Hasil generate untuk: first date dari pov cowo",
+      "color": "bg-amber-500",
+      "gradient": "from-amber-400 to-amber-600"
+    },
+    "questions": [
+      {
+        "id": "ai-1",
+        "categoryId": "ai-custom",
+        "text": "Hal kecil apa yang paling sering bikin harimu langsung cerah dan senyum-senyum sendiri?",
+        "depth": 1,
+        "followUps": [
+          "Ada cerita lucu di balik itu?",
+          "Kalau lagi butuh mood booster instan, apa trik andalanmu?"
+        ]
+      },
+      {
+        "id": "ai-2",
+        "categoryId": "ai-custom",
+        "text": "Kalau besok mendadak kamu dapat cuti panjang tanpa batas waktu dan semua kebutuhan finansialmu sudah beres, kamu bakal ngapain pertama kali?",
+        "depth": 2,
+        "followUps": [
+          "Itu impian lama atau ide dadakan?",
+          "Kamu tipe yang spontan atau suka merencanakan semuanya?"
+        ]
+      },
+      {
+        "id": "ai-3",
+        "categoryId": "ai-custom",
+        "text": "Ada nggak satu topik atau hobi yang kamu sangat antusias dan 'ngefans' banget, tapi jarang kamu ceritain ke orang lain?",
+        "depth": 2,
+        "followUps": [
+          "Apa yang bikin kamu sampai seantusias itu?",
+          "Pernah ketemu orang lain yang punya passion sama?"
+        ]
+      },
+      {
+        "id": "ai-4",
+        "categoryId": "ai-custom",
+        "text": "Apa satu skill yang paling pengen kamu kuasai instan, dan buat apa skill itu akan kamu gunakan?",
+        "depth": 1,
+        "followUps": [
+          "Udah pernah coba belajar belum?",
+          "Menurutmu, skill itu bakal mengubah hidupmu gimana?"
+        ]
+      },
+      {
+        "id": "ai-5",
+        "categoryId": "ai-custom",
+        "text": "Pencapaian personal apa yang paling bikin kamu bangga, nggak peduli seberapa kecil atau besar dampaknya buat orang lain?",
+        "depth": 2,
+        "followUps": [
+          "Ada tantangan besar di baliknya?",
+          "Pencapaian itu ngajarin kamu apa tentang dirimu sendiri?"
+        ]
+      },
+      {
+        "id": "ai-6",
+        "categoryId": "ai-custom",
+        "text": "Kalau bisa duduk ngobrol sama versi dirimu 10 tahun ke depan, kira-kira apa pertanyaan pertama yang bakal kamu ajukan?",
+        "depth": 3,
+        "followUps": [
+          "Dan apa yang paling kamu takutkan atau harapkan dari jawabannya?",
+          "Apa yang kamu harap dia bilang tentang pilihanmu sekarang?"
+        ]
+      },
+      {
+        "id": "ai-7",
+        "categoryId": "ai-custom",
+        "text": "Buku, film, atau lagu apa yang paling membentuk cara pandangmu terhadap sesuatu atau hidup secara umum?",
+        "depth": 2,
+        "followUps": [
+          "Pesan utamanya apa yang paling nyantol di kamu?",
+          "Ada nggak rekomendasi lain yang mirip dengan itu?"
+        ]
+      },
+      {
+        "id": "ai-8",
+        "categoryId": "ai-custom",
+        "text": "Menurutmu, apa definisi 'hidup yang bermakna' itu, dan apa yang sedang kamu lakukan untuk mendekati definisi itu sekarang?",
+        "depth": 3,
+        "followUps": [
+          "Ada momen tertentu yang bikin kamu mikir tentang ini?",
+          "Seberapa jauh kamu merasa sudah mendekati 'hidup bermakna' itu?"
+        ]
+      },
+      {
+        "id": "ai-9",
+        "categoryId": "ai-custom",
+        "text": "Apa makanan atau minuman yang kalau kamu lihat/cicipin, langsung punya cerita atau kenangan khusus?",
+        "depth": 1,
+        "followUps": [
+          "Kenangan apa di baliknya?",
+          "Apa makanan/minuman yang selalu sukses bikin kamu nyaman saat butuh?"
+        ]
+      },
+      {
+        "id": "ai-10",
+        "categoryId": "ai-custom",
+        "text": "Kalau hidup itu seperti buku, apa judul bab yang sedang kamu jalani sekarang, dan kira-kira apa tema utamanya?",
+        "depth": 3,
+        "followUps": [
+          "Apa yang kamu harapkan dari bab selanjutnya?",
+          "Siapa karakter pendukung utama di bab ini?"
+        ]
+      },
+      {
+        "id": "ai-11",
+        "categoryId": "ai-custom",
+        "text": "Hal apa yang paling kamu hargai dari sebuah persahabatan atau hubungan romantis, di luar cinta atau kesenangan?",
+        "depth": 2,
+        "followUps": [
+          "Pernah punya pengalaman yang ngajarin kamu tentang nilai ini?",
+          "Menurutmu, apa yang bikin sebuah hubungan jadi langgeng dan kuat?"
+        ]
+      },
+      {
+        "id": "ai-12",
+        "categoryId": "ai-custom",
+        "text": "Apa satu ketakutan terbesarmu yang sedang atau pernah kamu coba taklukkan, dan bagaimana prosesnya?",
+        "depth": 3,
+        "followUps": [
+          "Apa yang kamu pelajari dari pengalaman itu?",
+          "Ada nggak orang atau kejadian yang paling support kamu dalam proses itu?"
+        ]
+      }
+    ]
+  },
+  {
+    "category": {
       "id": "ai-custom-1767362656498",
       "label": "AI Magic ✨",
       "description": "Hasil generate untuk: first date",
