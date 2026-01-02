@@ -1,11 +1,14 @@
 import { CATEGORIES } from "@/lib/data";
 import { useGame } from "@/lib/store";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
-import { Sparkles } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Sparkles, Wand2 } from "lucide-react";
+import { useState } from "react";
+import { AIInputForm } from "./AIInputForm";
 
 export function CategorySelector() {
     const { selectCategory } = useGame();
+    const [showAIForm, setShowAIForm] = useState(false);
 
     const container = {
         hidden: { opacity: 0 },
@@ -74,7 +77,35 @@ export function CategorySelector() {
                         </p>
                     </motion.button>
                 ))}
+
+                {/* AI MAGIC CATEGORY */}
+                <motion.button
+                    variants={item}
+                    onClick={() => setShowAIForm(true)}
+                    className="group relative flex flex-col items-start p-6 rounded-2xl bg-amber-500/5 hover:bg-amber-500/10 border border-amber-500/10 hover:border-amber-500/30 transition-all duration-300 text-left"
+                >
+                    <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-br from-amber-400 to-orange-600" />
+
+                    <div className="w-12 h-12 rounded-xl mb-4 flex items-center justify-center text-white shadow-lg bg-gradient-to-br from-amber-400 to-orange-600 shadow-amber-500/20">
+                        <Wand2 className="w-6 h-6" />
+                    </div>
+
+                    <h3 className="text-xl font-semibold mb-2 text-amber-100 group-hover:text-white transition-colors">
+                        AI Magic ✨
+                    </h3>
+                    <p className="text-sm text-amber-500/60 group-hover:text-amber-400 transition-colors leading-relaxed">
+                        Generate kartu kustom khusus untuk momenmu lewat bantuan AI.
+                    </p>
+                </motion.button>
             </motion.div>
+
+            <AnimatePresence>
+                {showAIForm && (
+                    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+                        <AIInputForm onBack={() => setShowAIForm(false)} />
+                    </div>
+                )}
+            </AnimatePresence>
         </div>
     );
 }

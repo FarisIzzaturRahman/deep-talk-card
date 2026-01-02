@@ -9,26 +9,26 @@ interface GameState {
     currentQuestion: Question | null;
     history: Question[];
     queue: Question[];
-    // V2 State
     favorites: string[];
     isGroupMode: boolean;
-    activeFollowUp: string | null; // Text of the currently active follow-up being displayed, if any
+    activeFollowUp: string | null;
+    isGenerating: boolean;
 }
 
 interface GameContextType extends GameState {
     selectCategory: (categoryId: string) => void;
     nextQuestion: () => void;
     resetGame: () => void;
-    // V2 Actions
     toggleFavorite: (questionId: string) => void;
     toggleGroupMode: () => void;
     showFollowUp: (text: string) => void;
     closeFollowUp: () => void;
+    generateQuestions: (context: string, audience: string) => Promise<void>;
 }
 
 const GameContext = createContext<GameContextType | undefined>(undefined);
 
-const STORAGE_KEY = "deep-talk-game-state-v2";
+const STORAGE_KEY = "deep-talk-game-state-v3";
 
 export function GameProvider({ children }: { children: React.ReactNode }) {
     const [mounted, setMounted] = useState(false);
@@ -38,11 +38,14 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
     const [queue, setQueue] = useState<Question[]>([]);
     const [history, setHistory] = useState<Question[]>([]);
+    const [activeQuestions, setActiveQuestions] = useState<Question[]>([]);
 
-    // V2 State
+    // Settings & UI State
     const [favorites, setFavorites] = useState<string[]>([]);
     const [isGroupMode, setIsGroupMode] = useState(false);
     const [activeFollowUp, setActiveFollowUp] = useState<string | null>(null);
+    const [isGenerating, setIsGenerating] = useState(false);
+    const [customCategory, setCustomCategory] = useState<Category | null>(null);
 
     // Load state
     useEffect(() => {
@@ -54,12 +57,10 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
                 setFavorites(parsed.favorites || []);
                 setIsGroupMode(parsed.isGroupMode || false);
 
-                // Restore session
                 if (parsed.currentCategoryId) {
                     const category = CATEGORIES.find(c => c.id === parsed.currentCategoryId);
                     if (category) {
                         setCurrentCategory(category);
-                        // We won't restore exact queue for now to keep it simple, but we could
                     }
                 }
             } catch (e) {
@@ -84,15 +85,13 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         if (!category) return;
 
         setCurrentCategory(category);
-        // V2: Add simple transition or wait logic if needed
-
         const questions = ALL_QUESTIONS.filter((q) => q.categoryId === categoryId);
         const shuffled = shuffleArray(questions);
 
-        // Pick first
         const first = shuffled[0];
         const remaining = shuffled.slice(1);
 
+        setActiveQuestions(questions);
         setCurrentQuestion(first);
         setQueue(remaining);
         setHistory([first]);
@@ -100,17 +99,11 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     };
 
     const nextQuestion = () => {
-        // If showing followup, clear it first? Or just move on.
-        // Let's move on.
         setActiveFollowUp(null);
 
-        // Add delay for visual rhythm? Handled in UI usually, but state update is instant.
-
         if (queue.length === 0) {
-            // Reshuffle
-            if (currentCategory) {
-                const questions = ALL_QUESTIONS.filter((q) => q.categoryId === currentCategory.id);
-                const available = questions.filter(q => q.id !== currentQuestion?.id);
+            if (activeQuestions.length > 1) {
+                const available = activeQuestions.filter(q => q.id !== currentQuestion?.id);
                 const shuffled = shuffleArray(available);
                 const next = shuffled[0];
                 const remaining = shuffled.slice(1);
@@ -135,8 +128,6 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         setQueue([]);
         setHistory([]);
         setActiveFollowUp(null);
-        // We do NOT clear favorites or group mode on "reset game" (changing topic)
-        // Only if we want a Hard Reset.
     };
 
     const toggleFavorite = (questionId: string) => {
@@ -151,6 +142,48 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         setIsGroupMode(prev => !prev);
     };
 
+    const generateQuestions = async (context: string, audience: string) => {
+        setIsGenerating(true);
+        try {
+            const response = await fetch("/api/generate", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ context, audience }),
+            });
+
+            if (!response.ok) throw new Error("Failed to generate questions");
+
+            const data = await response.json();
+            const questions = data.questions as Question[];
+
+            const aiCategory: Category = {
+                id: `ai-custom-${Date.now()}`,
+                label: "AI Magic ✨",
+                description: `Hasil generate untuk: ${context}`,
+                color: "bg-amber-500",
+                gradient: "from-amber-400 to-amber-600"
+            };
+
+            setCustomCategory(aiCategory);
+            setCurrentCategory(aiCategory);
+
+            const shuffled = shuffleArray(questions);
+            const first = shuffled[0];
+            const remaining = shuffled.slice(1);
+
+            setActiveQuestions(questions);
+            setCurrentQuestion(first);
+            setQueue(remaining);
+            setHistory([first]);
+            setActiveFollowUp(null);
+        } catch (error) {
+            console.error(error);
+            alert("Maaf, gagal membuat pertanyaan. Coba lagi nanti.");
+        } finally {
+            setIsGenerating(false);
+        }
+    };
+
     const showFollowUp = (text: string) => {
         setActiveFollowUp(text);
     };
@@ -162,20 +195,22 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     return (
         <GameContext.Provider
             value={{
-                currentCategory,
+                currentCategory: currentCategory?.id.startsWith("ai-custom") ? customCategory : currentCategory,
                 currentQuestion,
                 history,
                 queue,
                 favorites,
                 isGroupMode,
                 activeFollowUp,
+                isGenerating,
                 selectCategory,
                 nextQuestion,
                 resetGame,
                 toggleFavorite,
                 toggleGroupMode,
                 showFollowUp,
-                closeFollowUp
+                closeFollowUp,
+                generateQuestions
             }}
         >
             {children}

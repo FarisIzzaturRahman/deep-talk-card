@@ -1,0 +1,393 @@
+[
+  {
+    "category": {
+      "id": "ai-custom-1767362656498",
+      "label": "AI Magic ✨",
+      "description": "Hasil generate untuk: first date",
+      "color": "bg-amber-500",
+      "gradient": "from-amber-400 to-amber-600"
+    },
+    "questions": [
+      {
+        "id": "ai-1",
+        "categoryId": "ai-custom",
+        "text": "Apa hal kecil yang bisa bikin kamu senyum atau mood kamu langsung membaik, bahkan di hari yang paling sibuk sekalipun?",
+        "depth": 1,
+        "followUps": [
+          "Kenapa hal itu bisa sebegitu ngaruhnya buat kamu?",
+          "Ada kejadian lucu terkait hal itu?"
+        ]
+      },
+      {
+        "id": "ai-2",
+        "categoryId": "ai-custom",
+        "text": "Kalau kamu punya satu mimpi besar yang pengen banget kamu wujudkan dalam 5 tahun ke depan, apa itu? Dan kenapa itu penting banget buat kamu?",
+        "depth": 2,
+        "followUps": [
+          "Apa langkah pertama yang kira-kira bakal kamu ambil buat ngejar mimpi itu?",
+          "Ada orang yang jadi inspirasi kamu buat mimpi ini?"
+        ]
+      },
+      {
+        "id": "ai-3",
+        "categoryId": "ai-custom",
+        "text": "Bayangin kamu lagi sendirian di tempat paling nyaman di dunia versi kamu. Kamu lagi ngapain dan suara apa yang kamu dengar?",
+        "depth": 1,
+        "followUps": [
+          "Kenapa tempat itu terasa begitu 'kamu'?",
+          "Sering gak kamu nemuin momen kayak gitu di kehidupan sehari-hari?"
+        ]
+      },
+      {
+        "id": "ai-4",
+        "categoryId": "ai-custom",
+        "text": "Dari semua pengalaman hidupmu, pelajaran apa yang paling berkesan dan membentuk kamu jadi pribadi yang sekarang?",
+        "depth": 2,
+        "followUps": [
+          "Ada momen tertentu yang jadi titik baliknya?",
+          "Bagaimana pelajaran itu mengubah cara pandangmu?"
+        ]
+      },
+      {
+        "id": "ai-5",
+        "categoryId": "ai-custom",
+        "text": "Ada satu hal tentang dirimu yang mungkin jarang orang lain tahu, tapi itu sangat berarti dan penting buat kamu?",
+        "depth": 3,
+        "followUps": [
+          "Kenapa kamu merasa itu jarang diketahui orang?",
+          "Bagaimana hal itu memengaruhi caramu berinteraksi dengan dunia?"
+        ]
+      },
+      {
+        "id": "ai-6",
+        "categoryId": "ai-custom",
+        "text": "Kalau kamu punya waktu luang seharian penuh tanpa gangguan, hal apa yang paling kamu suka lakukan sampai kamu lupa waktu?",
+        "depth": 1,
+        "followUps": [
+          "Udah berapa lama kamu menekuni hal itu?",
+          "Ada rencana buat ngembangin hobi itu lebih jauh?"
+        ]
+      },
+      {
+        "id": "ai-7",
+        "categoryId": "ai-custom",
+        "text": "Kalau kamu bisa punya kekuatan super untuk membantu satu masalah di dunia, masalah apa yang ingin kamu selesaikan dan kenapa?",
+        "depth": 2,
+        "followUps": [
+          "Menurutmu, apa akar masalahnya?",
+          "Apakah ada pengalaman pribadi yang bikin kamu peduli banget sama isu itu?"
+        ]
+      },
+      {
+        "id": "ai-8",
+        "categoryId": "ai-custom",
+        "text": "Dalam pertemanan atau hubungan, kualitas apa yang paling kamu hargai dari seseorang dan kenapa?",
+        "depth": 2,
+        "followUps": [
+          "Apakah kamu merasa kualitas itu sering ditemukan di sekitar kamu?",
+          "Gimana kamu menunjukkan kualitas itu ke orang lain?"
+        ]
+      },
+      {
+        "id": "ai-9",
+        "categoryId": "ai-custom",
+        "text": "Apa cerita paling konyol atau kejadian paling memalukan yang pernah kamu alami dan sekarang bisa kamu tertawakan?",
+        "depth": 1,
+        "followUps": [
+          "Gimana reaksi orang lain saat itu?",
+          "Apakah ada pelajaran lucu yang kamu ambil dari kejadian itu?"
+        ]
+      },
+      {
+        "id": "ai-10",
+        "categoryId": "ai-custom",
+        "text": "Kalau kamu bisa 'menulis' chapter selanjutnya dari hidupmu, seperti apa ending yang kamu harapkan di 10-15 tahun ke depan?",
+        "depth": 2,
+        "followUps": [
+          "Apa hal terpenting yang harus ada di 'ending' itu?",
+          "Peran apa yang ingin kamu mainkan dalam cerita itu?"
+        ]
+      },
+      {
+        "id": "ai-11",
+        "categoryId": "ai-custom",
+        "text": "Hal apa yang paling bikin kamu takut atau ragu untuk mencoba sesuatu yang baru, dan bagaimana kamu biasanya mengatasinya?",
+        "depth": 3,
+        "followUps": [
+          "Apakah kamu merasa sudah pernah berhasil menaklukkan ketakutan itu?",
+          "Ada support system yang membantumu?"
+        ]
+      },
+      {
+        "id": "ai-12",
+        "categoryId": "ai-custom",
+        "text": "Definisi 'hari yang sempurna' menurut kamu itu seperti apa? Dari pagi sampai malam, apa aja yang terjadi?",
+        "depth": 1,
+        "followUps": [
+          "Bagaimana rasanya di akhir hari itu?",
+          "Apakah ada hari yang mendekati 'sempurna' itu baru-baru ini?"
+        ]
+      }
+    ]
+  },
+  {
+    "category": {
+      "id": "ai-custom-1767362203471",
+      "label": "AI Magic ✨",
+      "description": "Hasil generate untuk: voluntering ke pedalaman indonesia",
+      "color": "bg-amber-500",
+      "gradient": "from-amber-400 to-amber-600"
+    },
+    "questions": [
+      {
+        "id": "ai-1",
+        "categoryId": "ai-custom",
+        "text": "Waktu pertama kali dengar atau memutuskan mau volunter ke pedalaman, apa sih hal pertama yang terbayang di benakmu, dan seberapa mirip atau beda sama kenyataan di sana?",
+        "depth": 2,
+        "followUps": [
+          "Ada momen 'wah, ternyata gini ya' yang paling membekas?",
+          "Apa ekspektasi yang paling jauh meleset?"
+        ]
+      },
+      {
+        "id": "ai-2",
+        "categoryId": "ai-custom",
+        "text": "Dari semua hal yang kamu alami di sana, tantangan atau kesulitan apa yang paling bikin kamu 'ngek' atau kaget dan butuh adaptasi ekstra?",
+        "depth": 2,
+        "followUps": [
+          "Gimana cara kamu ngatasinnya?",
+          "Pelajaran apa yang kamu dapat dari kesulitan itu?"
+        ]
+      },
+      {
+        "id": "ai-3",
+        "categoryId": "ai-custom",
+        "text": "Coba ceritakan satu momen paling berkesan atau paling bikin hatimu hangat selama di pedalaman. Apa yang terjadi dan kenapa itu sangat spesial buatmu?",
+        "depth": 2,
+        "followUps": [
+          "Apakah ada seseorang yang membuat momen itu spesial?",
+          "Perasaan apa yang dominan kamu rasakan saat itu?"
+        ]
+      },
+      {
+        "id": "ai-4",
+        "categoryId": "ai-custom",
+        "text": "Setelah pulang dari sana, ada nggak sih hal baru tentang dirimu sendiri yang baru kamu sadari atau lebih kamu kenali? Misalnya soal kesabaran, kekuatan, atau cara pandangmu?",
+        "depth": 3,
+        "followUps": [
+          "Perubahan apa yang paling signifikan kamu rasakan dalam dirimu?",
+          "Apakah ada nilai atau prioritas hidupmu yang bergeser setelah pengalaman itu?"
+        ]
+      },
+      {
+        "id": "ai-5",
+        "categoryId": "ai-custom",
+        "text": "Apa pelajaran paling berharga yang kamu dapat dari masyarakat pedalaman sana, yang mungkin nggak akan kamu temukan di kehidupan kota?",
+        "depth": 2,
+        "followUps": [
+          "Ada tradisi atau kebiasaan mereka yang paling kamu kagumi?",
+          "Sikap apa dari mereka yang menurutmu patut dicontoh?"
+        ]
+      },
+      {
+        "id": "ai-6",
+        "categoryId": "ai-custom",
+        "text": "Ada nggak sih satu hal dari kehidupan modern (mungkin sinyal internet, kopi sachet, atau kasur empuk) yang paling kamu rindukan waktu di pedalaman?",
+        "depth": 1,
+        "followUps": [
+          "Pas udah balik, hal kecil apa yang sekarang paling kamu syukuri?",
+          "Apa yang sekarang terasa lebih mewah dari sebelumnya?"
+        ]
+      },
+      {
+        "id": "ai-7",
+        "categoryId": "ai-custom",
+        "text": "Kalo boleh jujur, ada momen nggak sih di sana yang bikin kamu merasa sangat terharu, sedih, atau bahkan sedikit putus asa melihat kondisi sekitar?",
+        "depth": 3,
+        "followUps": [
+          "Bagaimana kamu melewati perasaan itu?",
+          "Pelajaran apa yang bisa diambil dari pengalaman emosional tersebut?"
+        ]
+      },
+      {
+        "id": "ai-8",
+        "categoryId": "ai-custom",
+        "text": "Pengalaman volunter ini ngubah pandanganmu tentang kegiatan sosial atau bantuan ke daerah terpencil nggak? Ada keinginan buat volunter lagi di masa depan?",
+        "depth": 3,
+        "followUps": [
+          "Kalau iya, daerah mana lagi yang ingin kamu kunjungi dan apa alasannya?",
+          "Menurutmu, apa yang bisa kita lakukan lagi untuk membantu mereka secara berkelanjutan?"
+        ]
+      },
+      {
+        "id": "ai-9",
+        "categoryId": "ai-custom",
+        "text": "Dari semua orang yang kamu temui di sana, ada satu tokoh atau anak kecil yang paling membekas di ingatanmu? Kenapa sosok itu begitu spesial?",
+        "depth": 2,
+        "followUps": [
+          "Apa percakapan atau interaksi paling berkesan dengannya?",
+          "Apakah kamu masih punya kontak dengannya, atau ada keinginan untuk kembali bertemu?"
+        ]
+      },
+      {
+        "id": "ai-10",
+        "categoryId": "ai-custom",
+        "text": "Kalau bisa kembali ke waktu sebelum berangkat, ada satu nasihat atau persiapan yang ingin kamu kasih ke dirimu sendiri atau teman-teman yang mau volunter ke sana?",
+        "depth": 2,
+        "followUps": [
+          "Apa yang membuat nasihat itu penting?",
+          "Apakah itu akan mengubah pengalamanmu secara signifikan?"
+        ]
+      },
+      {
+        "id": "ai-11",
+        "categoryId": "ai-custom",
+        "text": "Sebelum berangkat, mungkin ada stereotip atau bayangan tentang 'pedalaman' yang kamu punya. Setelah di sana, apa mitos yang paling terpatahkan atau pandangan yang berubah total?",
+        "depth": 2,
+        "followUps": [
+          "Bagaimana hal itu mengubah caramu memandang daerah pedalaman dan masyarakatnya?",
+          "Apakah ada sisi lain dari pedalaman yang justru lebih indah dari bayanganmu?"
+        ]
+      },
+      {
+        "id": "ai-12",
+        "categoryId": "ai-custom",
+        "text": "Sekarang setelah kembali ke rutinitas, ada kebiasaan, cara pandang, atau 'roh' dari pedalaman yang ingin kamu pertahankan atau terapkan dalam hidupmu sehari-hari?",
+        "depth": 3,
+        "followUps": [
+          "Bagaimana kamu akan mengaplikasikannya di tengah kesibukan kota?",
+          "Apa tantangan terbesar dalam menjaga 'roh' dari pengalaman itu tetap hidup?"
+        ]
+      }
+    ]
+  },
+  {
+    "category": {
+      "id": "ai-custom-1767361877689",
+      "label": "AI Magic ✨",
+      "description": "Hasil generate untuk: hobi memelihara ular",
+      "color": "bg-amber-500",
+      "gradient": "from-amber-400 to-amber-600"
+    },
+    "questions": [
+      {
+        "id": "ai-1",
+        "categoryId": "ai-custom",
+        "text": "Kapan pertama kali muncul ketertarikanmu sama ular, dan apa yang memicunya? Ada momen spesifik nggak yang bikin kamu langsung jatuh hati?",
+        "depth": 1,
+        "followUps": [
+          "Apa kesan pertamamu waktu pertama kali melihat atau berinteraksi dengan ular secara dekat?"
+        ]
+      },
+      {
+        "id": "ai-2",
+        "categoryId": "ai-custom",
+        "text": "Ular jenis apa yang pertama kali kamu pelihara? Gimana ceritanya kamu bisa dapetin dia?",
+        "depth": 1,
+        "followUps": [
+          "Apa hal yang paling kamu ingat dari pengalaman pertamamu merawat ular itu?",
+          "Apakah dia masih bersamamu sekarang?"
+        ]
+      },
+      {
+        "id": "ai-3",
+        "categoryId": "ai-custom",
+        "text": "Dari semua aspek memelihara ular, apa sih bagian yang paling bikin kamu senang atau rileks?",
+        "depth": 1,
+        "followUps": [
+          "Bisa ceritain satu momen yang paling berkesan nggak waktu kamu lagi interaksi sama ular kesayanganmu?"
+        ]
+      },
+      {
+        "id": "ai-4",
+        "categoryId": "ai-custom",
+        "text": "Gimana perasaanmu kalau ada orang yang langsung punya pandangan negatif, takut, atau bahkan jijik sama ular peliharaanmu?",
+        "depth": 2,
+        "followUps": [
+          "Pernah nggak kamu berhasil mengubah pandangan seseorang tentang ular dan hobi ini?",
+          "Bagaimana caramu menjelaskan hobi ini ke orang yang skeptis?"
+        ]
+      },
+      {
+        "id": "ai-5",
+        "categoryId": "ai-custom",
+        "text": "Menurut kamu, apa tantangan terbesar yang sering dihadapi para penghobi ular yang mungkin orang awam nggak tahu?",
+        "depth": 2,
+        "followUps": [
+          "Gimana caramu mengatasi tantangan itu dan pelajaran apa yang kamu dapat?",
+          "Apakah ada mitos atau kesalahpahaman tentang ular yang paling sering kamu hadapi?"
+        ]
+      },
+      {
+        "id": "ai-6",
+        "categoryId": "ai-custom",
+        "text": "Kalau boleh punya satu ular lagi tanpa batasan apa pun (jenis, ukuran, biaya, perawatan), ular apa yang akan kamu pilih dan kenapa?",
+        "depth": 2,
+        "followUps": [
+          "Apa sih yang bikin ular itu begitu istimewa di matamu?",
+          "Apa ekspektasimu dari pengalaman memelihara ular impian itu?"
+        ]
+      },
+      {
+        "id": "ai-7",
+        "categoryId": "ai-custom",
+        "text": "Ada nggak pelajaran hidup atau filosofi yang kamu dapatkan dari hobi memelihara ular ini, yang mungkin kamu nggak akan dapat dari hobi lain?",
+        "depth": 2,
+        "followUps": [
+          "Bisa kasih satu contoh spesifik gimana pelajaran itu teraplikasi di kehidupan sehari-harimu?",
+          "Apakah ada kaitannya dengan kesabaran, observasi, atau tanggung jawab?"
+        ]
+      },
+      {
+        "id": "ai-8",
+        "categoryId": "ai-custom",
+        "text": "Di luar sekadar hewan peliharaan, apa makna ular bagimu? Ada ikatan emosional khusus nggak di antara kalian?",
+        "depth": 3,
+        "followUps": [
+          "Gimana kamu mendefinisikan ikatan itu dan apakah itu sama dengan ikatan ke hewan peliharaan lain seperti anjing atau kucing?",
+          "Apakah ada momen di mana kamu merasa 'terhubung' dengan ular peliharaanmu?"
+        ]
+      },
+      {
+        "id": "ai-9",
+        "categoryId": "ai-custom",
+        "text": "Pernah nggak kamu merasa sedikit kesepian atau disalahpahami karena hobi ini nggak banyak yang benar-benar mengerti dan mendukung?",
+        "depth": 3,
+        "followUps": [
+          "Apa yang kamu lakukan untuk mengatasi perasaan itu, dan apakah ada komunitas yang mendukungmu?",
+          "Bagaimana cara kamu menjaga semangat hobi ini tetap menyala meskipun kadang ada pandangan negatif dari luar?"
+        ]
+      },
+      {
+        "id": "ai-10",
+        "categoryId": "ai-custom",
+        "text": "Bagaimana hobi memelihara ular ini telah mengubah cara pandangmu terhadap alam, hewan lain, atau bahkan dirimu sendiri?",
+        "depth": 3,
+        "followUps": [
+          "Adakah nilai-nilai baru yang kamu pegang karena hobi ini?",
+          "Apakah kamu jadi lebih menghargai aspek tertentu dari kehidupan yang sebelumnya tidak terlalu kamu perhatikan?"
+        ]
+      },
+      {
+        "id": "ai-11",
+        "categoryId": "ai-custom",
+        "text": "Pernahkah kamu menghadapi keputusan yang sangat sulit terkait ular peliharaanmu (misalnya perawatan medis mahal, relokasi, kehilangan)? Bagaimana kamu menanganinya?",
+        "depth": 3,
+        "followUps": [
+          "Apa yang paling berat dari keputusan-keputusan semacam itu, dan pelajaran apa yang kamu petik?",
+          "Bagaimana kamu berdamai dengan hasil dari keputusan tersebut?"
+        ]
+      },
+      {
+        "id": "ai-12",
+        "categoryId": "ai-custom",
+        "text": "Jika suatu hari nanti kamu tidak bisa lagi memelihara ular, hal apa yang paling akan kamu rindukan dari semua itu?",
+        "depth": 3,
+        "followUps": [
+          "Apa kenangan atau pengalaman yang akan selalu kamu ingat dan hargai dari hobi ini?",
+          "Bagaimana hobi ini membentuk siapa dirimu hari ini?"
+        ]
+      }
+    ]
+  }
+]
