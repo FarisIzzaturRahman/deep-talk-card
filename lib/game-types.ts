@@ -21,12 +21,18 @@ export interface GameConfig {
     playerCount: number;
 }
 
+export interface CategoryDeck {
+    remaining: string[]; // IDs of cards available to draw
+    used: string[];      // IDs of cards already played
+}
+
 export interface GameSession {
     id: string;
     config: GameConfig;
     players: Player[];
     turnOrder: string[]; // List of Player IDs in order for the current round
     roundCount: number;
+    decks: Record<string, CategoryDeck>; // State of validity per category
 }
 
 export interface RoundState {

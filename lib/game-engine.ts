@@ -16,8 +16,9 @@ export class GameEngine {
             id: `session-${Date.now()}`,
             config,
             players,
-            turnOrder: [], // Will be set on startRound
-            roundCount: 0
+            turnOrder: [],
+            roundCount: 0,
+            decks: {} // Initialized empty, lazy-loaded on startRound
         };
 
         this.round = {
@@ -35,9 +36,60 @@ export class GameEngine {
     public getSession() { return this.session; }
     public getRound() { return this.round; }
 
+    // --- Deck Logic ---
+
+    /**
+     * Ensures a deck exists for the given category.
+     * If missing, initializes 'remaining' with all card IDs and 'used' as empty.
+     */
+    private ensureDeckInitialized(categoryId: string, allCards: Question[]) {
+        if (!this.session.decks[categoryId]) {
+            const categoryCardIds = allCards
+                .filter(q => q.categoryId === categoryId)
+                .map(q => q.id);
+
+            this.session.decks[categoryId] = {
+                remaining: shuffleArray(categoryCardIds),
+                used: []
+            };
+        }
+    }
+
+    /**
+     * Draws N unique cards from the specified category deck.
+     * Auto-reshuffles if remaining cards are insufficient.
+     * Throws error if total unique cards < N (impossible to fulfill unique constraint).
+     */
+    private drawUniqueCards(categoryId: string, count: number, allCards: Question[]): Question[] {
+        this.ensureDeckInitialized(categoryId, allCards);
+        const deck = this.session.decks[categoryId];
+
+        // Check if total cards in category is enough for one round
+        const totalCards = deck.remaining.length + deck.used.length;
+        if (totalCards < count) {
+            throw new Error(`Insufficient cards in category. Needed ${count}, found ${totalCards}.`);
+        }
+
+        // Reshuffle if needed
+        if (deck.remaining.length < count) {
+            // Combine remaining + used, then reshuffle
+            deck.remaining = shuffleArray([...deck.remaining, ...deck.used]);
+            deck.used = [];
+        }
+
+        // Draw cards
+        const drawnIds = deck.remaining.splice(0, count);
+
+        // Add to used
+        deck.used.push(...drawnIds);
+
+        // Map IDs back to Question objects
+        return drawnIds.map(id => allCards.find(q => q.id === id)!);
+    }
+
     // --- Round Management ---
 
-    public startRound(pool: Question[]) {
+    public startRound(allCards: Question[]) {
         this.session.roundCount++;
 
         // 1. Randomize Turn Order for Draft Mode
@@ -46,20 +98,28 @@ export class GameEngine {
             const playerIds = this.session.players.map(p => p.id);
             this.session.turnOrder = shuffleArray(playerIds);
         } else {
-            // Shared mode doesn't really have turn order, but we can set it anyway
+            // Shared mode
             this.session.turnOrder = this.session.players.map(p => p.id);
         }
 
-        // 2. Deal Cards
+        // 2. Determine Draw Count
         const cardsNeeded = this.session.config.mode === 'DRAFT'
             ? this.session.players.length
             : 1;
 
-        // Ensure pool is shuffled before picking
-        const shuffledPool = shuffleArray([...pool]);
-        const deck = shuffledPool.slice(0, cardsNeeded);
+        // 3. Draw Unique Cards (with Deck Management)
+        let deck: Question[] = [];
+        try {
+            deck = this.drawUniqueCards(this.session.config.categoryId, cardsNeeded, allCards);
+        } catch (error) {
+            console.error(error);
+            // Fallback: If we can't draw (e.g. N > total cards), just pick randoms to avoid crash
+            // Ideally UI handles this, but here we survive.
+            deck = shuffleArray(allCards.filter(q => q.categoryId === this.session.config.categoryId))
+                .slice(0, cardsNeeded);
+        }
 
-        // 3. Init Round State
+        // 4. Init Round State
         this.round = {
             phase: this.session.config.mode === 'DRAFT' ? RoundPhase.DRAFTING : RoundPhase.ANSWERING,
             deck,
@@ -67,10 +127,10 @@ export class GameEngine {
             currentTurnIndex: 0,
             turnStatus: 'PICKING',
             picks: {},
-            playerAnswers: {} // Reset answers
+            playerAnswers: {}
         };
 
-        // For Shared Mode, auto-assign the single card to everyone
+        // For Shared Mode, auto-assign
         if (this.session.config.mode === 'SHARED') {
             const cardId = deck[0].id;
             this.session.players.forEach(p => {

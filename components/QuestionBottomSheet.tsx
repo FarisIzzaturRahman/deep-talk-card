@@ -1,7 +1,6 @@
 import { useGame } from "@/lib/store";
-import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "framer-motion";
-import { CheckCircle, X, Sparkles } from "lucide-react";
+import { motion } from "framer-motion";
+import { CheckCircle, Sparkles } from "lucide-react";
 
 export function QuestionBottomSheet() {
     const { round, session, currentPlayer, currentQuestion, confirmTurn } = useGame();
@@ -40,7 +39,7 @@ export function QuestionBottomSheet() {
                 <div className="space-y-2 text-center">
                     <span className="text-[10px] uppercase text-indigo-400 font-bold tracking-widest flex items-center justify-center gap-2">
                         <Sparkles className="w-3 h-3" />
-                        {currentPlayer?.name}'s Card
+                        {currentPlayer?.name}&apos;s Card
                     </span>
 
                     <h2 className="text-xl font-medium text-white leading-relaxed">
