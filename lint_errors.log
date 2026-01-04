@@ -1,0 +1,55 @@
+
+/home/faris/faris/deep-talk-card/lib/store.tsx
+    8:34  warning  'RoundPhase' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+   82:57  error    Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+/home/faris/faris/deep-talk-card/lib/store.tsx:82:57
+  80 |     }));
+  81 |
+> 82 |     const [session, setSession] = useState<GameSession>(engineRef.current.getSession());
+     |                                                         ^^^^^^^^^^^^^^^^^ Passing a ref to a function may read its value during render
+  83 |     const [round, setRound] = useState<RoundState>(engineRef.current.getRound());
+  84 |
+  85 |     // Contextual State                                                                                react-hooks/refs
+   82:57  error    Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+/home/faris/faris/deep-talk-card/lib/store.tsx:82:57
+  80 |     }));
+  81 |
+> 82 |     const [session, setSession] = useState<GameSession>(engineRef.current.getSession());
+     |                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Passing a ref to a function may read its value during render
+  83 |     const [round, setRound] = useState<RoundState>(engineRef.current.getRound());
+  84 |
+  85 |     // Contextual State                                                                     react-hooks/refs
+   83:52  error    Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+/home/faris/faris/deep-talk-card/lib/store.tsx:83:52
+  81 |
+  82 |     const [session, setSession] = useState<GameSession>(engineRef.current.getSession());
+> 83 |     const [round, setRound] = useState<RoundState>(engineRef.current.getRound());
+     |                                                    ^^^^^^^^^^^^^^^^^ Passing a ref to a function may read its value during render
+  84 |
+  85 |     // Contextual State
+  86 |     const [currentCategory, setCurrentCategory] = useState<Category | null>(null);           react-hooks/refs
+   83:52  error    Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+/home/faris/faris/deep-talk-card/lib/store.tsx:83:52
+  81 |
+  82 |     const [session, setSession] = useState<GameSession>(engineRef.current.getSession());
+> 83 |     const [round, setRound] = useState<RoundState>(engineRef.current.getRound());
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^ Passing a ref to a function may read its value during render
+  84 |
+  85 |     // Contextual State
+  86 |     const [currentCategory, setCurrentCategory] = useState<Category | null>(null);  react-hooks/refs
+  127:11  warning  'updateUserState' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+
+✖ 6 problems (4 errors, 2 warnings)
+

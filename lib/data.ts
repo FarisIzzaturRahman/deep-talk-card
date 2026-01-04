@@ -11,6 +11,7 @@ export interface Question {
     categoryId: string;
     text: string;
     depth: 1 | 2 | 3; // 1 = Light, 3 = Deep
+    type?: 'normal' | 'wildcard';
     followUps?: string[]; // Contextual follow-up questions
 }
 
@@ -677,4 +678,9 @@ export const ALL_QUESTIONS: Question[] = [
     { id: "fn-123", categoryId: "fun", text: "Apa hal ilegal yang ingin kamu lakuin kalau nggak ada hukum?", depth: 1 },
     { id: "fn-124", categoryId: "fun", text: "Kalau kamu kejebak di lift sama Presiden, apa kalimat pertama yang kamu ucapin?", depth: 1 },
     { id: "fn-125", categoryId: "fun", text: "Sebutkan skill 'tidak berguna' yang kamu banggakan!", depth: 1, followUps: ["Bisa melipat lidah? Bisa gerakin kuping?"] },
+    { id: "wc-1", categoryId: "ice-breaker", text: "Berikan pujian tulus kepada orang di sebelah kananmu.", depth: 1, type: "wildcard" },
+    { id: "wc-2", categoryId: "deep-talk", text: "Tanyakan satu hal yang paling membuatmu penasaran tentang lawan bicaramu saat ini.", depth: 2, type: "wildcard" },
+    { id: "wc-3", categoryId: "ice-breaker", text: "Ganti posisi duduk dengan orang yang paling jauh darimu.", depth: 1, type: "wildcard" },
+    { id: "wc-4", categoryId: "fun", text: "Pilih satu orang untuk menceritakan rahasia kecil yang lucu.", depth: 1, type: "wildcard" },
+    { id: "wc-5", categoryId: "deep-talk", text: "Wildcard: Tatap mata lawan bicaramu selama 10 detik tanpa bicara.", depth: 3, type: "wildcard" },
 ];
