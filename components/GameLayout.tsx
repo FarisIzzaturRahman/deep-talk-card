@@ -10,6 +10,7 @@ import { GameSetupModal } from "./GameSetupModal";
 import { RoundPhase } from "@/lib/game-types";
 import { cn } from "@/lib/utils";
 import { PlayerSidePanel } from "./PlayerSidePanel";
+import { EmotionalClosing } from "./EmotionalClosing";
 
 export function GameLayout() {
     const { gameStatus, round, session } = useGame();
@@ -83,6 +84,16 @@ export function GameLayout() {
                             {isDraftMode && (
                                 <PlayerSidePanel />
                             )}
+                        </motion.div>
+                    ) : gameStatus === 'FINISHED' ? (
+                        <motion.div
+                            key="finish"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="flex-1 flex"
+                        >
+                            <EmotionalClosing />
                         </motion.div>
                     ) : null}
                 </AnimatePresence>

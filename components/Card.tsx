@@ -60,9 +60,18 @@ export function Card() {
                                         </span>
                                     )}
                                     {currentQuestion.type === 'wildcard' && (
-                                        <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-[10px] font-bold uppercase tracking-widest text-amber-200 border border-amber-400/30 flex items-center gap-1.5 backdrop-blur-sm shadow-[0_0_15px_rgba(245,158,11,0.2)]">
-                                            <span className="text-sm">✨</span>
-                                            Wildcard
+                                        <span className={cn(
+                                            "px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest border flex items-center gap-1.5 backdrop-blur-sm shadow-lg",
+                                            currentQuestion.intensity === 3
+                                                ? "bg-rose-500/20 text-rose-200 border-rose-400/40 shadow-rose-500/20"
+                                                : currentQuestion.intensity === 2
+                                                    ? "bg-amber-500/20 text-amber-200 border-amber-400/40 shadow-amber-500/20"
+                                                    : "bg-emerald-500/20 text-emerald-100 border-emerald-400/40 shadow-emerald-500/20"
+                                        )}>
+                                            <span className="text-xs">
+                                                {currentQuestion.intensity === 3 ? "🔥" : currentQuestion.intensity === 2 ? "⚡" : "✨"}
+                                            </span>
+                                            Wildcard Lvl {currentQuestion.intensity || 1}
                                         </span>
                                     )}
                                 </div>

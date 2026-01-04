@@ -7,7 +7,7 @@ import { FeedbackModal } from "./FeedbackModal";
 export function Controls() {
     const {
         startRound,
-        resetGame,
+        endGame,
         gameStatus,
         timerMode,
         timer,
@@ -20,12 +20,20 @@ export function Controls() {
     if (gameStatus !== 'PLAYING') return null;
 
     const handleEndSession = () => {
-        setShowFeedback(true);
+        // Probability: 20% chance to show survey, 80% go straight to emotional closing
+        const showSurvey = Math.random() < 0.2;
+
+        if (showSurvey) {
+            setShowFeedback(true);
+        } else {
+            endGame();
+        }
     };
 
     const handleFeedbackClose = () => {
         setShowFeedback(false);
-        resetGame();
+        // After survey (dismissed or submitted), go to emotional closing
+        endGame();
     };
 
     const handleNext = () => {
