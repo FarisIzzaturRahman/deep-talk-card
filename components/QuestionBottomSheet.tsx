@@ -1,4 +1,5 @@
 import { useGame } from "@/lib/store";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { CheckCircle, Sparkles } from "lucide-react";
 
@@ -37,10 +38,25 @@ export function QuestionBottomSheet() {
                 <div className="w-12 h-1.5 bg-slate-700/50 rounded-full mx-auto" />
 
                 <div className="space-y-2 text-center">
-                    <span className="text-[10px] uppercase text-indigo-400 font-bold tracking-widest flex items-center justify-center gap-2">
-                        <Sparkles className="w-3 h-3" />
-                        {currentPlayer?.name}&apos;s Card
-                    </span>
+                    <div className="flex flex-col items-center gap-1">
+                        <span className="text-[10px] uppercase text-indigo-400 font-bold tracking-widest flex items-center justify-center gap-2">
+                            <Sparkles className="w-3 h-3" />
+                            {currentPlayer?.name}&apos;s Card
+                        </span>
+                        {currentQuestion.type === 'wildcard' && (
+                            <span className={cn(
+                                "px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-widest border flex items-center gap-1 backdrop-blur-sm",
+                                currentQuestion.intensity === 3
+                                    ? "bg-rose-500/20 text-rose-300 border-rose-500/40"
+                                    : currentQuestion.intensity === 2
+                                        ? "bg-amber-500/20 text-amber-300 border-amber-500/40"
+                                        : "bg-emerald-500/20 text-emerald-300 border-emerald-500/40"
+                            )}>
+                                {currentQuestion.intensity === 3 ? "🔥" : currentQuestion.intensity === 2 ? "⚡" : "✨"}
+                                Wildcard
+                            </span>
+                        )}
+                    </div>
 
                     <h2 className="text-xl font-medium text-white leading-relaxed">
                         {currentQuestion.text}

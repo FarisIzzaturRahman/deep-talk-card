@@ -12,6 +12,7 @@ export interface Question {
     text: string;
     depth: 1 | 2 | 3; // 1 = Light, 3 = Deep
     type?: 'normal' | 'wildcard';
+    intensity?: 1 | 2 | 3; // Wildcard intensity: 1 (safe), 3 (bold)
     followUps?: string[]; // Contextual follow-up questions
 }
 
@@ -122,7 +123,6 @@ export const ALL_QUESTIONS: Question[] = [
     { id: "ib-63", categoryId: "ice-breaker", text: "Apa 'Red Flag' terbesar bagimu saat baru kenal orang?", depth: 1 },
     { id: "ib-64", categoryId: "ice-breaker", text: "Kamu tim: Mandi air hangat pas udara panas, atau mandi air dingin pas udara dingin?", depth: 1 },
     { id: "ib-65", categoryId: "ice-breaker", text: "Sebutkan satu kata gaul yang kamu sering pake tapi sebenernya nggak tau artinya!", depth: 1 },
-    // New Questions (Batch 2)
     { id: "ib-66", categoryId: "ice-breaker", text: "Kalau makan bakso, tim kuah bening original atau tim saos+kecap+sambal sampai kuah butek?", depth: 1 },
     { id: "ib-67", categoryId: "ice-breaker", text: "Apa satu barang yang selalu ada di tas kamu, tapi jarang banget kepake?", depth: 1 },
     { id: "ib-68", categoryId: "ice-breaker", text: "Martabak manis: Tim Keju atau Tim Coklat Kacang?", depth: 1, followUps: ["Kenapa? Jangan bilang karena dikasihnya itu."] },
@@ -704,9 +704,74 @@ export const ALL_QUESTIONS: Question[] = [
     { id: "fn-123", categoryId: "fun", text: "Apa hal ilegal yang ingin kamu lakuin kalau nggak ada hukum?", depth: 1 },
     { id: "fn-124", categoryId: "fun", text: "Kalau kamu kejebak di lift sama Presiden, apa kalimat pertama yang kamu ucapin?", depth: 1 },
     { id: "fn-125", categoryId: "fun", text: "Sebutkan skill 'tidak berguna' yang kamu banggakan!", depth: 1, followUps: ["Bisa melipat lidah? Bisa gerakin kuping?"] },
-    { id: "wc-1", categoryId: "ice-breaker", text: "Berikan pujian tulus kepada orang di sebelah kananmu.", depth: 1, type: "wildcard" },
-    { id: "wc-2", categoryId: "deep-talk", text: "Tanyakan satu hal yang paling membuatmu penasaran tentang lawan bicaramu saat ini.", depth: 2, type: "wildcard" },
-    { id: "wc-3", categoryId: "ice-breaker", text: "Ganti posisi duduk dengan orang yang paling jauh darimu.", depth: 1, type: "wildcard" },
-    { id: "wc-4", categoryId: "fun", text: "Pilih satu orang untuk menceritakan rahasia kecil yang lucu.", depth: 1, type: "wildcard" },
-    { id: "wc-5", categoryId: "deep-talk", text: "Wildcard: Tatap mata lawan bicaramu selama 10 detik tanpa bicara.", depth: 3, type: "wildcard" },
+
+    // ============================
+    // WILD CARD (Playful Nudges)
+    // ============================
+    { id: "wc-1", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Berikan pujian tulus kepada orang di sebelah kananmu.", depth: 1 },
+    { id: "wc-2", categoryId: "wildcard", type: "wildcard", intensity: 2, text: "Tanyakan satu hal yang paling membuatmu penasaran tentang lawan bicaramu saat ini.", depth: 2 },
+    { id: "wc-3", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Ganti posisi duduk dengan orang yang paling jauh darimu.", depth: 1 },
+    { id: "wc-4", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Berikan satu senyuman terbaikmu ke semua orang sebelum lanjut.", depth: 1 },
+    { id: "wc-5", categoryId: "wildcard", type: "wildcard", intensity: 3, text: "Wildcard: Tatap mata lawan bicaramu selama 10 detik tanpa bicara.", depth: 3 },
+    { id: "wc-6", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Semua orang harus melakukan peregangan kecil selama 10 detik. Tarik napas...", depth: 1 },
+    { id: "wc-7", categoryId: "wildcard", type: "wildcard", intensity: 2, text: "Coba tebak satu lagu favorit orang di depanmu. Kalau salah, dia yang kasih tahu.", depth: 2 },
+    { id: "wc-8", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Gunakan logat daerah yang paling kamu tahu untuk menjawab pertanyaan berikutnya.", depth: 1 },
+    { id: "wc-9", categoryId: "wildcard", type: "wildcard", intensity: 2, text: "Sebutkan satu hal kecil yang kamu syukuri dari orang yang paling terakhir berbicara.", depth: 2 },
+    { id: "wc-10", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Lakukan toast (tos) kecil dengan orang-orang di dekatmu.", depth: 1 },
+    { id: "wc-11", categoryId: "wildcard", type: "wildcard", intensity: 3, text: "Tunjukkan satu foto random di galeri HP-mu yang punya cerita menyenangkan.", depth: 3 },
+    { id: "wc-12", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Sebutkan satu kata yang menggambarkan suasana momen ini.", depth: 1 },
+    { id: "wc-13", categoryId: "wildcard", type: "wildcard", intensity: 2, text: "Pilih satu orang untuk memberikan 'fakta unik' tentang dirinya yang belum kita tahu.", depth: 2 },
+    { id: "wc-14", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Berikan 'high five' virtual ke semua orang yang ada di sini.", depth: 1 },
+    { id: "wc-15", categoryId: "wildcard", type: "wildcard", intensity: 2, text: "Coba deskripsikan orang di kirimu menggunakan hanya 3 kata sifat positif.", depth: 2 },
+    { id: "wc-16", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Semua orang boleh memejamkan mata dan menarik napas dalam selama 5 detik.", depth: 1 },
+    { id: "wc-17", categoryId: "wildcard", type: "wildcard", intensity: 3, text: "Tantang satu orang untuk melakukan suit (batu-gunting-kertas). Yang menang boleh tanya 1 hal bebas.", depth: 3 },
+    { id: "wc-18", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Ucapkan 'Terima kasih sudah dengerin' ke orang yang terakhir berbicara.", depth: 1 },
+    { id: "wc-19", categoryId: "wildcard", type: "wildcard", intensity: 2, text: "Tampilkan satu ekspresi wajah paling 'santai' yang kamu punya.", depth: 2 },
+    { id: "wc-20", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Sebutkan satu emoji yang paling mewakili perasaanmu saat ini.", depth: 1 },
+    { id: "wc-21", categoryId: "wildcard", type: "wildcard", intensity: 2, text: "Gunakan kata 'Anu' setidaknya dua kali dalam jawaban pertanyaan berikutnya.", depth: 1 },
+    { id: "wc-22", categoryId: "wildcard", type: "wildcard", intensity: 3, text: "Mintalah satu orang memberikan rekomendasi hal seru (film/buku/makanan) untukmu.", depth: 2 },
+    { id: "wc-23", categoryId: "wildcard", type: "wildcard", intensity: 1, text: "Tunjukkan jempolmu (thumb's up) kepada siapa pun yang menurutmu ceritanya seru tadi.", depth: 1 },
+    { id: "wc-24", categoryId: "wildcard", type: "wildcard", intensity: 2, text: "Tebal atau Tipis? Tanyakan preferensi satu hal random (misal: kerupuk, selimut, atau casing HP) ke grup.", depth: 1 },
+    { id: "wc-25", categoryId: "wildcard", type: "wildcard", intensity: 3, text: "Saling lempar pujian secara estafet sampai semua orang dapat giliran.", depth: 3 },
+];
+
+// ============================
+// CLOSING MESSAGES (Emotional Soft Landing)
+// ============================
+export const CLOSING_MESSAGES = [
+    "Terima kasih sudah berbagi cerita hari ini. Hal-hal kecil kayak gini yang bikin kita makin dekat.",
+    "Obrolan hari ini seru banget. Kadang kita lupa betapa pentingnya sekadar duduk dan ngobrol.",
+    "Semoga ada satu atau dua cerita dari hari ini yang bikin kamu senyum pas mau tidur nanti.",
+    "Nggak ada jawaban benar atau salah, yang ada cuma cerita kita. Makasih udah jadi diri sendiri.",
+    "Capek ya? Istirahat yang cukup. Besok kita mulai hari baru dengan semangat baru.",
+    "Senang rasanya bisa mengenal sisi lain dari kalian semua. Sampai ketemu di obrolan berikutnya!",
+    "Dunia di luar sana mungkin berisik, tapi semoga momen ini ngasih sedikit ketenangan.",
+    "Teman ngobrol itu investasi terbaik. Jaga terus koneksi ini ya.",
+    "Udah, jangan dipikirin lagi jawaban tadi. Yang penting kita udah ketawa bareng.",
+    "Pulang dengan hati ringan ya. Kalian semua keren banget hari ini.",
+    "Kadang yang kita butuhkan cuma telinga yang mendengar dan hati yang mengerti. Thanks for today.",
+    "Jangan lupa minum air putih dan istirahat. Kesehatanmu lebih penting dari apapun.",
+    "Setiap orang punya cerita. Makasih udah ngasih kepercayaan buat dengerin ceritamu.",
+    "Kalau besok berat, inget aja kita pernah ketawa lepas gara-gara pertanyaan konyol tadi.",
+    "Stay safe, stay sane, and stay kind. Sampai jumpa lagi!",
+    "Terima kasih sudah meluangkan waktu. Nggak harus lama, yang penting rasanya nyata.",
+    "Hari ini mungkin biasa saja, tapi obrolannya nggak. Semoga terasa sampai nanti.",
+    "Ada hal-hal yang nggak perlu disimpulkan. Cukup dirasain sebentar, lalu disimpan.",
+    "Semoga setelah ini, suasananya jadi sedikit lebih hangat dari sebelumnya.",
+    "Nggak semua momen harus bermakna besar. Yang kecil-kecil juga layak dirayakan.",
+    "Kalau ada yang kepikiran setelah ini, berarti obrolannya kena di hati.",
+    "Terima kasih sudah hadir sepenuhnya, walau cuma sebentar.",
+    "Kadang ngobrol ringan justru yang paling kita butuhkan hari ini.",
+    "Semoga pulangnya nggak cuma bawa HP, tapi juga perasaan yang lebih ringan.",
+    "Momen kayak gini jarang terasa penting sekarang, tapi sering diingat nanti.",
+    "Nggak apa-apa kalau masih kepikiran satu dua jawaban. Itu bagian dari proses.",
+    "Terima kasih sudah bikin sesi ini hidup dengan caramu sendiri.",
+    "Kalau hari ini melelahkan, semoga obrolan tadi jadi jeda yang menyenangkan.",
+    "Semoga setelah ini, kamu merasa sedikit lebih ditemani.",
+    "Nggak perlu buru-buru. Semua hal baik memang datang pelan-pelan.",
+    "Terima kasih sudah ikut meramaikan ruang kecil ini.",
+    "Mungkin sederhana, tapi momen ini tetap berarti.",
+    "Kalau ada yang bikin senyum kecil barusan, itu sudah cukup.",
+    "Terima kasih sudah berbagi ruang, waktu, dan cerita.",
+    "Sampai jumpa lagi, di obrolan yang nggak perlu dipaksakan."
 ];

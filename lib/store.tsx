@@ -8,7 +8,7 @@ import { GameSession, RoundState, GameConfig, Player } from "./game-types";
 
 // --- Types ---
 
-export type GameStatus = 'LOBBY' | 'SETUP' | 'PLAYING';
+export type GameStatus = 'LOBBY' | 'SETUP' | 'PLAYING' | 'FINISHED';
 
 interface GameContextType {
     // Core State
@@ -27,6 +27,7 @@ interface GameContextType {
     startRound: () => void; // Deals cards
     draftCard: (cardId: string) => void; // Pick
     confirmTurn: () => void; // Done
+    endGame: () => void; // Go to Emotional Closing
     resetGame: () => void; // Back to Lobby
 
     // Features
@@ -125,6 +126,14 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         if (!currentPlayer) return;
         const success = engineRef.current.confirmTurn(currentPlayer.id);
         if (success) refreshEngineState();
+    };
+
+
+
+
+
+    const endGame = () => {
+        setGameStatus('FINISHED');
     };
 
     const resetGame = () => {
@@ -240,6 +249,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
             startRound,
             draftCard,
             confirmTurn,
+            endGame,
             resetGame,
             favorites,
             toggleFavorite,

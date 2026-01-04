@@ -94,11 +94,9 @@ export class GameEngine {
 
         // 1. Randomize Turn Order for Draft Mode
         if (this.session.config.mode === 'DRAFT') {
-            // Fisher-Yates shuffle for players
             const playerIds = this.session.players.map(p => p.id);
             this.session.turnOrder = shuffleArray(playerIds);
         } else {
-            // Shared mode
             this.session.turnOrder = this.session.players.map(p => p.id);
         }
 
@@ -107,19 +105,33 @@ export class GameEngine {
             ? this.session.players.length
             : 1;
 
-        // 3. Draw Unique Cards (with Deck Management)
+        // 3. Determine if a Wildcard should be included
+        // 25% chance in Draft, 15% in Shared.
+        const wildcardProb = this.session.config.mode === 'DRAFT' ? 0.25 : 0.15;
+        const includeWildcard = Math.random() < wildcardProb;
+
+        // 4. Draw Cards
         let deck: Question[] = [];
         try {
-            deck = this.drawUniqueCards(this.session.config.categoryId, cardsNeeded, allCards);
+            if (includeWildcard) {
+                const normalCount = Math.max(0, cardsNeeded - 1);
+                const categoryCards = normalCount > 0
+                    ? this.drawUniqueCards(this.session.config.categoryId, normalCount, allCards)
+                    : [];
+
+                const wildcard = this.drawUniqueCards("wildcard", 1, allCards)[0];
+                deck = shuffleArray([...categoryCards, wildcard]);
+            } else {
+                deck = this.drawUniqueCards(this.session.config.categoryId, cardsNeeded, allCards);
+            }
         } catch (error) {
             console.error(error);
-            // Fallback: If we can't draw (e.g. N > total cards), just pick randoms to avoid crash
-            // Ideally UI handles this, but here we survive.
+            // Fallback: Just draw randoms from category
             deck = shuffleArray(allCards.filter(q => q.categoryId === this.session.config.categoryId))
                 .slice(0, cardsNeeded);
         }
 
-        // 4. Init Round State
+        // 5. Init Round State
         this.round = {
             phase: this.session.config.mode === 'DRAFT' ? RoundPhase.DRAFTING : RoundPhase.ANSWERING,
             deck,
