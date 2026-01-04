@@ -1,16 +1,23 @@
 import { useGame } from "@/lib/store";
 import { cn } from "@/lib/utils";
-import { ArrowRight, RefreshCw, Shuffle, Users, LogOut } from "lucide-react";
+import { ArrowRight, LogOut, Zap, Clock } from "lucide-react";
 import { useState } from "react";
 import { FeedbackModal } from "./FeedbackModal";
 
 export function Controls() {
-    const { nextQuestion, resetGame, toggleGroupMode, isGroupMode } = useGame();
+    const {
+        startRound,
+        resetGame,
+        gameStatus,
+        timerMode,
+        timer,
+        startSpeedMode,
+        stopSpeedMode,
+        session
+    } = useGame();
     const [showFeedback, setShowFeedback] = useState(false);
 
-    // When ending game, show feedback first, then reset? 
-    // Or just separate button.
-    // Requirement: "Muncul hanya saat user mengakhiri"
+    if (gameStatus !== 'PLAYING') return null;
 
     const handleEndSession = () => {
         setShowFeedback(true);
@@ -18,54 +25,60 @@ export function Controls() {
 
     const handleFeedbackClose = () => {
         setShowFeedback(false);
-        resetGame(); // Navigate back to category selection after feedback
+        resetGame();
+    };
+
+    const handleNext = () => {
+        startRound();
     };
 
     return (
         <>
             <div className="flex flex-col items-center gap-6 w-full max-w-md mx-auto mt-6 px-4">
-                {/* Top: Group Mode Toggle */}
-                <button
-                    onClick={toggleGroupMode}
-                    className={cn(
-                        "flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium transition-all border",
-                        isGroupMode
-                            ? "bg-emerald-500/20 text-emerald-300 border-emerald-500/30"
-                            : "bg-transparent text-slate-500 border-transparent hover:bg-white/5"
-                    )}
-                >
-                    <Users className="w-3.5 h-3.5" />
-                    {isGroupMode ? "Mode Grup: Aktif" : "Mode Solo"}
-                </button>
 
-                {/* Main Action */}
-                <button
-                    onClick={nextQuestion}
-                    className="w-full relative group overflow-hidden bg-slate-100 text-slate-900 rounded-2xl px-8 py-5 font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 flex items-center justify-center gap-3"
-                >
-                    <span className="relative z-10 tracking-wide">
-                        {isGroupMode ? "Giliran Selanjutnya" : "Pertanyaan Baru"}
-                    </span>
-                    <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
-                </button>
+                {/* Main Action Buttons */}
+                <div className="w-full space-y-3">
+                    {/* Next Round Button */}
+                    <div className="relative">
+                        <button
+                            onClick={handleNext}
+                            className={cn(
+                                "w-full relative group overflow-hidden rounded-[1.5rem] px-8 py-5 font-black text-xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-3",
+                                timerMode === 'speed' ? "bg-rose-500 text-white shadow-rose-900/20" : "bg-white text-slate-950 shadow-slate-900/40"
+                            )}
+                        >
+                            <span className="relative z-10 tracking-widest uppercase">
+                                {session.config.mode === 'DRAFT' ? "New Draft Round" : "Pertanyaan Baru"}
+                            </span>
+                            <ArrowRight className="w-6 h-6" />
 
-                {/* Secondary Actions Row */}
-                <div className="flex w-full gap-3">
-                    <button
-                        onClick={nextQuestion} // Shuffle effectively just picks another random
-                        className="flex-1 bg-white/5 hover:bg-white/10 border border-white/5 hover:border-white/10 text-slate-300 hover:text-white rounded-xl px-4 py-3 font-medium text-sm transition-all flex items-center justify-center gap-2"
-                    >
-                        <Shuffle className="w-4 h-4" />
-                        Acak
-                    </button>
+                            <div className="absolute inset-x-0 top-0 h-px bg-white/20" />
+                        </button>
+                    </div>
 
-                    <button
-                        onClick={handleEndSession}
-                        className="flex-1 bg-white/5 hover:bg-white/10 border border-white/5 hover:border-white/10 text-rose-300/80 hover:text-rose-300 rounded-xl px-4 py-3 font-medium text-sm transition-all flex items-center justify-center gap-2"
-                    >
-                        <LogOut className="w-4 h-4" />
-                        Selesai
-                    </button>
+                    <div className="flex w-full gap-3">
+                        {/* Speed Mode Toggle */}
+                        <button
+                            onClick={() => timerMode === 'speed' ? stopSpeedMode() : startSpeedMode()}
+                            className={cn(
+                                "flex-1 flex items-center justify-center gap-2 px-4 py-4 rounded-2xl text-xs font-bold transition-all border border-white/5",
+                                timerMode === 'speed'
+                                    ? "bg-rose-500/20 text-rose-300 border-rose-500/30"
+                                    : "bg-slate-800/40 text-slate-500 hover:text-white hover:bg-slate-800/60"
+                            )}
+                        >
+                            {timerMode === 'speed' ? <Clock className="w-4 h-4 animate-pulse" /> : <Zap className="w-4 h-4" />}
+                            {timerMode === 'speed' ? `${timer}s` : "Speed Mode"}
+                        </button>
+
+                        <button
+                            onClick={handleEndSession}
+                            className="flex-1 bg-slate-800/40 hover:bg-rose-500/20 border border-white/5 hover:border-rose-500/30 text-slate-500 hover:text-rose-300 rounded-2xl px-4 py-4 font-bold text-xs transition-all flex items-center justify-center gap-2 tracking-widest uppercase"
+                        >
+                            <LogOut className="w-4 h-4" />
+                            Selesai
+                        </button>
+                    </div>
                 </div>
             </div>
 

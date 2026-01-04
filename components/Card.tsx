@@ -26,15 +26,29 @@ export function Card() {
                         className="w-full h-full aspect-[3/4] md:aspect-[4/3]"
                     >
                         <div className={cn(
-                            "relative w-full h-full rounded-[2rem] p-8 md:p-12 flex flex-col items-center justify-center text-center shadow-2xl overflow-hidden bg-gradient-to-br transition-colors duration-700",
+                            "relative w-full h-full rounded-[2rem] p-8 md:p-12 flex flex-col items-center justify-center text-center shadow-2xl overflow-hidden bg-gradient-to-br transition-all duration-700 border-4",
+                            currentQuestion.type === 'wildcard'
+                                ? "border-amber-400 shadow-[0_0_50px_rgba(245,158,11,0.3)] saturate-[1.2]"
+                                : "border-white/10",
                             currentCategory.gradient
                         )}>
                             {/* Texture/Pattern Overlay */}
                             <div className="absolute inset-0 bg-black/10 mix-blend-overlay" />
                             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 contrast-125" />
 
-                            {/* Top Metadata */}
-                            <div className="absolute top-8 w-full px-8 flex justify-between items-center z-20">
+                            {/* Interactive Glow for Wildcard */}
+                            {(currentQuestion.type === 'wildcard') && (
+                                <motion.div
+                                    animate={{
+                                        opacity: [0.3, 0.6, 0.3],
+                                        scale: [1, 1.2, 1]
+                                    }}
+                                    transition={{ duration: 3, repeat: Infinity }}
+                                    className="absolute inset-0 opacity-20 blur-[100px] pointer-events-none bg-amber-400"
+                                />
+                            )}
+
+                            <div className={cn("absolute w-full px-8 flex justify-between items-center z-20 transition-all top-8")}>
                                 <div className="flex items-center gap-2">
                                     <span className="px-3 py-1 rounded-full bg-white/10 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-white/90 backdrop-blur-md border border-white/20">
                                         {currentCategory.label}
@@ -43,6 +57,12 @@ export function Card() {
                                         <span className="px-2 py-0.5 rounded-full bg-black/10 text-[10px] font-bold uppercase tracking-widest text-white/80 border border-white/10 flex items-center gap-1.5 backdrop-blur-sm">
                                             <span className="w-1.5 h-1.5 rounded-full bg-rose-300 shadow-[0_0_8px_rgba(251,113,133,0.8)]" />
                                             Deep
+                                        </span>
+                                    )}
+                                    {currentQuestion.type === 'wildcard' && (
+                                        <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-[10px] font-bold uppercase tracking-widest text-amber-200 border border-amber-400/30 flex items-center gap-1.5 backdrop-blur-sm shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+                                            <span className="text-sm">✨</span>
+                                            Wildcard
                                         </span>
                                     )}
                                 </div>

@@ -1,24 +1,33 @@
+"use client";
+
 import { useGame } from "@/lib/store";
 import { AnimatePresence, motion } from "framer-motion";
 import { Card } from "./Card";
 import { CategorySelector } from "./CategorySelector";
 import { Controls } from "./Controls";
+import { DraftingBoard } from "./DraftingBoard";
+import { GameSetupModal } from "./GameSetupModal";
+import { RoundPhase } from "@/lib/game-types";
 
 export function GameLayout() {
-    const { currentCategory } = useGame();
+    const { gameStatus, round, session } = useGame();
 
     return (
         <div className="min-h-screen w-full flex flex-col items-center p-4 md:p-8 bg-slate-950 text-slate-50 overflow-x-hidden font-sans selection:bg-rose-500/30">
+            {/* Background Gradients */}
+            <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10 bg-slate-950">
+                <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[800px] h-[800px] bg-indigo-500/5 rounded-full blur-[120px]" />
+            </div>
+
             <div className="w-full max-w-6xl mx-auto flex-1 flex flex-col relative z-10">
 
-                {/* Background Gradients - Dynamic based on state could be added here */}
-                <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10 bg-slate-950">
-                    {/* Static Ambient Light */}
-                    <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[800px] h-[800px] bg-indigo-500/5 rounded-full blur-[120px]" />
-                </div>
+                {/* Modals / Overlays */}
+                <AnimatePresence>
+                    {gameStatus === 'SETUP' && <GameSetupModal />}
+                </AnimatePresence>
 
                 <AnimatePresence mode="wait">
-                    {!currentCategory ? (
+                    {gameStatus === 'LOBBY' ? (
                         <motion.div
                             key="selector"
                             initial={{ opacity: 0 }}
@@ -29,7 +38,7 @@ export function GameLayout() {
                         >
                             <CategorySelector />
                         </motion.div>
-                    ) : (
+                    ) : gameStatus === 'PLAYING' ? (
                         <motion.div
                             key="game"
                             initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
@@ -39,17 +48,26 @@ export function GameLayout() {
                             className="flex-1 flex flex-col items-center justify-center min-h-[85vh]"
                         >
                             <div className="w-full max-w-md">
-                                <Card />
+                                {/* 
+                                    Drafting Board is shown during DRAFTING phase for DRAFT mode.
+                                    Otherwise show the active Card (Shared Mode OR Draft Result).
+                                */}
+                                {session.config.mode === 'DRAFT' && round.phase === RoundPhase.DRAFTING ? (
+                                    <DraftingBoard />
+                                ) : (
+                                    <Card />
+                                )}
+
+                                {/* Controls always shown during gameplay to allow Exit / Speed Mode */}
                                 <Controls />
                             </div>
                         </motion.div>
-                    )}
+                    ) : null}
                 </AnimatePresence>
-
             </div>
 
             <footer className="w-full py-8 text-center text-slate-600 text-xs tracking-widest uppercase opacity-50">
-                <p>Deep Talk V2 • For Meaningful Connections</p>
+                <p>Deep Talk • No Login Required</p>
             </footer>
         </div>
     );
