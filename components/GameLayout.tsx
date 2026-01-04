@@ -8,9 +8,13 @@ import { Controls } from "./Controls";
 import { DraftingBoard } from "./DraftingBoard";
 import { GameSetupModal } from "./GameSetupModal";
 import { RoundPhase } from "@/lib/game-types";
+import { cn } from "@/lib/utils";
+import { PlayerSidePanel } from "./PlayerSidePanel";
 
 export function GameLayout() {
     const { gameStatus, round, session } = useGame();
+
+    const isDraftMode = session.config.mode === 'DRAFT';
 
     return (
         <div className="min-h-screen w-full flex flex-col items-center p-4 md:p-8 bg-slate-950 text-slate-50 overflow-x-hidden font-sans selection:bg-rose-500/30">
@@ -19,7 +23,7 @@ export function GameLayout() {
                 <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[800px] h-[800px] bg-indigo-500/5 rounded-full blur-[120px]" />
             </div>
 
-            <div className="w-full max-w-6xl mx-auto flex-1 flex flex-col relative z-10">
+            <div className="w-full max-w-7xl mx-auto flex-1 flex flex-col relative z-10">
 
                 {/* Modals / Overlays */}
                 <AnimatePresence>
@@ -45,9 +49,18 @@ export function GameLayout() {
                             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
                             exit={{ opacity: 0, scale: 1.05, filter: "blur(10px)" }}
                             transition={{ duration: 0.5, delay: 0.1 }}
-                            className="flex-1 flex flex-col items-center justify-center min-h-[85vh]"
+                            className={cn(
+                                "flex-1 w-full",
+                                isDraftMode
+                                    ? "lg:grid lg:grid-cols-[1fr_320px] lg:gap-12 lg:items-start"
+                                    : "flex flex-col items-center justify-center"
+                            )}
                         >
-                            <div className="w-full max-w-md">
+                            {/* Main Content Area */}
+                            <div className={cn(
+                                "w-full flex flex-col items-center",
+                                isDraftMode ? "lg:pt-8" : "max-w-md mx-auto min-h-[85vh] justify-center"
+                            )}>
                                 {/* 
                                     Drafting Board is shown during DRAFTING phase for DRAFT mode.
                                     Otherwise show the active Card (Shared Mode OR Draft Result).
@@ -59,8 +72,17 @@ export function GameLayout() {
                                 )}
 
                                 {/* Controls always shown during gameplay to allow Exit / Speed Mode */}
-                                <Controls />
+                                {/* In desktop layout, maybe Controls should stick to bottom or be part of sidebar? 
+                                    For now keep under card for consistency, but ensure spacing. */}
+                                <div className="w-full max-w-md mt-6">
+                                    <Controls />
+                                </div>
                             </div>
+
+                            {/* Desktop Side Panel */}
+                            {isDraftMode && (
+                                <PlayerSidePanel />
+                            )}
                         </motion.div>
                     ) : null}
                 </AnimatePresence>
