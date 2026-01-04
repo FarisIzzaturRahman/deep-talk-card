@@ -1,7 +1,6 @@
 import { useGame } from "@/lib/store";
-import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { User, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 
 export function TurnBanner() {
     const { session, round, currentPlayer } = useGame();
@@ -28,9 +27,9 @@ export function TurnBanner() {
                     </div>
                     <div className="flex flex-col">
                         <span className="text-[10px] uppercase text-indigo-300 font-bold tracking-widest leading-none">
-                            Active Turn <br /> <br />
+                            Active Turn
                         </span>
-                        <span className="text-xs font-bold text-white leading-none">
+                        <span className="text-xs font-bold text-white leading-none mt-1">
                             {currentPlayer?.name}
                         </span>
                     </div>

@@ -103,14 +103,15 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
 
         // Start first round immediately? Or wait for explicit "Start"?
         // Let's start immediately so we go to gameplay
-        engineRef.current.startRound(activeQuestions);
+        engineRef.current.startRound(ALL_QUESTIONS);
 
         refreshEngineState();
         setGameStatus('PLAYING');
     };
 
     const startRound = () => {
-        engineRef.current.startRound(activeQuestions);
+        // Pass ALL_QUESTIONS to engine so it can manage decks across categories
+        engineRef.current.startRound(ALL_QUESTIONS);
         refreshEngineState();
     };
 
