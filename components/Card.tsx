@@ -77,9 +77,14 @@ export function Card() {
                                 </div>
                                 <button
                                     onClick={() => toggleFavorite(currentQuestion.id)}
+                                    aria-label={isFavorite ? "Hapus dari favorit" : "Tambahkan ke favorit"}
+                                    aria-pressed={isFavorite}
                                     className="p-2 rounded-full hover:bg-white/10 transition-colors"
                                 >
-                                    <Heart className={cn("w-6 h-6 transition-colors", isFavorite ? "fill-white text-white" : "text-white/60 hover:text-white")} />
+                                    <Heart
+                                        className={cn("w-6 h-6 transition-colors", isFavorite ? "fill-white text-white" : "text-white/60 hover:text-white")}
+                                        aria-hidden="true"
+                                    />
                                 </button>
                             </div>
 

@@ -3,7 +3,7 @@
 @theme {
   --color-background: #0f172a; /* Slate 900 */
   --color-foreground: #f8fafc; /* Slate 50 */
-  --font-sans: var(--font-inter);
+  --font-sans: Arial, Helvetica, sans-serif;
 }
 
 @layer base {

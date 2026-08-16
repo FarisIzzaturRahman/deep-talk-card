@@ -10,7 +10,6 @@ A beautifully designed, **no-login** web application to spark meaningful convers
 -   **Two Game Modes**:
     -   **Shared Mode**: Classic "one question for everyone" style.
     -   **Draft Mode**: Local multiplayer with a unique "Pick -> Reveal -> Done" loop.
--   **AI-Powered Questions**: Generate custom card decks on the fly using Google Gemini AI.
 -   **Beautiful UI**: Glassmorphism, fluid animations (Framer Motion), and dynamic gradients.
 -   **Responsive**: Works perfectly on mobile and desktop.
 
@@ -42,13 +41,11 @@ A structured loop for groups of 2-8 players.
 -   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 -   **Animations**: [Framer Motion](https://www.framer.com/motion/)
 -   **State Management**: React Context + Hooks (No external state library needed for this scale)
--   **AI Integration**: Google Generative AI SDK
 
 ## 🚀 Quick Start
 
 ### Prerequisites
--   Node.js 18+ installed.
--   A Google Gemini API Key (optional, for AI features).
+-   Node.js 20.9+ installed.
 
 ### Installation
 
@@ -63,19 +60,12 @@ A structured loop for groups of 2-8 players.
     npm install
     ```
 
-3.  **Setup Environment Variables**:
-    Copy `.env.example` to `.env.local` and add your API key.
-    ```bash
-    cp .env.example .env.local
-    ```
-    *Open `.env.local` and paste your `GOOGLE_GENERATIVE_AI_API_KEY`.*
-
-4.  **Run the development server**:
+3.  **Run the development server**:
     ```bash
     npm run dev
     ```
 
-5.  **Open the app**:
+4.  **Open the app**:
     Visit [http://localhost:3000](http://localhost:3000).
 
 ## ☁️ Deployment (Vercel)
@@ -85,14 +75,13 @@ This project is optimized for deployment on **Vercel**.
 1.  Push your code to a GitHub repository.
 2.  Go to [Vercel Dashboard](https://vercel.com/new).
 3.  Import your repository.
-4.  **Environment Variables**: Add `GOOGLE_GENERATIVE_AI_API_KEY` in the Vercel project settings.
-5.  Click **Deploy**.
+4.  Click **Deploy**.
 
 ## 📂 Project Structure
 
 ```
 ├── app/                  # Next.js App Router
-│   ├── api/generate/     # AI Generation Endpoint
+│   ├── api/feedback/     # Feedback Endpoint
 │   ├── layout.tsx        # Root Layout
 │   └── page.tsx          # Home Page
 ├── components/           # React Components
@@ -100,7 +89,7 @@ This project is optimized for deployment on **Vercel**.
 │   ├── DraftingBoard.tsx # Draft Logic UI
 │   └── ...
 ├── lib/                  # Logic & Data
-│   ├── game-engine.ts    # Core Game Loop Class
+│   ├── game-engine.ts    # Pure Game State Transitions
 │   ├── store.tsx         # Global State (Context)
 │   └── data.ts           # Static Question Data
 └── public/               # Static Assets

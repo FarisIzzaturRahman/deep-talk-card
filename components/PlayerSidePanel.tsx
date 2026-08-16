@@ -1,13 +1,17 @@
 import { useGame } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { User, CheckCircle, Clock, Loader2 } from "lucide-react";
+import { CheckCircle, Loader2 } from "lucide-react";
 
 export function PlayerSidePanel() {
     const { session, round, currentPlayer } = useGame();
 
     // Only show in DRAFT mode
     if (session.config.mode !== 'DRAFT') return null;
+
+    const playersInTurnOrder = session.turnOrder
+        .map((playerId) => session.players.find((player) => player.id === playerId))
+        .filter((player) => player !== undefined);
 
     return (
         <div className="hidden lg:flex flex-col gap-6 w-80 shrink-0 h-fit sticky top-8">
@@ -23,8 +27,7 @@ export function PlayerSidePanel() {
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest pl-1">Turn Order</h4>
 
                 <div className="flex flex-col gap-3">
-                    {session.players.map((player) => {
-                        const turnIndex = session.turnOrder.indexOf(player.id);
+                    {playersInTurnOrder.map((player, turnIndex) => {
                         const isCurrentTurn = player.id === currentPlayer?.id;
                         const isDone = turnIndex < round.currentTurnIndex;
                         const isWaiting = turnIndex > round.currentTurnIndex;

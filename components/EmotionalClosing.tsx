@@ -2,17 +2,14 @@ import { CLOSING_MESSAGES } from "@/lib/data";
 import { useGame } from "@/lib/store";
 import { motion } from "framer-motion";
 import { Coffee, Home } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export function EmotionalClosing() {
     const { resetGame } = useGame();
-    const [message, setMessage] = useState("");
-
-    useEffect(() => {
-        // Pick a random message on mount
+    const [message] = useState(() => {
         const randomIndex = Math.floor(Math.random() * CLOSING_MESSAGES.length);
-        setMessage(CLOSING_MESSAGES[randomIndex]);
-    }, []);
+        return CLOSING_MESSAGES[randomIndex];
+    });
 
     return (
         <div className="fixed inset-0 z-50 flex flex-col items-center justify-center p-6 bg-slate-950 text-center">

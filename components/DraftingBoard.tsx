@@ -6,7 +6,7 @@ import { TurnBanner } from "./TurnBanner";
 import { QuestionBottomSheet } from "./QuestionBottomSheet";
 
 export function DraftingBoard() {
-    const { round, session, currentPlayer, draftCard, confirmTurn } = useGame();
+    const { round, session, currentPlayer, currentQuestion, draftCard, confirmTurn } = useGame();
 
     // Only relevant if we are drafting
     if (session.config.mode !== 'DRAFT' || round.phase !== 'DRAFTING') return null;
@@ -103,9 +103,13 @@ export function DraftingBoard() {
 
                             <div className="text-center space-y-4">
                                 <span className="text-xs font-bold text-indigo-400 uppercase tracking-widest">
-                                    {currentPlayer.name}'s Card
+                                    {currentPlayer.name}&apos;s Card
                                 </span>
-                                <CurrentQuestionDisplay />
+                                {currentQuestion && (
+                                    <h3 className="text-xl md:text-2xl font-medium text-white leading-relaxed">
+                                        &ldquo;{currentQuestion.text}&rdquo;
+                                    </h3>
+                                )}
                             </div>
 
                             <button
@@ -120,16 +124,5 @@ export function DraftingBoard() {
                 )}
             </AnimatePresence>
         </div>
-    );
-}
-
-// Helper to avoid prop drilling loop issues if we need store inside map
-function CurrentQuestionDisplay() {
-    const { currentQuestion } = useGame();
-    if (!currentQuestion) return null;
-    return (
-        <h3 className="text-xl md:text-2xl font-medium text-white leading-relaxed">
-            "{currentQuestion.text}"
-        </h3>
     );
 }

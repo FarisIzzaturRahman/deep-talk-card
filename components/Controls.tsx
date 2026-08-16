@@ -1,89 +1,104 @@
 import { useGame } from "@/lib/store";
 import { cn } from "@/lib/utils";
-import { ArrowRight, LogOut, Zap, Clock } from "lucide-react";
-import { useState } from "react";
+import { ArrowRight, Clock, LogOut, Zap } from "lucide-react";
+import { useEffect, useState } from "react";
 import { FeedbackModal } from "./FeedbackModal";
 
-export function Controls() {
-    const {
-        startRound,
-        endGame,
-        gameStatus,
-        timerMode,
-        timer,
-        startSpeedMode,
-        stopSpeedMode,
-        session
-    } = useGame();
-    const [showFeedback, setShowFeedback] = useState(false);
+const SPEED_MODE_DURATION = 60;
 
-    if (gameStatus !== 'PLAYING') return null;
+export function Controls() {
+    const { startRound, endGame, gameStatus, session, round } = useGame();
+    const [showFeedback, setShowFeedback] = useState(false);
+    const [speedModeEnabled, setSpeedModeEnabled] = useState(false);
+    const [timer, setTimer] = useState(SPEED_MODE_DURATION);
+
+    const isSpeedMode = speedModeEnabled && timer > 0;
+    const canStartRound = session.config.mode === "SHARED" || round.phase === "COMPLETE";
+
+    useEffect(() => {
+        if (!isSpeedMode) return;
+
+        const timeout = window.setTimeout(() => {
+            setTimer((currentTimer) => Math.max(0, currentTimer - 1));
+        }, 1000);
+
+        return () => window.clearTimeout(timeout);
+    }, [isSpeedMode, timer]);
+
+    if (gameStatus !== "PLAYING") return null;
+
+    const toggleSpeedMode = () => {
+        if (isSpeedMode) {
+            setSpeedModeEnabled(false);
+            return;
+        }
+
+        setTimer(SPEED_MODE_DURATION);
+        setSpeedModeEnabled(true);
+    };
 
     const handleEndSession = () => {
-        // Probability: 20% chance to show survey, 80% go straight to emotional closing
-        const showSurvey = Math.random() < 0.2;
-
-        if (showSurvey) {
+        if (Math.random() < 0.2) {
             setShowFeedback(true);
-        } else {
-            endGame();
+            return;
         }
+
+        endGame();
     };
 
     const handleFeedbackClose = () => {
         setShowFeedback(false);
-        // After survey (dismissed or submitted), go to emotional closing
         endGame();
-    };
-
-    const handleNext = () => {
-        startRound();
     };
 
     return (
         <>
-            <div className="flex flex-col items-center gap-6 w-full max-w-md mx-auto mt-6 px-4">
-
-                {/* Main Action Buttons */}
+            <div className="mx-auto mt-6 flex w-full max-w-md flex-col items-center gap-6 px-4">
                 <div className="w-full space-y-3">
-                    {/* Next Round Button */}
-                    <div className="relative">
+                    {canStartRound && (
                         <button
-                            onClick={handleNext}
+                            onClick={startRound}
                             className={cn(
-                                "w-full relative group overflow-hidden rounded-[1.5rem] px-8 py-5 font-black text-xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-3",
-                                timerMode === 'speed' ? "bg-rose-500 text-white shadow-rose-900/20" : "bg-white text-slate-950 shadow-slate-900/40"
+                                "group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-3xl px-8 py-5 text-xl font-black shadow-2xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]",
+                                isSpeedMode
+                                    ? "bg-rose-500 text-white shadow-rose-900/20"
+                                    : "bg-white text-slate-950 shadow-slate-900/40",
                             )}
                         >
-                            <span className="relative z-10 tracking-widest uppercase">
-                                {session.config.mode === 'DRAFT' ? "New Draft Round" : "Pertanyaan Baru"}
+                            <span className="relative z-10 uppercase tracking-widest">
+                                {session.config.mode === "DRAFT"
+                                    ? "Mulai Ronde Baru"
+                                    : "Pertanyaan Baru"}
                             </span>
-                            <ArrowRight className="w-6 h-6" />
-
-                            <div className="absolute inset-x-0 top-0 h-px bg-white/20" />
+                            <ArrowRight className="h-6 w-6" aria-hidden="true" />
+                            <span className="absolute inset-x-0 top-0 h-px bg-white/20" />
                         </button>
-                    </div>
+                    )}
 
                     <div className="flex w-full gap-3">
-                        {/* Speed Mode Toggle */}
                         <button
-                            onClick={() => timerMode === 'speed' ? stopSpeedMode() : startSpeedMode()}
+                            onClick={toggleSpeedMode}
+                            aria-pressed={isSpeedMode}
                             className={cn(
-                                "flex-1 flex items-center justify-center gap-2 px-4 py-4 rounded-2xl text-xs font-bold transition-all border border-white/5",
-                                timerMode === 'speed'
-                                    ? "bg-rose-500/20 text-rose-300 border-rose-500/30"
-                                    : "bg-slate-800/40 text-slate-500 hover:text-white hover:bg-slate-800/60"
+                                "flex flex-1 items-center justify-center gap-2 rounded-2xl border border-white/5 px-4 py-4 text-xs font-bold transition-all",
+                                isSpeedMode
+                                    ? "border-rose-500/30 bg-rose-500/20 text-rose-300"
+                                    : "bg-slate-800/40 text-slate-500 hover:bg-slate-800/60 hover:text-white",
                             )}
                         >
-                            {timerMode === 'speed' ? <Clock className="w-4 h-4 animate-pulse" /> : <Zap className="w-4 h-4" />}
-                            {timerMode === 'speed' ? `${timer}s` : "Speed Mode"}
+                            {isSpeedMode ? (
+                                <Clock className="h-4 w-4 animate-pulse" aria-hidden="true" />
+                            ) : (
+                                <Zap className="h-4 w-4" aria-hidden="true" />
+                            )}
+                            {isSpeedMode ? `${timer}s` : "Speed Mode"}
                         </button>
 
                         <button
                             onClick={handleEndSession}
-                            className="flex-1 bg-slate-800/40 hover:bg-rose-500/20 border border-white/5 hover:border-rose-500/30 text-slate-500 hover:text-rose-300 rounded-2xl px-4 py-4 font-bold text-xs transition-all flex items-center justify-center gap-2 tracking-widest uppercase"
+                            className="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-white/5 bg-slate-800/40 px-4 py-4 text-xs font-bold uppercase tracking-widest text-slate-500 transition-all hover:border-rose-500/30 hover:bg-rose-500/20 hover:text-rose-300"
                         >
-                            <LogOut className="w-4 h-4" />
+                            <LogOut className="h-4 w-4" aria-hidden="true" />
                             Selesai
                         </button>
                     </div>

@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { GameConfig, GameMode, Player } from "@/lib/game-types";
 
 export function GameSetupModal() {
-    const { currentCategory, setupGame, resetGame, startRound } = useGame();
+    const { currentCategory, setupGame, resetGame } = useGame();
     const [mode, setMode] = useState<GameMode>('SHARED');
     const [playerCount, setPlayerCount] = useState(2);
     const [playerNames, setPlayerNames] = useState<string[]>(['Player 1', 'Player 2']);
@@ -35,8 +35,7 @@ export function GameSetupModal() {
         // Construct Config
         const config: GameConfig = {
             mode,
-            categoryId: currentCategory.id,
-            playerCount: mode === 'SHARED' ? 1 : playerCount
+            categoryId: currentCategory.id
         };
 
         // Construct Players
@@ -51,7 +50,12 @@ export function GameSetupModal() {
     };
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+        <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="game-setup-title"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm"
+        >
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -63,7 +67,7 @@ export function GameSetupModal() {
                         <Users className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                        <h2 className="text-2xl font-black text-white uppercase tracking-tight">Game Setup</h2>
+                        <h2 id="game-setup-title" className="text-2xl font-black text-white uppercase tracking-tight">Game Setup</h2>
                         <p className="text-white/80 text-sm font-medium">{currentCategory.label}</p>
                     </div>
                 </div>
@@ -115,6 +119,8 @@ export function GameSetupModal() {
                                 <span className="text-sm font-bold text-slate-300">Total Players:</span>
                                 <div className="flex items-center gap-4">
                                     <button
+                                        type="button"
+                                        aria-label="Kurangi jumlah pemain"
                                         onClick={() => handlePlayerCountChange(-1)}
                                         className="p-2 rounded-full bg-slate-700 hover:bg-slate-600 transition-colors"
                                     >
@@ -122,6 +128,8 @@ export function GameSetupModal() {
                                     </button>
                                     <span className="text-xl font-black text-white w-6 text-center">{playerCount}</span>
                                     <button
+                                        type="button"
+                                        aria-label="Tambah jumlah pemain"
                                         onClick={() => handlePlayerCountChange(1)}
                                         className="p-2 rounded-full bg-indigo-500 hover:bg-indigo-400 transition-colors shadow-lg shadow-indigo-500/20"
                                     >
@@ -138,6 +146,7 @@ export function GameSetupModal() {
                                             {idx + 1}
                                         </div>
                                         <input
+                                            aria-label={`Nama pemain ${idx + 1}`}
                                             type="text"
                                             value={name}
                                             onChange={(e) => handleNameChange(idx, e.target.value)}

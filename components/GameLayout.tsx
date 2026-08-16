@@ -7,15 +7,17 @@ import { CategorySelector } from "./CategorySelector";
 import { Controls } from "./Controls";
 import { DraftingBoard } from "./DraftingBoard";
 import { GameSetupModal } from "./GameSetupModal";
-import { RoundPhase } from "@/lib/game-types";
 import { cn } from "@/lib/utils";
 import { PlayerSidePanel } from "./PlayerSidePanel";
 import { EmotionalClosing } from "./EmotionalClosing";
+import { RoundComplete } from "./RoundComplete";
 
 export function GameLayout() {
     const { gameStatus, round, session } = useGame();
 
     const isDraftMode = session.config.mode === 'DRAFT';
+    const isDrafting = isDraftMode && round.phase === 'DRAFTING';
+    const isRoundComplete = isDraftMode && round.phase === 'COMPLETE';
 
     return (
         <div className="min-h-screen w-full flex flex-col items-center p-4 md:p-8 bg-slate-950 text-slate-50 overflow-x-hidden font-sans selection:bg-rose-500/30">
@@ -62,19 +64,14 @@ export function GameLayout() {
                                 "w-full flex flex-col items-center",
                                 isDraftMode ? "lg:pt-8" : "max-w-md mx-auto min-h-[85vh] justify-center"
                             )}>
-                                {/* 
-                                    Drafting Board is shown during DRAFTING phase for DRAFT mode.
-                                    Otherwise show the active Card (Shared Mode OR Draft Result).
-                                */}
-                                {session.config.mode === 'DRAFT' && round.phase === RoundPhase.DRAFTING ? (
+                                {isDrafting ? (
                                     <DraftingBoard />
+                                ) : isRoundComplete ? (
+                                    <RoundComplete />
                                 ) : (
                                     <Card />
                                 )}
 
-                                {/* Controls always shown during gameplay to allow Exit / Speed Mode */}
-                                {/* In desktop layout, maybe Controls should stick to bottom or be part of sidebar? 
-                                    For now keep under card for consistency, but ensure spacing. */}
                                 <div className="w-full max-w-md mt-6">
                                     <Controls />
                                 </div>

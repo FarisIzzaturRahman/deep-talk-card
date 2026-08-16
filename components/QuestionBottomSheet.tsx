@@ -9,11 +9,6 @@ export function QuestionBottomSheet() {
     const isDraftMode = session.config.mode === 'DRAFT';
     const isRevealed = round.turnStatus === 'REVEALED';
 
-    // Only show on Mobile, when Revealed, in Draft Mode
-    // Check viewport? We can just use CSS media queries to hide/show 
-    // or rely on the parent to only render this on mobile. 
-    // Let's rely on CSS 'lg:hidden' for safety.
-
     if (!isDraftMode || !isRevealed || !currentQuestion) return null;
 
     return (
@@ -28,6 +23,9 @@ export function QuestionBottomSheet() {
 
             {/* Sheet */}
             <motion.div
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="draft-question-title"
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
                 exit={{ y: "100%" }}
@@ -58,7 +56,7 @@ export function QuestionBottomSheet() {
                         )}
                     </div>
 
-                    <h2 className="text-xl font-medium text-white leading-relaxed">
+                    <h2 id="draft-question-title" className="text-xl font-medium text-white leading-relaxed">
                         {currentQuestion.text}
                     </h2>
                 </div>
