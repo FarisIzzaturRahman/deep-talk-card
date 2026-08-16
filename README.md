@@ -1,106 +1,86 @@
-# Deep Talk Card: No-Login Edition 🃏
+# ajakBicara 🃏
 
-A beautifully designed, **no-login** web application to spark meaningful conversations. Built with **Next.js 16**, **Tailwind CSS v4**, and **Framer Motion**.
+**Bingung mau ngobrol apa? Biar ajakBicara yang mulai.**
 
-![Deep Talk Banner](https://placehold.co/1200x400/1e293b/white?text=Deep+Talk+Card)
+ajakBicara adalah permainan kartu percakapan untuk menemani waktu bersama orang baru, teman lama, keluarga, atau seseorang yang sedang ingin kamu kenal lebih dekat. Pilih suasana obrolan, buka sebuah pertanyaan, lalu biarkan ceritanya mengalir.
 
-## ✨ Features
+[Mainkan ajakBicara sekarang](https://ajakbicara.web.id)
 
--   **Zero Login Required**: Jump straight into the game. No sign-ups, no profiles.
--   **Two Game Modes**:
-    -   **Shared Mode**: Classic "one question for everyone" style.
-    -   **Draft Mode**: Local multiplayer with a unique "Pick -> Reveal -> Done" loop.
--   **Beautiful UI**: Glassmorphism, fluid animations (Framer Motion), and dynamic gradients.
--   **Responsive**: Works perfectly on mobile and desktop.
+## Untuk momen apa saja?
 
-## 🎮 How to Play
+ajakBicara bisa menemani kamu saat:
 
-### 1. Shared Mode (Classic)
-Perfect for casual hangouts or icebreakers.
-1.  Select a **Category** (e.g., "Deep Talk", "Fun").
-2.  Choose **Shared Mode** in the setup modal.
-3.  Click **Start Game**.
-4.  A single card is displayed. Everyone answers the same question.
-5.  Click **Pertanyaan Baru** (Next) to draw a new card.
+- nongkrong mulai kehabisan bahan obrolan;
+- ingin mencairkan suasana dengan orang-orang baru;
+- quality time bersama teman atau keluarga;
+- PDKT dan ingin mengenal satu sama lain tanpa bikin risih;
+- ingin beralih dari obrolan ringan ke percakapan yang lebih bermakna; atau
+- sekadar ingin menjawab pertanyaan seru untuk diri sendiri.
 
-### 2. Draft Mode (Pass & Play)
-A structured loop for groups of 2-8 players.
-1.  Select a **Category**.
-2.  Choose **Draft Mode**.
-3.  Input the **Number of Players** and their **Names** (optional).
-4.  **The Draft Loop**:
-    -   **Pick**: The active player (highlighted) picks a mystery card from the board.
-    -   **Reveal**: The card flips over. The player reads it aloud.
-    -   **Done**: Player clicks **"Selesai / Done"** to finish their turn.
-    -   **Next**: The turn passes to the next randomized player.
-5.  **New Round**: Once all players have drafted, start a new round to reshuffle and get fresh cards.
+Tidak perlu akun dan tidak perlu persiapan khusus. Cukup buka lewat ponsel atau komputer, lalu mulai bermain.
 
-## 🛠️ Tech Stack
+## Pilih suasana obrolanmu
 
--   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
--   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
--   **Animations**: [Framer Motion](https://www.framer.com/motion/)
--   **State Management**: React Context + Hooks (No external state library needed for this scale)
+Tersedia lebih dari **1.100 pertanyaan** yang terbagi secara seimbang ke dalam berbagai topik:
 
-## 🚀 Quick Start
+| Topik | Cocok untuk |
+| --- | --- |
+| **Ice Breaker** | Pemanasan dan mencairkan suasana supaya obrolan tidak kaku. |
+| **Deep Talk** | Mengenal perasaan, mimpi, dan cara pandang satu sama lain. |
+| **Refleksi Diri** | Berhenti sejenak untuk mengenal diri dan perjalanan hidup. |
+| **Nostalgia** | Mengingat masa kecil, kebiasaan lama, dan momen-momen lucu. |
+| **Fun & Random** | Pertanyaan santai, unik, dan tidak terduga untuk seru-seruan. |
+| **PDKT & Chemistry** | Kenalan lebih dekat dan menemukan chemistry dengan cara yang playful. |
 
-### Prerequisites
--   Node.js 20.9+ installed.
+Sesekali, kartu **Wildcard** juga dapat muncul sebagai kejutan untuk membuat permainan makin hidup.
 
-### Installation
+## Cara bermain
 
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/yourusername/deep-talk-card.git
-    cd deep-talk-card
-    ```
+1. Buka [ajakbicara.web.id](https://ajakbicara.web.id).
+2. Pilih topik yang sesuai dengan suasana saat itu.
+3. Pilih cara bermain: **Shared** atau **Draft**.
+4. Baca pertanyaannya, bergantian menjawab, dan nikmati obrolannya.
 
-2.  **Install dependencies**:
-    ```bash
-    npm install
-    ```
+### Shared — satu pertanyaan untuk semua
 
-3.  **Run the development server**:
-    ```bash
-    npm run dev
-    ```
+Mode ini cocok untuk bermain santai dalam kelompok, berdua, atau sendiri.
 
-4.  **Open the app**:
-    Visit [http://localhost:3000](http://localhost:3000).
+1. Satu kartu pertanyaan akan tampil di layar.
+2. Bacakan pertanyaannya dan beri kesempatan kepada semua orang untuk menjawab.
+3. Tekan **Perdalam Topik** jika ingin melanjutkan obrolan dengan pertanyaan tambahan.
+4. Tekan ikon hati untuk menyimpan pertanyaan favorit di browser yang sedang digunakan.
+5. Pilih **Pertanyaan Baru** saat semua orang siap melanjutkan.
 
-## ☁️ Deployment (Vercel)
+### Draft — giliran unik untuk setiap pemain
 
-This project is optimized for deployment on **Vercel**.
+Mode ini cocok untuk kelompok berisi 2–8 pemain.
 
-1.  Push your code to a GitHub repository.
-2.  Go to [Vercel Dashboard](https://vercel.com/new).
-3.  Import your repository.
-4.  Click **Deploy**.
+1. Tentukan jumlah pemain dan masukkan nama masing-masing.
+2. Pemain yang mendapat giliran memilih satu kartu misteri.
+3. Buka kartu, bacakan pertanyaannya, lalu jawab bersama.
+4. Tekan **Selesai / Done** untuk memberikan giliran kepada pemain berikutnya.
+5. Setelah semua pemain mendapat giliran, pilih **Mulai Ronde Baru** jika ingin lanjut.
 
-## 📂 Project Structure
+Ingin suasana yang lebih cepat? Aktifkan **Speed Mode** untuk memberi waktu 60 detik pada obrolan saat itu.
 
-```
-├── app/                  # Next.js App Router
-│   ├── layout.tsx        # Root Layout
-│   └── page.tsx          # Home Page
-├── components/           # React Components
-│   ├── GameLayout.tsx    # State-driven Layout Manager
-│   ├── DraftingBoard.tsx # Draft Logic UI
-│   └── ...
-├── lib/                  # Logic & Data
-│   ├── game-engine.ts    # Pure Game State Transitions
-│   ├── store.tsx         # Global State (Context)
-│   └── data.ts           # Category Metadata
-└── public/questions/     # Versioned Question Banks
-```
+## Biar semua tetap nyaman
 
-Question banks are cached as immutable static assets. When changing their
-contents, create a new version directory and update `QUESTION_DATA_VERSION` in
-`lib/question-loader.ts` so returning visitors do not receive stale questions.
+Tidak ada jawaban benar atau salah dalam ajakBicara. Supaya permainannya menyenangkan untuk semua orang:
 
-The game currently ships 1,100 curated questions: 175 questions in each main
-category and 50 wildcard cards. `asmara` is presented as **PDKT & Chemistry**,
-with playful, non-sensitive prompts suitable for casual hangouts.
+- siapa pun boleh melewati pertanyaan atau tidak menjawab;
+- jangan memaksa orang lain untuk bercerita lebih jauh;
+- dengarkan tanpa memotong atau menghakimi;
+- jaga cerita pribadi yang dibagikan selama permainan; dan
+- pilih topik sesuai suasana dan kedekatan para pemain.
 
-## 📄 License
-MIT
+Koleksi pertanyaan ajakBicara dirancang agar tetap ramah dan nyaman, tanpa pertanyaan tentang mantan, seksual, traumatis, atau hal sensitif.
+
+## Obrolanmu tetap milikmu
+
+ajakBicara tidak meminta akun dan tidak menyediakan kolom untuk merekam jawaban. Cerita cukup disampaikan langsung di antara para pemain. Pertanyaan yang kamu tandai sebagai favorit hanya disimpan di browser pada perangkat yang digunakan.
+
+---
+
+Siapa pun bisa memulai percakapan yang seru. Kadang, yang dibutuhkan hanya satu pertanyaan yang tepat.
+
+**[Ayo ajakBicara](https://ajakbicara.web.id)**

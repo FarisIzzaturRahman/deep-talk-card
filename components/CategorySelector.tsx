@@ -31,7 +31,7 @@ export function CategorySelector() {
             >
                 <div className="inline-flex items-center justify-center p-3 bg-white/5 rounded-full mb-6 ring-1 ring-white/10">
                     <Sparkles className="w-6 h-6 text-yellow-400 mr-2" />
-                    <span className="text-sm font-medium tracking-wider uppercase text-yellow-400/90">Deep Talk Cards</span>
+                    <span className="text-sm font-medium tracking-wider text-yellow-400/90">ajakBicara</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-br from-white to-white/60 bg-clip-text text-transparent">
                     Pilih Topik Obrolan

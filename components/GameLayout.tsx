@@ -96,8 +96,8 @@ export function GameLayout() {
                 </AnimatePresence>
             </div>
 
-            <footer className="w-full py-8 text-center text-slate-600 text-xs tracking-widest uppercase opacity-50">
-                <p>Deep Talk • No Login Required</p>
+            <footer className="w-full py-8 text-center text-slate-600 text-xs tracking-widest opacity-50">
+                <p>ajakBicara • Tanpa Login</p>
             </footer>
         </div>
     );
