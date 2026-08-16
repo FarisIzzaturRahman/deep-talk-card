@@ -131,7 +131,7 @@ export function GameSetupModal() {
                                 )}
                             >
                                 <Users className="h-6 w-6" aria-hidden="true" />
-                                <span className="font-bold text-sm">Shared</span>
+                                <span className="text-sm font-bold">Main Bareng</span>
                                 <span className="text-xs leading-snug opacity-70">Satu kartu untuk semua</span>
                             </button>
 
@@ -147,8 +147,8 @@ export function GameSetupModal() {
                                 )}
                             >
                                 <Shuffle className="h-6 w-6" aria-hidden="true" />
-                                <span className="font-bold text-sm">Draft</span>
-                                <span className="text-xs leading-snug opacity-70">Kartu unik tiap pemain</span>
+                                <span className="text-sm font-bold">Giliran Kartu</span>
+                                <span className="text-xs leading-snug opacity-70">Satu kartu setiap giliran</span>
                             </button>
                         </div>
                     </fieldset>

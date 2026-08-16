@@ -1,13 +1,21 @@
 import { useGame } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { Sparkles, CheckCircle } from "lucide-react";
+import { Sparkles, CheckCircle, SkipForward } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { TurnBanner } from "./TurnBanner";
 import { QuestionBottomSheet } from "./QuestionBottomSheet";
 
 export function DraftingBoard() {
-    const { round, session, currentPlayer, currentQuestion, draftCard, confirmTurn } = useGame();
+    const {
+        confirmTurn,
+        currentPlayer,
+        currentQuestion,
+        draftCard,
+        round,
+        session,
+        skipQuestion,
+    } = useGame();
     const desktopConfirmButtonRef = useRef<HTMLButtonElement>(null);
     const isDrafting = session.config.mode === 'DRAFT' && round.phase === 'DRAFTING';
     const isRevealed = round.turnStatus === 'REVEALED';
@@ -108,15 +116,25 @@ export function DraftingBoard() {
                                 )}
                             </div>
 
-                            <button
-                                ref={desktopConfirmButtonRef}
-                                type="button"
-                                onClick={confirmTurn}
-                                className="flex min-h-12 w-full max-w-sm items-center justify-center gap-2 rounded-2xl bg-indigo-500 px-6 py-4 text-sm font-black uppercase tracking-[0.16em] text-white shadow-lg shadow-indigo-950/30 transition hover:bg-indigo-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 active:scale-[0.98]"
-                            >
-                                <CheckCircle className="h-5 w-5" aria-hidden="true" />
-                                <span>Selesai Menjawab</span>
-                            </button>
+                            <div className="flex w-full max-w-lg gap-3">
+                                <button
+                                    type="button"
+                                    onClick={skipQuestion}
+                                    className="flex min-h-12 flex-1 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-950/40 px-5 py-4 text-sm font-bold text-slate-300 transition hover:border-white/20 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 active:scale-[0.98]"
+                                >
+                                    <SkipForward className="h-5 w-5" aria-hidden="true" />
+                                    <span>Lewati</span>
+                                </button>
+                                <button
+                                    ref={desktopConfirmButtonRef}
+                                    type="button"
+                                    onClick={confirmTurn}
+                                    className="flex min-h-12 flex-[1.35] items-center justify-center gap-2 rounded-2xl bg-indigo-500 px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-white shadow-lg shadow-indigo-950/30 transition hover:bg-indigo-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 active:scale-[0.98]"
+                                >
+                                    <CheckCircle className="h-5 w-5" aria-hidden="true" />
+                                    <span>Selesai Menjawab</span>
+                                </button>
+                            </div>
                         </div>
                     </motion.div>
                 )}

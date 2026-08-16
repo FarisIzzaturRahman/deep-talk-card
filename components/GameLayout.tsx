@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import { PlayerSidePanel } from "./PlayerSidePanel";
 import { EmotionalClosing } from "./EmotionalClosing";
 import { RoundComplete } from "./RoundComplete";
+import { SaweriaSupportLink } from "./SaweriaSupportLink";
 
 export function GameLayout() {
     const { currentCategory, gameStatus, round, session } = useGame();
@@ -62,7 +63,12 @@ export function GameLayout() {
                                     </h1>
                                 </div>
                                 <div className="shrink-0 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-bold uppercase tracking-[0.14em] text-slate-300 sm:px-4">
-                                    {isDraftMode ? `Draft · Ronde ${session.roundCount}` : "Shared"}
+                                    {isDraftMode ? (
+                                        <>
+                                            <span className="sm:hidden">Giliran · R{session.roundCount}</span>
+                                            <span className="hidden sm:inline">Giliran Kartu · Ronde {session.roundCount}</span>
+                                        </>
+                                    ) : "Main Bareng"}
                                 </div>
                             </header>
 
@@ -73,7 +79,7 @@ export function GameLayout() {
                                     : "lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-center xl:grid-cols-[minmax(0,1fr)_22rem]",
                             )}>
                                 <section
-                                    aria-label={isDraftMode ? "Area draft kartu" : "Kartu pertanyaan"}
+                                    aria-label={isDraftMode ? "Area giliran kartu" : "Kartu pertanyaan"}
                                     className={cn(
                                         "min-w-0",
                                         !isDraftMode && "flex flex-col justify-center lg:min-h-[calc(100dvh-12rem)]",
@@ -111,8 +117,9 @@ export function GameLayout() {
                     ) : null}
                 </AnimatePresence>
                 {gameStatus === "LOBBY" && (
-                    <footer className="w-full py-6 text-center text-xs tracking-[0.18em] text-slate-600">
+                    <footer className="flex w-full flex-col items-center gap-3 py-6 text-center text-xs tracking-[0.18em] text-slate-600">
                         <p>ajakBicara • Tanpa Login</p>
+                        <SaweriaSupportLink />
                     </footer>
                 )}
             </div>

@@ -192,3 +192,21 @@ export function confirmTurn(state: GameState): GameState {
         },
     };
 }
+
+export function skipQuestion(
+    state: GameState,
+    allQuestions: Question[],
+): GameState {
+    if (
+        state.session.config.mode === "SHARED"
+        && state.round.phase === "ANSWERING"
+    ) {
+        return startRound(state, allQuestions);
+    }
+
+    if (state.session.config.mode === "DRAFT") {
+        return confirmTurn(state);
+    }
+
+    return state;
+}

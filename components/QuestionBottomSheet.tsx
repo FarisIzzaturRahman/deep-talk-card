@@ -1,11 +1,18 @@
 import { useGame } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { CheckCircle, Sparkles } from "lucide-react";
+import { CheckCircle, SkipForward, Sparkles } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 export function QuestionBottomSheet() {
-    const { round, session, currentPlayer, currentQuestion, confirmTurn } = useGame();
+    const {
+        confirmTurn,
+        currentPlayer,
+        currentQuestion,
+        round,
+        session,
+        skipQuestion,
+    } = useGame();
     const confirmButtonRef = useRef<HTMLButtonElement>(null);
 
     const isDraftMode = session.config.mode === 'DRAFT';
@@ -73,15 +80,25 @@ export function QuestionBottomSheet() {
                     </p>
                 </div>
 
-                <button
-                    ref={confirmButtonRef}
-                    type="button"
-                    onClick={confirmTurn}
-                    className="flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-indigo-500 px-6 py-4 text-sm font-black uppercase tracking-[0.16em] text-white shadow-lg shadow-indigo-950/30 transition hover:bg-indigo-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 active:scale-[0.98]"
-                >
-                    <CheckCircle className="h-5 w-5" aria-hidden="true" />
-                    <span>Selesai Menjawab</span>
-                </button>
+                <div className="flex flex-col gap-3 sm:flex-row">
+                    <button
+                        type="button"
+                        onClick={skipQuestion}
+                        className="flex min-h-12 flex-1 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-950/40 px-5 py-4 text-sm font-bold text-slate-300 transition hover:border-white/20 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 active:scale-[0.98]"
+                    >
+                        <SkipForward className="h-5 w-5" aria-hidden="true" />
+                        <span>Lewati</span>
+                    </button>
+                    <button
+                        ref={confirmButtonRef}
+                        type="button"
+                        onClick={confirmTurn}
+                        className="flex min-h-12 flex-[1.35] items-center justify-center gap-2 rounded-2xl bg-indigo-500 px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-white shadow-lg shadow-indigo-950/30 transition hover:bg-indigo-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 active:scale-[0.98]"
+                    >
+                        <CheckCircle className="h-5 w-5" aria-hidden="true" />
+                        <span>Selesai Menjawab</span>
+                    </button>
+                </div>
             </motion.div>
         </div>
     );

@@ -19,7 +19,7 @@ export function Controls() {
                 </div>
                 <div>
                     <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">
-                        {isSharedMode ? "Mode Shared" : `Ronde ${session.roundCount}`}
+                        {isSharedMode ? "Main Bareng" : `Ronde ${session.roundCount}`}
                     </p>
                     <h2 className="mt-1 text-lg font-semibold text-white">
                         {isSharedMode ? "Satu pertanyaan untuk semua" : "Mainkan sesuai giliran"}

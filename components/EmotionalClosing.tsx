@@ -3,6 +3,7 @@ import { useGame } from "@/lib/store";
 import { motion } from "framer-motion";
 import { Coffee, Home } from "lucide-react";
 import { useState } from "react";
+import { SaweriaSupportLink } from "./SaweriaSupportLink";
 
 export function EmotionalClosing() {
     const { resetGame } = useGame();
@@ -33,14 +34,21 @@ export function EmotionalClosing() {
 
                 <div className="h-px w-16 bg-slate-800" aria-hidden="true" />
 
-                <button
-                    type="button"
-                    onClick={resetGame}
-                    className="group mt-4 flex min-h-12 items-center gap-3 rounded-full border border-slate-700 bg-transparent px-7 py-3 text-sm font-medium uppercase tracking-[0.14em] text-slate-300 transition-all hover:border-slate-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white sm:mt-8 sm:px-8 sm:py-4"
-                >
-                    <Home className="h-4 w-4 transition-transform group-hover:scale-110" aria-hidden="true" />
-                    <span>Kembali ke Awal</span>
-                </button>
+                <div className="mt-4 flex flex-col items-center gap-3 sm:mt-8">
+                    <button
+                        type="button"
+                        onClick={resetGame}
+                        className="group flex min-h-12 items-center gap-3 rounded-full border border-slate-700 bg-transparent px-7 py-3 text-sm font-medium uppercase tracking-[0.14em] text-slate-300 transition-all hover:border-slate-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white sm:px-8 sm:py-4"
+                    >
+                        <Home className="h-4 w-4 transition-transform group-hover:scale-110" aria-hidden="true" />
+                        <span>Kembali ke Awal</span>
+                    </button>
+
+                    <SaweriaSupportLink />
+                    <p className="max-w-sm text-xs leading-relaxed text-slate-500">
+                        Dukunganmu sepenuhnya opsional, tetapi sangat berarti untuk ajakBicara.
+                    </p>
+                </div>
             </motion.div>
         </div>
     );

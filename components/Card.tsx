@@ -1,10 +1,19 @@
 import { useGame } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { Heart, MessageCircle } from "lucide-react";
+import { Heart, MessageCircle, SkipForward } from "lucide-react";
 
 export function Card() {
-    const { currentQuestion, currentCategory, favorites, toggleFavorite, activeFollowUp, showFollowUp, closeFollowUp } = useGame();
+    const {
+        activeFollowUp,
+        closeFollowUp,
+        currentCategory,
+        currentQuestion,
+        favorites,
+        showFollowUp,
+        skipQuestion,
+        toggleFavorite,
+    } = useGame();
 
     if (!currentQuestion || !currentCategory) return null;
 
@@ -100,18 +109,28 @@ export function Card() {
                                 </motion.h2>
                             </div>
 
-                            {hasFollowUps && (
-                                <div className="absolute bottom-5 z-20 sm:bottom-7 lg:bottom-8">
+                            <div className="absolute inset-x-5 bottom-5 z-20 flex flex-wrap justify-center gap-2 sm:inset-x-7 sm:bottom-7 lg:bottom-8">
+                                {hasFollowUps && (
                                     <button
                                         type="button"
                                         onClick={() => showFollowUp(currentQuestion.followUps![0])}
                                         className="flex min-h-11 items-center gap-2 rounded-full border border-white/15 bg-white/15 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                                     >
                                         <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                                        <span>Perdalam Topik</span>
+                                        <span className="sm:hidden">Dalami</span>
+                                        <span className="hidden sm:inline">Perdalam Topik</span>
                                     </button>
-                                </div>
-                            )}
+                                )}
+                                <button
+                                    type="button"
+                                    onClick={skipQuestion}
+                                    aria-label="Lewati pertanyaan ini"
+                                    className="flex min-h-11 items-center gap-2 rounded-full border border-white/15 bg-slate-950/15 px-5 py-2 text-sm font-semibold text-white/90 backdrop-blur-sm transition hover:bg-slate-950/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                                >
+                                    <SkipForward className="h-4 w-4" aria-hidden="true" />
+                                    <span>Lewati</span>
+                                </button>
+                            </div>
                         </div>
                     </motion.div>
                 ) : (

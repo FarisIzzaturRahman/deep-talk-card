@@ -2,7 +2,13 @@
 
 import React, { createContext, useContext, useEffect, useRef, useState } from "react";
 import { CATEGORIES, type Category, type Question } from "./data";
-import { confirmTurn, createGameState, pickCard, startRound } from "./game-engine";
+import {
+    confirmTurn,
+    createGameState,
+    pickCard,
+    skipQuestion as skipGameQuestion,
+    startRound,
+} from "./game-engine";
 import type { GameConfig, GameSession, GameState, Player, RoundState } from "./game-types";
 import { loadQuestions } from "./question-loader";
 
@@ -23,6 +29,7 @@ interface GameContextType {
     startRound: () => void;
     draftCard: (cardId: string) => void;
     confirmTurn: () => void;
+    skipQuestion: () => void;
     endGame: () => void;
     resetGame: () => void;
     favorites: string[];
@@ -126,6 +133,13 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         setGame((currentGame) => confirmTurn(currentGame));
     };
 
+    const skipCurrentQuestion = () => {
+        if (!loadedQuestions) return;
+
+        setGame((currentGame) => skipGameQuestion(currentGame, loadedQuestions.questions));
+        setActiveFollowUp(null);
+    };
+
     const endGame = () => {
         setActiveFollowUp(null);
         setGameStatus("FINISHED");
@@ -177,6 +191,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
             startRound: beginNextRound,
             draftCard,
             confirmTurn: finishCurrentTurn,
+            skipQuestion: skipCurrentQuestion,
             endGame,
             resetGame,
             favorites,

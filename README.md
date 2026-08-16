@@ -38,10 +38,10 @@ Sesekali, kartu **Wildcard** juga dapat muncul sebagai kejutan untuk membuat per
 
 1. Buka [ajakbicara.web.id](https://ajakbicara.web.id).
 2. Pilih topik yang sesuai dengan suasana saat itu.
-3. Pilih cara bermain: **Shared** atau **Draft**.
+3. Pilih cara bermain: **Main Bareng** atau **Giliran Kartu**.
 4. Baca pertanyaannya, bergantian menjawab, dan nikmati obrolannya.
 
-### Shared — satu pertanyaan untuk semua
+### Main Bareng — satu pertanyaan untuk semua
 
 Mode ini cocok untuk bermain santai dalam kelompok, berdua, atau sendiri.
 
@@ -49,17 +49,19 @@ Mode ini cocok untuk bermain santai dalam kelompok, berdua, atau sendiri.
 2. Bacakan pertanyaannya dan beri kesempatan kepada semua orang untuk menjawab.
 3. Tekan **Perdalam Topik** jika ingin melanjutkan obrolan dengan pertanyaan tambahan.
 4. Tekan ikon hati untuk menyimpan pertanyaan favorit di browser yang sedang digunakan.
-5. Pilih **Pertanyaan Baru** saat semua orang siap melanjutkan.
+5. Tekan **Lewati** jika pertanyaannya tidak ingin dijawab.
+6. Pilih **Pertanyaan Baru** saat semua orang siap melanjutkan.
 
-### Draft — giliran unik untuk setiap pemain
+### Giliran Kartu — satu kartu untuk setiap giliran
 
 Mode ini cocok untuk kelompok berisi 2–8 pemain.
 
 1. Tentukan jumlah pemain dan masukkan nama masing-masing.
 2. Pemain yang mendapat giliran memilih satu kartu misteri.
 3. Buka kartu, bacakan pertanyaannya, lalu jawab bersama.
-4. Tekan **Selesai Menjawab** untuk memberikan giliran kepada pemain berikutnya.
-5. Setelah semua pemain mendapat giliran, pilih **Mulai Ronde Baru** jika ingin lanjut.
+4. Tekan **Selesai Menjawab**, atau pilih **Lewati** tanpa perlu memberikan alasan.
+5. Giliran akan berpindah kepada pemain berikutnya.
+6. Setelah semua pemain mendapat giliran, pilih **Mulai Ronde Baru** jika ingin lanjut.
 
 ## Biar semua tetap nyaman
 
@@ -76,6 +78,10 @@ Koleksi pertanyaan ajakBicara dirancang agar tetap ramah dan nyaman, tanpa perta
 ## Obrolanmu tetap milikmu
 
 ajakBicara tidak meminta akun dan tidak menyediakan kolom untuk merekam jawaban. Cerita cukup disampaikan langsung di antara para pemain. Pertanyaan yang kamu tandai sebagai favorit hanya disimpan di browser pada perangkat yang digunakan.
+
+## Suka dengan ajakBicara?
+
+Jika ajakBicara membuat waktu bersama jadi lebih seru, kamu bisa [mendukung pengembangannya lewat Saweria](https://saweria.co/ajakbicara). Dukungan ini sepenuhnya opsional—permainannya tetap bisa dinikmati siapa saja secara gratis.
 
 ---
 

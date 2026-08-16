@@ -19,7 +19,7 @@ export function PlayerSidePanel() {
         >
             <div className="space-y-3">
                 <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-indigo-300">Mode Draft</p>
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-indigo-300">Giliran Kartu</p>
                     <h2 id="turn-order-heading" className="mt-1 text-xl font-semibold text-white">Urutan Pemain</h2>
                 </div>
                 <div className="flex items-center justify-between rounded-xl border border-white/5 bg-slate-950/40 p-3 text-xs font-bold uppercase tracking-[0.12em] text-slate-400">
