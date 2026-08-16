@@ -54,8 +54,8 @@ export const CATEGORIES: Category[] = [
     },
     {
         id: "asmara",
-        label: "Spill the Tea",
-        description: "Gosipin cinta, mantan, dan red flag. Siap-siap baper!",
+        label: "PDKT & Chemistry",
+        description: "Kenalan lebih dekat, cari chemistry, dan ngobrol manis tanpa bikin risih.",
         color: "bg-rose-500",
         gradient: "from-rose-400 to-rose-600"
     },

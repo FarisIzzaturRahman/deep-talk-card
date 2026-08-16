@@ -98,5 +98,9 @@ Question banks are cached as immutable static assets. When changing their
 contents, create a new version directory and update `QUESTION_DATA_VERSION` in
 `lib/question-loader.ts` so returning visitors do not receive stale questions.
 
+The game currently ships 1,100 curated questions: 175 questions in each main
+category and 50 wildcard cards. `asmara` is presented as **PDKT & Chemistry**,
+with playful, non-sensitive prompts suitable for casual hangouts.
+
 ## 📄 License
 MIT

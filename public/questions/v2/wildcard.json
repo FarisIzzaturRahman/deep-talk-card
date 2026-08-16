@@ -42,5 +42,11 @@
   {"id":"wc-41","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Pilih siapa di antara kalian yang paling cocok jadi ketua RT di komplek ini dan kenapa.","depth":2},
   {"id":"wc-42","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Praktekkin gaya memancing atau nge-drift mobil sebagai reaksi jawaban berikutnya.","depth":1},
   {"id":"wc-43","categoryId":"wildcard","type":"wildcard","intensity":3,"text":"Ucapkan satu kata random yang tiba-tiba melintas di otakmu sekarang dalam 3 detik! 3... 2... 1...","depth":3},
-  {"id":"wc-44","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Lakukan pose andalan model tahun 2000-an (misal peace dari atas kepala) ke semua orang dan ditahan 3 detik.","depth":1}
+  {"id":"wc-44","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Lakukan pose andalan model tahun 2000-an (misal peace dari atas kepala) ke semua orang dan ditahan 3 detik.","depth":1},
+  {"id":"wc-45","categoryId":"wildcard","text":"Rekomendasikan satu lagu favoritmu kepada pemain di sebelah kanan.","depth":1,"type":"wildcard","intensity":1},
+  {"id":"wc-46","categoryId":"wildcard","text":"Gambarkan pemain di sebelah kiri sebagai sebuah camilan, lalu jelaskan alasannya.","depth":1,"type":"wildcard","intensity":1},
+  {"id":"wc-47","categoryId":"wildcard","text":"Buat satu slogan singkat untuk kelompok kalian malam ini.","depth":1,"type":"wildcard","intensity":1},
+  {"id":"wc-48","categoryId":"wildcard","text":"Pilih nama tim paling unik untuk semua pemain dalam waktu sepuluh detik.","depth":1,"type":"wildcard","intensity":1},
+  {"id":"wc-49","categoryId":"wildcard","text":"Berikan satu pujian tulus kepada pemain yang paling lama kamu kenal di sini.","depth":1,"type":"wildcard","intensity":1},
+  {"id":"wc-50","categoryId":"wildcard","text":"Pilih satu emoji yang menggambarkan setiap pemain, lalu jelaskan secara singkat.","depth":1,"type":"wildcard","intensity":1}
 ]
