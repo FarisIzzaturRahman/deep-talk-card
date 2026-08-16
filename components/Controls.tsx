@@ -1,91 +1,60 @@
 import { useGame } from "@/lib/store";
-import { cn } from "@/lib/utils";
-import { ArrowRight, Clock, LogOut, Zap } from "lucide-react";
-import { useEffect, useState } from "react";
-
-const SPEED_MODE_DURATION = 60;
+import { ArrowRight, LogOut, MessageCircleMore } from "lucide-react";
 
 export function Controls() {
     const { startRound, endGame, gameStatus, session, round } = useGame();
-    const [speedModeEnabled, setSpeedModeEnabled] = useState(false);
-    const [timer, setTimer] = useState(SPEED_MODE_DURATION);
-
-    const isSpeedMode = speedModeEnabled && timer > 0;
     const canStartRound = session.config.mode === "SHARED" || round.phase === "COMPLETE";
-
-    useEffect(() => {
-        if (!isSpeedMode) return;
-
-        const timeout = window.setTimeout(() => {
-            setTimer((currentTimer) => Math.max(0, currentTimer - 1));
-        }, 1000);
-
-        return () => window.clearTimeout(timeout);
-    }, [isSpeedMode, timer]);
+    const isSharedMode = session.config.mode === "SHARED";
 
     if (gameStatus !== "PLAYING") return null;
 
-    const toggleSpeedMode = () => {
-        if (isSpeedMode) {
-            setSpeedModeEnabled(false);
-            return;
-        }
-
-        setTimer(SPEED_MODE_DURATION);
-        setSpeedModeEnabled(true);
-    };
-
     return (
-        <div className="mx-auto mt-6 flex w-full max-w-md flex-col items-center gap-6 px-4">
-            <div className="w-full space-y-3">
+        <section
+            aria-label="Kontrol permainan"
+            className="w-full rounded-3xl border border-white/10 bg-slate-900/70 p-4 shadow-xl backdrop-blur-sm sm:p-5 lg:p-6"
+        >
+            <div className="mb-5 hidden lg:flex lg:items-start lg:gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 text-slate-200">
+                    <MessageCircleMore className="h-5 w-5" aria-hidden="true" />
+                </div>
+                <div>
+                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">
+                        {isSharedMode ? "Mode Shared" : `Ronde ${session.roundCount}`}
+                    </p>
+                    <h2 className="mt-1 text-lg font-semibold text-white">
+                        {isSharedMode ? "Satu pertanyaan untuk semua" : "Mainkan sesuai giliran"}
+                    </h2>
+                    <p className="mt-1 text-sm leading-relaxed text-slate-400">
+                        {isSharedMode
+                            ? "Beri ruang untuk semua orang menjawab sebelum mengambil kartu berikutnya."
+                            : "Setiap pemain memilih satu kartu, lalu membacanya dengan lantang."}
+                    </p>
+                </div>
+            </div>
+
+            <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
                 {canStartRound && (
                     <button
+                        type="button"
                         onClick={startRound}
-                        className={cn(
-                            "group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-3xl px-8 py-5 text-xl font-black shadow-2xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]",
-                            isSpeedMode
-                                ? "bg-rose-500 text-white shadow-rose-900/20"
-                                : "bg-white text-slate-950 shadow-slate-900/40",
-                        )}
+                        className="group flex min-h-12 flex-1 items-center justify-center gap-3 rounded-2xl bg-white px-5 py-4 text-sm font-black uppercase tracking-[0.14em] text-slate-950 shadow-lg shadow-black/20 transition hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 active:scale-[0.98]"
                     >
-                        <span className="relative z-10 uppercase tracking-widest">
-                            {session.config.mode === "DRAFT"
-                                ? "Mulai Ronde Baru"
-                                : "Pertanyaan Baru"}
+                        <span>
+                            {isSharedMode ? "Pertanyaan Baru" : "Mulai Ronde Baru"}
                         </span>
-                        <ArrowRight className="h-6 w-6" aria-hidden="true" />
-                        <span className="absolute inset-x-0 top-0 h-px bg-white/20" />
+                        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                     </button>
                 )}
 
-                <div className="flex w-full gap-3">
-                    <button
-                        onClick={toggleSpeedMode}
-                        aria-pressed={isSpeedMode}
-                        className={cn(
-                            "flex flex-1 items-center justify-center gap-2 rounded-2xl border border-white/5 px-4 py-4 text-xs font-bold transition-all",
-                            isSpeedMode
-                                ? "border-rose-500/30 bg-rose-500/20 text-rose-300"
-                                : "bg-slate-800/40 text-slate-500 hover:bg-slate-800/60 hover:text-white",
-                        )}
-                    >
-                        {isSpeedMode ? (
-                            <Clock className="h-4 w-4 animate-pulse" aria-hidden="true" />
-                        ) : (
-                            <Zap className="h-4 w-4" aria-hidden="true" />
-                        )}
-                        {isSpeedMode ? `${timer}s` : "Speed Mode"}
-                    </button>
-
-                    <button
-                        onClick={endGame}
-                        className="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-white/5 bg-slate-800/40 px-4 py-4 text-xs font-bold uppercase tracking-widest text-slate-500 transition-all hover:border-rose-500/30 hover:bg-rose-500/20 hover:text-rose-300"
-                    >
-                        <LogOut className="h-4 w-4" aria-hidden="true" />
-                        Selesai
-                    </button>
-                </div>
+                <button
+                    type="button"
+                    onClick={endGame}
+                    className="flex min-h-12 flex-1 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-950/40 px-5 py-4 text-sm font-bold text-slate-400 transition hover:border-rose-400/30 hover:bg-rose-500/10 hover:text-rose-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 active:scale-[0.98]"
+                >
+                    <LogOut className="h-4 w-4" aria-hidden="true" />
+                    Akhiri Permainan
+                </button>
             </div>
-        </div>
+        </section>
     );
 }

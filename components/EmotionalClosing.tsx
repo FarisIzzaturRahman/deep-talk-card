@@ -12,36 +12,33 @@ export function EmotionalClosing() {
     });
 
     return (
-        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center p-6 bg-slate-950 text-center">
-            {/* Ambient Background */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[100px] animate-pulse" />
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-y-auto bg-slate-950 p-5 text-center sm:p-8">
+            <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+                <div className="absolute left-1/2 top-1/2 h-[36rem] w-[36rem] -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-full bg-indigo-500/10 blur-[100px]" />
             </div>
 
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="relative z-10 max-w-lg w-full flex flex-col items-center gap-8"
+                className="relative z-10 flex w-full max-w-2xl flex-col items-center gap-6 sm:gap-8"
             >
-                {/* Icon */}
-                <div className="w-20 h-20 bg-indigo-500/10 rounded-full flex items-center justify-center text-indigo-300 mb-4 ring-1 ring-indigo-500/20">
-                    <Coffee className="w-10 h-10 opacity-80" />
+                <div className="mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-500/10 text-indigo-300 ring-1 ring-indigo-500/20 sm:mb-4 sm:h-20 sm:w-20">
+                    <Coffee className="h-8 w-8 opacity-80 sm:h-10 sm:w-10" aria-hidden="true" />
                 </div>
 
-                {/* Message */}
-                <h2 className="text-2xl md:text-3xl font-serif text-slate-100 leading-relaxed font-light italic">
+                <h1 className="text-balance font-serif text-2xl font-light italic leading-relaxed text-slate-100 sm:text-3xl lg:text-4xl">
                     &ldquo;{message}&rdquo;
-                </h2>
+                </h1>
 
-                <div className="w-16 h-px bg-slate-800" />
+                <div className="h-px w-16 bg-slate-800" aria-hidden="true" />
 
-                {/* Action */}
                 <button
+                    type="button"
                     onClick={resetGame}
-                    className="mt-8 group flex items-center gap-3 px-8 py-4 bg-transparent border border-slate-700 hover:border-slate-500 rounded-full text-slate-400 hover:text-white transition-all text-sm uppercase tracking-widest font-medium"
+                    className="group mt-4 flex min-h-12 items-center gap-3 rounded-full border border-slate-700 bg-transparent px-7 py-3 text-sm font-medium uppercase tracking-[0.14em] text-slate-300 transition-all hover:border-slate-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white sm:mt-8 sm:px-8 sm:py-4"
                 >
-                    <Home className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                    <Home className="h-4 w-4 transition-transform group-hover:scale-110" aria-hidden="true" />
                     <span>Kembali ke Awal</span>
                 </button>
             </motion.div>

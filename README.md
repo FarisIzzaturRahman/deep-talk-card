@@ -58,10 +58,8 @@ Mode ini cocok untuk kelompok berisi 2–8 pemain.
 1. Tentukan jumlah pemain dan masukkan nama masing-masing.
 2. Pemain yang mendapat giliran memilih satu kartu misteri.
 3. Buka kartu, bacakan pertanyaannya, lalu jawab bersama.
-4. Tekan **Selesai / Done** untuk memberikan giliran kepada pemain berikutnya.
+4. Tekan **Selesai Menjawab** untuk memberikan giliran kepada pemain berikutnya.
 5. Setelah semua pemain mendapat giliran, pilih **Mulai Ronde Baru** jika ingin lanjut.
-
-Ingin suasana yang lebih cepat? Aktifkan **Speed Mode** untuk memberi waktu 60 detik pada obrolan saat itu.
 
 ## Biar semua tetap nyaman
 

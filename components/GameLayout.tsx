@@ -13,22 +13,20 @@ import { EmotionalClosing } from "./EmotionalClosing";
 import { RoundComplete } from "./RoundComplete";
 
 export function GameLayout() {
-    const { gameStatus, round, session } = useGame();
+    const { currentCategory, gameStatus, round, session } = useGame();
 
     const isDraftMode = session.config.mode === 'DRAFT';
     const isDrafting = isDraftMode && round.phase === 'DRAFTING';
     const isRoundComplete = isDraftMode && round.phase === 'COMPLETE';
 
     return (
-        <div className="min-h-screen w-full flex flex-col items-center p-4 md:p-8 bg-slate-950 text-slate-50 overflow-x-hidden font-sans selection:bg-rose-500/30">
-            {/* Background Gradients */}
-            <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10 bg-slate-950">
-                <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[800px] h-[800px] bg-indigo-500/5 rounded-full blur-[120px]" />
+        <div className="relative min-h-screen min-h-[100dvh] w-full overflow-x-hidden bg-slate-950 font-sans text-slate-50 selection:bg-rose-500/30">
+            <div className="pointer-events-none fixed inset-0 overflow-hidden" aria-hidden="true">
+                <div className="absolute left-1/2 top-[-18rem] h-[42rem] w-[42rem] -translate-x-1/2 rounded-full bg-indigo-500/10 blur-[140px]" />
+                <div className="absolute bottom-[-20rem] right-[-12rem] h-[36rem] w-[36rem] rounded-full bg-rose-500/5 blur-[140px]" />
             </div>
 
-            <div className="w-full max-w-7xl mx-auto flex-1 flex flex-col relative z-10">
-
-                {/* Modals / Overlays */}
+            <div className="relative z-10 mx-auto flex min-h-screen min-h-[100dvh] w-full max-w-[1440px] flex-col px-4 sm:px-6 lg:px-8 xl:px-12">
                 <AnimatePresence>
                     {gameStatus === 'SETUP' && <GameSetupModal />}
                 </AnimatePresence>
@@ -41,7 +39,7 @@ export function GameLayout() {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0, y: -20, filter: "blur(10px)" }}
                             transition={{ duration: 0.5 }}
-                            className="flex-1 flex"
+                            className="flex flex-1 py-6 sm:py-10 lg:py-12"
                         >
                             <CategorySelector />
                         </motion.div>
@@ -52,35 +50,53 @@ export function GameLayout() {
                             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
                             exit={{ opacity: 0, scale: 1.05, filter: "blur(10px)" }}
                             transition={{ duration: 0.5, delay: 0.1 }}
-                            className={cn(
-                                "flex-1 w-full",
-                                isDraftMode
-                                    ? "lg:grid lg:grid-cols-[1fr_320px] lg:gap-12 lg:items-start"
-                                    : "flex flex-col items-center justify-center"
-                            )}
+                            className="flex w-full flex-1 flex-col py-4 sm:py-6 lg:py-8"
                         >
-                            {/* Main Content Area */}
-                            <div className={cn(
-                                "w-full flex flex-col items-center",
-                                isDraftMode ? "lg:pt-8" : "max-w-md mx-auto min-h-[85vh] justify-center"
-                            )}>
-                                {isDrafting ? (
-                                    <DraftingBoard />
-                                ) : isRoundComplete ? (
-                                    <RoundComplete />
-                                ) : (
-                                    <Card />
-                                )}
-
-                                <div className="w-full max-w-md mt-6">
-                                    <Controls />
+                            <header className="mb-5 flex items-center justify-between gap-4 border-b border-white/10 pb-4 sm:mb-7 sm:pb-5">
+                                <div className="min-w-0">
+                                    <p className="text-xs font-bold tracking-[0.18em] text-yellow-300">
+                                        ajakBicara
+                                    </p>
+                                    <h1 className="mt-1 truncate text-xl font-semibold text-white sm:text-2xl">
+                                        {currentCategory?.label ?? "Permainan"}
+                                    </h1>
                                 </div>
-                            </div>
+                                <div className="shrink-0 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-bold uppercase tracking-[0.14em] text-slate-300 sm:px-4">
+                                    {isDraftMode ? `Draft · Ronde ${session.roundCount}` : "Shared"}
+                                </div>
+                            </header>
 
-                            {/* Desktop Side Panel */}
-                            {isDraftMode && (
-                                <PlayerSidePanel />
-                            )}
+                            <div className={cn(
+                                "grid flex-1 items-start gap-5 lg:gap-8 xl:gap-10",
+                                isDraftMode
+                                    ? "lg:grid-cols-[minmax(0,1fr)_18rem] xl:grid-cols-[minmax(0,1fr)_20rem]"
+                                    : "lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-center xl:grid-cols-[minmax(0,1fr)_22rem]",
+                            )}>
+                                <section
+                                    aria-label={isDraftMode ? "Area draft kartu" : "Kartu pertanyaan"}
+                                    className={cn(
+                                        "min-w-0",
+                                        !isDraftMode && "flex flex-col justify-center lg:min-h-[calc(100dvh-12rem)]",
+                                    )}
+                                >
+                                    {isDrafting ? (
+                                        <DraftingBoard />
+                                    ) : isRoundComplete ? (
+                                        <RoundComplete />
+                                    ) : (
+                                        <Card />
+                                    )}
+
+                                    <div className="mt-5 lg:hidden">
+                                        <Controls />
+                                    </div>
+                                </section>
+
+                                <aside className="hidden min-w-0 flex-col gap-5 lg:sticky lg:top-8 lg:flex">
+                                    {isDraftMode && <PlayerSidePanel />}
+                                    <Controls />
+                                </aside>
+                            </div>
                         </motion.div>
                     ) : gameStatus === 'FINISHED' ? (
                         <motion.div
@@ -88,17 +104,18 @@ export function GameLayout() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="flex-1 flex"
+                            className="flex flex-1"
                         >
                             <EmotionalClosing />
                         </motion.div>
                     ) : null}
                 </AnimatePresence>
+                {gameStatus === "LOBBY" && (
+                    <footer className="w-full py-6 text-center text-xs tracking-[0.18em] text-slate-600">
+                        <p>ajakBicara • Tanpa Login</p>
+                    </footer>
+                )}
             </div>
-
-            <footer className="w-full py-8 text-center text-slate-600 text-xs tracking-widest opacity-50">
-                <p>ajakBicara • Tanpa Login</p>
-            </footer>
         </div>
     );
 }

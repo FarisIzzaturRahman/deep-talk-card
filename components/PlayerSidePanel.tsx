@@ -6,7 +6,6 @@ import { CheckCircle, Loader2 } from "lucide-react";
 export function PlayerSidePanel() {
     const { session, round, currentPlayer } = useGame();
 
-    // Only show in DRAFT mode
     if (session.config.mode !== 'DRAFT') return null;
 
     const playersInTurnOrder = session.turnOrder
@@ -14,26 +13,30 @@ export function PlayerSidePanel() {
         .filter((player) => player !== undefined);
 
     return (
-        <div className="hidden lg:flex flex-col gap-6 w-80 shrink-0 h-fit sticky top-8">
-            <div className="flex flex-col gap-2">
-                <h3 className="text-xl font-black text-white uppercase tracking-tight">Round Status</h3>
-                <div className="flex items-center justify-between text-xs font-bold text-slate-500 uppercase tracking-widest bg-slate-900/50 p-3 rounded-xl border border-white/5">
-                    <span>Round {session.roundCount}</span>
-                    <span>{round.phase}</span>
+        <section
+            aria-labelledby="turn-order-heading"
+            className="flex min-w-0 flex-col gap-5 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-xl backdrop-blur-sm"
+        >
+            <div className="space-y-3">
+                <div>
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-indigo-300">Mode Draft</p>
+                    <h2 id="turn-order-heading" className="mt-1 text-xl font-semibold text-white">Urutan Pemain</h2>
+                </div>
+                <div className="flex items-center justify-between rounded-xl border border-white/5 bg-slate-950/40 p-3 text-xs font-bold uppercase tracking-[0.12em] text-slate-400">
+                    <span>Ronde {session.roundCount}</span>
+                    <span>{round.phase === "COMPLETE" ? "Selesai" : "Berjalan"}</span>
                 </div>
             </div>
 
-            <div className="space-y-4">
-                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest pl-1">Turn Order</h4>
-
-                <div className="flex flex-col gap-3">
+            <div>
+                <ol className="flex flex-col gap-2">
                     {playersInTurnOrder.map((player, turnIndex) => {
                         const isCurrentTurn = player.id === currentPlayer?.id;
                         const isDone = turnIndex < round.currentTurnIndex;
                         const isWaiting = turnIndex > round.currentTurnIndex;
 
                         return (
-                            <motion.div
+                            <motion.li
                                 key={player.id}
                                 layoutId={`sidebar-player-${player.id}`}
                                 initial={false}
@@ -42,59 +45,53 @@ export function PlayerSidePanel() {
                                     opacity: isWaiting ? 0.5 : 1
                                 }}
                                 className={cn(
-                                    "relative p-4 rounded-xl border transition-all flex items-center gap-3 overflow-hidden",
+                                    "relative flex items-center gap-3 overflow-hidden rounded-xl border p-3 transition-all",
                                     isCurrentTurn
-                                        ? "bg-indigo-500/20 border-indigo-500/50 shadow-[0_0_20px_rgba(99,102,241,0.2)]"
+                                        ? "border-indigo-400/40 bg-indigo-500/15"
                                         : isDone
-                                            ? "bg-emerald-500/5 border-emerald-500/20"
-                                            : "bg-slate-800/40 border-white/5"
+                                            ? "border-emerald-400/15 bg-emerald-500/5"
+                                            : "border-white/5 bg-slate-950/30"
                                 )}
                             >
-                                {/* Status Icon */}
                                 <div className={cn(
-                                    "w-8 h-8 rounded-full flex items-center justify-center shrink-0 border",
+                                    "flex h-8 w-8 shrink-0 items-center justify-center rounded-full border",
                                     isCurrentTurn
-                                        ? "bg-indigo-500 text-white border-indigo-400"
+                                        ? "border-indigo-300 bg-indigo-500 text-white"
                                         : isDone
-                                            ? "bg-emerald-500/20 text-emerald-400 border-emerald-500/30"
-                                            : "bg-slate-700 text-slate-400 border-slate-600"
+                                            ? "border-emerald-400/25 bg-emerald-500/15 text-emerald-300"
+                                            : "border-slate-600 bg-slate-800 text-slate-400"
                                 )}>
                                     {isCurrentTurn ? (
-                                        <Loader2 className="w-4 h-4 animate-spin" />
+                                        <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
                                     ) : isDone ? (
-                                        <CheckCircle className="w-4 h-4" />
+                                        <CheckCircle className="h-4 w-4" aria-hidden="true" />
                                     ) : (
                                         <span className="text-xs font-bold">{turnIndex + 1}</span>
                                     )}
                                 </div>
 
                                 <div className="flex-1 min-w-0">
-                                    <h5 className={cn(
-                                        "font-bold truncate transition-colors",
+                                    <p className={cn(
+                                        "truncate text-sm font-bold transition-colors",
                                         isCurrentTurn ? "text-indigo-200" : isDone ? "text-emerald-200" : "text-slate-400"
                                     )}>
                                         {player.name}
-                                    </h5>
-                                    <p className="text-[10px] uppercase tracking-widest font-medium opacity-60">
-                                        {isCurrentTurn ? "Thinking..." : isDone ? "Ready" : "Waiting"}
+                                    </p>
+                                    <p className="text-[10px] font-medium uppercase tracking-[0.14em] text-slate-500">
+                                        {isCurrentTurn ? "Sedang bermain" : isDone ? "Sudah selesai" : "Menunggu"}
                                     </p>
                                 </div>
-
-                                {isCurrentTurn && (
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-500/10 to-transparent animate-shimmer" style={{ backgroundSize: '200% 100%' }} />
-                                )}
-                            </motion.div>
+                            </motion.li>
                         );
                     })}
-                </div>
+                </ol>
             </div>
 
-            {/* Desktop-only Key Hint or Decor */}
-            <div className="mt-4 p-4 rounded-xl bg-slate-800/30 border border-dashed border-white/10 text-center">
-                <p className="text-[10px] text-slate-500 font-medium">
-                    Pro Tip: Read the card aloud before clicking Done.
+            <div className="rounded-xl border border-dashed border-white/10 bg-slate-950/30 p-3 text-center">
+                <p className="text-xs leading-relaxed text-slate-500">
+                    Bacakan kartu sebelum menekan tombol selesai.
                 </p>
             </div>
-        </div>
+        </section>
     );
 }
