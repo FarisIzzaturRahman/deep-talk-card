@@ -1,11 +1,13 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useState } from "react";
-import { ALL_QUESTIONS, CATEGORIES, type Category, type Question } from "./data";
+import React, { createContext, useContext, useEffect, useRef, useState } from "react";
+import { CATEGORIES, type Category, type Question } from "./data";
 import { confirmTurn, createGameState, pickCard, startRound } from "./game-engine";
 import type { GameConfig, GameSession, GameState, Player, RoundState } from "./game-types";
+import { loadQuestions } from "./question-loader";
 
 export type GameStatus = "LOBBY" | "SETUP" | "PLAYING" | "FINISHED";
+export type QuestionLoadStatus = "IDLE" | "LOADING" | "READY" | "ERROR";
 
 interface GameContextType {
     gameStatus: GameStatus;
@@ -14,7 +16,9 @@ interface GameContextType {
     currentCategory: Category | null;
     currentPlayer: Player | null;
     currentQuestion: Question | null;
+    questionLoadStatus: QuestionLoadStatus;
     selectCategory: (categoryId: string) => void;
+    retryQuestionLoad: () => void;
     setupGame: (config: GameConfig, players: Player[]) => void;
     startRound: () => void;
     draftCard: (cardId: string) => void;
@@ -62,6 +66,31 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     const [game, setGame] = useState<GameState>(createInitialGame);
     const [favorites, setFavorites] = useState<string[]>(readStoredFavorites);
     const [activeFollowUp, setActiveFollowUp] = useState<string | null>(null);
+    const [questionLoadStatus, setQuestionLoadStatus] = useState<QuestionLoadStatus>("IDLE");
+    const [loadedQuestions, setLoadedQuestions] = useState<{
+        categoryId: string;
+        questions: Question[];
+    } | null>(null);
+    const questionRequestId = useRef(0);
+
+    const loadCategoryQuestions = (categoryId: string) => {
+        const requestId = ++questionRequestId.current;
+        setQuestionLoadStatus("LOADING");
+        setLoadedQuestions(null);
+
+        void loadQuestions(categoryId)
+            .then((questions) => {
+                if (questionRequestId.current !== requestId) return;
+
+                setLoadedQuestions({ categoryId, questions });
+                setQuestionLoadStatus("READY");
+            })
+            .catch(() => {
+                if (questionRequestId.current !== requestId) return;
+
+                setQuestionLoadStatus("ERROR");
+            });
+    };
 
     const selectCategory = (categoryId: string) => {
         const category = CATEGORIES.find((candidate) => candidate.id === categoryId);
@@ -70,17 +99,22 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         setCurrentCategory(category);
         setActiveFollowUp(null);
         setGameStatus("SETUP");
+        loadCategoryQuestions(category.id);
     };
 
     const setupGame = (config: GameConfig, players: Player[]) => {
+        if (loadedQuestions?.categoryId !== config.categoryId) return;
+
         const newGame = createGameState(config, players);
-        setGame(startRound(newGame, ALL_QUESTIONS));
+        setGame(startRound(newGame, loadedQuestions.questions));
         setActiveFollowUp(null);
         setGameStatus("PLAYING");
     };
 
     const beginNextRound = () => {
-        setGame((currentGame) => startRound(currentGame, ALL_QUESTIONS));
+        if (!loadedQuestions) return;
+
+        setGame((currentGame) => startRound(currentGame, loadedQuestions.questions));
         setActiveFollowUp(null);
     };
 
@@ -98,9 +132,12 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     };
 
     const resetGame = () => {
+        questionRequestId.current += 1;
         setGameStatus("LOBBY");
         setCurrentCategory(null);
         setActiveFollowUp(null);
+        setQuestionLoadStatus("IDLE");
+        setLoadedQuestions(null);
         setGame(createInitialGame());
     };
 
@@ -131,7 +168,11 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
             currentCategory,
             currentPlayer,
             currentQuestion: game.round.currentQuestion,
+            questionLoadStatus,
             selectCategory,
+            retryQuestionLoad: () => {
+                if (currentCategory) loadCategoryQuestions(currentCategory.id);
+            },
             setupGame,
             startRound: beginNextRound,
             draftCard,

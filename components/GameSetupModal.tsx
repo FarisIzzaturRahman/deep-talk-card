@@ -1,17 +1,24 @@
 import { useState } from "react";
 import { useGame } from "@/lib/store";
-import { Users, Shuffle, Play, Plus, Minus } from "lucide-react";
+import { LoaderCircle, Minus, Play, Plus, RefreshCw, Shuffle, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { GameConfig, GameMode, Player } from "@/lib/game-types";
 
 export function GameSetupModal() {
-    const { currentCategory, setupGame, resetGame } = useGame();
+    const {
+        currentCategory,
+        questionLoadStatus,
+        resetGame,
+        retryQuestionLoad,
+        setupGame,
+    } = useGame();
     const [mode, setMode] = useState<GameMode>('SHARED');
     const [playerCount, setPlayerCount] = useState(2);
     const [playerNames, setPlayerNames] = useState<string[]>(['Player 1', 'Player 2']);
 
     if (!currentCategory) return null;
+    const questionsReady = questionLoadStatus === "READY";
 
     const handlePlayerCountChange = (delta: number) => {
         const newCount = Math.max(2, Math.min(8, playerCount + delta));
@@ -73,6 +80,36 @@ export function GameSetupModal() {
                 </div>
 
                 <div className="p-6 space-y-8">
+                    {questionLoadStatus === "LOADING" && (
+                        <div
+                            role="status"
+                            aria-live="polite"
+                            className="flex items-center justify-center gap-3 rounded-2xl border border-indigo-500/20 bg-indigo-500/10 p-4 text-sm font-bold text-indigo-200"
+                        >
+                            <LoaderCircle className="h-5 w-5 animate-spin" aria-hidden="true" />
+                            Menyiapkan pertanyaan...
+                        </div>
+                    )}
+
+                    {questionLoadStatus === "ERROR" && (
+                        <div
+                            role="alert"
+                            className="flex items-center justify-between gap-4 rounded-2xl border border-rose-500/20 bg-rose-500/10 p-4"
+                        >
+                            <p className="text-sm font-bold text-rose-200">
+                                Pertanyaan belum berhasil dimuat.
+                            </p>
+                            <button
+                                type="button"
+                                onClick={retryQuestionLoad}
+                                className="flex shrink-0 items-center gap-2 rounded-xl bg-rose-500/20 px-3 py-2 text-xs font-bold text-rose-100 transition-colors hover:bg-rose-500/30"
+                            >
+                                <RefreshCw className="h-4 w-4" aria-hidden="true" />
+                                Coba Lagi
+                            </button>
+                        </div>
+                    )}
+
                     {/* Mode Selection */}
                     <div className="space-y-3">
                         <label className="text-xs font-bold text-slate-400 uppercase tracking-widest">Select Mode</label>
@@ -169,7 +206,8 @@ export function GameSetupModal() {
                         </button>
                         <button
                             onClick={handleStart}
-                            className="flex-1 bg-white text-slate-950 px-6 py-4 rounded-2xl font-black text-base uppercase tracking-widest hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 shadow-xl"
+                            disabled={!questionsReady}
+                            className="flex-1 bg-white text-slate-950 px-6 py-4 rounded-2xl font-black text-base uppercase tracking-widest hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 shadow-xl disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100"
                         >
                             <span>Start Game</span>
                             <Play className="w-4 h-4 fill-current" />

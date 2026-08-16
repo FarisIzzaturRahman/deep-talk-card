@@ -81,7 +81,6 @@ This project is optimized for deployment on **Vercel**.
 
 ```
 ├── app/                  # Next.js App Router
-│   ├── api/feedback/     # Feedback Endpoint
 │   ├── layout.tsx        # Root Layout
 │   └── page.tsx          # Home Page
 ├── components/           # React Components
@@ -91,9 +90,13 @@ This project is optimized for deployment on **Vercel**.
 ├── lib/                  # Logic & Data
 │   ├── game-engine.ts    # Pure Game State Transitions
 │   ├── store.tsx         # Global State (Context)
-│   └── data.ts           # Static Question Data
-└── public/               # Static Assets
+│   └── data.ts           # Category Metadata
+└── public/questions/     # Versioned Question Banks
 ```
+
+Question banks are cached as immutable static assets. When changing their
+contents, create a new version directory and update `QUESTION_DATA_VERSION` in
+`lib/question-loader.ts` so returning visitors do not receive stale questions.
 
 ## 📄 License
 MIT
