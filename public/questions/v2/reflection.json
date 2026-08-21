@@ -1,177 +1,1361 @@
 [
-  {"id":"rf-1","categoryId":"reflection","text":"Apa satu kebiasaan buruk yang pengen banget kamu stop tahun ini?","depth":2},
-  {"id":"rf-2","categoryId":"reflection","text":"Kalau kamu ketemu versi dirimu yang umur 10 tahun, dia bakal bangga nggak sama kamu sekarang?","depth":3},
-  {"id":"rf-3","categoryId":"reflection","text":"Apa pencapaian kecil tahun ini yang belum sempet kamu rayain/hargai?","depth":2},
-  {"id":"rf-4","categoryId":"reflection","text":"Kapan terakhir kali kamu bilang 'makasih' ke diri sendiri?","depth":2},
-  {"id":"rf-5","categoryId":"reflection","text":"Apa bakat atau hobi yang dulu kamu suka tapi ditinggalin karena sibuk?","depth":2},
-  {"id":"rf-6","categoryId":"reflection","text":"Sifat apa dari dirimu yang sering bikin masalah sama orang lain?","depth":3},
-  {"id":"rf-8","categoryId":"reflection","text":"Menurutmu, kamu pendengar yang baik atau pembicara yang dominan?","depth":2},
-  {"id":"rf-9","categoryId":"reflection","text":"Apa pelajaran mahal yang kamu dapet dari 'kegagalan' terakhirmu?","depth":2},
-  {"id":"rf-10","categoryId":"reflection","text":"Kalau hidupmu adalah buku, judul bab saat ini apa?","depth":2,"followUps":["Kenapa judulnya itu?"]},
-  {"id":"rf-11","categoryId":"reflection","text":"Siapa orang yang harusnya kamu hubungi tapi kamu tunda-tunda terus?","depth":2},
-  {"id":"rf-12","categoryId":"reflection","text":"Berapa jam sehari kamu dedikasikan buat scroll medsos? Worth it nggak?","depth":2},
-  {"id":"rf-13","categoryId":"reflection","text":"Apa definisi 'Bahagia' versi kamu sekarang vs 5 tahun lalu?","depth":2},
-  {"id":"rf-14","categoryId":"reflection","text":"Apakah lingkungan pertemananmu sekarang bikin kamu berkembang atau stagnan?","depth":3},
-  {"id":"rf-15","categoryId":"reflection","text":"Apa satu hal yang orang lain sering salah paham soal kamu?","depth":2},
-  {"id":"rf-16","categoryId":"reflection","text":"Apa batasan (boundary) yang perlu kamu tegesin ke orang lain?","depth":2},
-  {"id":"rf-17","categoryId":"reflection","text":"Kalau nggak ada masalah uang, kerjaan apa yang sebenernya pengen kamu lakuin?","depth":2},
-  {"id":"rf-18","categoryId":"reflection","text":"Apa momen di mana kamu merasa paling 'hidup'?","depth":2},
-  {"id":"rf-19","categoryId":"reflection","text":"Apa kritik pedas yang pernah kamu terima dan ternyata bener?","depth":2},
-  {"id":"rf-21","categoryId":"reflection","text":"Apa prioritas hidupmu yang sering kegeser sama hal-hal nggak penting?","depth":2},
-  {"id":"rf-22","categoryId":"reflection","text":"Kalau kamu bisa kasih satu skill baru ke dirimu secara instan, mau skill apa?","depth":1},
-  {"id":"rf-23","categoryId":"reflection","text":"Seberapa sering kamu ngebandingin diri sama orang lain di Instagram/TikTok?","depth":2},
-  {"id":"rf-24","categoryId":"reflection","text":"Apa satu hal yang kamu harap orang lain lebih apresiasi dari kamu?","depth":2},
-  {"id":"rf-27","categoryId":"reflection","text":"Apa hal yang bikin kamu merasa berharga?","depth":2},
-  {"id":"rf-29","categoryId":"reflection","text":"Apa ketakutan irasional yang masih kamu percaya?","depth":1},
-  {"id":"rf-30","categoryId":"reflection","text":"Satu kata yang mendeskripsikan tahun ini buatmu?","depth":1},
-  {"id":"rf-31","categoryId":"reflection","text":"Apa hal baik yang kamu lakukan hari ini?","depth":1},
-  {"id":"rf-32","categoryId":"reflection","text":"Apa kebiasaan pagi yang membuat harimu lebih baik?","depth":1},
-  {"id":"rf-33","categoryId":"reflection","text":"Siapa orang yang paling kamu kagumi dan kenapa?","depth":2},
-  {"id":"rf-34","categoryId":"reflection","text":"Apa kegagalan yang ternyata membawamu ke arah yang lebih baik?","depth":2},
-  {"id":"rf-35","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari pekerjaanmu (atau studi)?","depth":2},
-  {"id":"rf-36","categoryId":"reflection","text":"Apa buku atau film yang mengubah cara pandangmu?","depth":2},
-  {"id":"rf-37","categoryId":"reflection","text":"Apa nasihat terbaik yang pernah kamu terima?","depth":2},
-  {"id":"rf-38","categoryId":"reflection","text":"Bagaimana cara kamu memanjakan diri sendiri?","depth":1},
-  {"id":"rf-39","categoryId":"reflection","text":"Apa keahlian yang ingin kamu pelajari tahun ini?","depth":2},
-  {"id":"rf-40","categoryId":"reflection","text":"Apa hal yang membuatmu merasa produktif?","depth":1},
-  {"id":"rf-42","categoryId":"reflection","text":"Bagaimana kamu mendefinisikan 'keseimbangan hidup'?","depth":3},
-  {"id":"rf-43","categoryId":"reflection","text":"Apa hal kecil yang bisa membuatmu tersenyum?","depth":1},
-  {"id":"rf-44","categoryId":"reflection","text":"Apa yang kamu lakukan untuk mengatasi rasa malas?","depth":2},
-  {"id":"rf-46","categoryId":"reflection","text":"Apa yang membuatmu merasa percaya diri?","depth":2},
-  {"id":"rf-47","categoryId":"reflection","text":"Kapan terakhir kali kamu mencoba sesuatu yang baru?","depth":1},
-  {"id":"rf-48","categoryId":"reflection","text":"Apa hal yang paling kamu nantikan minggu ini?","depth":1},
-  {"id":"rf-49","categoryId":"reflection","text":"Bagaimana kamu menghabiskan waktu luangmu?","depth":1},
-  {"id":"rf-50","categoryId":"reflection","text":"Apa hal yang membuatmu merasa bersyukur hari ini?","depth":1},
-  {"id":"rf-51","categoryId":"reflection","text":"Apa yang kamu lakukan saat merasa bosan?","depth":1},
-  {"id":"rf-53","categoryId":"reflection","text":"Apa yang kamu lakukan untuk bersantai setelah hari yang panjang?","depth":1},
-  {"id":"rf-54","categoryId":"reflection","text":"Apa impian liburanmu?","depth":1},
-  {"id":"rf-55","categoryId":"reflection","text":"Apa hal yang paling kamu banggakan dari keluargamu?","depth":2},
-  {"id":"rf-56","categoryId":"reflection","text":"Apa yang membuatmu merasa dihargai di tempat kerja?","depth":2},
-  {"id":"rf-57","categoryId":"reflection","text":"Bagaimana kamu menghadapi kritik?","depth":2},
-  {"id":"rf-59","categoryId":"reflection","text":"Apa makanan sehat favoritmu?","depth":1},
-  {"id":"rf-60","categoryId":"reflection","text":"Apa kutipan motivasi favoritmu?","depth":2},
-  {"id":"rf-61","categoryId":"reflection","text":"Apa yang membuatmu merasa dicintai oleh pasanganmu?","depth":2},
-  {"id":"rf-64","categoryId":"reflection","text":"Apa yang kamu lakukan untuk membantu orang lain?","depth":2},
-  {"id":"rf-65","categoryId":"reflection","text":"Apa yang membuatmu merasa bangga menjadi dirimu sendiri?","depth":3},
-  {"id":"rf-67","categoryId":"reflection","text":"Apa yang membuatmu merasa terhubung dengan alam?","depth":2},
-  {"id":"rf-68","categoryId":"reflection","text":"Apa kenangan terbaikmu tahun lalu?","depth":2},
-  {"id":"rf-69","categoryId":"reflection","text":"Apa yang kamu lakukan untuk merayakan keberhasilanmu?","depth":1},
-  {"id":"rf-70","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari teman-temanmu?","depth":2},
-  {"id":"rf-71","categoryId":"reflection","text":"Apa yang membuatmu merasa optimis hari ini?","depth":1},
-  {"id":"rf-72","categoryId":"reflection","text":"Apa yang kamu lakukan untuk meningkatkan moodmu?","depth":1},
-  {"id":"rf-73","categoryId":"reflection","text":"Apa hal yang paling kamu hargai dari waktu sendirimu?","depth":2},
-  {"id":"rf-74","categoryId":"reflection","text":"Apa yang membuatmu merasa berenergi?","depth":1},
-  {"id":"rf-75","categoryId":"reflection","text":"Apa tujuan utamamu bulan ini?","depth":2},
-  {"id":"rf-76","categoryId":"reflection","text":"Apa yang kamu lakukan untuk menjaga fokus?","depth":2},
-  {"id":"rf-77","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari rumahmu?","depth":1},
-  {"id":"rf-78","categoryId":"reflection","text":"Apa yang membuatmu merasa nyaman dengan orang baru?","depth":2},
-  {"id":"rf-79","categoryId":"reflection","text":"Apa yang kamu lakukan saat kamu tidak tahu harus berbuat apa?","depth":2},
-  {"id":"rf-82","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari kotamu?","depth":1},
-  {"id":"rf-83","categoryId":"reflection","text":"Apa yang membuatmu merasa nostalgia?","depth":1},
-  {"id":"rf-85","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari hewan peliharaanmu (jika ada)?","depth":1},
-  {"id":"rf-88","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari akhir pekan?","depth":1},
-  {"id":"rf-89","categoryId":"reflection","text":"Apa yang membuatmu merasa berani?","depth":2},
-  {"id":"rf-91","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari tradisi keluargamu?","depth":2},
-  {"id":"rf-92","categoryId":"reflection","text":"Apa yang membuatmu merasa terkesan dengan seseorang?","depth":2},
-  {"id":"rf-93","categoryId":"reflection","text":"Apa yang kamu lakukan untuk menjaga agar tetap rendah hati?","depth":3},
-  {"id":"rf-94","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari cuaca hari ini?","depth":1},
-  {"id":"rf-95","categoryId":"reflection","text":"Apa yang membuatmu merasa sabar?","depth":2},
-  {"id":"rf-97","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari seni?","depth":2},
-  {"id":"rf-98","categoryId":"reflection","text":"Apa yang membuatmu merasa kreatif?","depth":2},
-  {"id":"rf-100","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari musik?","depth":1},
-  {"id":"rf-101","categoryId":"reflection","text":"Apa yang membuatmu merasa bebas?","depth":3},
-  {"id":"rf-102","categoryId":"reflection","text":"Apa yang kamu lakukan untuk menjaga integritasmu?","depth":3},
-  {"id":"rf-103","categoryId":"reflection","text":"Apa hal yang paling kamu sukai dari perjalanan hidupmu sejauh ini?","depth":3},
-  {"id":"rf-104","categoryId":"reflection","text":"Apa yang membuatmu merasa penuh harapan?","depth":2},
-  {"id":"rf-105","categoryId":"reflection","text":"Apa pertanyaan yang paling sering kamu tanyakan pada dirimu sendiri?","depth":3},
-  {"id":"rf-107","categoryId":"reflection","text":"Kalau sosmed hilang besok, seberapa besar pengaruhnya ke rasa percaya dirimu?","depth":2},
-  {"id":"rf-108","categoryId":"reflection","text":"Apakah kamu tipe 'People Pleaser'? Kapan terakhir kali kamu berani bilang 'Nggak'?","depth":2},
-  {"id":"rf-109","categoryId":"reflection","text":"Apa satu 'skill' kehidupan (bukan kerjaan) yang kamu rasa kamu payah banget?","depth":1,"followUps":["Mengatur duit? Masak? Beres-beres?"]},
-  {"id":"rf-112","categoryId":"reflection","text":"Apakah kamu sudah menjadi teman yang baik buat dirimu sendiri?","depth":3},
-  {"id":"rf-115","categoryId":"reflection","text":"Kalau tahun ini punya tema satu kata, kata apa yang kamu pilih?","depth":1},
-  {"id":"rf-117","categoryId":"reflection","text":"Kalau kamu bertemu versi dirimu yang berusia 10 tahun, dia bakal bangga atau kecewa?","depth":2},
-  {"id":"rf-120","categoryId":"reflection","text":"Kapan terakhir kali kamu benar-benar istirahat tanpa merasa bersalah?","depth":2},
-  {"id":"rf-123","categoryId":"reflection","text":"Siapa orang yang paling berjasa membentuk karaktermu hari ini?","depth":2},
-  {"id":"rf-125","categoryId":"reflection","text":"Dalam skala 1-10, seberapa jujur kamu pada diri sendiri setahun terakhir ini?","depth":2},
-  {"id":"rf-127","categoryId":"reflection","text":"Kapan terakhir kali kamu merasa bangga karena berani melangkah keluar zona nyaman?","depth":2},
-  {"id":"rf-129","categoryId":"reflection","text":"Kalau melihat dirimu 3 tahun lalu, perubahan apa yang paling drastis dan positif dalam dirimu?","depth":2},
-  {"id":"rf-132","categoryId":"reflection","text":"Seberapa sering kamu ngerasa bersalah saat luangin waktu buat me time?","depth":2},
-  {"id":"rf-133","categoryId":"reflection","text":"Satu pencapaian yang kelihatannya kecil di mata orang, tapi buatmu butuh perjuangan luar biasa?","depth":2},
-  {"id":"rf-135","categoryId":"reflection","text":"Kapan terakhir kamu bener-bener dengerin kata hati, meskipun logika bilang sebaliknya?","depth":2},
-  {"id":"rf-136","categoryId":"reflection","text":"Hal apa dari karakter aslimu yang sering kamu tutupi agar bisa diterima lingkungan?","depth":2},
-  {"id":"rf-137","categoryId":"reflection","text":"Seberapa gampang kamu memaafkan dirimu sendiri saat bikin kesalahan bodoh?","depth":2},
-  {"id":"rf-138","categoryId":"reflection","text":"Dalam hal toleransi, apa satu prinsip yang kamu pegang teguh banget sampai saat ini?","depth":2},
-  {"id":"rf-140","categoryId":"reflection","text":"Apa hal yang terus kamu pelajari meskipun udah gagal berkali-kali menerapkannya?","depth":2},
-  {"id":"rf-142","categoryId":"reflection","text":"Menurut kamu, apa definisi sukses versimu yang paling jujur hari ini?","depth":2},
-  {"id":"rf-144","categoryId":"reflection","text":"Apakah kamu lebih sering merayakan prosesnya atau cuma fokus sama hasil akhir aja?","depth":2},
-  {"id":"rf-146","categoryId":"reflection","text":"Kebiasaan pagi apa yang paling membantu membentuk suasana harimu?","depth":1},
-  {"id":"rf-147","categoryId":"reflection","text":"Ritual malam sederhana apa yang membuatmu lebih siap menyambut besok?","depth":1},
-  {"id":"rf-148","categoryId":"reflection","text":"Apa satu prioritas yang ingin kamu selesaikan besok?","depth":1},
-  {"id":"rf-149","categoryId":"reflection","text":"Tugas ringan apa yang sering kamu tunda padahal bisa cepat selesai?","depth":1},
-  {"id":"rf-150","categoryId":"reflection","text":"Seperti apa ruang kerja atau belajar yang membuatmu nyaman?","depth":1},
-  {"id":"rf-151","categoryId":"reflection","text":"Cara fokus apa yang paling cocok dengan gaya kerjamu?","depth":2},
-  {"id":"rf-152","categoryId":"reflection","text":"Kebiasaan digital apa yang ingin kamu atur ulang?","depth":2},
-  {"id":"rf-153","categoryId":"reflection","text":"Pada jam berapa energimu biasanya berada di titik terbaik?","depth":1},
-  {"id":"rf-154","categoryId":"reflection","text":"Jeda seperti apa yang membuatmu kembali segar?","depth":1},
-  {"id":"rf-155","categoryId":"reflection","text":"Apa kemenangan kecilmu minggu ini?","depth":1},
-  {"id":"rf-156","categoryId":"reflection","text":"Hal baru apa yang kamu pelajari beberapa hari terakhir?","depth":1},
-  {"id":"rf-157","categoryId":"reflection","text":"Apa yang sedang membuatmu penasaran sekarang?","depth":1},
-  {"id":"rf-158","categoryId":"reflection","text":"Hobi apa yang ingin kamu beri waktu lagi?","depth":2},
-  {"id":"rf-159","categoryId":"reflection","text":"Keahlian kecil apa yang ingin kamu latih bulan ini?","depth":2},
-  {"id":"rf-160","categoryId":"reflection","text":"Pilihan terbaru apa yang membuatmu bangga pada diri sendiri?","depth":2},
-  {"id":"rf-161","categoryId":"reflection","text":"Pujian apa yang sekarang lebih mudah kamu terima?","depth":2},
-  {"id":"rf-162","categoryId":"reflection","text":"Kekuatan apa yang mungkin lebih mudah dilihat temanmu daripada dirimu sendiri?","depth":2},
-  {"id":"rf-163","categoryId":"reflection","text":"Sifat baik apa yang ingin lebih sering kamu gunakan?","depth":2},
-  {"id":"rf-164","categoryId":"reflection","text":"Kecepatan hidup seperti apa yang paling terasa nyaman bagimu sekarang?","depth":2},
-  {"id":"rf-165","categoryId":"reflection","text":"Bagian mana dari keseharianmu yang ingin dibuat lebih sederhana?","depth":2},
-  {"id":"rf-166","categoryId":"reflection","text":"Gangguan apa yang ingin lebih sering kamu tolak?","depth":2},
-  {"id":"rf-167","categoryId":"reflection","text":"Hal apa yang saat ini paling layak mendapatkan perhatianmu?","depth":2},
-  {"id":"rf-168","categoryId":"reflection","text":"Rutinitas kecil apa yang ingin kamu tambahkan?","depth":1},
-  {"id":"rf-169","categoryId":"reflection","text":"Rutinitas apa yang sudah tidak banyak membantumu?","depth":2},
-  {"id":"rf-170","categoryId":"reflection","text":"Janji kecil apa yang ingin kamu tepati untuk dirimu minggu ini?","depth":2},
-  {"id":"rf-171","categoryId":"reflection","text":"Apa bagian favoritmu dari fase hidup saat ini?","depth":2},
-  {"id":"rf-172","categoryId":"reflection","text":"Perubahan positif apa yang paling terasa dalam dirimu tahun ini?","depth":2},
-  {"id":"rf-173","categoryId":"reflection","text":"Nilai apa yang membuat pilihan sehari-harimu terasa lebih mudah?","depth":3},
-  {"id":"rf-174","categoryId":"reflection","text":"Lingkungan seperti apa yang membantumu menyelesaikan sesuatu?","depth":2},
-  {"id":"rf-175","categoryId":"reflection","text":"Bagaimana cara favoritmu mengisi ulang energi?","depth":1},
-  {"id":"rf-176","categoryId":"reflection","text":"Bagaimana kamu membagi waktu antara sendiri dan bersosialisasi?","depth":2},
-  {"id":"rf-177","categoryId":"reflection","text":"Kalau punya satu jam bebas, kamu paling ingin mengisinya dengan apa?","depth":1},
-  {"id":"rf-178","categoryId":"reflection","text":"Hal apa yang ingin kamu mulai meski belum merasa sepenuhnya siap?","depth":2},
-  {"id":"rf-179","categoryId":"reflection","text":"Bagaimana kamu membuat tugas biasa terasa lebih menyenangkan?","depth":1},
-  {"id":"rf-180","categoryId":"reflection","text":"Dalam hal apa kamu baru-baru ini membuat dirimu sendiri terkejut?","depth":2},
-  {"id":"rf-181","categoryId":"reflection","text":"Bagaimana kamu ingin berbicara kepada diri sendiri setelah membuat kesalahan kecil?","depth":2},
-  {"id":"rf-182","categoryId":"reflection","text":"Apa yang membantumu tetap fleksibel ketika rencana berubah?","depth":2},
-  {"id":"rf-183","categoryId":"reflection","text":"Bagaimana kamu mengenali kemajuan yang berjalan perlahan?","depth":2},
-  {"id":"rf-184","categoryId":"reflection","text":"Apa cara merayakan diri yang tidak harus membeli sesuatu?","depth":1},
-  {"id":"rf-185","categoryId":"reflection","text":"Hal spesifik apa yang kamu syukuri hari ini?","depth":1},
-  {"id":"rf-186","categoryId":"reflection","text":"Apa yang ingin lebih sering kamu perhatikan dalam keseharian?","depth":2},
-  {"id":"rf-187","categoryId":"reflection","text":"Pertanyaan apa yang bagus untuk kamu tanyakan kepada diri sendiri setiap malam?","depth":2},
-  {"id":"rf-188","categoryId":"reflection","text":"Satu kata apa yang ingin kamu jadikan panduan minggu ini?","depth":1},
-  {"id":"rf-189","categoryId":"reflection","text":"Kebiasaan baik siapa yang ingin kamu contoh?","depth":2},
-  {"id":"rf-190","categoryId":"reflection","text":"Bagaimana cara favoritmu merapikan isi pikiran?","depth":2},
-  {"id":"rf-191","categoryId":"reflection","text":"Masukan tentang hal apa yang ingin kamu minta dari orang yang kamu percaya?","depth":2},
-  {"id":"rf-192","categoryId":"reflection","text":"Kapan kamu paling mudah mendengar intuisi sendiri?","depth":2},
-  {"id":"rf-193","categoryId":"reflection","text":"Kapan kamu merasa produktif tanpa harus merasa sibuk?","depth":2},
-  {"id":"rf-194","categoryId":"reflection","text":"Istirahat yang bermakna terlihat seperti apa bagimu?","depth":2},
-  {"id":"rf-195","categoryId":"reflection","text":"Batas penggunaan media sosial seperti apa yang realistis buatmu?","depth":2},
-  {"id":"rf-196","categoryId":"reflection","text":"Momen apa yang ingin lebih sering kamu simpan hanya untuk dirimu sendiri?","depth":2},
-  {"id":"rf-197","categoryId":"reflection","text":"Aktivitas apa yang paling melatih kesabaranmu dengan cara menyenangkan?","depth":2},
-  {"id":"rf-198","categoryId":"reflection","text":"Sisi playful apa yang ingin lebih sering kamu tunjukkan?","depth":2},
-  {"id":"rf-199","categoryId":"reflection","text":"Kegiatan kreatif apa yang ingin kamu coba tanpa mengejar hasil sempurna?","depth":2},
-  {"id":"rf-200","categoryId":"reflection","text":"Proyek kecil apa yang ingin kamu mulai hanya karena penasaran?","depth":2},
-  {"id":"rf-201","categoryId":"reflection","text":"Petualangan kecil apa yang ingin kamu coba berikutnya?","depth":1},
-  {"id":"rf-202","categoryId":"reflection","text":"Bagaimana hubunganmu dengan waktu berubah dibanding beberapa tahun lalu?","depth":3},
-  {"id":"rf-203","categoryId":"reflection","text":"Tanda apa yang memberi tahu bahwa kamu perlu memperlambat ritme?","depth":2},
-  {"id":"rf-204","categoryId":"reflection","text":"Seperti apa ambisi yang tetap memberi ruang untuk menikmati proses?","depth":3},
-  {"id":"rf-205","categoryId":"reflection","text":"Apa arti sukses untuk bulan ini saja?","depth":2},
-  {"id":"rf-206","categoryId":"reflection","text":"Bagaimana kamu memilih hal yang harus didahulukan?","depth":2},
-  {"id":"rf-207","categoryId":"reflection","text":"Satu hal apa yang ingin kamu tuntaskan sebelum memulai yang baru?","depth":2},
-  {"id":"rf-208","categoryId":"reflection","text":"Apa yang bisa kamu keluarkan dari daftar tugas karena sebenarnya tidak penting?","depth":2},
-  {"id":"rf-209","categoryId":"reflection","text":"Ritual apa yang cocok untuk menandai dimulainya babak baru?","depth":2},
-  {"id":"rf-210","categoryId":"reflection","text":"Untuk hal apa kamu ingin berterima kasih kepada dirimu hari ini?","depth":2},
-  {"id":"rf-211","categoryId":"reflection","text":"Kebiasaan apa yang membuat akhir pekanmu terasa lebih utuh?","depth":1},
-  {"id":"rf-212","categoryId":"reflection","text":"Apa satu hal yang ingin kamu lakukan dengan lebih pelan dan sadar?","depth":2},
-  {"id":"rf-213","categoryId":"reflection","text":"Bagian kecil dari rutinitasmu apa yang ternyata paling kamu nikmati?","depth":1},
-  {"id":"rf-214","categoryId":"reflection","text":"Bagian mana dari pekerjaan atau studimu yang paling memberi rasa puas?","depth":2},
-  {"id":"rf-215","categoryId":"reflection","text":"Kalau fase hidupmu sekarang punya warna, warna apa yang paling cocok?","depth":1}
+  {
+    "id": "rf-1",
+    "categoryId": "reflection",
+    "text": "Satu kebiasaan buruk apa yang pengen banget lo stop mulai tahun ini demi ketenangan hidup lo?",
+    "depth": 2,
+    "followUps": [
+      "Kebiasaan menunda-nunda, overthinking, atau susah nolak permintaan orang?"
+    ]
+  },
+  {
+    "id": "rf-2",
+    "categoryId": "reflection",
+    "text": "Kalau lo ketemu versi diri lo pas umur 10 tahun, kira-kira dia bakal bangga nggak liat lo yang sekarang?",
+    "depth": 3,
+    "followUps": [
+      "Hal apa yang bakal bikin dia paling kagum atau kaget?"
+    ]
+  },
+  {
+    "id": "rf-3",
+    "categoryId": "reflection",
+    "text": "Pencapaian kecil apa tahun ini yang sebenernya keren tapi belum sempet lo apresiasi atau rayain?",
+    "depth": 2
+  },
+  {
+    "id": "rf-4",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo bener-bener berterima kasih dan bangga sama diri lo sendiri?",
+    "depth": 2
+  },
+  {
+    "id": "rf-5",
+    "categoryId": "reflection",
+    "text": "Hobi atau bakat apa yang dulu lo suka banget tapi kepaksa lo tinggalin gara-gara sibuk rutinitas?",
+    "depth": 2
+  },
+  {
+    "id": "rf-6",
+    "categoryId": "reflection",
+    "text": "Sifat atau kebiasaan dari diri lo apa yang paling sering bikin lo nyesel setelah kejadian?",
+    "depth": 3
+  },
+  {
+    "id": "rf-7",
+    "categoryId": "reflection",
+    "text": "Jujur, lo tipe orang yang lebih dominan jadi pendengar yang baik atau pembicara yang suka cerita?",
+    "depth": 2
+  },
+  {
+    "id": "rf-8",
+    "categoryId": "reflection",
+    "text": "Pelajaran berharga apa yang lo dapet dari kesalahan atau kegagalan terbesar lo belakangan ini?",
+    "depth": 2
+  },
+  {
+    "id": "rf-9",
+    "categoryId": "reflection",
+    "text": "Kalau perjalanan hidup lo dijadiin buku, bab yang lagi lo jalanin sekarang judulnya apa?",
+    "depth": 2,
+    "followUps": [
+      "Kenapa lo pilih judul itu?"
+    ]
+  },
+  {
+    "id": "rf-10",
+    "categoryId": "reflection",
+    "text": "Siapa orang baik yang harusnya sering lo hubungi tapi sering lo tunda-tunda karena kesibukan?",
+    "depth": 2
+  },
+  {
+    "id": "rf-11",
+    "categoryId": "reflection",
+    "text": "Seberapa sering lo ngerasa capek mental gara-gara kebanyakan scroll media sosial?",
+    "depth": 2
+  },
+  {
+    "id": "rf-12",
+    "categoryId": "reflection",
+    "text": "Apa arti 'sukses dan bahagia' versi lo sekarang dibanding versi lo 5 tahun yang lalu?",
+    "depth": 3
+  },
+  {
+    "id": "rf-13",
+    "categoryId": "reflection",
+    "text": "Apakah lingkaran pertemanan lo sekarang bikin lo makin berkembang atau malah bikin lo jalan di tempat?",
+    "depth": 3
+  },
+  {
+    "id": "rf-14",
+    "categoryId": "reflection",
+    "text": "Hal apa tentang diri lo yang orang lain paling sering salah sangka pas pertama kali kenal?",
+    "depth": 2
+  },
+  {
+    "id": "rf-15",
+    "categoryId": "reflection",
+    "text": "Batasan pribadi (boundaries) apa yang menurut lo perlu lo tegaskan lagi ke orang-orang di sekitar lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-16",
+    "categoryId": "reflection",
+    "text": "Kalau urusan finansial udah aman sentosa, aktivitas atau karya apa yang pengen banget lo tekuni setiap hari?",
+    "depth": 2
+  },
+  {
+    "id": "rf-17",
+    "categoryId": "reflection",
+    "text": "Momen kayak gimana yang paling bikin lo ngerasa bener-bener damai dan bersyukur?",
+    "depth": 2
+  },
+  {
+    "id": "rf-18",
+    "categoryId": "reflection",
+    "text": "Kritik atau masukan pedas apa yang pernah lo terima dan ternyata beneran bikin lo berubah jadi lebih baik?",
+    "depth": 2
+  },
+  {
+    "id": "rf-19",
+    "categoryId": "reflection",
+    "text": "Prioritas penting apa dalam hidup lo yang akhir-akhir ini sering kegeser sama hal-hal nggak penting?",
+    "depth": 2
+  },
+  {
+    "id": "rf-20",
+    "categoryId": "reflection",
+    "text": "Kalau lo bisa nambahin satu keahlian baru ke diri lo secara instan, lo mau keahlian apa?",
+    "depth": 1
+  },
+  {
+    "id": "rf-21",
+    "categoryId": "reflection",
+    "text": "Seberapa sering lo ngebandingin pencapaian hidup lo sama orang lain di Instagram atau LinkedIn?",
+    "depth": 2
+  },
+  {
+    "id": "rf-22",
+    "categoryId": "reflection",
+    "text": "Hal apa dari diri lo yang lo harap orang-orang terdekat bisa lebih menghargai atau notice?",
+    "depth": 2
+  },
+  {
+    "id": "rf-23",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo ngerasa paling percaya diri dan nggak peduli sama omongan orang lain?",
+    "depth": 2
+  },
+  {
+    "id": "rf-24",
+    "categoryId": "reflection",
+    "text": "Apa kekhawatiran yang dulu sering bikin lo nggak bisa tidur, tapi pas dijalanin ternyata biasa aja?",
+    "depth": 1
+  },
+  {
+    "id": "rf-25",
+    "categoryId": "reflection",
+    "text": "Satu kata yang paling mewakili perjalanan dan perjuangan hidup lo sepanjang tahun ini?",
+    "depth": 1
+  },
+  {
+    "id": "rf-26",
+    "categoryId": "reflection",
+    "text": "Kebaikan kecil apa yang lo lakuin diam-diam belakangan ini dan bikin hati lo anget?",
+    "depth": 1
+  },
+  {
+    "id": "rf-27",
+    "categoryId": "reflection",
+    "text": "Rutinitas pagi apa yang terbukti paling ampuh bikin mood lo bagus seharian?",
+    "depth": 1
+  },
+  {
+    "id": "rf-28",
+    "categoryId": "reflection",
+    "text": "Siapa sosok di dunia nyata yang cara hidup atau pola pikirnya paling lo kagumi?",
+    "depth": 2
+  },
+  {
+    "id": "rf-29",
+    "categoryId": "reflection",
+    "text": "Hal yang dulu lo anggap kegagalan, tapi sekarang lo sadar itu jalan pembuka buat hal yang lebih baik apa?",
+    "depth": 2
+  },
+  {
+    "id": "rf-30",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling lo syukuri dari pekerjaan atau kesibukan yang lagi lo jalanin sekarang?",
+    "depth": 2
+  },
+  {
+    "id": "rf-31",
+    "categoryId": "reflection",
+    "text": "Buku, podcast, atau film apa yang paling ngerubah cara pandang lo tentang hidup belakangan ini?",
+    "depth": 2
+  },
+  {
+    "id": "rf-32",
+    "categoryId": "reflection",
+    "text": "Nasihat hidup terbaik apa yang pernah dikasih seseorang ke lo dan masih lo pegang teguh?",
+    "depth": 2
+  },
+  {
+    "id": "rf-33",
+    "categoryId": "reflection",
+    "text": "Gimana cara self-reward atau memanjakan diri sendiri yang paling bikin lo rileks sehabis capek kerja?",
+    "depth": 1
+  },
+  {
+    "id": "rf-34",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling bikin lo ngerasa hari lo produktif dan bermakna?",
+    "depth": 1
+  },
+  {
+    "id": "rf-35",
+    "categoryId": "reflection",
+    "text": "Bagaimana lo mendefinisikan keseimbangan antara kerjaan dan kehidupan pribadi (work-life balance)?",
+    "depth": 3
+  },
+  {
+    "id": "rf-36",
+    "categoryId": "reflection",
+    "text": "Hal kecil dan sederhana apa di sekitar lo yang selalu sukses bikin lo tersenyum?",
+    "depth": 1
+  },
+  {
+    "id": "rf-37",
+    "categoryId": "reflection",
+    "text": "Jurus andalan lo buat ngelawan rasa malas dan mager pas lagi banyak tugas apa?",
+    "depth": 2
+  },
+  {
+    "id": "rf-38",
+    "categoryId": "reflection",
+    "text": "Apa yang paling bikin lo merasa berharga sebagai manusia di luar urusan status dan materi?",
+    "depth": 3
+  },
+  {
+    "id": "rf-39",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo memaafkan diri sendiri atas keputusan ceroboh yang pernah lo ambil?",
+    "depth": 3
+  },
+  {
+    "id": "rf-40",
+    "categoryId": "reflection",
+    "text": "Apa ketakutan terbesar lo saat memikirkan masa depan 5 atau 10 tahun ke depan?",
+    "depth": 2
+  },
+  {
+    "id": "rf-41",
+    "categoryId": "reflection",
+    "text": "Seberapa mampu lo buat bilang 'nggak' tanpa ngerasa bersalah ke orang lain?",
+    "depth": 2
+  },
+  {
+    "id": "rf-42",
+    "categoryId": "reflection",
+    "text": "Hal apa yang paling lo butuhin pas energi sosial lo bener-bener udah abis (lowbat)?",
+    "depth": 1
+  },
+  {
+    "id": "rf-43",
+    "categoryId": "reflection",
+    "text": "Menurut lo, bagian mana dari kepribadian lo yang paling banyak mengalami pendewasaan?",
+    "depth": 2
+  },
+  {
+    "id": "rf-44",
+    "categoryId": "reflection",
+    "text": "Siapa orang yang paling sering lo mintai saran pas lo lagi buntu dan bingung ngambil keputusan?",
+    "depth": 2
+  },
+  {
+    "id": "rf-45",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo ngerasa sendirian di tengah keramaian, dan gimana lo mengatasinya?",
+    "depth": 3
+  },
+  {
+    "id": "rf-46",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling lo syukuri dari kesehatan fisik dan mental lo hari ini?",
+    "depth": 2
+  },
+  {
+    "id": "rf-47",
+    "categoryId": "reflection",
+    "text": "Apakah lo tipe orang yang gampang meluapkan emosi atau tipe yang suka memendam sampai meledak?",
+    "depth": 2
+  },
+  {
+    "id": "rf-48",
+    "categoryId": "reflection",
+    "text": "Pelajaran apa yang lo petik dari orang-orang yang pernah datang lalu pergi dari hidup lo?",
+    "depth": 3
+  },
+  {
+    "id": "rf-49",
+    "categoryId": "reflection",
+    "text": "Apa mimpi masa kecil yang udah berhasil lo wujudkan dengan hasil keringat sendiri?",
+    "depth": 2
+  },
+  {
+    "id": "rf-50",
+    "categoryId": "reflection",
+    "text": "Kalau lo bisa ngasih satu pujian tulus ke diri lo sekarang, apa kalimat pujiannya?",
+    "depth": 2
+  },
+  {
+    "id": "rf-51",
+    "categoryId": "reflection",
+    "text": "Seberapa sering lo meluangkan waktu buat bener-bener refleksi diri tanpa megang gadget?",
+    "depth": 1
+  },
+  {
+    "id": "rf-52",
+    "categoryId": "reflection",
+    "text": "Hal apa yang dulu lo pikir sangat penting, tapi makin ke sini ternyata nggak sepenting itu?",
+    "depth": 2
+  },
+  {
+    "id": "rf-53",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menenangkan pikiran pas kepala lo lagi penuh banget sama overthinking?",
+    "depth": 2
+  },
+  {
+    "id": "rf-54",
+    "categoryId": "reflection",
+    "text": "Apa sifat dari orang tua lo yang tanpa sadar sekarang menurun persis ke diri lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-55",
+    "categoryId": "reflection",
+    "text": "Kapan lo pertama kali ngerasa bener-bener mandiri dan bertanggung jawab penuh atas hidup lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-56",
+    "categoryId": "reflection",
+    "text": "Hal paling berani apa yang pernah lo ambil dan mengubah jalan hidup lo sampai sekarang?",
+    "depth": 3
+  },
+  {
+    "id": "rf-57",
+    "categoryId": "reflection",
+    "text": "Apa definisi menjadi orang yang bermanfaat bagi orang lain menurut versi lo pribadi?",
+    "depth": 2
+  },
+  {
+    "id": "rf-58",
+    "categoryId": "reflection",
+    "text": "Seberapa jujur lo sama perasaan lo sendiri saat lagi ngerasa nggak baik-baik aja?",
+    "depth": 2
+  },
+  {
+    "id": "rf-59",
+    "categoryId": "reflection",
+    "text": "Hal apa yang paling pengen lo perbaiki dalam cara lo berkomunikasi sama orang-orang terdekat?",
+    "depth": 2
+  },
+  {
+    "id": "rf-60",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo ngerasa puas banget sama hasil kerja keras yang lo lakuin?",
+    "depth": 2
+  },
+  {
+    "id": "rf-61",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling sering bikin fokus lo gampang terdistraksi pas lagi ngerjain sesuatu?",
+    "depth": 1
+  },
+  {
+    "id": "rf-62",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa iri hati nggak merusak kedamaian pikiran lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-63",
+    "categoryId": "reflection",
+    "text": "Apa bentuk kepedulian dari teman yang paling bikin lo ngerasa beruntung punya mereka?",
+    "depth": 2
+  },
+  {
+    "id": "rf-64",
+    "categoryId": "reflection",
+    "text": "Menurut lo, apa perbedaan antara rasa percaya diri yang sehat dengan kesombongan?",
+    "depth": 2
+  },
+  {
+    "id": "rf-65",
+    "categoryId": "reflection",
+    "text": "Hal apa yang paling lo hindari saat lagi menyelesaikan masalah atau perbedaan pendapat?",
+    "depth": 2
+  },
+  {
+    "id": "rf-66",
+    "categoryId": "reflection",
+    "text": "Kapan lo ngerasa paling bangga sama keteguhan prinsip yang lo pegang?",
+    "depth": 2
+  },
+  {
+    "id": "rf-67",
+    "categoryId": "reflection",
+    "text": "Apa kebiasaan kecil sebelum tidur yang terbukti bikin kualitas istirahat lo jadi jauh lebih baik?",
+    "depth": 1
+  },
+  {
+    "id": "rf-68",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menyemangati diri sendiri pas lagi ngerasa ragu sama kemampuan lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-69",
+    "categoryId": "reflection",
+    "text": "Hal apa yang paling pengen lo pelajari lebih dalam dalam 6 bulan ke depan?",
+    "depth": 1
+  },
+  {
+    "id": "rf-70",
+    "categoryId": "reflection",
+    "text": "Apa bentuk apresiasi sederhana dari orang lain yang selalu berhasil bikin lo terharu?",
+    "depth": 2
+  },
+  {
+    "id": "rf-71",
+    "categoryId": "reflection",
+    "text": "Menurut lo, apa tanda paling jelas kalau seseorang udah bener-bener berdamai sama masa lalunya?",
+    "depth": 3
+  },
+  {
+    "id": "rf-72",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo membagi waktu antara kewajiban, hobi, dan istirahat sehari-hari?",
+    "depth": 2
+  },
+  {
+    "id": "rf-73",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling lo syukuri dari tempat tinggal atau lingkungan lo saat ini?",
+    "depth": 1
+  },
+  {
+    "id": "rf-74",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo sadar kalau lo nggak bisa menyenangkan semua orang di dunia?",
+    "depth": 3
+  },
+  {
+    "id": "rf-75",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo ubah dari cara lo mengelola waktu harian lo?",
+    "depth": 1
+  },
+  {
+    "id": "rf-76",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa ingin tahu dan semangat belajar tetap menyala?",
+    "depth": 2
+  },
+  {
+    "id": "rf-77",
+    "categoryId": "reflection",
+    "text": "Apa satu nilai kebaikan yang selalu lo tanamkan dalam setiap tindakan lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-78",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo berani mencoba hal baru yang sama sekali di luar zona nyaman lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-79",
+    "categoryId": "reflection",
+    "text": "Hal apa yang paling bikin lo ngerasa lega setelah berhasil lo selesaikan minggu ini?",
+    "depth": 1
+  },
+  {
+    "id": "rf-80",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga hubungan baik sama teman-teman lama di tengah kesibukan masing-masing?",
+    "depth": 2
+  },
+  {
+    "id": "rf-81",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa terhubung kembali dengan diri lo yang sejati?",
+    "depth": 2
+  },
+  {
+    "id": "rf-82",
+    "categoryId": "reflection",
+    "text": "Kapan lo ngerasa paling tenang saat menghadapi ketidakpastian dalam hidup?",
+    "depth": 3
+  },
+  {
+    "id": "rf-83",
+    "categoryId": "reflection",
+    "text": "Apa hal sederhana yang bisa langsung mengembalikan senyum di wajah lo pas lagi suntuk?",
+    "depth": 1
+  },
+  {
+    "id": "rf-84",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menghargai proses perkembangan diri tanpa terburu-buru menuntut hasil instan?",
+    "depth": 3
+  },
+  {
+    "id": "rf-85",
+    "categoryId": "reflection",
+    "text": "Apa kebiasaan makan atau gaya hidup sehat yang paling pengen lo konsistenin?",
+    "depth": 1
+  },
+  {
+    "id": "rf-86",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa sangat bersyukur atas keberadaan keluarga di samping lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-87",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling lo pelajari tentang arti kesabaran dalam menghadapi situasi sulit?",
+    "depth": 2
+  },
+  {
+    "id": "rf-88",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menolak ajakan nongkrong secara sopan pas lo emang lagi butuh me-time?",
+    "depth": 1
+  },
+  {
+    "id": "rf-89",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa hidup ini selalu punya kejutan yang indah?",
+    "depth": 2
+  },
+  {
+    "id": "rf-90",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo menertawakan kebodohan diri sendiri tanpa merasa rendah diri?",
+    "depth": 2
+  },
+  {
+    "id": "rf-91",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo sampaikan ke orang tua lo sebagai rasa terima kasih?",
+    "depth": 3
+  },
+  {
+    "id": "rf-92",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa optimis tetap ada walau rencana nggak berjalan mulus?",
+    "depth": 2
+  },
+  {
+    "id": "rf-93",
+    "categoryId": "reflection",
+    "text": "Apa kebiasaan digital yang paling pengen lo kurangi biar hidup lo terasa lebih nyata?",
+    "depth": 2
+  },
+  {
+    "id": "rf-94",
+    "categoryId": "reflection",
+    "text": "Kapan lo ngerasa paling bersyukur punya telinga yang mau mendengarkan curhatan teman?",
+    "depth": 2
+  },
+  {
+    "id": "rf-95",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo kagum dari daya juang orang-orang pekerja keras di sekitar lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-96",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo merawat rasa syukur pas lagi berada di hari-hari yang terasa biasa saja?",
+    "depth": 2
+  },
+  {
+    "id": "rf-97",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo ingat pas lo lagi ngerasa ragu sama masa depan lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-98",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa berhasil mengendalikan amarah dengan sangat dewasa?",
+    "depth": 2
+  },
+  {
+    "id": "rf-99",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa lo sedang berjalan di jalur yang tepat?",
+    "depth": 2
+  },
+  {
+    "id": "rf-100",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo merayakan setiap progres kecil yang lo buat setiap harinya?",
+    "depth": 1
+  },
+  {
+    "id": "rf-101",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa nyaman menjadi diri sendiri seutuhnya?",
+    "depth": 2
+  },
+  {
+    "id": "rf-102",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo memberikan ruang untuk menangis atau meluapkan rasa lelah?",
+    "depth": 3
+  },
+  {
+    "id": "rf-103",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo buktikan ke diri lo sendiri, bukan ke orang lain?",
+    "depth": 3
+  },
+  {
+    "id": "rf-104",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar pikiran lo tetap terbuka terhadap sudut pandang baru?",
+    "depth": 2
+  },
+  {
+    "id": "rf-105",
+    "categoryId": "reflection",
+    "text": "Apa kebaikan kecil yang pernah orang asing berikan ke lo dan masih lo ingat sampai hari ini?",
+    "depth": 2
+  },
+  {
+    "id": "rf-106",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo ngerasa sangat bersyukur punya teman yang mau mengingatkan kesalahan lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-107",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa tenang saat menutup mata sebelum tidur?",
+    "depth": 1
+  },
+  {
+    "id": "rf-108",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo mengatasi rasa jenuh dari rutinitas harian yang monoton?",
+    "depth": 1
+  },
+  {
+    "id": "rf-109",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling lo syukuri dari setiap kesempatan kedua yang pernah lo dapatkan?",
+    "depth": 2
+  },
+  {
+    "id": "rf-110",
+    "categoryId": "reflection",
+    "text": "Kapan lo ngerasa paling kuat saat berhasil melewati masa-masa yang sangat menantang?",
+    "depth": 3
+  },
+  {
+    "id": "rf-111",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo sampaikan ke diri lo yang sedang berjuang keras hari ini?",
+    "depth": 2
+  },
+  {
+    "id": "rf-112",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga kerendahan hati saat lo sedang meraih keberhasilan besar?",
+    "depth": 2
+  },
+  {
+    "id": "rf-113",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa setiap pengalaman hidup selalu ada hikmahnya?",
+    "depth": 2
+  },
+  {
+    "id": "rf-114",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo meluangkan waktu untuk menikmati keindahan alam tanpa sibuk memotretnya?",
+    "depth": 1
+  },
+  {
+    "id": "rf-115",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bersyukur atas hal-hal sederhana yang lo miliki?",
+    "depth": 2
+  },
+  {
+    "id": "rf-116",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menyikapi ekspektasi orang lain agar tidak menjadi beban pikiran lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-117",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo tingkatkan dalam menjaga kesehatan fisik lo?",
+    "depth": 1
+  },
+  {
+    "id": "rf-118",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa sangat beruntung dikelilingi oleh orang-orang yang tulus?",
+    "depth": 2
+  },
+  {
+    "id": "rf-119",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bersemangat untuk menyambut hari esok?",
+    "depth": 1
+  },
+  {
+    "id": "rf-120",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa percaya pada kemampuan diri sendiri tetap kokoh?",
+    "depth": 2
+  },
+  {
+    "id": "rf-121",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bangga menjadi bagian dari keluarga lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-122",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo melakukan sesuatu murni untuk kebahagiaan orang lain tanpa pamrih?",
+    "depth": 2
+  },
+  {
+    "id": "rf-123",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo lepaskan agar hati dan pikiran lo terasa jauh lebih ringan?",
+    "depth": 3
+  },
+  {
+    "id": "rf-124",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo membangun kebiasaan positif yang bertahan lama dalam keseharian?",
+    "depth": 2
+  },
+  {
+    "id": "rf-125",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa lo telah bertumbuh menjadi pribadi yang lebih baik?",
+    "depth": 2
+  },
+  {
+    "id": "rf-126",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa sangat dihargai atas keberadaan dan kehadiran lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-127",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa damai saat menikmati kesendirian?",
+    "depth": 1
+  },
+  {
+    "id": "rf-128",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menghadapi rasa cemas yang tiba-tiba muncul tanpa alasan jelas?",
+    "depth": 2
+  },
+  {
+    "id": "rf-129",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo syukuri dari setiap rintangan yang berhasil lo lewati?",
+    "depth": 2
+  },
+  {
+    "id": "rf-130",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo memberikan hadiah kecil untuk mengapresiasi diri sendiri?",
+    "depth": 1
+  },
+  {
+    "id": "rf-131",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa kebaikan kecil selalu berbuah manis?",
+    "depth": 2
+  },
+  {
+    "id": "rf-132",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa empati terhadap sesama tetap hidup di dalam hati?",
+    "depth": 2
+  },
+  {
+    "id": "rf-133",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo capai bukan untuk validasi orang lain, melainkan untuk kepuasan batin?",
+    "depth": 3
+  },
+  {
+    "id": "rf-134",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa berhasil keluar dari pola pikir yang membatasi diri lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-135",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa waktu yang lo luangkan bersama orang tercinta sangat berharga?",
+    "depth": 2
+  },
+  {
+    "id": "rf-136",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa syukur tidak hilang saat sedang menghadapi masa sulit?",
+    "depth": 2
+  },
+  {
+    "id": "rf-137",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo sampaikan ke sahabat terdekat lo yang selalu ada buat lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-138",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo merasa benar-benar bebas dari beban ekspektasi orang lain?",
+    "depth": 2
+  },
+  {
+    "id": "rf-139",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa hidup ini layak untuk dinikmati setiap detiknya?",
+    "depth": 2
+  },
+  {
+    "id": "rf-140",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menumbuhkan rasa kasih sayang terhadap diri sendiri saat sedang merasa tidak cukup baik?",
+    "depth": 3
+  },
+  {
+    "id": "rf-141",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa lo memiliki tempat yang aman untuk pulang?",
+    "depth": 3
+  },
+  {
+    "id": "rf-142",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo menyadari bahwa kebahagiaan sejati berasal dari dalam diri sendiri?",
+    "depth": 3
+  },
+  {
+    "id": "rf-143",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo wariskan sebagai teladan baik bagi orang-orang di sekitar lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-144",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar hati lo tetap lembut di tengah dunia yang terkadang keras?",
+    "depth": 3
+  },
+  {
+    "id": "rf-145",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bersyukur atas napas dan kesempatan hidup hari ini?",
+    "depth": 2
+  },
+  {
+    "id": "rf-146",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo merasa sangat damai hanya dengan duduk diam menikmati hening?",
+    "depth": 1
+  },
+  {
+    "id": "rf-147",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa setiap langkah kecil lo membawa arti besar?",
+    "depth": 2
+  },
+  {
+    "id": "rf-148",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa integritas dan kejujuran selalu menjadi kompas hidup lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-149",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo rayakan bersama orang-orang tersayang di akhir tahun nanti?",
+    "depth": 1
+  },
+  {
+    "id": "rf-150",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa benar-benar bersatu dengan tujuan hidup yang lo pilih?",
+    "depth": 3
+  },
+  {
+    "id": "rf-151",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa kebaikan selalu menemukan jalannya sendiri?",
+    "depth": 2
+  },
+  {
+    "id": "rf-152",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar semangat pantang menyerah tetap berkobar saat menghadapi tantangan?",
+    "depth": 2
+  },
+  {
+    "id": "rf-153",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo sampaikan sebagai pesan pengingat untuk diri lo di masa depan?",
+    "depth": 2
+  },
+  {
+    "id": "rf-154",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo merasa sangat terharu oleh ketulusan cinta dari orang-orang di sekitar lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-155",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bersyukur atas setiap pintu kesempatan yang terbuka?",
+    "depth": 2
+  },
+  {
+    "id": "rf-156",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar pikiran lo tetap jernih saat dihadapkan pada banyak pilihan?",
+    "depth": 2
+  },
+  {
+    "id": "rf-157",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa persahabatan sejati adalah anugerah terbesar?",
+    "depth": 2
+  },
+  {
+    "id": "rf-158",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa berhasil mengatasi keraguan dalam diri dan berani melangkah?",
+    "depth": 2
+  },
+  {
+    "id": "rf-159",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa hidup ini selalu menyediakan ruang untuk belajar?",
+    "depth": 2
+  },
+  {
+    "id": "rf-160",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa cinta dan kasih sayang selalu hadir dalam setiap hubungan lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-161",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo capai untuk menciptakan ketenangan batin dalam hidup lo?",
+    "depth": 3
+  },
+  {
+    "id": "rf-162",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo merasa sangat bersyukur atas setiap rezeki yang mengalir dalam hidup lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-163",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa kehadiran lo di dunia ini memiliki arti yang berharga?",
+    "depth": 3
+  },
+  {
+    "id": "rf-164",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar kehangatan senyuman lo bisa membawa kebahagiaan bagi orang lain?",
+    "depth": 1
+  },
+  {
+    "id": "rf-165",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo wujudkan bersama orang-orang yang paling lo sayangi?",
+    "depth": 2
+  },
+  {
+    "id": "rf-166",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa sangat damai dengan segala kelebihan dan kekurangan diri lo?",
+    "depth": 3
+  },
+  {
+    "id": "rf-167",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa setiap hari baru adalah kesempatan emas untuk memulai kembali?",
+    "depth": 1
+  },
+  {
+    "id": "rf-168",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa hormat dan penghargaan selalu ada dalam setiap interaksi lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-169",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo ingat saat lo sedang merasa lelah mengejar impian lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-170",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo merasa sangat bahagia hanya dengan hal-hal kecil yang tidak ternilai harganya?",
+    "depth": 1
+  },
+  {
+    "id": "rf-171",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa ketulusan hati selalu memancarkan energi positif?",
+    "depth": 2
+  },
+  {
+    "id": "rf-172",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar komitmen untuk terus bertumbuh tetap kuat dalam jiwa lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-173",
+    "categoryId": "reflection",
+    "text": "Tantang orang di sebelah kiri lo buat kasih satu apresiasi tulus tentang kepribadian lo!",
+    "depth": 1
+  },
+  {
+    "id": "rf-174",
+    "categoryId": "reflection",
+    "text": "Tunjuk satu orang di sini yang menurut lo punya aura paling dewasa dan menenangkan!",
+    "depth": 1
+  },
+  {
+    "id": "rf-175",
+    "categoryId": "reflection",
+    "text": "Sebutkan satu kata afirmasi positif yang ingin lo ucapkan untuk diri lo sendiri malam ini!",
+    "depth": 1
+  },
+  {
+    "id": "rf-176",
+    "categoryId": "reflection",
+    "text": "Apa satu hal yang paling lo butuhin untuk merasa damai saat pikiran lo lagi kacau?",
+    "depth": 2
+  },
+  {
+    "id": "rf-177",
+    "categoryId": "reflection",
+    "text": "Seberapa sering lo mengapresiasi tubuh lo atas semua kerja keras yang udah dia lewati?",
+    "depth": 2
+  },
+  {
+    "id": "rf-178",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo berani mengakui kesalahan tanpa mencari-cari alasan pembelaan?",
+    "depth": 3
+  },
+  {
+    "id": "rf-179",
+    "categoryId": "reflection",
+    "text": "Apa arti menjadi teman yang setia menurut standar yang lo pegang sendiri?",
+    "depth": 2
+  },
+  {
+    "id": "rf-180",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa iri terhadap pencapaian orang lain tidak meracuni hati lo?",
+    "depth": 3
+  },
+  {
+    "id": "rf-181",
+    "categoryId": "reflection",
+    "text": "Hal apa yang paling membuat lo merasa bahwa lo sedang bertumbuh ke arah yang lebih bijaksana?",
+    "depth": 2
+  },
+  {
+    "id": "rf-182",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa berhasil mengalahkan rasa takut dan berani mengambil risiko?",
+    "depth": 2
+  },
+  {
+    "id": "rf-183",
+    "categoryId": "reflection",
+    "text": "Apa kebiasaan pikiran positif yang paling pengen lo latih secara konsisten setiap hari?",
+    "depth": 2
+  },
+  {
+    "id": "rf-184",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo merawat hubungan dengan diri sendiri di tengah padatnya tuntutan dunia luar?",
+    "depth": 2
+  },
+  {
+    "id": "rf-185",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo ubah dari caramu menyikapi kritik atau masukan dari orang lain?",
+    "depth": 2
+  },
+  {
+    "id": "rf-186",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo merasa sangat bersyukur atas keberadaan sahabat yang mau menerima apa adanya?",
+    "depth": 2
+  },
+  {
+    "id": "rf-187",
+    "categoryId": "reflection",
+    "text": "Menurut lo, apa yang paling membedakan antara keinginan nafsu sesaat dengan kebutuhan jiwa yang sejati?",
+    "depth": 3
+  },
+  {
+    "id": "rf-188",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menenangkan hati saat rencana hidup lo tidak berjalan sesuai jadwal yang lo buat?",
+    "depth": 2
+  },
+  {
+    "id": "rf-189",
+    "categoryId": "reflection",
+    "text": "Apa satu nilai integritas yang tidak akan pernah lo gadaikan demi keuntungan materi apa pun?",
+    "depth": 3
+  },
+  {
+    "id": "rf-190",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa benar-benar bangga atas kerja keras yang tidak dilihat oleh siapa pun?",
+    "depth": 2
+  },
+  {
+    "id": "rf-191",
+    "categoryId": "reflection",
+    "text": "Hal apa yang paling membuat lo merasa bahwa hidup ini penuh dengan keajaiban kecil yang indah?",
+    "depth": 2
+  },
+  {
+    "id": "rf-192",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo merawat rasa welas asih terhadap sesama makhluk hidup di sekitar lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-193",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling pengen lo pelajari tentang cara mengelola emosi negatif secara sehat?",
+    "depth": 2
+  },
+  {
+    "id": "rf-194",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo merasa sangat damai saat menikmati hening di pagi hari?",
+    "depth": 1
+  },
+  {
+    "id": "rf-195",
+    "categoryId": "reflection",
+    "text": "Menurut lo, apa bukti paling nyata bahwa seseorang telah dewasa secara spiritual dan emosional?",
+    "depth": 3
+  },
+  {
+    "id": "rf-196",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar rasa terima kasih selalu menjadi doa pertama lo setiap bangun tidur?",
+    "depth": 2
+  },
+  {
+    "id": "rf-197",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa setiap manusia memiliki perjuangan tak terlihatnya masing-masing?",
+    "depth": 2
+  },
+  {
+    "id": "rf-198",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa berhasil memaafkan diri sendiri atas keputusan di masa lalu?",
+    "depth": 3
+  },
+  {
+    "id": "rf-199",
+    "categoryId": "reflection",
+    "text": "Hal apa yang paling pengen lo bangun untuk menciptakan ruang keluarga yang hangat dan suportif?",
+    "depth": 2
+  },
+  {
+    "id": "rf-200",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar optimisme tetap menyala tanpa menjadi toxic positivity?",
+    "depth": 2
+  },
+  {
+    "id": "rf-201",
+    "categoryId": "reflection",
+    "text": "Apa arti kepemimpinan yang melayani menurut sudut pandang pribadi lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-202",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo memberikan senyuman hangat kepada orang asing yang tampak sedang lelah?",
+    "depth": 1
+  },
+  {
+    "id": "rf-203",
+    "categoryId": "reflection",
+    "text": "Menurut lo, apa hal terindah dari proses menerima diri sendiri tanpa syarat?",
+    "depth": 3
+  },
+  {
+    "id": "rf-204",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar energi positif lo tidak terkuras oleh lingkungan yang pesimis?",
+    "depth": 2
+  },
+  {
+    "id": "rf-205",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa hidup ini adalah sekolah terbaik untuk belajar bersabar?",
+    "depth": 2
+  },
+  {
+    "id": "rf-206",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa sangat terhubung dengan suara hati nurani lo yang terdalam?",
+    "depth": 3
+  },
+  {
+    "id": "rf-207",
+    "categoryId": "reflection",
+    "text": "Hal apa yang paling pengen lo wariskan kepada orang-orang terdekat sebagai teladan hidup lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-208",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar komitmen untuk terus berbuat baik tidak luntur oleh kekecewaan?",
+    "depth": 3
+  },
+  {
+    "id": "rf-209",
+    "categoryId": "reflection",
+    "text": "Apa arti memiliki kemerdekaan berpikir dan bersikap bagi kualitas hidup lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-210",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo merasa sangat bahagia hanya karena berhasil menolong orang lain tanpa pamrih?",
+    "depth": 2
+  },
+  {
+    "id": "rf-211",
+    "categoryId": "reflection",
+    "text": "Menurut lo, apa yang membuat sebuah ketenangan batin jauh lebih bernilai daripada tepuk tangan pujian?",
+    "depth": 3
+  },
+  {
+    "id": "rf-212",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo merawat rasa syukur saat menghadapi kenyataan yang berbeda dari harapan lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-213",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa lo sedang melangkah di jalan yang tepat?",
+    "depth": 2
+  },
+  {
+    "id": "rf-214",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa berhasil melepaskan beban yang selama ini lo pikul sendirian?",
+    "depth": 3
+  },
+  {
+    "id": "rf-215",
+    "categoryId": "reflection",
+    "text": "Hal apa yang paling pengen lo sampaikan sebagai afirmasi cinta untuk diri lo sendiri?",
+    "depth": 2
+  },
+  {
+    "id": "rf-216",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar kelembutan hati selalu hadir dalam setiap tutur kata lo?",
+    "depth": 2
+  },
+  {
+    "id": "rf-217",
+    "categoryId": "reflection",
+    "text": "Apa arti hidup yang sederhana namun sarat akan makna bagi pandangan hidup lo?",
+    "depth": 3
+  },
+  {
+    "id": "rf-218",
+    "categoryId": "reflection",
+    "text": "Kapan terakhir kali lo merasa sangat bersyukur atas kesempatan untuk memperbaiki diri setiap hari?",
+    "depth": 2
+  },
+  {
+    "id": "rf-219",
+    "categoryId": "reflection",
+    "text": "Menurut lo, apa yang membuat kebaikan tulus memiliki resonansi abadi di hati orang lain?",
+    "depth": 2
+  },
+  {
+    "id": "rf-220",
+    "categoryId": "reflection",
+    "text": "Bagaimana cara lo menjaga agar api semangat dalam jiwa lo tetap menyala terang?",
+    "depth": 2
+  },
+  {
+    "id": "rf-221",
+    "categoryId": "reflection",
+    "text": "Apa hal yang paling membuat lo merasa bahwa hidup ini patut dijalani dengan penuh sukacita?",
+    "depth": 2
+  },
+  {
+    "id": "rf-222",
+    "categoryId": "reflection",
+    "text": "Kapan momen di mana lo merasa benar-benar selaras dengan tujuan luhur keberadaan lo di dunia?",
+    "depth": 3
+  },
+  {
+    "id": "rf-223",
+    "categoryId": "reflection",
+    "text": "Tantang orang di samping lo buat sebutkan satu kelebihan terbesar yang dia liat dari diri lo!",
+    "depth": 1
+  },
+  {
+    "id": "rf-224",
+    "categoryId": "reflection",
+    "text": "Tunjuk satu orang di ruangan ini yang menurut lo punya ketenangan batin paling mengagumkan!",
+    "depth": 1
+  },
+  {
+    "id": "rf-225",
+    "categoryId": "reflection",
+    "text": "Sebutkan satu kata kunci yang ingin lo jadikan kompas hidup sepanjang tahun ini!",
+    "depth": 1
+  }
 ]

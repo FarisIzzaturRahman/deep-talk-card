@@ -1,52 +1,602 @@
 [
-  {"id":"wc-1","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Berikan pujian tulus kepada orang di sebelah kananmu.","depth":1},
-  {"id":"wc-2","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Tanyakan satu hal yang paling membuatmu penasaran tentang lawan bicaramu saat ini.","depth":2},
-  {"id":"wc-3","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Ganti posisi duduk dengan orang yang paling jauh darimu.","depth":1},
-  {"id":"wc-4","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Berikan satu senyuman terbaikmu ke semua orang sebelum lanjut.","depth":1},
-  {"id":"wc-5","categoryId":"wildcard","type":"wildcard","intensity":3,"text":"Wildcard: Tatap mata lawan bicaramu selama 10 detik tanpa bicara.","depth":3},
-  {"id":"wc-6","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Semua orang harus melakukan peregangan kecil selama 10 detik. Tarik napas...","depth":1},
-  {"id":"wc-7","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Coba tebak satu lagu favorit orang di depanmu. Kalau salah, dia yang kasih tahu.","depth":2},
-  {"id":"wc-8","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Gunakan logat daerah yang paling kamu tahu untuk menjawab pertanyaan berikutnya.","depth":1},
-  {"id":"wc-9","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Sebutkan satu hal kecil yang kamu syukuri dari orang yang paling terakhir berbicara.","depth":2},
-  {"id":"wc-10","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Lakukan toast (tos) kecil dengan orang-orang di dekatmu.","depth":1},
-  {"id":"wc-11","categoryId":"wildcard","type":"wildcard","intensity":3,"text":"Tunjukkan satu foto random di galeri HP-mu yang punya cerita menyenangkan.","depth":3},
-  {"id":"wc-12","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Sebutkan satu kata yang menggambarkan suasana momen ini.","depth":1},
-  {"id":"wc-13","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Pilih satu orang untuk memberikan 'fakta unik' tentang dirinya yang belum kita tahu.","depth":2},
-  {"id":"wc-14","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Berikan 'high five' virtual ke semua orang yang ada di sini.","depth":1},
-  {"id":"wc-15","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Coba deskripsikan orang di kirimu menggunakan hanya 3 kata sifat positif.","depth":2},
-  {"id":"wc-16","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Semua orang boleh memejamkan mata dan menarik napas dalam selama 5 detik.","depth":1},
-  {"id":"wc-17","categoryId":"wildcard","type":"wildcard","intensity":3,"text":"Tantang satu orang untuk melakukan suit (batu-gunting-kertas). Yang menang boleh tanya 1 hal bebas.","depth":3},
-  {"id":"wc-18","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Ucapkan 'Terima kasih sudah dengerin' ke orang yang terakhir berbicara.","depth":1},
-  {"id":"wc-19","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Tampilkan satu ekspresi wajah paling 'santai' yang kamu punya.","depth":2},
-  {"id":"wc-20","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Sebutkan satu emoji yang paling mewakili perasaanmu saat ini.","depth":1},
-  {"id":"wc-21","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Gunakan kata 'Anu' setidaknya dua kali dalam jawaban pertanyaan berikutnya.","depth":1},
-  {"id":"wc-22","categoryId":"wildcard","type":"wildcard","intensity":3,"text":"Mintalah satu orang memberikan rekomendasi hal seru (film/buku/makanan) untukmu.","depth":2},
-  {"id":"wc-23","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Tunjukkan jempolmu (thumb's up) kepada siapa pun yang menurutmu ceritanya seru tadi.","depth":1},
-  {"id":"wc-24","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Tebal atau Tipis? Tanyakan preferensi satu hal random (misal: kerupuk, selimut, atau casing HP) ke grup.","depth":1},
-  {"id":"wc-25","categoryId":"wildcard","type":"wildcard","intensity":3,"text":"Saling lempar pujian secara estafet sampai semua orang dapat giliran.","depth":3},
-  {"id":"wc-26","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Pejamkan mata dan bayangkan satu tempat paling damai. Deskripsikan tempat itu dalam satu kalimat.","depth":1},
-  {"id":"wc-27","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Ajak teman di sebelahmu untuk lomba menatap mata tanpa ketawa selama 15 detik!","depth":2},
-  {"id":"wc-28","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Beri tahu kami satu aplikasi di HP-mu yang paling sering kamu buka saat lagi overthinking atau melamun.","depth":1},
-  {"id":"wc-29","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Coba tatap orang di sebelah kananmu sambil bikin muka sekonyol mungkin selama 5 detik!","depth":1},
-  {"id":"wc-30","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Semua pemain harus jujur: sebutkan satu kesan pertama (first impression) yang salah dari orang di depanmu.","depth":2},
-  {"id":"wc-31","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Tantangan fisik: Cobalah berdiri dengan satu kaki selama 10 detik sambil bernyanyi lagu cicak di dinding.","depth":1},
-  {"id":"wc-32","categoryId":"wildcard","type":"wildcard","intensity":3,"text":"Berikan senyum tergoda (flirting smile) ke arah kamera atau ke siapa pun yang kamu suka di ruangan ini.","depth":3},
-  {"id":"wc-33","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Tantang orang di samping kiri untuk main tebak kata (tanpa suara) dari hewan favoritmu.","depth":2},
-  {"id":"wc-34","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Coba bicara dalam bahasa alien (bahasa ngasal) selama 10 detik untuk menjelaskan hari yang kamu lewati.","depth":1},
-  {"id":"wc-35","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Ungkapkan satu kebiasaan aneh teman-temanmu di grup ini yang baru kamu notice sekarang.","depth":2},
-  {"id":"wc-36","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Ajak semua orang tos bersilang (chest bump dari udara) sebagai tanda kompak hari ini!","depth":1},
-  {"id":"wc-37","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Cobalah untuk tidak berkedip selama kamu menceritakan menu makanan favoritmu hari ini.","depth":1},
-  {"id":"wc-38","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Pilih satu orang untuk pura-pura jadi presenter berita dan laporkan obrolan seru kita hari ini.","depth":2},
-  {"id":"wc-39","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Semua orang wajib mendesah seperti lega habis minum es teh manis secara bersamaan!","depth":1},
-  {"id":"wc-40","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Tunjukkan satu gaya foto ala 'bapak-bapak di grup WhatsApp' ke semua orang.","depth":1},
-  {"id":"wc-41","categoryId":"wildcard","type":"wildcard","intensity":2,"text":"Pilih siapa di antara kalian yang paling cocok jadi ketua RT di komplek ini dan kenapa.","depth":2},
-  {"id":"wc-42","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Praktekkin gaya memancing atau nge-drift mobil sebagai reaksi jawaban berikutnya.","depth":1},
-  {"id":"wc-43","categoryId":"wildcard","type":"wildcard","intensity":3,"text":"Ucapkan satu kata random yang tiba-tiba melintas di otakmu sekarang dalam 3 detik! 3... 2... 1...","depth":3},
-  {"id":"wc-44","categoryId":"wildcard","type":"wildcard","intensity":1,"text":"Lakukan pose andalan model tahun 2000-an (misal peace dari atas kepala) ke semua orang dan ditahan 3 detik.","depth":1},
-  {"id":"wc-45","categoryId":"wildcard","text":"Rekomendasikan satu lagu favoritmu kepada pemain di sebelah kanan.","depth":1,"type":"wildcard","intensity":1},
-  {"id":"wc-46","categoryId":"wildcard","text":"Gambarkan pemain di sebelah kiri sebagai sebuah camilan, lalu jelaskan alasannya.","depth":1,"type":"wildcard","intensity":1},
-  {"id":"wc-47","categoryId":"wildcard","text":"Buat satu slogan singkat untuk kelompok kalian malam ini.","depth":1,"type":"wildcard","intensity":1},
-  {"id":"wc-48","categoryId":"wildcard","text":"Pilih nama tim paling unik untuk semua pemain dalam waktu sepuluh detik.","depth":1,"type":"wildcard","intensity":1},
-  {"id":"wc-49","categoryId":"wildcard","text":"Berikan satu pujian tulus kepada pemain yang paling lama kamu kenal di sini.","depth":1,"type":"wildcard","intensity":1},
-  {"id":"wc-50","categoryId":"wildcard","text":"Pilih satu emoji yang menggambarkan setiap pemain, lalu jelaskan secara singkat.","depth":1,"type":"wildcard","intensity":1}
+  {
+    "id": "wc-1",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Kasih satu pujian paling tulus ke orang di sebelah kanan lo sekarang!",
+    "depth": 1
+  },
+  {
+    "id": "wc-2",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Tanyain satu hal yang paling bikin lo penasaran tentang orang di depan lo saat ini!",
+    "depth": 2
+  },
+  {
+    "id": "wc-3",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Tukeran posisi tempat duduk sama orang yang posisinya paling jauh dari lo!",
+    "depth": 1
+  },
+  {
+    "id": "wc-4",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Pasang senyuman paling manis atau paling kocak lo ke semua orang selama 5 detik!",
+    "depth": 1
+  },
+  {
+    "id": "wc-5",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Wildcard: Tatap mata lawan bicara di depan lo selama 10 detik tanpa ketawa sama sekali!",
+    "depth": 3
+  },
+  {
+    "id": "wc-6",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Semua pemain wajib stretching atau peregangan bareng-bareng selama 10 detik. Tarik napas...",
+    "depth": 1
+  },
+  {
+    "id": "wc-7",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Coba tebak satu lagu favorit orang di depan lo. Kalau tebakan lo salah, dia yang wajib kasih tahu!",
+    "depth": 2
+  },
+  {
+    "id": "wc-8",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Pake logat daerah yang paling lo bisa buat jawab kartu pertanyaan berikutnya!",
+    "depth": 1
+  },
+  {
+    "id": "wc-9",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Sebutkan satu hal positif yang lo kagumi dari orang yang terakhir kali ngomong tadi!",
+    "depth": 2
+  },
+  {
+    "id": "wc-10",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Ajak tos (high five) semua orang yang duduk melingkar di dekat lo sekarang!",
+    "depth": 1
+  },
+  {
+    "id": "wc-11",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Tunjukin satu foto paling random di galeri HP lo yang punya cerita seru di baliknya!",
+    "depth": 3
+  },
+  {
+    "id": "wc-12",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Sebutkan satu kata yang paling mewakili suasana obrolan kita malam ini!",
+    "depth": 1
+  },
+  {
+    "id": "wc-13",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Pilih satu orang buat spill fakta unik tentang dirinya yang orang lain belum tahu!",
+    "depth": 2
+  },
+  {
+    "id": "wc-14",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Kirim salam virtual atau gesture jempol ke semua orang yang ada di ruangan ini!",
+    "depth": 1
+  },
+  {
+    "id": "wc-15",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Deskripsiin orang di sebelah kiri lo cuma pake 3 kata sifat yang positif!",
+    "depth": 2
+  },
+  {
+    "id": "wc-16",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Semua pemain boleh merem sebentar dan tarik napas panjang selama 5 detik biar rileks!",
+    "depth": 1
+  },
+  {
+    "id": "wc-17",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Tantang satu orang main suit (batu-gunting-kertas). Yang menang berhak nanya 1 hal bebas!",
+    "depth": 3
+  },
+  {
+    "id": "wc-18",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Ucapkan 'Makasih udah mau dengerin ya' ke orang yang terakhir berbicara tadi!",
+    "depth": 1
+  },
+  {
+    "id": "wc-19",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Tunjukin ekspresi muka paling santai atau lempeng yang lo punya ke semua orang!",
+    "depth": 2
+  },
+  {
+    "id": "wc-20",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Sebutkan satu emoji yang paling ngegambarin suasana hati lo saat ini juga!",
+    "depth": 1
+  },
+  {
+    "id": "wc-21",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Wajib selipkan kata 'Jujurly' atau 'Sebenernya' minimal 2 kali pas jawab kartu berikutnya!",
+    "depth": 1
+  },
+  {
+    "id": "wc-22",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Minta satu orang di sini buat kasih rekomendasi tontonan film atau kuliner terbaik versinya!",
+    "depth": 2
+  },
+  {
+    "id": "wc-23",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Kasih dua jempol ke siapa pun di sini yang menurut lo ceritanya paling seru malam ini!",
+    "depth": 1
+  },
+  {
+    "id": "wc-24",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Lempar satu pertanyaan perdebatan receh (misal: bakso vs mie ayam) ke seluruh kelompok!",
+    "depth": 1
+  },
+  {
+    "id": "wc-25",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Saling lempar pujian singkat secara bergiliran searah jarum jam sampe semua kebagian!",
+    "depth": 3
+  },
+  {
+    "id": "wc-26",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Pejamkan mata dan bayangkan tempat paling damai. Deskripsiin suasana tempat itu dalam 1 kalimat!",
+    "depth": 1
+  },
+  {
+    "id": "wc-27",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Ajak temen di samping lo buat lomba tatap mata tanpa ketawa selama 15 detik!",
+    "depth": 2
+  },
+  {
+    "id": "wc-28",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Kasih tau satu aplikasi di HP lo yang paling sering lo buka pas lagi bengong melamun!",
+    "depth": 1
+  },
+  {
+    "id": "wc-29",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Tatap orang di sebelah kanan lo sambil bikin muka paling konyol selama 5 detik!",
+    "depth": 1
+  },
+  {
+    "id": "wc-30",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Semua pemain harus jujur: sebutkan satu first impression yang ternyata salah dari orang di depan lo!",
+    "depth": 2
+  },
+  {
+    "id": "wc-31",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Tantangan fisik: coba seimbangkan satu benda kecil di atas telapak tangan selama 10 detik!",
+    "depth": 1
+  },
+  {
+    "id": "wc-32",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Berikan senyum paling memikat atau kedipan mata ala model ke kamera atau teman di hadapan lo!",
+    "depth": 3
+  },
+  {
+    "id": "wc-33",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Tantang orang di samping kiri buat main tebak gerakan tanpa suara dari hewan favorit lo!",
+    "depth": 2
+  },
+  {
+    "id": "wc-34",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Coba ceritain kegiatan hari ini pake bahasa isyarat atau gerakan tubuh selama 10 detik!",
+    "depth": 1
+  },
+  {
+    "id": "wc-35",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Ungkapkan satu kebiasaan unik dari teman-teman lo di sini yang baru lo sadari malam ini!",
+    "depth": 2
+  },
+  {
+    "id": "wc-36",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Ajak semua orang tos tangan kompak bersamaan sebagai tanda solid hari ini!",
+    "depth": 1
+  },
+  {
+    "id": "wc-37",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Cobalah buat nggak berkedip selama lo nyebutin 3 menu makanan favorit lo!",
+    "depth": 1
+  },
+  {
+    "id": "wc-38",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Pilih satu orang buat pura-pura jadi pembaca berita dan laporkan obrolan seru kita malam ini!",
+    "depth": 2
+  },
+  {
+    "id": "wc-39",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Semua orang wajib bersuara 'Aaaah lega' kayak abis minum es teh manis barengan!",
+    "depth": 1
+  },
+  {
+    "id": "wc-40",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Tunjukkan satu gaya pose foto andalan bapak-bapak di grup WhatsApp ke semua orang!",
+    "depth": 1
+  },
+  {
+    "id": "wc-41",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Pilih siapa di antara kalian yang auranya paling cocok jadi ketua panitia acara dan kenapa!",
+    "depth": 2
+  },
+  {
+    "id": "wc-42",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Tirukan satu sound effect atau suara klakson kendaraan sebagai reaksi jawaban kartu berikutnya!",
+    "depth": 1
+  },
+  {
+    "id": "wc-43",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Ucapkan satu kata random yang tiba-tiba melintas di otak lo sekarang dalam hitungan 3 detik!",
+    "depth": 3
+  },
+  {
+    "id": "wc-44",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Lakukan pose andalan model foto jadul (misal pose dua jari di pipi) dan tahan selama 3 detik!",
+    "depth": 1
+  },
+  {
+    "id": "wc-45",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Rekomendasikan satu lagu andalan lo ke pemain yang ada di sebelah kanan!",
+    "depth": 1
+  },
+  {
+    "id": "wc-46",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Gambarkan pemain di sebelah kiri lo sebagai sebuah jenis camilan, lalu jelasin alasannya!",
+    "depth": 1
+  },
+  {
+    "id": "wc-47",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Bikin satu slogan singkat dan kocak buat kelompok tongkrongan kita malam ini!",
+    "depth": 1
+  },
+  {
+    "id": "wc-48",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Tentukan nama tim paling keren buat seluruh pemain dalam waktu sepuluh detik!",
+    "depth": 1
+  },
+  {
+    "id": "wc-49",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Kasih satu apresiasi tulus ke teman yang paling lama lo kenal di tongkrongan ini!",
+    "depth": 1
+  },
+  {
+    "id": "wc-50",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Pilih satu emoji yang paling cocok ngegambarin tiap pemain di ruangan ini!",
+    "depth": 1
+  },
+  {
+    "id": "wc-51",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Tirukan gaya barista kafe pas nawarin menu kopi andalan ke pelanggan!",
+    "depth": 1
+  },
+  {
+    "id": "wc-52",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Tantang orang di depan lo buat tebak apa makanan yang paling lo benci di dunia!",
+    "depth": 1
+  },
+  {
+    "id": "wc-53",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Bikin suara sound effect kartun pas lagi kaget secara heboh!",
+    "depth": 1
+  },
+  {
+    "id": "wc-54",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Sebutkan satu nama kontak di HP lo yang punya nama panggilan paling aneh dan jelasin kenapa!",
+    "depth": 2
+  },
+  {
+    "id": "wc-55",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Wildcard: Sampaikan satu gombalan receh paling gokil ke orang di sebelah kiri lo sekarang juga!",
+    "depth": 3
+  },
+  {
+    "id": "wc-56",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Lakukan gaya hormat bendera sambil pasang muka paling khidmat selama 5 detik!",
+    "depth": 1
+  },
+  {
+    "id": "wc-57",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Pilih satu orang di sini dan tebak apa zodiak atau sifat dominan dia. Benar nggak tebakan lo?",
+    "depth": 2
+  },
+  {
+    "id": "wc-58",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Semua pemain wajib tos jempol ke orang di samping masing-masing!",
+    "depth": 1
+  },
+  {
+    "id": "wc-59",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Deskripsikan suasana hati lo saat ini cuma pake judul satu lagu Indonesia yang terkenal!",
+    "depth": 2
+  },
+  {
+    "id": "wc-60",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Tirukan suara hewan yang paling lo kuasai selama 3 detik tanpa ketawa!",
+    "depth": 1
+  },
+  {
+    "id": "wc-61",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Tantang orang di hadapan lo main suit. Yang kalah harus cerita 1 pengalaman konyolnya!",
+    "depth": 3
+  },
+  {
+    "id": "wc-62",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Praktekkan pose foto andalan anak hits jaman sekarang (misal pose candid pegang kacamata)!",
+    "depth": 1
+  },
+  {
+    "id": "wc-63",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Sebutkan satu kebiasaan unik dari teman di sebelah kanan lo yang paling lo notice malam ini!",
+    "depth": 2
+  },
+  {
+    "id": "wc-64",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Ucapkan kata 'Mantap Jiwa' pake nada komentator pertandingan olahraga!",
+    "depth": 1
+  },
+  {
+    "id": "wc-65",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Pilih satu orang buat spill menu makan siang apa yang dia makan kemarin lusa!",
+    "depth": 1
+  },
+  {
+    "id": "wc-66",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Semua pemain wajib bertepuk tangan berirama 3 kali secara serempak!",
+    "depth": 1
+  },
+  {
+    "id": "wc-67",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Kirim satu stiker meme paling absurd di grup WhatsApp tongkrongan kalian sekarang!",
+    "depth": 3
+  },
+  {
+    "id": "wc-68",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Tunjukkan ekspresi muka pas lo dapet notifikasi pesanan paket kurir udah sampai di rumah!",
+    "depth": 1
+  },
+  {
+    "id": "wc-69",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Minta orang di sebelah kiri lo buat kasih nama julukan pahlawan super buat lo malam ini!",
+    "depth": 2
+  },
+  {
+    "id": "wc-70",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Praktekkan gaya menyapa ala presenter berita televisi nasional selama 5 detik!",
+    "depth": 1
+  },
+  {
+    "id": "wc-71",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Sebutkan 3 hal yang wajib ada di dalam tas atau saku lo kalau lagi pergi nongkrong!",
+    "depth": 1
+  },
+  {
+    "id": "wc-72",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 3,
+    "text": "Tatap kamera atau tatap semua orang sambil pasang senyum paling mempesona selama 5 detik!",
+    "depth": 3
+  },
+  {
+    "id": "wc-73",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Ajak semua pemain untuk serukan satu yel-yel pendek penambah semangat bersama-sama!",
+    "depth": 1
+  },
+  {
+    "id": "wc-74",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 2,
+    "text": "Pilih siapa di antara kalian yang auranya paling cocok jadi pemandu wisata dan jelaskan alasannya!",
+    "depth": 2
+  },
+  {
+    "id": "wc-75",
+    "categoryId": "wildcard",
+    "type": "wildcard",
+    "intensity": 1,
+    "text": "Berikan tepuk tangan meriah untuk semua orang yang sudah berani terbuka dan berbagi cerita malam ini!",
+    "depth": 1
+  }
 ]

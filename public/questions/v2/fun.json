@@ -1,177 +1,1386 @@
 [
-  {"id":"fn-1","categoryId":"fun","text":"Kalau hidupmu dijadikan sinetron azab, judulnya kira-kira apa?","depth":1,"followUps":["Azab apa tuh? wkwk"]},
-  {"id":"fn-2","categoryId":"fun","text":"Kalau kamu jadi hantu Indonesia, mau jadi apa? (Pocong/Kunti/Tuyul, dll)","depth":1,"followUps":["Kenapa pilih itu? Biar bisa loncat-loncat?"]},
-  {"id":"fn-3","categoryId":"fun","text":"Skenario kiamat zombie: Senjata apa yang pertama kali kamu cari di rumah?","depth":1},
-  {"id":"fn-4","categoryId":"fun","text":"Kalau binatang bisa ngomong, binatang apa yang paling nyebelin?","depth":1},
-  {"id":"fn-5","categoryId":"fun","text":"Teori konspirasi apa yang diem-diem kamu percaya? (Misal: alien, bumi datar, dll)","depth":1},
-  {"id":"fn-6","categoryId":"fun","text":"Kalau kamu punya uang unlimited tapi cuma boleh beli barang yang huruf depannya 'K', beli apa?","depth":1},
-  {"id":"fn-7","categoryId":"fun","text":"Hal paling absurd apa yang pernah kamu lakuin pas lagi sendirian di kamar?","depth":1},
-  {"id":"fn-8","categoryId":"fun","text":"Pilih: Nggak bisa makan nasi selamanya ATAU nggak bisa akses internet selamanya?","depth":1},
-  {"id":"fn-9","categoryId":"fun","text":"Kalau kamu bisa tukeran hidup sama satu orang selama 24 jam, mau jadi siapa?","depth":1},
-  {"id":"fn-10","categoryId":"fun","text":"Apa kebohongan paling konyol yang pernah kamu bilang ke teman biar nggak jadi ketemuan?","depth":1},
-  {"id":"fn-11","categoryId":"fun","text":"Kalau alien dateng ke bumi, makanan Indonesia apa yang mau kamu suguhin biar mereka nggak jadi nyerang?","depth":1},
-  {"id":"fn-12","categoryId":"fun","text":"Sebutkan satu kata bahasa Indonesia yang kedengeran aneh kalau diulang-ulang.","depth":1},
-  {"id":"fn-13","categoryId":"fun","text":"Kalau kamu masuk penjara, kira-kira kasusnya apa?","depth":1},
-  {"id":"fn-14","categoryId":"fun","text":"Apa superpower paling nggak berguna yang kamu pengen punya?","depth":1,"followUps":["Bisa ngubah air jadi kuah bakso?"]},
-  {"id":"fn-15","categoryId":"fun","text":"Siapa selebritis yang menurutmu cocok jadi presiden kita selanjutnya?","depth":1},
-  {"id":"fn-16","categoryId":"fun","text":"Pilih: Selalu salah kostum di acara penting ATAU selalu salah nyebut nama orang pas salaman?","depth":1},
-  {"id":"fn-17","categoryId":"fun","text":"Kalau kamu buka warung makan, nama warungnya apa & menu andalannya apa?","depth":1},
-  {"id":"fn-18","categoryId":"fun","text":"Apa bau aneh yang sebenernya kamu suka? (Bensin? Hujan? Ketiak sendiri?)","depth":1},
-  {"id":"fn-19","categoryId":"fun","text":"Kalau disuruh bikin sekte baru, ajaran utamanya apa?","depth":1},
-  {"id":"fn-20","categoryId":"fun","text":"Momen 'salah server' paling canggung yang pernah kamu alami?","depth":1},
-  {"id":"fn-21","categoryId":"fun","text":"Kalau hidupmu ada backsound-nya, lagu apa yang lagi muter sekarang?","depth":1},
-  {"id":"fn-22","categoryId":"fun","text":"Pilih: Tahu masa depan ATAU bisa mengubah masa lalu?","depth":1},
-  {"id":"fn-23","categoryId":"fun","text":"Siapa tokoh kartun yang sifatnya paling mirip sama kamu?","depth":1},
-  {"id":"fn-24","categoryId":"fun","text":"Apa hal ilegal yang kalau jadi legal bakal sering kamu lakuin?","depth":1},
-  {"id":"fn-25","categoryId":"fun","text":"Kalau kamu jadi influencer, kontenmu tentang apa?","depth":1},
-  {"id":"fn-26","categoryId":"fun","text":"Sebutkan 3 benda yang bakal kamu bawa kalau terdampar di pulau kosong (nggak boleh HP).","depth":1},
-  {"id":"fn-27","categoryId":"fun","text":"Kalau bisa ngilang, tempat mana yang pertama kali kamu masukin?","depth":1},
-  {"id":"fn-28","categoryId":"fun","text":"Apa nama WI-FI terkocak yang pernah kamu lihat?","depth":1},
-  {"id":"fn-29","categoryId":"fun","text":"Kalau kamu harus nikah sama makanan, makanan apa yang kamu pilih?","depth":1},
-  {"id":"fn-30","categoryId":"fun","text":"Apa chat terakhir yang kamu copy-paste?","depth":1},
-  {"id":"fn-31","categoryId":"fun","text":"Kalau kamu jadi sayuran, kamu mau jadi sayur apa dan kenapa?","depth":1},
-  {"id":"fn-32","categoryId":"fun","text":"Apa judul biografi hidupmu yang ditulis oleh orang yang membencimu?","depth":1},
-  {"id":"fn-33","categoryId":"fun","text":"Kalau kamu bisa kentut wangi, mau wangi apa?","depth":1},
-  {"id":"fn-34","categoryId":"fun","text":"Apa hal paling aneh yang pernah kamu google?","depth":1},
-  {"id":"fn-35","categoryId":"fun","text":"Kalau kamu diculik alien dan mereka minta satu alasan kenapa bumi layak diselamatkan, kamu bilang apa?","depth":1},
-  {"id":"fn-36","categoryId":"fun","text":"Apa lagu yang paling sering kamu nyanyikan di kamar mandi?","depth":1},
-  {"id":"fn-37","categoryId":"fun","text":"Kalau kamu bisa jadi benda mati selama sehari, mau jadi apa?","depth":1},
-  {"id":"fn-38","categoryId":"fun","text":"Apa kebiasaan anehmu saat makan?","depth":1},
-  {"id":"fn-39","categoryId":"fun","text":"Kalau hewan bisa bicara, hewan apa yang paling kasar?","depth":1},
-  {"id":"fn-40","categoryId":"fun","text":"Apa nama samaranmu kalau jadi mata-mata?","depth":1},
-  {"id":"fn-41","categoryId":"fun","text":"Kalau kamu punya pulau sendiri, apa aturan pertamanya?","depth":1},
-  {"id":"fn-42","categoryId":"fun","text":"Apa hal paling memalukan yang pernah kamu lakukan di depan gebetan?","depth":1},
-  {"id":"fn-43","categoryId":"fun","text":"Kalau kamu bisa menggabungkan dua hewan, hewan apa yang bakal jadi paling keren?","depth":1},
-  {"id":"fn-44","categoryId":"fun","text":"Apa hal remeh yang bisa memicu perang dunia ke-3 menurutmu?","depth":1},
-  {"id":"fn-45","categoryId":"fun","text":"Kalau hidupmu adalah video game, apa cheat code-nya?","depth":1},
-  {"id":"fn-46","categoryId":"fun","text":"Apa rasa es krim yang menurutmu harusnya ada tapi belum ada?","depth":1},
-  {"id":"fn-47","categoryId":"fun","text":"Kalau kamu bisa bicara dengan satu benda di kamarmu, pilih mana?","depth":1},
-  {"id":"fn-48","categoryId":"fun","text":"Apa nama band yang cocok buat kita?","depth":1},
-  {"id":"fn-49","categoryId":"fun","text":"Kalau kamu jadi hantu, siapa orang pertama yang bakal kamu gentayangi?","depth":1},
-  {"id":"fn-50","categoryId":"fun","text":"Apa kombinasi makanan aneh yang enak menurutmu?","depth":1},
-  {"id":"fn-51","categoryId":"fun","text":"Kalau kamu bisa menghapus satu hari dalam seminggu, hari apa yang kamu hapus?","depth":1},
-  {"id":"fn-52","categoryId":"fun","text":"Apa hal paling gila yang pernah kamu lakukan demi diskon?","depth":1},
-  {"id":"fn-53","categoryId":"fun","text":"Kalau kamu jadi presiden, libur nasional apa yang bakal kamu tambah?","depth":1},
-  {"id":"fn-54","categoryId":"fun","text":"Apa lagu dangdut yang paling pas buat suasana hatimu sekarang?","depth":1},
-  {"id":"fn-56","categoryId":"fun","text":"Apa nama wifi paling kreatif yang pernah kamu liat?","depth":1},
-  {"id":"fn-57","categoryId":"fun","text":"Kalau kamu bisa jadi karakter fiksi jahat, mau jadi siapa?","depth":1},
-  {"id":"fn-58","categoryId":"fun","text":"Apa hal yang kamu harap orang lain tidak melihatmu melakukannya?","depth":1},
-  {"id":"fn-59","categoryId":"fun","text":"Kalau kamu bisa menukar suaramu dengan suara artis, siapa yang kamu pilih?","depth":1},
-  {"id":"fn-60","categoryId":"fun","text":"Apa pertanyaan paling bodoh yang pernah kamu tanyakan ke Google?","depth":1},
-  {"id":"fn-61","categoryId":"fun","text":"Kalau kamu harus memakai satu warna baju seumur hidup, warna apa?","depth":1},
-  {"id":"fn-62","categoryId":"fun","text":"Apa hal yang menurutmu ilegal padahal sebenernya legal?","depth":1},
-  {"id":"fn-63","categoryId":"fun","text":"Kalau kamu bisa punya tombol 'undo' di kehidupan nyata, kapan kamu bakal pake?","depth":1},
-  {"id":"fn-64","categoryId":"fun","text":"Apa tarian andalanmu kalau lagi sendirian?","depth":1},
-  {"id":"fn-65","categoryId":"fun","text":"Kalau kamu bisa makan malam sama 3 orang terkenal (hidup/mati), siapa aja?","depth":1},
-  {"id":"fn-66","categoryId":"fun","text":"Apa hal paling tidak berguna yang kamu hafal?","depth":1},
-  {"id":"fn-67","categoryId":"fun","text":"Kalau kamu jadi superhero, apa kelemahan konyolmu?","depth":1},
-  {"id":"fn-68","categoryId":"fun","text":"Apa hal yang bikin kamu langsung swipe left di aplikasi dating?","depth":1},
-  {"id":"fn-69","categoryId":"fun","text":"Kalau kamu bisa punya peliharaan dinosaurus, jenis apa?","depth":1},
-  {"id":"fn-70","categoryId":"fun","text":"Apa konspirasi teori buatanmu sendiri?","depth":1},
-  {"id":"fn-71","categoryId":"fun","text":"Kalau kamu bisa ganti suara klakson mobilmu, mau diganti suara apa?","depth":1},
-  {"id":"fn-72","categoryId":"fun","text":"Apa hal yang paling sering kamu hilangkan?","depth":1},
-  {"id":"fn-73","categoryId":"fun","text":"Kalau kamu bisa masuk ke dalam lukisan, lukisan mana?","depth":1},
-  {"id":"fn-74","categoryId":"fun","text":"Apa hal yang paling bikin kamu ilfeel saat makan?","depth":1},
-  {"id":"fn-75","categoryId":"fun","text":"Kalau kamu bisa jadi influencer, produk apa yang nggak mau kamu endorse?","depth":1},
-  {"id":"fn-76","categoryId":"fun","text":"Apa hal yang menurutmu overrated banget?","depth":1},
-  {"id":"fn-77","categoryId":"fun","text":"Kalau kamu bisa punya pintu ajaib doraemon, mau tembus ke mana sekarang?","depth":1},
-  {"id":"fn-78","categoryId":"fun","text":"Apa hal yang paling kamu takuti dari teknologi masa depan?","depth":1},
-  {"id":"fn-79","categoryId":"fun","text":"Kalau kamu bisa merubah satu hukum fisika, apa yang kamu ubah?","depth":1},
-  {"id":"fn-80","categoryId":"fun","text":"Apa mimpi teraneh yang pernah kamu ingat?","depth":1},
-  {"id":"fn-81","categoryId":"fun","text":"Kalau kamu bisa jadi atlet olimpiade, cabang olahraga apa?","depth":1},
-  {"id":"fn-82","categoryId":"fun","text":"Apa hal yang paling sering kamu bohongi di CV?","depth":1},
-  {"id":"fn-83","categoryId":"fun","text":"Kalau kamu bisa hidup di film Disney, mau jadi siapa?","depth":1},
-  {"id":"fn-84","categoryId":"fun","text":"Apa hal yang paling kamu benci dari hari Senin?","depth":1},
-  {"id":"fn-85","categoryId":"fun","text":"Kalau kamu bisa punya kembaran, apa yang bakal kalian lakuin?","depth":1},
-  {"id":"fn-86","categoryId":"fun","text":"Apa hal yang paling kamu takuti kalau jadi terkenal?","depth":1},
-  {"id":"fn-87","categoryId":"fun","text":"Kalau kamu bisa ganti mata uang jadi benda lain, benda apa?","depth":1},
-  {"id":"fn-88","categoryId":"fun","text":"Apa hal yang paling sering kamu komplain?","depth":1},
-  {"id":"fn-89","categoryId":"fun","text":"Kalau kamu bisa punya robot yang mirip kamu, dia bakal kamu suruh ngapain?","depth":1},
-  {"id":"fn-90","categoryId":"fun","text":"Apa hal yang paling kamu rindukan dari zaman purba (padahal nggak ngalamin)?","depth":1},
-  {"id":"fn-91","categoryId":"fun","text":"Kalau kamu bisa jadi bajak laut, apa nama kapalmu?","depth":1},
-  {"id":"fn-92","categoryId":"fun","text":"Apa hal yang paling kamu benci dari transportasi umum?","depth":1},
-  {"id":"fn-93","categoryId":"fun","text":"Kalau kamu bisa punya tato yang bisa gerak, gambar apa?","depth":1},
-  {"id":"fn-94","categoryId":"fun","text":"Apa hal yang paling kamu takuti kalau jadi tua?","depth":1},
-  {"id":"fn-95","categoryId":"fun","text":"Kalau kamu bisa punya saku ajaib, apa barang pertama yang kamu keluarin?","depth":1},
-  {"id":"fn-96","categoryId":"fun","text":"Apa hal yang paling kamu benci dari menjadi dewasa?","depth":1},
-  {"id":"fn-97","categoryId":"fun","text":"Kalau kamu bisa jadi karakter game, apa jurus andalanmu?","depth":1},
-  {"id":"fn-99","categoryId":"fun","text":"Kalau kamu bisa punya rumah di planet lain, planet mana?","depth":1},
-  {"id":"fn-100","categoryId":"fun","text":"Apa hal yang paling kamu benci dari musim hujan?","depth":1},
-  {"id":"fn-101","categoryId":"fun","text":"Kalau kamu bisa jadi detektif, kasus apa yang mau kamu pecahkan?","depth":1},
-  {"id":"fn-102","categoryId":"fun","text":"Apa hal yang paling kamu takuti dari dokter gigi?","depth":1},
-  {"id":"fn-103","categoryId":"fun","text":"Kalau kamu bisa punya kekuatan untuk menghentikan waktu, apa yang bakal kamu lakuin?","depth":1},
-  {"id":"fn-104","categoryId":"fun","text":"Apa hal yang paling kamu benci dari menunggu?","depth":1},
-  {"id":"fn-105","categoryId":"fun","text":"Kalau kamu bisa jadi raja/ratu, apa perintah pertamamu?","depth":1},
-  {"id":"fn-106","categoryId":"fun","text":"Kalau kamu jadi presiden, lagu apa yang wajib diputer sebelum pidato kenegaraan?","depth":1},
-  {"id":"fn-107","categoryId":"fun","text":"Kalau nyamuk menghisap lemak bukan darah, apa yang bakal kamu lakuin?","depth":1,"followUps":["Buka jendela lebar-lebar?"]},
-  {"id":"fn-108","categoryId":"fun","text":"Pilih: Punya tombol 'Mute' buat orang cerewet atau tombol 'Fast Forward' buat momen ngebosenin?","depth":1},
-  {"id":"fn-109","categoryId":"fun","text":"Kalau kamu wajib ganti nama jadi nama makanan Indonesia, mau dipanggil apa?","depth":1},
-  {"id":"fn-110","categoryId":"fun","text":"Apa konspirasi tentang dirimu sendiri yang mungkin dipercaya orang lain?","depth":1},
-  {"id":"fn-111","categoryId":"fun","text":"Kalau alien mendarat dan minta dibawa ke 'pemimpin' kamu, kamu bawa ke siapa?","depth":1,"followUps":["Ibumu? Pak RT? Atau Kucingmu?"]},
-  {"id":"fn-112","categoryId":"fun","text":"Satu benda di kamarmu yang kalau dia bisa ngomong, kamu bakal dalam masalah besar?","depth":1},
-  {"id":"fn-113","categoryId":"fun","text":"Kalau reinkarnasi itu nyata, di kehidupan selanjutnya kamu mau jadi benda apa?","depth":1},
-  {"id":"fn-114","categoryId":"fun","text":"Apa judul skripsi/tugas akhir yang cocok buat menceritakan kisah cintamu?","depth":1},
-  {"id":"fn-115","categoryId":"fun","text":"Kalau bisa download kemampuan kayak di film Matrix, kemampuan receh apa yang kamu mau?","depth":1,"followUps":["Jago kupas salak? Jago nawar di pasar?"]},
-  {"id":"fn-116","categoryId":"fun","text":"Kalau kamu jadi hantu, mau jadi hantu jenis apa dan bakal gentayangan di mana?","depth":1},
-  {"id":"fn-117","categoryId":"fun","text":"Sebutkan satu teori konspirasi yang diem-diem kamu percaya!","depth":1},
-  {"id":"fn-118","categoryId":"fun","text":"Kalau disuruh makan makanan kucing demi uang 5 juta, gas nggak?","depth":1},
-  {"id":"fn-120","categoryId":"fun","text":"Kalau binatang bisa ngomong, binatang apa yang menurutmu paling kasar omongannya?","depth":1,"followUps":["Kucing? Angsa?"]},
-  {"id":"fn-121","categoryId":"fun","text":"Pilih: Napas bau naga seumur hidup atau ketek bau bawang seumur hidup?","depth":1},
-  {"id":"fn-122","categoryId":"fun","text":"Kalau hidupmu adalah Sitkom (Komedi), siapa yang bakal mainin 'laugh track' (suara ketawa)?","depth":1},
-  {"id":"fn-123","categoryId":"fun","text":"Apa hal ilegal yang ingin kamu lakuin kalau nggak ada hukum?","depth":1},
-  {"id":"fn-124","categoryId":"fun","text":"Kalau kamu kejebak di lift sama Presiden, apa kalimat pertama yang kamu ucapin?","depth":1},
-  {"id":"fn-125","categoryId":"fun","text":"Sebutkan skill 'tidak berguna' yang kamu banggakan!","depth":1,"followUps":["Bisa melipat lidah? Bisa gerakin kuping?"]},
-  {"id":"fn-126","categoryId":"fun","text":"Kalau kamu bisa bikin hukum gravitasi itu opsional, apa hal pertama yang bakal kamu lakuin?","depth":1},
-  {"id":"fn-127","categoryId":"fun","text":"Kalau hidupmu adalah sebuah reality show, siapa orang pertama yang bakal di-kick dari episode pertama?","depth":1},
-  {"id":"fn-128","categoryId":"fun","text":"Hewan apa yang paling cocok buat mendeskripsikan mood-mu hari ini dan kenapa?","depth":1,"followUps":["Kungkang rebahan? Atau macan ngamuk?"]},
-  {"id":"fn-129","categoryId":"fun","text":"Kalau alien akhirnya turun ke bumi dan butuh satu guide lokal, kamu ajak ke mana biar mereka kagum?","depth":1},
-  {"id":"fn-130","categoryId":"fun","text":"Bayangin kamu terjebak di pulau terpencil sama satu artis ibukota, siapa artisnya biar kamu gampang survive?","depth":1},
-  {"id":"fn-131","categoryId":"fun","text":"Teori konspirasi paling nggak masuk akal apa yang pernah kamu karang sendiri?","depth":1},
-  {"id":"fn-132","categoryId":"fun","text":"Kalau kamu cuma boleh ngomong pakai judul lagu seumur hidup, lagu pertamanya apa?","depth":1},
-  {"id":"fn-133","categoryId":"fun","text":"Jika kamu bisa memberikan review bintang 1, 2, 3, 4, 5 ke tahun ini, bintang berapa dan review jujurnya apa?","depth":1},
-  {"id":"fn-134","categoryId":"fun","text":"Kira-kira apa nama grup band rock-mu kalau anggotanya cuma kamu dan hewan peliharaanmu?","depth":1},
-  {"id":"fn-135","categoryId":"fun","text":"Sebutkan kalimat yang pas diucapin saat pemakaman TAPI juga cocok diucapin pas lagi nyukur rambut!","depth":1},
-  {"id":"fn-137","categoryId":"fun","text":"Apa kekuatan super terburuk yang kalau kamu milikin malah bikin repot diri sendiri?","depth":1},
-  {"id":"fn-138","categoryId":"fun","text":"Kalau malaikat pencabut nyawa dateng dan kamu bisa nantang main satu game supaya bebas, game apa yang kamu pilih?","depth":1},
-  {"id":"fn-139","categoryId":"fun","text":"Gaya alien kayak gimana yang paling kamu takutin: yang kayak monster atau yang kayak manusia kantoran?","depth":1},
-  {"id":"fn-140","categoryId":"fun","text":"Misalnya besok uang udah nggak berlaku, transaksi pakai daun, kamu bakal tanam pohon apa biar kaya raya?","depth":1},
-  {"id":"fn-141","categoryId":"fun","text":"Sebutkan gabungan nama dua makanan paling menjijikkan yang bisa kamu bayangkan.","depth":1},
-  {"id":"fn-143","categoryId":"fun","text":"Kalau dunia ini simulasi, glitch (bug) apa yang paling sering kamu temuin di sekelilingmu?","depth":1},
-  {"id":"fn-144","categoryId":"fun","text":"Kamu mau pilih: Bisa baca pikiran orang yang lagi lapar aja, atau bisa baca pikiran hewan yang lagi marah?","depth":1},
-  {"id":"fn-145","categoryId":"fun","text":"Kalau punya kekuatan super yang cuma berguna untuk urusan rumah, kekuatan apa yang kamu pilih?","depth":1},
-  {"id":"fn-146","categoryId":"fun","text":"Kalau ikut acara game show, tantangan apa yang paling mungkin kamu menangkan?","depth":1},
-  {"id":"fn-147","categoryId":"fun","text":"Hewan apa yang cocok jadi maskot kelompok ini?","depth":1},
-  {"id":"fn-148","categoryId":"fun","text":"Kalau boleh menciptakan hari libur baru, apa yang dirayakan?","depth":1},
-  {"id":"fn-149","categoryId":"fun","text":"Kalau menemukan planet baru, kamu akan memberinya nama apa?","depth":1},
-  {"id":"fn-150","categoryId":"fun","text":"Ide bisnis absurd apa yang diam-diam mungkin punya pelanggan?","depth":1},
-  {"id":"fn-151","categoryId":"fun","text":"Kalau hidupmu punya slogan iklan, bunyinya apa?","depth":1},
-  {"id":"fn-152","categoryId":"fun","text":"Efek suara apa yang seharusnya muncul setiap kali kamu memasuki ruangan?","depth":1},
-  {"id":"fn-153","categoryId":"fun","text":"Kalau bisa menjadi karakter kartun sehari, kamu pilih siapa?","depth":1},
-  {"id":"fn-154","categoryId":"fun","text":"Kalau semua orang di sini bertukar suara, suara siapa yang paling lucu dipakai?","depth":1},
-  {"id":"fn-155","categoryId":"fun","text":"Kalau benda di kamarmu bisa menjadi narator hidupmu, benda apa yang paling cerewet?","depth":1},
-  {"id":"fn-156","categoryId":"fun","text":"Lagu apa yang paling aneh kalau dijadikan musik lift?","depth":1},
-  {"id":"fn-157","categoryId":"fun","text":"Kalau membuat mesin penjual otomatis unik, mesin itu menjual apa?","depth":1},
-  {"id":"fn-158","categoryId":"fun","text":"Tema restoran paling nyeleneh apa yang ingin kamu kunjungi?","depth":1},
-  {"id":"fn-159","categoryId":"fun","text":"Kalau kamarmu punya tombol rahasia, tombol itu melakukan apa?","depth":1},
-  {"id":"fn-160","categoryId":"fun","text":"Olahraga baru apa yang bisa dibuat dari benda-benda di rumah?","depth":1},
-  {"id":"fn-161","categoryId":"fun","text":"Kalau seekor hewan datang untuk wawancara kerja, hewan apa yang paling meyakinkan?","depth":1},
-  {"id":"fn-162","categoryId":"fun","text":"Kalau awan punya layanan pesan antar, barang apa yang mereka kirim?","depth":1},
-  {"id":"fn-163","categoryId":"fun","text":"Ide jahil ringan apa yang lucu tanpa merepotkan siapa pun?","depth":1},
-  {"id":"fn-164","categoryId":"fun","text":"Kalau harimu dijadikan film komedi, judulnya apa?","depth":1},
-  {"id":"fn-165","categoryId":"fun","text":"Kalau tongkrongan ini adalah serial, judul episode malam ini apa?","depth":1},
-  {"id":"fn-166","categoryId":"fun","text":"Trofi untuk kemampuan unik apa yang pantas kamu dapatkan?","depth":1},
-  {"id":"fn-167","categoryId":"fun","text":"Aturan busana aneh apa yang akan kamu berlakukan selama sehari?","depth":1},
-  {"id":"fn-168","categoryId":"fun","text":"Kalau kotamu membuat patung untuk benda sehari-hari, benda apa yang dipilih?","depth":1},
-  {"id":"fn-169","categoryId":"fun","text":"Kalau ada museum benda biasa, koleksi apa yang paling menarik?","depth":1},
-  {"id":"fn-170","categoryId":"fun","text":"Kalau bisa teleportasi hanya untuk mengambil camilan, kamu pergi ke mana?","depth":1},
-  {"id":"fn-171","categoryId":"fun","text":"Tombol baru apa yang ingin kamu tambahkan ke remote control?","depth":1},
-  {"id":"fn-172","categoryId":"fun","text":"Emoji apa yang paling cocok menjadi logo hidupmu minggu ini?","depth":1},
-  {"id":"fn-173","categoryId":"fun","text":"Lagu apa yang cocok diputar setiap kali kamu melakukan entrance dramatis?","depth":1},
-  {"id":"fn-174","categoryId":"fun","text":"Kalau punya asisten imajiner, seperti apa kepribadiannya?","depth":1},
-  {"id":"fn-175","categoryId":"fun","text":"Kendaraan dari dunia fiksi apa yang paling ingin kamu pakai?","depth":1},
-  {"id":"fn-176","categoryId":"fun","text":"Kalau boleh mengganti nama hari Senin, kamu akan menamainya apa?","depth":1},
-  {"id":"fn-177","categoryId":"fun","text":"Kemampuan kurang berguna apa yang bisa kamu bawa ke kejuaraan dunia?","depth":1},
-  {"id":"fn-178","categoryId":"fun","text":"Kalau hewan peliharaanmu menjalankan perusahaan, jabatan apa yang cocok untuknya?","depth":1},
-  {"id":"fn-179","categoryId":"fun","text":"Kalau semua orang wajib memakai topi unik sehari, topi seperti apa yang kamu pilih?","depth":1},
-  {"id":"fn-180","categoryId":"fun","text":"Kalau kamu bisa menciptakan jenis cuaca baru, cuacanya seperti apa?","depth":1}
+  {
+    "id": "fn-1",
+    "categoryId": "fun",
+    "text": "Kalau hidup lo dijadiin judul sinetron azab, kira-kira judul lengkapnya apa?",
+    "depth": 1,
+    "followUps": [
+      "Azab gara-gara apa tuh? wkwk",
+      "Jenazahnya ketutup apa pas mau dikubur?"
+    ]
+  },
+  {
+    "id": "fn-2",
+    "categoryId": "fun",
+    "text": "Kalau lo jadi hantu lokal Indonesia, lo mau jadi apa dan alasannya kenapa?",
+    "depth": 1,
+    "followUps": [
+      "Pocong, Kunti, Tuyul, Genderuwo, atau Kuyang?"
+    ]
+  },
+  {
+    "id": "fn-3",
+    "categoryId": "fun",
+    "text": "Skenario kiamat zombie mendadak terjadi di Indonesia: benda apa di sekitar lo yang pertama kali lo jadiin senjata?",
+    "depth": 1
+  },
+  {
+    "id": "fn-4",
+    "categoryId": "fun",
+    "text": "Kalau semua binatang bisa ngomong bahasa manusia, binatang apa yang menurut lo omongannya bakal paling songong dan nyebelin?",
+    "depth": 1
+  },
+  {
+    "id": "fn-5",
+    "categoryId": "fun",
+    "text": "Teori konspirasi absurd apa yang diem-diem lo percaya atau pernah lo karang sendiri?",
+    "depth": 1,
+    "followUps": [
+      "Ceritain teorinya dong, siapa tau masuk akal!"
+    ]
+  },
+  {
+    "id": "fn-6",
+    "categoryId": "fun",
+    "text": "Kalau lo punya uang unlimited tapi cuma boleh dibelanjain buat barang yang huruf depannya 'K', lo mau beli apa aja?",
+    "depth": 1
+  },
+  {
+    "id": "fn-7",
+    "categoryId": "fun",
+    "text": "Hal paling absurd apa yang pernah lo lakuin pas lagi sendirian di kamar dan nggak ada yang liat?",
+    "depth": 1
+  },
+  {
+    "id": "fn-8",
+    "categoryId": "fun",
+    "text": "Pilih mana: nggak bisa makan nasi seumur hidup ATAU nggak bisa akses internet seumur hidup?",
+    "depth": 1
+  },
+  {
+    "id": "fn-9",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa tukeran nasib dan tubuh sama satu orang terkenal selama 24 jam, lo mau jadi siapa dan mau ngapain?",
+    "depth": 1
+  },
+  {
+    "id": "fn-10",
+    "categoryId": "fun",
+    "text": "Alasan bohong paling konyol apa yang pernah lo bikin demi batalin janji nongkrong karena mager?",
+    "depth": 1
+  },
+  {
+    "id": "fn-11",
+    "categoryId": "fun",
+    "text": "Kalau alien beneran mendarat di bumi, makanan Indonesia apa yang mau lo suguhin biar mereka nggak jadi ngehancurin bumi?",
+    "depth": 1
+  },
+  {
+    "id": "fn-12",
+    "categoryId": "fun",
+    "text": "Sebutkan satu kata bahasa Indonesia yang kalau diucapin berulang-ulang 10 kali malah kedengeran aneh banget!",
+    "depth": 1
+  },
+  {
+    "id": "fn-13",
+    "categoryId": "fun",
+    "text": "Kalau suatu hari lo masuk berita viral, kira-kira gara-gara kasus konyol apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-14",
+    "categoryId": "fun",
+    "text": "Superpower paling nggak guna apa yang pengen lo punya cuma buat pamer receh?",
+    "depth": 1,
+    "followUps": [
+      "Bisa ngubah air putih jadi kuah bakso? Atau bisa teleportasi 5 cm doang?"
+    ]
+  },
+  {
+    "id": "fn-15",
+    "categoryId": "fun",
+    "text": "Siapa selebgram atau komika yang menurut lo kalau jadi lurah atau RT di komplek lo bakal bikin heboh tiap hari?",
+    "depth": 1
+  },
+  {
+    "id": "fn-16",
+    "categoryId": "fun",
+    "text": "Pilih mana: selalu salah kostum heboh di acara formal ATAU selalu salah nyebut nama orang pas salaman?",
+    "depth": 1
+  },
+  {
+    "id": "fn-17",
+    "categoryId": "fun",
+    "text": "Kalau lo buka usaha warung makan, nama warungnya apa dan menu andalan paling nyelenehnya apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-18",
+    "categoryId": "fun",
+    "text": "Bau aneh apa yang orang lain bilang nggak enak tapi sebenernya lo suka hirup?",
+    "depth": 1,
+    "followUps": [
+      "Bau bensin, bau spidol baru, bau basement mall, atau bau aspal basah?"
+    ]
+  },
+  {
+    "id": "fn-19",
+    "categoryId": "fun",
+    "text": "Kalau lo bikin sekte atau aliran baru, aturan paling mutlak yang wajib dipatuhi anggotanya apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-20",
+    "categoryId": "fun",
+    "text": "Momen salah server atau salah sambung paling canggung yang pernah lo alamin kayak gimana?",
+    "depth": 1
+  },
+  {
+    "id": "fn-21",
+    "categoryId": "fun",
+    "text": "Kalau hidup lo ada backsound musik yang ngikutin mood secara otomatis, lagu apa yang lagi muter sekarang?",
+    "depth": 1
+  },
+  {
+    "id": "fn-22",
+    "categoryId": "fun",
+    "text": "Pilih mana: bisa ngeliat masa depan 5 menit ke depan atau bisa ngulang waktu 10 detik ke belakang?",
+    "depth": 1
+  },
+  {
+    "id": "fn-23",
+    "categoryId": "fun",
+    "text": "Karakter kartun atau anime apa yang kelakuannya paling mirip sama lo sehari-hari?",
+    "depth": 1
+  },
+  {
+    "id": "fn-24",
+    "categoryId": "fun",
+    "text": "Hal konyol apa yang pengen banget lo lakuin kalau selama 24 jam nggak ada aturan dan hukum di dunia?",
+    "depth": 1
+  },
+  {
+    "id": "fn-25",
+    "categoryId": "fun",
+    "text": "Kalau tiba-tiba lo viral jadi seleb TikTok jalur konten aneh, kira-kira konten apa tuh?",
+    "depth": 1
+  },
+  {
+    "id": "fn-26",
+    "categoryId": "fun",
+    "text": "Kalau lo terdampar di pulau kosong dan cuma boleh bawa 3 barang tanpa HP, lo bawa apa aja?",
+    "depth": 1
+  },
+  {
+    "id": "fn-27",
+    "categoryId": "fun",
+    "text": "Kalau lo punya kemampuan menghilang tak kasat mata, tempat pertama yang pengen lo susupin di mana?",
+    "depth": 1
+  },
+  {
+    "id": "fn-28",
+    "categoryId": "fun",
+    "text": "Nama Wi-Fi tetangga atau hotspot paling kocak apa yang pernah lo liat?",
+    "depth": 1
+  },
+  {
+    "id": "fn-29",
+    "categoryId": "fun",
+    "text": "Kalau di dunia paralel lo wajib nikah sama satu jenis makanan, lo mau nikah sama makanan apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-30",
+    "categoryId": "fun",
+    "text": "Apa teks terakhir yang ada di clipboard HP lo pas dipencet paste sekarang?",
+    "depth": 1
+  },
+  {
+    "id": "fn-31",
+    "categoryId": "fun",
+    "text": "Kalau lo direinkarnasi jadi jenis sayuran, lo mau jadi sayur apa dan alasannya kenapa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-32",
+    "categoryId": "fun",
+    "text": "Judul buku biografi hidup lo kalau yang nulis temen tongkrongan yang suka ngecengin lo apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-33",
+    "categoryId": "fun",
+    "text": "Kalau lo punya superpower bisa bikin kentut beraroma wangi, lo mau pilih wangi apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-34",
+    "categoryId": "fun",
+    "text": "Hal paling absurd atau nggak penting apa yang pernah lo cari di Google pas tengah malem?",
+    "depth": 1
+  },
+  {
+    "id": "fn-35",
+    "categoryId": "fun",
+    "text": "Kalau diculik alien dan lo disuruh ngasih satu alesan kenapa manusia di bumi layak dipertahanin, lo ngomong apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-36",
+    "categoryId": "fun",
+    "text": "Lagu apa yang paling sering lo nyanyiin sekuat tenaga pas lagi sendirian di kamar mandi?",
+    "depth": 1
+  },
+  {
+    "id": "fn-37",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa berubah jadi benda mati selama 24 jam, lo mau jadi benda apa dan ditaruh di mana?",
+    "depth": 1
+  },
+  {
+    "id": "fn-38",
+    "categoryId": "fun",
+    "text": "Kebiasaan paling aneh apa yang lo punya pas lagi makan sendirian?",
+    "depth": 1
+  },
+  {
+    "id": "fn-39",
+    "categoryId": "fun",
+    "text": "Kalau kucing oren di jalanan bisa ngomong, kira-kira kalimat pertama yang dia omongin ke lo apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-40",
+    "categoryId": "fun",
+    "text": "Nama samaran paling keren sekaligus kocak apa yang bakal lo pake kalau jadi agen rahasia?",
+    "depth": 1
+  },
+  {
+    "id": "fn-41",
+    "categoryId": "fun",
+    "text": "Kalau lo punya pulau pribadi, aturan hukum paling pertama yang lo buat apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-42",
+    "categoryId": "fun",
+    "text": "Momen paling bikin malu tapi kocak apa yang pernah lo alamin di tempat umum?",
+    "depth": 1
+  },
+  {
+    "id": "fn-43",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa ngegabungin dua jenis hewan jadi satu monster baru, lo mau gabungin hewan apa sama apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-44",
+    "categoryId": "fun",
+    "text": "Hal remeh dan sepele apa yang menurut lo bisa bikin ricuh satu tongkrongan kalau didebatin?",
+    "depth": 1
+  },
+  {
+    "id": "fn-45",
+    "categoryId": "fun",
+    "text": "Kalau hidup ini video game, cheat code apa yang paling pengen lo aktifin sekarang?",
+    "depth": 1,
+    "followUps": [
+      "Cheat uang instan, cheat kebal ngantuk, atau cheat serba hoki?"
+    ]
+  },
+  {
+    "id": "fn-46",
+    "categoryId": "fun",
+    "text": "Varian rasa mie instan atau es krim apa yang menurut lo aneh tapi harusnya diciptain?",
+    "depth": 1
+  },
+  {
+    "id": "fn-47",
+    "categoryId": "fun",
+    "text": "Kalau kasur atau bantal lo di kamar bisa ngomong, rahasia apa yang bakal dia bocorin tentang lo?",
+    "depth": 1
+  },
+  {
+    "id": "fn-48",
+    "categoryId": "fun",
+    "text": "Kalau kita semua di sini bikin grup boyband atau girlband, apa nama grup dan konsep panggung kita?",
+    "depth": 1
+  },
+  {
+    "id": "fn-49",
+    "categoryId": "fun",
+    "text": "Kalau jadi hantu usil, siapa orang pertama yang bakal lo gangguin pas dia lagi tidur nyenyak?",
+    "depth": 1
+  },
+  {
+    "id": "fn-50",
+    "categoryId": "fun",
+    "text": "Kombinasi makanan aneh apa yang menurut orang lain menjijikkan tapi menurut lo rasanya enak banget?",
+    "depth": 1
+  },
+  {
+    "id": "fn-51",
+    "categoryId": "fun",
+    "text": "Kalau lo punya wewenang ngehapus satu hari dalam seminggu biar libur, hari apa yang lo apus?",
+    "depth": 1
+  },
+  {
+    "id": "fn-52",
+    "categoryId": "fun",
+    "text": "Hal paling niat apa yang pernah lo lakuin cuma demi dapet barang gratisan atau diskon goceng?",
+    "depth": 1
+  },
+  {
+    "id": "fn-53",
+    "categoryId": "fun",
+    "text": "Kalau lo bikin hari libur baru di kalender, hari peringatan apa yang lo rayakan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-54",
+    "categoryId": "fun",
+    "text": "Lagu apa yang kalau diputer di tongkrongan otomatis bikin semua orang goyang serempak?",
+    "depth": 1
+  },
+  {
+    "id": "fn-55",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa nuker suara lo sama suara tokoh terkenal atau karakter kartun, lo mau pake suara siapa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-56",
+    "categoryId": "fun",
+    "text": "Pertanyaan paling konyol apa yang pernah lo tanyain ke AI atau Google?",
+    "depth": 1
+  },
+  {
+    "id": "fn-57",
+    "categoryId": "fun",
+    "text": "Kalau lo harus pake satu warna baju yang sama persis selama setahun penuh, lo pilih warna apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-58",
+    "categoryId": "fun",
+    "text": "Hal apa yang menurut lo sebenernya legal tapi rasanya berasa kayak ngelakuin kejahatan kriminal?",
+    "depth": 1,
+    "followUps": [
+      "Contoh: Keluar dari minimarket tanpa beli apa-apa."
+    ]
+  },
+  {
+    "id": "fn-59",
+    "categoryId": "fun",
+    "text": "Kalau di dunia nyata ada tombol undo buat narik balik omongan 5 menit lalu, lo bakal sering pake pas kapan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-60",
+    "categoryId": "fun",
+    "text": "Gerakan dance andalan lo kalau lagi seneng banget sendirian di kamar kayak gimana?",
+    "depth": 1
+  },
+  {
+    "id": "fn-61",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa makan bareng 3 tokoh fiksi atau kartun, siapa aja yang mau lo undang ke meja makan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-62",
+    "categoryId": "fun",
+    "text": "Fakta nggak penting apa yang entah kenapa nempel banget di otak lo dan nggak pernah lo lupa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-63",
+    "categoryId": "fun",
+    "text": "Kalau lo jadi superhero super kuat, apa kelemahan konyol yang bisa bikin lo langsung loyo?",
+    "depth": 1,
+    "followUps": [
+      "Lemes kalau kena bau durian? Atau pingsan kalau denger dangdut?"
+    ]
+  },
+  {
+    "id": "fn-64",
+    "categoryId": "fun",
+    "text": "Tipe bio atau foto di aplikasi dating yang kayak gimana yang bikin lo langsung refleks lewatin?",
+    "depth": 1
+  },
+  {
+    "id": "fn-65",
+    "categoryId": "fun",
+    "text": "Kalau lo boleh pelihara satu hewan purba atau dinosaurus di rumah, lo mau pelihara apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-66",
+    "categoryId": "fun",
+    "text": "Kalau suara klakson kendaraan lo bisa diganti jadi rekaman suara lo ngomong, lo mau pasang rekaman apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-67",
+    "categoryId": "fun",
+    "text": "Barang apa yang paling sering lo cari-cari panik padahal lagi lo pegang di tangan sendiri?",
+    "depth": 1
+  },
+  {
+    "id": "fn-68",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa masuk ke dalem dunia kartun selama seminggu, kartun apa yang mau lo tuju?",
+    "depth": 1
+  },
+  {
+    "id": "fn-69",
+    "categoryId": "fun",
+    "text": "Kalau lo jadi influencer centang biru, produk absurd apa yang tetep lo tolak walau ditawari jutaan rupiah?",
+    "depth": 1
+  },
+  {
+    "id": "fn-70",
+    "categoryId": "fun",
+    "text": "Tren zaman sekarang apa yang menurut lo overrated banget dan nggak masuk akal?",
+    "depth": 1
+  },
+  {
+    "id": "fn-71",
+    "categoryId": "fun",
+    "text": "Kalau pintu kemana saja Doraemon ada di depan lo sekarang, lo mau buka pintu itu langsung tembus ke mana?",
+    "depth": 1
+  },
+  {
+    "id": "fn-72",
+    "categoryId": "fun",
+    "text": "Mimpi teraneh atau paling absurd apa yang pernah lo alamin dan masih lo inget jelas sampe sekarang?",
+    "depth": 1
+  },
+  {
+    "id": "fn-73",
+    "categoryId": "fun",
+    "text": "Kalau lo dipaksa tanding di olimpiade cabang olahraga aneh, olahraga apa yang kira-kira lo bisa menang?",
+    "depth": 1
+  },
+  {
+    "id": "fn-74",
+    "categoryId": "fun",
+    "text": "Kalau lo punya kloningan diri sendiri yang mirip 100%, tugas apa yang bakal lo limpahin ke dia?",
+    "depth": 1
+  },
+  {
+    "id": "fn-75",
+    "categoryId": "fun",
+    "text": "Kalau mata uang rupiah diganti pake barang sehari-hari, lo pengen transaksi pake barang apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-76",
+    "categoryId": "fun",
+    "text": "Kalau lo jadi bajak laut yang berlayar di lautan, apa nama kapal dan slogan bendera lo?",
+    "depth": 1
+  },
+  {
+    "id": "fn-77",
+    "categoryId": "fun",
+    "text": "Kalau tato di badan bisa gerak-gerak kayak animasi GIF, lo mau bikin gambar apa di lengan lo?",
+    "depth": 1
+  },
+  {
+    "id": "fn-78",
+    "categoryId": "fun",
+    "text": "Kalau kantong ajaib Doraemon jatuh ke tangan lo, alat pertama apa yang langsung lo keluarin?",
+    "depth": 1
+  },
+  {
+    "id": "fn-79",
+    "categoryId": "fun",
+    "text": "Kalau lo jadi karakter game fighting, apa nama jurus pamungkas lo?",
+    "depth": 1
+  },
+  {
+    "id": "fn-80",
+    "categoryId": "fun",
+    "text": "Kalau nyamuk di dunia ini menghisap lemak perut bukan darah, apa respon lo?",
+    "depth": 1,
+    "followUps": [
+      "Bakal tidur buka pintu kamar lebar-lebar?"
+    ]
+  },
+  {
+    "id": "fn-81",
+    "categoryId": "fun",
+    "text": "Pilih mana: punya tombol Mute buat nyetop orang bawel atau tombol Fast Forward buat lewatin momen gabut?",
+    "depth": 1
+  },
+  {
+    "id": "fn-82",
+    "categoryId": "fun",
+    "text": "Kalau nama lo wajib diganti jadi nama jajanan tradisional pasar, lo mau dipanggil apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-83",
+    "categoryId": "fun",
+    "text": "Kalau ada alien turun dan minta dianterin ketemu pemimpin tertinggi lo, lo bakal bawa dia ke siapa?",
+    "depth": 1,
+    "followUps": [
+      "Emak lo di rumah, bos lo di tempat kerja, atau kucing oren?"
+    ]
+  },
+  {
+    "id": "fn-84",
+    "categoryId": "fun",
+    "text": "Benda di kamar lo yang kalau tiba-tiba bisa ngomong bakal bikin lo panik setengah mati apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-85",
+    "categoryId": "fun",
+    "text": "Kalau lo ditantang makan makanan kucing satu sendok demi hadiah 10 juta tunai, gas nggak?",
+    "depth": 1
+  },
+  {
+    "id": "fn-86",
+    "categoryId": "fun",
+    "text": "Pilih mana: tiap ngomong harus pake nada opera bernyanyi ATAU tiap jalan harus sambil moonwalk mundur?",
+    "depth": 1
+  },
+  {
+    "id": "fn-87",
+    "categoryId": "fun",
+    "text": "Kalau hidup lo dibikin sitkom TV komedi, siapa orang di tongkrongan ini yang cocok jadi pengisi suara ketawa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-88",
+    "categoryId": "fun",
+    "text": "Kalau lo kejebak di lift rusak bareng artis papan atas selama 2 jam, topik obrolan apa yang bakal lo buka?",
+    "depth": 1
+  },
+  {
+    "id": "fn-89",
+    "categoryId": "fun",
+    "text": "Kalau hukum gravitasi bisa lo matiin sesuka hati selama 10 detik tiap hari, lo mau pake buat apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-90",
+    "categoryId": "fun",
+    "text": "Kalau tongkrongan ini dijadiin acara bertahan hidup, siapa yang bakal tereliminasi paling pertama?",
+    "depth": 1
+  },
+  {
+    "id": "fn-91",
+    "categoryId": "fun",
+    "text": "Hewan apa yang paling mewakili mood dan energi lo hari ini: kungkang males, kucing manja, atau harimau ngamuk?",
+    "depth": 1
+  },
+  {
+    "id": "fn-92",
+    "categoryId": "fun",
+    "text": "Kalau alien butuh satu pemandu wisata lokal buat keliling kota lo, tempat mana yang lo bawa biar mereka takjub?",
+    "depth": 1
+  },
+  {
+    "id": "fn-93",
+    "categoryId": "fun",
+    "text": "Kalau lo cuma boleh ngomong pake judul lagu Indonesia seharian penuh, kalimat pertama lo apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-94",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa ngasih rating bintang 1 sampe 5 buat tahun ini, lo kasih berapa bintang dan ulasan singkatnya apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-95",
+    "categoryId": "fun",
+    "text": "Apa nama band rock lo kalau personilnya cuma lo dan hewan peliharaan lo?",
+    "depth": 1
+  },
+  {
+    "id": "fn-96",
+    "categoryId": "fun",
+    "text": "Kalimat apa yang pas diucapin pas lagi nyukur rambut tapi juga cocok diucapin pas lagi perpisahan kelulusan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-97",
+    "categoryId": "fun",
+    "text": "Apa kekuatan super paling aneh yang kalau lo milikin malah bikin repot diri sendiri?",
+    "depth": 1
+  },
+  {
+    "id": "fn-98",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa nantang satu orang main game buat nentuin siapa yang bayar makan, lo mau tanding game apa?",
+    "depth": 1,
+    "followUps": [
+      "Ludo, Uno, Catur, atau Mobile Legends?"
+    ]
+  },
+  {
+    "id": "fn-99",
+    "categoryId": "fun",
+    "text": "Kalau besok seluruh dunia sepakat transaksi belanja pake daun, lo bakal nanem pohon apa di pekarangan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-100",
+    "categoryId": "fun",
+    "text": "Kalau dunia ini terbukti simulasi komputer, glitch atau bug apa yang paling sering lo alamin di kehidupan sehari-hari?",
+    "depth": 1
+  },
+  {
+    "id": "fn-101",
+    "categoryId": "fun",
+    "text": "Pilih mana: bisa baca pikiran orang yang lagi kelaperan doang atau bisa ngerti bahasa hewan yang lagi ngambek?",
+    "depth": 1
+  },
+  {
+    "id": "fn-102",
+    "categoryId": "fun",
+    "text": "Kalau ikut kuis game show berhadiah, tantangan konyol apa yang 100 persen yakin bakal lo menangkan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-103",
+    "categoryId": "fun",
+    "text": "Ide bisnis paling absurd apa yang menurut lo kalau beneran dibikin bakal ada aja orang yang beli?",
+    "depth": 1
+  },
+  {
+    "id": "fn-104",
+    "categoryId": "fun",
+    "text": "Kalau hidup lo punya slogan iklan komersial di TV, apa bunyi slogannya?",
+    "depth": 1
+  },
+  {
+    "id": "fn-105",
+    "categoryId": "fun",
+    "text": "Sound effect apa yang harusnya bunyi otomatis tiap kali lo jalan masuk ke suatu ruangan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-106",
+    "categoryId": "fun",
+    "text": "Kalau semua orang di ruangan ini tukeran suara selama sejam, suara siapa yang paling kocak kalau lo pake?",
+    "depth": 1
+  },
+  {
+    "id": "fn-107",
+    "categoryId": "fun",
+    "text": "Mesin penjual otomatis unik apa yang pengen banget lo ciptain di pinggir jalan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-108",
+    "categoryId": "fun",
+    "text": "Tema kafe atau restoran paling nyeleneh apa yang pengen banget lo bikin atau datengin?",
+    "depth": 1
+  },
+  {
+    "id": "fn-109",
+    "categoryId": "fun",
+    "text": "Kalau di kamar lo ada tombol rahasia di bawah kasur, tombol itu fungsinya ngapain?",
+    "depth": 1
+  },
+  {
+    "id": "fn-110",
+    "categoryId": "fun",
+    "text": "Olahraga aneh apa yang bisa lo ciptain dari barang-barang yang ada di kamar kos atau rumah lo?",
+    "depth": 1
+  },
+  {
+    "id": "fn-111",
+    "categoryId": "fun",
+    "text": "Kalau hewan peliharaan lo ikutan wawancara kerja, jawaban apa yang bakal dia kasih pas ditanya apa kelebihannya?",
+    "depth": 1
+  },
+  {
+    "id": "fn-112",
+    "categoryId": "fun",
+    "text": "Ide prank receh apa yang nggak berbahaya tapi sukses bikin orang geleng-geleng kepala?",
+    "depth": 1
+  },
+  {
+    "id": "fn-113",
+    "categoryId": "fun",
+    "text": "Kalau hari ini hidup lo dijadiin film komedi, judul film dan pemeran utamanya siapa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-114",
+    "categoryId": "fun",
+    "text": "Kalau tongkrongan kita malam ini dibikin episode series drama komedi, apa judul episodenya?",
+    "depth": 1
+  },
+  {
+    "id": "fn-115",
+    "categoryId": "fun",
+    "text": "Piala penghargaan atas kemampuan nggak berguna apa yang paling pantes lo dapet?",
+    "depth": 1
+  },
+  {
+    "id": "fn-116",
+    "categoryId": "fun",
+    "text": "Aturan dress code paling aneh apa yang bakal lo wajibin ke semua orang kalau lo bikin pesta seru-seruan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-117",
+    "categoryId": "fun",
+    "text": "Kalau ada museum khusus benda-benda receh kehidupan sehari-hari, barang apa dari lo yang mau disumbangin?",
+    "depth": 1
+  },
+  {
+    "id": "fn-118",
+    "categoryId": "fun",
+    "text": "Kalau bisa teleportasi cuma buat ngambil satu jenis cemilan, lo mau meluncur ke mana?",
+    "depth": 1
+  },
+  {
+    "id": "fn-119",
+    "categoryId": "fun",
+    "text": "Tombol baru apa yang pengen lo tambahin di remote TV atau remote AC biar hidup lo makin gampang?",
+    "depth": 1
+  },
+  {
+    "id": "fn-120",
+    "categoryId": "fun",
+    "text": "Emoji apa yang paling cocok jadi logo atau lambang kepribadian lo minggu ini?",
+    "depth": 1
+  },
+  {
+    "id": "fn-121",
+    "categoryId": "fun",
+    "text": "Lagu apa yang paling pas diputer pas lo lagi jalan lambat slow motion sok keren di depan umum?",
+    "depth": 1
+  },
+  {
+    "id": "fn-122",
+    "categoryId": "fun",
+    "text": "Kendaraan fiksi apa yang paling pengen lo pake buat berangkat aktivitas biar bebas macet?",
+    "depth": 1
+  },
+  {
+    "id": "fn-123",
+    "categoryId": "fun",
+    "text": "Kalau hari Senin boleh diganti namanya jadi kata lain, lo mau namain hari apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-124",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa nyiptain jenis cuaca baru di bumi selain hujan dan panas, cuacanya kayak gimana?",
+    "depth": 1
+  },
+  {
+    "id": "fn-125",
+    "categoryId": "fun",
+    "text": "Siapa orang di sini yang mukanya paling meyakinkan buat jadi bos mafia tapi aslinya penakut?",
+    "depth": 1
+  },
+  {
+    "id": "fn-126",
+    "categoryId": "fun",
+    "text": "Pilih mana: tiap kali ketawa keluar suara klakson bus telolet ATAU tiap kali bersin suaranya kayak petasan banting?",
+    "depth": 1
+  },
+  {
+    "id": "fn-127",
+    "categoryId": "fun",
+    "text": "Kalau lo disuruh bikin tantangan viral di TikTok yang dijamin trending satu Indonesia, tantangannya ngapain?",
+    "depth": 1
+  },
+  {
+    "id": "fn-128",
+    "categoryId": "fun",
+    "text": "Spill satu momen di mana lo ngerasa sok tahu banget padahal ternyata lo salah total!",
+    "depth": 1
+  },
+  {
+    "id": "fn-129",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa ngobrol sama tanaman hias di rumah, kira-kira cerita seru apa yang bakal dia ceritain?",
+    "depth": 1
+  },
+  {
+    "id": "fn-130",
+    "categoryId": "fun",
+    "text": "Pernah nggak lo ketahuan ngomong sendiri pas lagi mikir di tempat umum? Gimana reaksi orang sekitar?",
+    "depth": 1
+  },
+  {
+    "id": "fn-131",
+    "categoryId": "fun",
+    "text": "Kalau lo berubah wujud jadi peralatan dapur, lo mau jadi wajan teflon, blender berisik, atau rice cooker?",
+    "depth": 1
+  },
+  {
+    "id": "fn-132",
+    "categoryId": "fun",
+    "text": "Apa hal paling norak yang pernah lo beli cuma karena gengsi liat orang lain punya?",
+    "depth": 1
+  },
+  {
+    "id": "fn-133",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa masukin satu aturan konyol ke undang-undang lalu lintas, aturan apa tuh?",
+    "depth": 1
+  },
+  {
+    "id": "fn-134",
+    "categoryId": "fun",
+    "text": "Pilih mana: punya rambut yang warnanya berubah ngikutin emosi ATAU alis yang gerak sendiri tiap bohong?",
+    "depth": 1
+  },
+  {
+    "id": "fn-135",
+    "categoryId": "fun",
+    "text": "Apa reaksi pertama lo kalau tiba-tiba kucing di rumah berdiri pake dua kaki terus nyapa 'Halo bro'?",
+    "depth": 1
+  },
+  {
+    "id": "fn-136",
+    "categoryId": "fun",
+    "text": "Hal konyol apa yang sering bikin lo melamun mikir aneh-aneh pas lagi nunggu antrean?",
+    "depth": 1
+  },
+  {
+    "id": "fn-137",
+    "categoryId": "fun",
+    "text": "Kalau tongkrongan kita bikin kelompok halu, apa lambang dan janji seru paling absurdnya?",
+    "depth": 1
+  },
+  {
+    "id": "fn-138",
+    "categoryId": "fun",
+    "text": "Siapa di tongkrongan ini yang paling pantes dapet gelar Duta Mager Nasional dan kenapa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-139",
+    "categoryId": "fun",
+    "text": "Pernah nggak lo salah masuk mobil orang di parkiran karena bentuk dan warnanya mirip? Ceritain!",
+    "depth": 1
+  },
+  {
+    "id": "fn-140",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa bikin satu makanan yang nggak bakal bikin kenyang tapi rasanya enak banget, makanan apa tuh?",
+    "depth": 1
+  },
+  {
+    "id": "fn-141",
+    "categoryId": "fun",
+    "text": "Spill satu kebiasaan lo pas lagi sendirian di kamar yang kalau orang lain liat bakal dikira aneh!",
+    "depth": 1
+  },
+  {
+    "id": "fn-142",
+    "categoryId": "fun",
+    "text": "Kalau lo jadi tokoh antagonis di film komedi, alasan konyol apa yang bikin lo pengen bikin onar?",
+    "depth": 1
+  },
+  {
+    "id": "fn-143",
+    "categoryId": "fun",
+    "text": "Pilih mana: seumur hidup cuma boleh dengerin satu lagu yang sama ATAU seumur hidup nonton TV tanpa suara?",
+    "depth": 1
+  },
+  {
+    "id": "fn-144",
+    "categoryId": "fun",
+    "text": "Apa barang paling random yang pernah lo temuin di dalem tas atau kantong celana lo pas lagi bersih-bersih?",
+    "depth": 1
+  },
+  {
+    "id": "fn-145",
+    "categoryId": "fun",
+    "text": "Kalau lo punya remote kontrol yang bisa nge-pause orang lain selama 1 menit, lo mau isengin siapa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-146",
+    "categoryId": "fun",
+    "text": "Kira-kira apa nama minuman boba paling aneh yang menurut lo bakal laku keras di Indonesia?",
+    "depth": 1
+  },
+  {
+    "id": "fn-147",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa ngubah satu benda di kamar lo jadi emas murni dalam semalam, benda apa yang lo pilih?",
+    "depth": 1
+  },
+  {
+    "id": "fn-148",
+    "categoryId": "fun",
+    "text": "Pernah nggak lo ngerasa ada orang yang merhatiin lo dari jauh, pas lo geer ternyata dia lagi liat hal lain?",
+    "depth": 1
+  },
+  {
+    "id": "fn-149",
+    "categoryId": "fun",
+    "text": "Kalau lo disuruh bikin parfum dengan wangi suasana tertentu, wangi apa yang mau lo racik?",
+    "depth": 1
+  },
+  {
+    "id": "fn-150",
+    "categoryId": "fun",
+    "text": "Siapa komedian yang menurut lo paling cocok jadi narator di kepala lo pas lagi galau?",
+    "depth": 1
+  },
+  {
+    "id": "fn-151",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa ganti suara sirine ambulans jadi lagu dangdut koplo, lagu apa yang paling pas?",
+    "depth": 1
+  },
+  {
+    "id": "fn-152",
+    "categoryId": "fun",
+    "text": "Hal konyol apa yang pernah lo percayai pas masih kecil gara-gara dibohongin temen tongkrongan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-153",
+    "categoryId": "fun",
+    "text": "Pilih mana: nggak sengaja kentut bersuara pas lagi hening ujian ATAU cegukan nggak berhenti pas lagi presentasi?",
+    "depth": 1
+  },
+  {
+    "id": "fn-154",
+    "categoryId": "fun",
+    "text": "Kalau lo nemu koper isi uang tunai miliaran di jalan tanpa nama pemilik, hal pertama yang lo lakuin apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-155",
+    "categoryId": "fun",
+    "text": "Apa jajanan sekolah paling legendaris yang menurut lo rasanya nggak ada tandingannya sampai sekarang?",
+    "depth": 1
+  },
+  {
+    "id": "fn-156",
+    "categoryId": "fun",
+    "text": "Kalau lo dipaksa ikutan ajang pencarian bakat di TV, bakat unik apa yang bakal lo tampilin?",
+    "depth": 1
+  },
+  {
+    "id": "fn-157",
+    "categoryId": "fun",
+    "text": "Siapa orang di ruangan ini yang menurut lo paling jago ngeles kalau lagi ketahuan salah?",
+    "depth": 1
+  },
+  {
+    "id": "fn-158",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa bikin hewan liar jadi jinak dan bisa diajak nongkrong di warkop, lo mau ajak hewan apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-159",
+    "categoryId": "fun",
+    "text": "Pernah nggak lo ketiduran sambil megang HP terus HP-nya jatuh pas nimpa muka? Rasanya gimana?",
+    "depth": 1
+  },
+  {
+    "id": "fn-160",
+    "categoryId": "fun",
+    "text": "Apa nama akun media sosial paling alay yang pernah lo bikin zaman dulu?",
+    "depth": 1
+  },
+  {
+    "id": "fn-161",
+    "categoryId": "fun",
+    "text": "Kalau lo disuruh milih satu makanan yang harus dilarang beredar di seluruh dunia, makanan apa tuh?",
+    "depth": 1
+  },
+  {
+    "id": "fn-162",
+    "categoryId": "fun",
+    "text": "Pilih mana: bisa ngomong sama semua jenis burung ATAU bisa ngerti apa yang dipikirin ikan di akuarium?",
+    "depth": 1
+  },
+  {
+    "id": "fn-163",
+    "categoryId": "fun",
+    "text": "Hal paling absurd apa yang pernah lo liat pas lagi naik motor di jalan raya?",
+    "depth": 1
+  },
+  {
+    "id": "fn-164",
+    "categoryId": "fun",
+    "text": "Kalau lo dikasih kesempatan ngasih nama satu planet baru di tata surya, nama apa yang lo kasih?",
+    "depth": 1
+  },
+  {
+    "id": "fn-165",
+    "categoryId": "fun",
+    "text": "Apa reaksi lo kalau tiba-tiba lo bangun tidur dan mendadak lancar ngomong bahasa alien?",
+    "depth": 1
+  },
+  {
+    "id": "fn-166",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa bikin satu mata pelajaran atau topik belajar baru yang wajib di sekolah, topik apa tuh?",
+    "depth": 1
+  },
+  {
+    "id": "fn-167",
+    "categoryId": "fun",
+    "text": "Siapa di antara kita yang paling mungkin tersesat di tempat yang lurus-lurus aja jalannya?",
+    "depth": 1
+  },
+  {
+    "id": "fn-168",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa nyuruh satu tokoh kartun buat nyanyiin lagu pop zaman sekarang, siapa nyanyiin lagu apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-169",
+    "categoryId": "fun",
+    "text": "Pernah nggak lo kepedean disapa orang di mall, pas lo bales lambai tangan ternyata dia nyapa orang di belakang lo?",
+    "depth": 1
+  },
+  {
+    "id": "fn-170",
+    "categoryId": "fun",
+    "text": "Apa menu kreasi mie instan paling gila yang pernah lo bikin pas laper tengah malem?",
+    "depth": 1
+  },
+  {
+    "id": "fn-171",
+    "categoryId": "fun",
+    "text": "Kalau lo punya pintu rahasia di kamar mandi yang tembus ke tempat liburan impian, lo mau tembus ke mana?",
+    "depth": 1
+  },
+  {
+    "id": "fn-172",
+    "categoryId": "fun",
+    "text": "Hal receh apa yang selalu sukses bikin lo ngakak guling-guling padahal orang lain liatnya biasa aja?",
+    "depth": 1
+  },
+  {
+    "id": "fn-173",
+    "categoryId": "fun",
+    "text": "Kalau lo jadi juri ajang masak, komentar paling pedas nan kocak apa yang bakal lo lontarkan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-174",
+    "categoryId": "fun",
+    "text": "Tunjuk satu orang di sini yang paling cocok jadi pemeran antagonis di drama komedi!",
+    "depth": 1
+  },
+  {
+    "id": "fn-175",
+    "categoryId": "fun",
+    "text": "Spill satu kalimat rayuan paling garing tapi kocak yang pernah lo denger seumur hidup!",
+    "depth": 1
+  },
+  {
+    "id": "fn-176",
+    "categoryId": "fun",
+    "text": "Kalau lo jadi karakter bos mafia di film, nama julukan lo di dunia bawah tanah apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-177",
+    "categoryId": "fun",
+    "text": "Pilih mana: setiap kali bersin ngeluarin suara terompet atau setiap ketawa ngeluarin bunyi bebek?",
+    "depth": 1
+  },
+  {
+    "id": "fn-178",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa ngubah satu benda mati di kamar lo jadi bisa ngomong, lo mau benda apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-179",
+    "categoryId": "fun",
+    "text": "Skenario absurd: lo tiba-tiba dinobatin jadi raja di negara antah berantah, aturan pertama lo apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-180",
+    "categoryId": "fun",
+    "text": "Kalau rambut lo berubah warna sesuai mood kayak cincin ajaib, pas ketemu gebetan warnanya jadi apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-181",
+    "categoryId": "fun",
+    "text": "Pilih mana: punya pintu kemana saja Doraemon tapi cuma bisa dipake jam 3 pagi, atau punya baling-baling bambu tapi kecepatannya kayak kura-kura?",
+    "depth": 1
+  },
+  {
+    "id": "fn-182",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa nuker suara lo sama suara komentator bola Indonesia yang heboh, mau lo pake buat apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-183",
+    "categoryId": "fun",
+    "text": "Apa hal paling gokil yang bakal lo lakuin kalau lo bisa tak terlihat selama 1 jam di mall?",
+    "depth": 1
+  },
+  {
+    "id": "fn-184",
+    "categoryId": "fun",
+    "text": "Pilih mana: jalan mundur selamanya atau harus jalan sambil salto tiap 10 langkah?",
+    "depth": 1
+  },
+  {
+    "id": "fn-185",
+    "categoryId": "fun",
+    "text": "Kalau lo disuruh bikin sekte makanan baru, apa ritual makan yang wajib ditaati anggotanya?",
+    "depth": 1
+  },
+  {
+    "id": "fn-186",
+    "categoryId": "fun",
+    "text": "Sebutkan satu nama superhero lokal buatan lo sendiri beserta kekuatannya yang receh!",
+    "depth": 1
+  },
+  {
+    "id": "fn-187",
+    "categoryId": "fun",
+    "text": "Pilih mana: punya kemampuan baca pikiran orang tapi cuma pas mereka lagi mikirin makanan, atau bisa bicara sama nyamuk?",
+    "depth": 1
+  },
+  {
+    "id": "fn-188",
+    "categoryId": "fun",
+    "text": "Kalau lo dikutuk jadi salah satu peralatan dapur, lo lebih milih jadi wajan gosong atau blender berisik?",
+    "depth": 1
+  },
+  {
+    "id": "fn-189",
+    "categoryId": "fun",
+    "text": "Apa konspirasi tongkrongan paling konyol yang pernah kalian diskusikan sampai subuh?",
+    "depth": 1
+  },
+  {
+    "id": "fn-190",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa memasukkan satu hukum fisika baru di bumi, lo mau bikin apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-191",
+    "categoryId": "fun",
+    "text": "Pilih mana: tiap ngomong harus pake rima pantun atau tiap jalan harus sambil joget poco-poco?",
+    "depth": 1
+  },
+  {
+    "id": "fn-192",
+    "categoryId": "fun",
+    "text": "Kalau lo diundang makan malam bareng dinosaurus T-Rex, lo mau suguhin lauk apa biar nggak dimakan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-193",
+    "categoryId": "fun",
+    "text": "Apa gaya selebrasi gol paling heboh yang bakal lo praktekin kalau menang undian jalan-jalan ke luar negeri?",
+    "depth": 1
+  },
+  {
+    "id": "fn-194",
+    "categoryId": "fun",
+    "text": "Pilih mana: punya remote TV yang bisa nge-pause waktu di dunia nyata atau tombol replay buat ngulang obrolan seru?",
+    "depth": 1
+  },
+  {
+    "id": "fn-195",
+    "categoryId": "fun",
+    "text": "Kalau lo buka warteg di planet Mars, menu andalan lo yang paling laris kira-kira apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-196",
+    "categoryId": "fun",
+    "text": "Siapa di antara kalian yang kalau jadi detektif paling gampang ketahuan pas lagi menyamar?",
+    "depth": 1
+  },
+  {
+    "id": "fn-197",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa ngasih soundtrack musik latar otomatis tiap lo masuk ruangan, lo mau lagu apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-198",
+    "categoryId": "fun",
+    "text": "Pilih mana: bisa mengerti bahasa kucing atau bisa mengendalikan gerak-gerik kecoa terbang?",
+    "depth": 1
+  },
+  {
+    "id": "fn-199",
+    "categoryId": "fun",
+    "text": "Kalau lo tiba-tiba bangun dan nemu kloningan diri lo lagi masak sarapan di dapur, apa reaksi pertama lo?",
+    "depth": 1
+  },
+  {
+    "id": "fn-200",
+    "categoryId": "fun",
+    "text": "Sebutkan satu ide bisnis paling nggak masuk akal tapi lo yakin bakal laku keras di Indonesia!",
+    "depth": 1
+  },
+  {
+    "id": "fn-201",
+    "categoryId": "fun",
+    "text": "Pilih mana: punya mobil terbang tapi harus dikayuh kayak sepeda ontel, atau punya karpet terbang yang mogok kalau mendung?",
+    "depth": 1
+  },
+  {
+    "id": "fn-202",
+    "categoryId": "fun",
+    "text": "Kalau lo disuruh ganti kostum superhero pas kondangan nikahan temen, lo mau pake kostum apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-203",
+    "categoryId": "fun",
+    "text": "Apa hal paling konyol yang pernah lo cari di Google pas tengah malam karena kepikiran mendadak?",
+    "depth": 1
+  },
+  {
+    "id": "fn-204",
+    "categoryId": "fun",
+    "text": "Pilih mana: setiap mandi airnya berubah jadi kuah soto atau sabunnya beraroma bumbu rendang?",
+    "depth": 1
+  },
+  {
+    "id": "fn-205",
+    "categoryId": "fun",
+    "text": "Kalau lo disuruh ikut lomba bertahan hidup di pulau terpencil, barang receh apa yang bakal lo bawa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-206",
+    "categoryId": "fun",
+    "text": "Sebutkan satu nama jurus pamungkas lo pas lagi ngeles dari tugas kantor atau tugas kuliah!",
+    "depth": 1
+  },
+  {
+    "id": "fn-207",
+    "categoryId": "fun",
+    "text": "Pilih mana: bisa teleportasi tapi mendaratnya selalu di atas pohon, atau bisa lari secepat kilat tapi cuma bisa pake sandal jepit?",
+    "depth": 1
+  },
+  {
+    "id": "fn-208",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa nge-prank seluruh warga satu kota secara serentak tanpa membahayakan, lo mau ngapain?",
+    "depth": 1
+  },
+  {
+    "id": "fn-209",
+    "categoryId": "fun",
+    "text": "Apa makanan yang kalau dimakan bikin lo ngerasa punya kekuatan super instan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-210",
+    "categoryId": "fun",
+    "text": "Pilih mana: selalu disapa orang asing kayak artis terkenal atau nggak pernah dikenali sama siapa pun bahkan temen sendiri?",
+    "depth": 1
+  },
+  {
+    "id": "fn-211",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa bikin satu mata pelajaran atau mata kuliah baru yang wajib di sekolah, lo mau bikin pelajaran apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-212",
+    "categoryId": "fun",
+    "text": "Siapa di ruangan ini yang menurut lo kalau diajak ikutan uji nyali di rumah hantu bakal paling heboh teriakannya?",
+    "depth": 1
+  },
+  {
+    "id": "fn-213",
+    "categoryId": "fun",
+    "text": "Pilih mana: punya kantong ajaib kayak Doraemon tapi isinya cuma jajanan pasar, atau punya sapu terbang Harry Potter tapi rodanya macet?",
+    "depth": 1
+  },
+  {
+    "id": "fn-214",
+    "categoryId": "fun",
+    "text": "Kalau lo disuruh jadi pengisi suara karakter kartun animasi, lo pengen ngisi suara karakter apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-215",
+    "categoryId": "fun",
+    "text": "Apa ekspresi muka lo kalau tiba-tiba disorot kamera bioskop pas lagi makan popcorn belepotan?",
+    "depth": 1
+  },
+  {
+    "id": "fn-216",
+    "categoryId": "fun",
+    "text": "Pilih mana: hidup di dunia video game petualangan atau hidup di dunia serial kartun komedi?",
+    "depth": 1
+  },
+  {
+    "id": "fn-217",
+    "categoryId": "fun",
+    "text": "Kalau lo nemu jin yang cuma bisa ngabulin 1 permintaan yang sama sekali nggak penting, lo mau minta apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-218",
+    "categoryId": "fun",
+    "text": "Sebutkan satu judul buku biografi tentang kebiasaan tidur dan mager lo sehari-hari!",
+    "depth": 1
+  },
+  {
+    "id": "fn-219",
+    "categoryId": "fun",
+    "text": "Pilih mana: tiap kali lo jalan selalu ada backsound tepuk tangan penonton atau backsound suara jangkrik?",
+    "depth": 1
+  },
+  {
+    "id": "fn-220",
+    "categoryId": "fun",
+    "text": "Kalau lo bisa ngobrol 5 menit sama alien luar angkasa, gosip bumi apa yang bakal lo ceritain ke dia?",
+    "depth": 1
+  },
+  {
+    "id": "fn-221",
+    "categoryId": "fun",
+    "text": "Apa hal paling absurd yang pernah lo liat pengendara motor bawa di jalanan Indonesia?",
+    "depth": 1
+  },
+  {
+    "id": "fn-222",
+    "categoryId": "fun",
+    "text": "Pilih mana: bisa terbang tapi tingginya cuma 10 sentimeter dari tanah atau bisa menyelam tanpa alat tapi cuma di kolam renang anak-anak?",
+    "depth": 1
+  },
+  {
+    "id": "fn-223",
+    "categoryId": "fun",
+    "text": "Kalau lo disuruh bikin koreografi dance TikTok bareng orang di samping kiri lo, temanya apa?",
+    "depth": 1
+  },
+  {
+    "id": "fn-224",
+    "categoryId": "fun",
+    "text": "Tantang orang di depan lo buat tirukan gaya ketawa tokoh antagonis sinetron selama 3 detik!",
+    "depth": 1
+  },
+  {
+    "id": "fn-225",
+    "categoryId": "fun",
+    "text": "Sebutkan satu kata paling ajaib yang bisa bikin suasana tongkrongan langsung heboh seketika!",
+    "depth": 1
+  }
 ]

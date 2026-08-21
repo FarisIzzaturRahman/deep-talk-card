@@ -21,7 +21,7 @@ Tidak perlu akun dan tidak perlu persiapan khusus. Cukup buka lewat ponsel atau 
 
 ## Pilih suasana obrolanmu
 
-Tersedia lebih dari **1.100 pertanyaan** yang terbagi secara seimbang ke dalam berbagai topik:
+Tersedia ribuan pertanyaan seru yang terbagi ke dalam berbagai topik:
 
 | Topik | Cocok untuk |
 | --- | --- |

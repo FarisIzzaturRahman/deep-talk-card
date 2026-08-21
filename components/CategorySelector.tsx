@@ -43,7 +43,7 @@ export function CategorySelector() {
                     Temukan pertanyaan yang memicu percakapan bermakna, kejujuran, dan keseruan bersama.
                 </p>
                 <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-slate-600">
-                    6 topik · 1.100 pertanyaan · tanpa login
+                    6 topik obrolan · tanpa login
                 </p>
             </motion.div>
 

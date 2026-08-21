@@ -1,177 +1,1405 @@
 [
-  {"id":"pdk-1","categoryId":"asmara","text":"Hal pertama apa yang biasanya bikin kamu nyaman ngobrol sama orang baru?","depth":1},
-  {"id":"pdk-2","categoryId":"asmara","text":"Kalau mau mulai obrolan dengan orang yang menarik perhatianmu, kamu biasanya buka dengan topik apa?","depth":1},
-  {"id":"pdk-3","categoryId":"asmara","text":"Kamu lebih suka chat singkat tapi sering, atau panjang tapi sesekali?","depth":1},
-  {"id":"pdk-4","categoryId":"asmara","text":"Tempat paling enak buat kenalan lebih dekat menurutmu di mana?","depth":1},
-  {"id":"pdk-5","categoryId":"asmara","text":"Pilih suasana ngobrol: kedai kopi, tempat makan, atau jalan santai?","depth":1},
-  {"id":"pdk-6","categoryId":"asmara","text":"Saat janjian, kamu tim datang lebih awal atau tepat waktu?","depth":1},
-  {"id":"pdk-7","categoryId":"asmara","text":"Kamu lebih menikmati rencana spontan atau agenda yang disiapkan rapi?","depth":1},
-  {"id":"pdk-8","categoryId":"asmara","text":"Kamu lebih mudah nyambung dengan orang yang kalem atau yang banyak cerita?","depth":1},
-  {"id":"pdk-9","categoryId":"asmara","text":"Jenis humor seperti apa yang paling gampang bikin kamu ketawa?","depth":1},
-  {"id":"pdk-10","categoryId":"asmara","text":"Emoji apa yang paling sering kamu pakai saat ngobrol dengan orang yang kamu suka?","depth":1},
-  {"id":"pdk-11","categoryId":"asmara","text":"Pilih mana: bertukar voice note atau mengetik chat panjang?","depth":1},
-  {"id":"pdk-12","categoryId":"asmara","text":"Kamu lebih suka ngobrol santai di pagi hari atau panjang lebar malam hari?","depth":1},
-  {"id":"pdk-13","categoryId":"asmara","text":"Kalau bikin playlist bareng seseorang, lagu pertama yang kamu masukkan apa?","depth":1},
-  {"id":"pdk-14","categoryId":"asmara","text":"Makanan apa yang paling aman kamu rekomendasikan untuk acara kenalan pertama?","depth":1},
-  {"id":"pdk-15","categoryId":"asmara","text":"Perhatian kecil seperti apa yang menurutmu paling manis?","depth":1},
-  {"id":"pdk-16","categoryId":"asmara","text":"Keahlian sederhana apa yang langsung membuat seseorang terlihat menarik bagimu?","depth":1},
-  {"id":"pdk-17","categoryId":"asmara","text":"Hobi apa yang bikin kamu penasaran kalau diceritakan dengan antusias?","depth":1},
-  {"id":"pdk-18","categoryId":"asmara","text":"Akhir pekan ideal untuk dihabiskan berdua versimu seperti apa?","depth":1},
-  {"id":"pdk-19","categoryId":"asmara","text":"Ide jalan bareng sederhana apa yang menurutmu nggak pernah gagal?","depth":1},
-  {"id":"pdk-20","categoryId":"asmara","text":"Lagu apa yang cocok jadi latar suasana saat sedang kenalan lebih dekat?","depth":1},
-  {"id":"pdk-21","categoryId":"asmara","text":"Genre film apa yang paling seru ditonton sambil saling komentar?","depth":1},
-  {"id":"pdk-22","categoryId":"asmara","text":"Kalau bisa mengajak seseorang jalan sehari ke kota mana pun, kamu pilih kota apa?","depth":1},
-  {"id":"pdk-23","categoryId":"asmara","text":"Saat jalan bareng, kamu lebih suka banyak foto atau menikmati momen tanpa kamera?","depth":1},
-  {"id":"pdk-24","categoryId":"asmara","text":"Nama panggilan lucu seperti apa yang masih terasa manis dan nggak berlebihan?","depth":1},
-  {"id":"pdk-25","categoryId":"asmara","text":"Pertanyaan pembuka apa yang paling ampuh mencairkan suasana menurutmu?","depth":1},
-  {"id":"pdk-26","categoryId":"asmara","text":"Permainan ringan apa yang seru dimainkan berdua?","depth":1},
-  {"id":"pdk-27","categoryId":"asmara","text":"Menu apa yang ingin kamu coba masak bareng seseorang?","depth":1},
-  {"id":"pdk-28","categoryId":"asmara","text":"Pilih tempat jalan santai: toko buku, taman, pasar malam, atau museum?","depth":1},
-  {"id":"pdk-29","categoryId":"asmara","text":"Kalau rencana jalan batal karena hujan, kegiatan penggantinya apa?","depth":1},
-  {"id":"pdk-30","categoryId":"asmara","text":"Kamu pilih nonton pertunjukan ramai atau ngobrol di tempat yang tenang?","depth":1},
-  {"id":"pdk-31","categoryId":"asmara","text":"Menurutmu, orang pecinta kucing atau pecinta anjing lebih gampang diajak kenalan?","depth":1},
-  {"id":"pdk-32","categoryId":"asmara","text":"Topik apa yang paling enak dibahas saat perjalanan panjang?","depth":1},
-  {"id":"pdk-33","categoryId":"asmara","text":"Lagu karaoke apa yang bisa bikin suasana canggung langsung hilang?","depth":1},
-  {"id":"pdk-34","categoryId":"asmara","text":"Camilan tengah malam apa yang paling cocok dibagi berdua?","depth":1},
-  {"id":"pdk-35","categoryId":"asmara","text":"Oleh-oleh kecil apa yang akan membuatmu merasa diingat?","depth":1},
-  {"id":"pdk-36","categoryId":"asmara","text":"Seberapa penting bertukar meme dalam proses kenalan menurutmu?","depth":1},
-  {"id":"pdk-37","categoryId":"asmara","text":"Kamu lebih nyaman mulai dari nongkrong rame-rame atau langsung ngobrol berdua?","depth":1},
-  {"id":"pdk-38","categoryId":"asmara","text":"Kamu lebih suka ditanya banyak hal atau mendengar orang lain bercerita dulu?","depth":1},
-  {"id":"pdk-39","categoryId":"asmara","text":"Pujian sederhana seperti apa yang paling berkesan buatmu?","depth":1},
-  {"id":"pdk-40","categoryId":"asmara","text":"Gombalan receh seperti apa yang masih bisa bikin kamu senyum?","depth":1},
-  {"id":"pdk-41","categoryId":"asmara","text":"Apa tanda menyenangkan yang bisa terlihat dari obrolan pertama?","depth":1},
-  {"id":"pdk-42","categoryId":"asmara","text":"Cara menutup chat seperti apa yang bikin kamu ingin lanjut ngobrol besok?","depth":1},
-  {"id":"pdk-43","categoryId":"asmara","text":"Menurutmu, bisa diam dengan nyaman itu manis atau malah canggung?","depth":1},
-  {"id":"pdk-44","categoryId":"asmara","text":"Kebiasaan lucu apa yang gampang membuatmu menyukai kepribadian seseorang?","depth":1},
-  {"id":"pdk-45","categoryId":"asmara","text":"Hal baru apa yang seru dipelajari bersama orang yang sedang kamu kenal?","depth":1},
-  {"id":"pdk-46","categoryId":"asmara","text":"Gaya liburan mana yang lebih cocok buatmu: santai, kulineran, atau penuh aktivitas?","depth":1},
-  {"id":"pdk-47","categoryId":"asmara","text":"Pemandangan apa yang paling cocok untuk obrolan panjang?","depth":1},
-  {"id":"pdk-48","categoryId":"asmara","text":"Topik ringan apa yang bisa kamu bahas berjam-jam?","depth":1},
-  {"id":"pdk-49","categoryId":"asmara","text":"Bagaimana rasanya kalau seseorang ingat pesanan makanan atau minuman favoritmu?","depth":1},
-  {"id":"pdk-50","categoryId":"asmara","text":"Kamu lebih suka kejutan kecil atau diajak merencanakan sesuatu bersama?","depth":1},
-  {"id":"pdk-51","categoryId":"asmara","text":"Pertanyaan apa yang selalu senang kamu jawab saat sedang kenalan?","depth":1},
-  {"id":"pdk-52","categoryId":"asmara","text":"Kegiatan apa yang paling pas saat pertama kali dikenalkan ke teman-teman seseorang?","depth":1},
-  {"id":"pdk-53","categoryId":"asmara","text":"Kalau main game berdua, kamu lebih suka bekerja sama atau saling bersaing?","depth":1},
-  {"id":"pdk-54","categoryId":"asmara","text":"Kapan waktu paling nyaman buat beralih dari obrolan ringan ke obrolan bermakna?","depth":1},
-  {"id":"pdk-55","categoryId":"asmara","text":"Apa jurus andalanmu untuk menyelamatkan suasana yang tiba-tiba hening?","depth":1},
-  {"id":"pdk-56","categoryId":"asmara","text":"Kalau harus tampil di acara bakat berdua, kalian akan menampilkan apa?","depth":1},
-  {"id":"pdk-57","categoryId":"asmara","text":"Kamu tipe yang suka berbagi makanan atau pesan menu masing-masing?","depth":1},
-  {"id":"pdk-58","categoryId":"asmara","text":"Saat jalan bareng, kamu lebih cocok jadi penunjuk arah atau pengikut peta?","depth":1},
-  {"id":"pdk-59","categoryId":"asmara","text":"Apa nama yang lucu untuk playlist buatan berdua?","depth":1},
-  {"id":"pdk-60","categoryId":"asmara","text":"Kamu lebih suka foto candid atau foto yang dipersiapkan rapi?","depth":1},
-  {"id":"pdk-61","categoryId":"asmara","text":"Aktivitas jalan bareng hemat apa yang tetap terasa spesial?","depth":1},
-  {"id":"pdk-62","categoryId":"asmara","text":"Pilih menikmati matahari terbit atau matahari terbenam bersama?","depth":1},
-  {"id":"pdk-63","categoryId":"asmara","text":"Kamu lebih tertarik datang ke pameran, festival makanan, atau pertunjukan musik?","depth":1},
-  {"id":"pdk-64","categoryId":"asmara","text":"Barang kecil apa yang lucu kalau punya versi pasangan?","depth":1},
-  {"id":"pdk-65","categoryId":"asmara","text":"Kalau seseorang menggambarkan kesan pertamanya tentangmu dalam tiga kata, kamu ingin tiga kata apa?","depth":1},
-  {"id":"pdk-66","categoryId":"asmara","text":"Minuman apa yang paling cocok menemani sesi saling kenal?","depth":1},
-  {"id":"pdk-67","categoryId":"asmara","text":"Pilih aktivitas berdua: merakit sesuatu, melukis, atau mencoba resep baru?","depth":1},
-  {"id":"pdk-68","categoryId":"asmara","text":"Apa lagu yang diam-diam ingin kamu dengar dinyanyikan seseorang untukmu?","depth":1},
-  {"id":"pdk-69","categoryId":"asmara","text":"Kamu lebih suka diajak ke tempat favorit seseorang atau menemukan tempat baru bersama?","depth":1},
-  {"id":"pdk-70","categoryId":"asmara","text":"Kebiasaan chat apa yang menurutmu paling menggemaskan?","depth":1},
-  {"id":"pdk-71","categoryId":"asmara","text":"Apa tanda bahwa kamu benar-benar nyambung saat ngobrol dengan seseorang?","depth":2},
-  {"id":"pdk-72","categoryId":"asmara","text":"Seperti apa obrolan yang terasa seimbang bagimu?","depth":2},
-  {"id":"pdk-73","categoryId":"asmara","text":"Apa yang membuatmu nyaman menjadi diri sendiri di dekat orang baru?","depth":2},
-  {"id":"pdk-74","categoryId":"asmara","text":"Mana yang lebih menarik bagimu: rasa ingin tahu yang tulus atau pesona yang percaya diri?","depth":2},
-  {"id":"pdk-75","categoryId":"asmara","text":"Seberapa penting komunikasi yang konsisten saat sedang saling mengenal?","depth":2},
-  {"id":"pdk-76","categoryId":"asmara","text":"Cara menunjukkan ketertarikan seperti apa yang terasa natural buatmu?","depth":2},
-  {"id":"pdk-77","categoryId":"asmara","text":"Bagaimana cara menyampaikan niat kenalan tanpa membuat suasana terlalu serius?","depth":2},
-  {"id":"pdk-78","categoryId":"asmara","text":"Seberapa penting punya ruang sendiri walaupun sedang dekat dengan seseorang?","depth":2},
-  {"id":"pdk-79","categoryId":"asmara","text":"Respons seperti apa yang kamu harapkan ketika sedang sibuk dan belum bisa membalas pesan?","depth":2},
-  {"id":"pdk-80","categoryId":"asmara","text":"Menurutmu, apa ciri orang yang benar-benar mendengarkan?","depth":2},
-  {"id":"pdk-81","categoryId":"asmara","text":"Hal kecil apa yang membuatmu merasa dihargai saat sedang kenalan?","depth":2},
-  {"id":"pdk-82","categoryId":"asmara","text":"Apakah perbedaan hobi membuat hubungan lebih seru atau lebih menantang?","depth":2},
-  {"id":"pdk-83","categoryId":"asmara","text":"Bagaimana cara berbeda pendapat tanpa merusak suasana baik?","depth":2},
-  {"id":"pdk-84","categoryId":"asmara","text":"Kamu lebih suka bergantian merencanakan kegiatan atau selalu memutuskannya bersama?","depth":2},
-  {"id":"pdk-85","categoryId":"asmara","text":"Dukungan seperti apa yang paling berarti untuk tujuan yang sedang kamu kejar?","depth":2},
-  {"id":"pdk-86","categoryId":"asmara","text":"Apa cara terbaik menjaga proses kenalan tetap menyenangkan?","depth":2},
-  {"id":"pdk-87","categoryId":"asmara","text":"Apa arti quality time bagimu?","depth":2},
-  {"id":"pdk-88","categoryId":"asmara","text":"Sebutkan satu green flag yang bisa terlihat dari kebiasaan sehari-hari.","depth":2},
-  {"id":"pdk-89","categoryId":"asmara","text":"Seberapa penting seseorang menepati hal-hal kecil yang sudah dijanjikan?","depth":2},
-  {"id":"pdk-90","categoryId":"asmara","text":"Perlakuan baik kepada orang lain seperti apa yang paling kamu perhatikan?","depth":2},
-  {"id":"pdk-91","categoryId":"asmara","text":"Apa yang membuat seseorang terlihat berpikiran terbuka bagimu?","depth":2},
-  {"id":"pdk-92","categoryId":"asmara","text":"Kamu lebih tertarik pada orang yang sudah yakin dengan arah hidupnya atau yang masih senang mencoba banyak hal?","depth":2},
-  {"id":"pdk-93","categoryId":"asmara","text":"Seberapa menarik orang yang selalu punya rasa ingin tahu?","depth":2},
-  {"id":"pdk-94","categoryId":"asmara","text":"Menurutmu, selera humor yang cocok berpengaruh sebesar apa pada chemistry?","depth":2},
-  {"id":"pdk-95","categoryId":"asmara","text":"Inisiatif sederhana apa yang menunjukkan seseorang sungguh ingin mengenalmu?","depth":2},
-  {"id":"pdk-96","categoryId":"asmara","text":"Bagaimana cara menyampaikan batasan dengan tetap hangat?","depth":2},
-  {"id":"pdk-97","categoryId":"asmara","text":"Menurutmu, seperti apa kejujuran yang tetap menjaga perasaan?","depth":2},
-  {"id":"pdk-98","categoryId":"asmara","text":"Apa cara terbaik meluruskan chat yang mudah disalahartikan?","depth":2},
-  {"id":"pdk-99","categoryId":"asmara","text":"Bagaimana kamu memberi tahu seseorang kalau sedang butuh waktu untuk mengisi energi?","depth":2},
-  {"id":"pdk-100","categoryId":"asmara","text":"Menurutmu, pasangan introvert dan ekstrovert bisa saling melengkapi dalam hal apa?","depth":2},
-  {"id":"pdk-101","categoryId":"asmara","text":"Untuk keputusan kecil, kamu lebih suka bergantian memilih atau mencari pilihan yang sama-sama disukai?","depth":2},
-  {"id":"pdk-102","categoryId":"asmara","text":"Bagaimana cara paling seru merayakan pencapaian kecil seseorang?","depth":2},
-  {"id":"pdk-103","categoryId":"asmara","text":"Selain kata-kata romantis, tindakan apa yang terasa penuh perhatian?","depth":2},
-  {"id":"pdk-104","categoryId":"asmara","text":"Kamu lebih mudah menangkap perhatian lewat kata-kata atau tindakan?","depth":2},
-  {"id":"pdk-105","categoryId":"asmara","text":"Seberapa penting rasa pertemanan sebagai dasar hubungan romantis?","depth":2},
-  {"id":"pdk-106","categoryId":"asmara","text":"Kecepatan kenalan seperti apa yang terasa nyaman bagimu?","depth":2},
-  {"id":"pdk-107","categoryId":"asmara","text":"Apa yang membuat sebuah percakapan terus teringat setelah selesai?","depth":2},
-  {"id":"pdk-108","categoryId":"asmara","text":"Kapan kamu merasa nggak perlu tampil sempurna di depan seseorang?","depth":2},
-  {"id":"pdk-109","categoryId":"asmara","text":"Pertanyaan ringan apa yang menurutmu bisa menunjukkan karakter seseorang?","depth":2},
-  {"id":"pdk-110","categoryId":"asmara","text":"Bagaimana kamu tahu seseorang benar-benar menghargai waktumu?","depth":2},
-  {"id":"pdk-111","categoryId":"asmara","text":"Bagian dari rutinitas seseorang apa yang paling menarik untuk kamu dengar?","depth":2},
-  {"id":"pdk-112","categoryId":"asmara","text":"Bagaimana respons idealmu saat rencana bersama tiba-tiba harus berubah?","depth":2},
-  {"id":"pdk-113","categoryId":"asmara","text":"Permintaan maaf seperti apa yang terasa tulus bagimu?","depth":2},
-  {"id":"pdk-114","categoryId":"asmara","text":"Bagaimana kamu biasanya menunjukkan bahwa kamu menghargai usaha seseorang?","depth":2},
-  {"id":"pdk-115","categoryId":"asmara","text":"Apa yang menunjukkan bahwa seseorang bisa menerima masukan dengan dewasa?","depth":2},
-  {"id":"pdk-116","categoryId":"asmara","text":"Saat ngobrol dalam kelompok, sikap apa yang membuat seseorang makin menarik?","depth":2},
-  {"id":"pdk-117","categoryId":"asmara","text":"Seberapa penting seseorang bisa menerima kata tidak dengan baik?","depth":2},
-  {"id":"pdk-118","categoryId":"asmara","text":"Bagaimana kamu memberi orang lain waktu untuk memikirkan jawabannya?","depth":2},
-  {"id":"pdk-119","categoryId":"asmara","text":"Apakah punya kegiatan masing-masing bisa membuat hubungan makin segar?","depth":2},
-  {"id":"pdk-120","categoryId":"asmara","text":"Pesan penyemangat seperti apa yang paling ingin kamu terima sebelum hari penting?","depth":2},
-  {"id":"pdk-121","categoryId":"asmara","text":"Hal sederhana apa yang bisa dilakukan untuk mengembalikan semangat seseorang?","depth":2},
-  {"id":"pdk-122","categoryId":"asmara","text":"Tradisi kecil berdua seperti apa yang terdengar menyenangkan?","depth":2},
-  {"id":"pdk-123","categoryId":"asmara","text":"Proyek kecil apa yang menarik untuk dikerjakan berdua?","depth":2},
-  {"id":"pdk-124","categoryId":"asmara","text":"Bagaimana membagi waktu antara petualangan baru dan waktu santai bersama?","depth":2},
-  {"id":"pdk-125","categoryId":"asmara","text":"Ajakan spontan seperti apa yang kemungkinan besar akan kamu iyakan?","depth":2},
-  {"id":"pdk-126","categoryId":"asmara","text":"Mana yang lebih membuatmu tertarik: antusiasme besar atau ketulusan yang tenang?","depth":2},
-  {"id":"pdk-127","categoryId":"asmara","text":"Menurutmu, seperti apa konsistensi yang tidak terasa mengekang?","depth":2},
-  {"id":"pdk-128","categoryId":"asmara","text":"Hal apa yang paling mungkin mengubah kesan pertamamu terhadap seseorang menjadi lebih baik?","depth":2},
-  {"id":"pdk-129","categoryId":"asmara","text":"Nilai hidup apa yang menyenangkan kalau dimiliki bersama?","depth":2},
-  {"id":"pdk-130","categoryId":"asmara","text":"Kenapa cara seseorang memperlakukan pekerja layanan bisa menunjukkan karakternya?","depth":2},
-  {"id":"pdk-131","categoryId":"asmara","text":"Apa bedanya seseorang yang seru di kelompok dan nyaman diajak ngobrol berdua?","depth":2},
-  {"id":"pdk-132","categoryId":"asmara","text":"Pujian seperti apa yang terdengar tulus dan spesifik?","depth":2},
-  {"id":"pdk-133","categoryId":"asmara","text":"Bagaimana menjaga candaan tetap menyenangkan untuk semua pihak?","depth":2},
-  {"id":"pdk-134","categoryId":"asmara","text":"Apa yang membuat hening bersama seseorang justru terasa nyaman?","depth":2},
-  {"id":"pdk-135","categoryId":"asmara","text":"Seberapa penting seseorang mengajukan pertanyaan lanjutan saat kamu bercerita?","depth":2},
-  {"id":"pdk-136","categoryId":"asmara","text":"Kebiasaan mendengarkan apa yang paling kamu hargai?","depth":2},
-  {"id":"pdk-137","categoryId":"asmara","text":"Bagaimana rasanya ketika seseorang mengingat detail kecil dari ceritamu?","depth":2},
-  {"id":"pdk-138","categoryId":"asmara","text":"Apa yang membuatmu merasa bebas menyampaikan pendapat di dekat seseorang?","depth":2},
-  {"id":"pdk-139","categoryId":"asmara","text":"Kapan obrolan terasa begitu seru sampai waktu berjalan cepat?","depth":2},
-  {"id":"pdk-140","categoryId":"asmara","text":"Bagaimana membangun chemistry tanpa memaksakan suasana?","depth":2},
-  {"id":"pdk-141","categoryId":"asmara","text":"Apa arti menjadi satu tim dalam sebuah hubungan bagimu?","depth":3},
-  {"id":"pdk-142","categoryId":"asmara","text":"Dukungan seperti apa yang membantu dua orang sama-sama mengejar mimpi?","depth":3},
-  {"id":"pdk-143","categoryId":"asmara","text":"Bagaimana dua orang bisa bertumbuh tanpa kehilangan dirinya masing-masing?","depth":3},
-  {"id":"pdk-144","categoryId":"asmara","text":"Menurutmu, kebiasaan komunikasi apa yang paling kuat menjadi dasar hubungan?","depth":3},
-  {"id":"pdk-145","categoryId":"asmara","text":"Tindakan kecil apa yang perlahan membangun rasa percaya?","depth":3},
-  {"id":"pdk-146","categoryId":"asmara","text":"Apa yang membuatmu merasa dilihat sebagai dirimu sendiri?","depth":3},
-  {"id":"pdk-147","categoryId":"asmara","text":"Suasana seperti apa yang ingin kamu rasakan dalam hubungan yang sehat?","depth":3},
-  {"id":"pdk-148","categoryId":"asmara","text":"Bagaimana perbedaan kepribadian bisa memperkaya hubungan?","depth":3},
-  {"id":"pdk-149","categoryId":"asmara","text":"Keputusan seperti apa yang sebaiknya selalu dibicarakan sebagai satu tim?","depth":3},
-  {"id":"pdk-150","categoryId":"asmara","text":"Bagaimana menyeimbangkan kedekatan dan ruang pribadi?","depth":3},
-  {"id":"pdk-151","categoryId":"asmara","text":"Kehidupan sehari-hari bersama seseorang seperti apa yang terdengar menyenangkan bagimu?","depth":3},
-  {"id":"pdk-152","categoryId":"asmara","text":"Apa yang bisa dua orang lakukan untuk menciptakan rasa tenang satu sama lain?","depth":3},
-  {"id":"pdk-153","categoryId":"asmara","text":"Bagaimana tetap menunjukkan rasa hormat saat pendapat berbeda?","depth":3},
-  {"id":"pdk-154","categoryId":"asmara","text":"Apa yang menjaga rasa penasaran kepada seseorang tetap hidup seiring waktu?","depth":3},
-  {"id":"pdk-155","categoryId":"asmara","text":"Menurutmu, apa peran persahabatan di dalam hubungan romantis?","depth":3},
-  {"id":"pdk-156","categoryId":"asmara","text":"Bagaimana cara menyampaikan kebutuhan tanpa menuntut?","depth":3},
-  {"id":"pdk-157","categoryId":"asmara","text":"Apa cara terbaik memberi ruang untuk tujuan pribadi masing-masing?","depth":3},
-  {"id":"pdk-158","categoryId":"asmara","text":"Bagaimana tetap bersikap hangat ketika hari sedang sangat sibuk?","depth":3},
-  {"id":"pdk-159","categoryId":"asmara","text":"Kebiasaan apa yang bisa menjaga rasa terima kasih dalam hubungan?","depth":3},
-  {"id":"pdk-160","categoryId":"asmara","text":"Apa arti komitmen yang terasa sehat dan realistis bagimu?","depth":3},
-  {"id":"pdk-161","categoryId":"asmara","text":"Menurutmu, bagaimana dua orang terus memilih satu sama lain dalam keseharian?","depth":3},
-  {"id":"pdk-162","categoryId":"asmara","text":"Rutinitas sederhana apa yang bisa membuat dua orang semakin dekat?","depth":3},
-  {"id":"pdk-163","categoryId":"asmara","text":"Bagaimana menciptakan ruang yang aman untuk selalu berkata jujur?","depth":3},
-  {"id":"pdk-164","categoryId":"asmara","text":"Apa ukuran keberhasilan sebuah hubungan menurutmu?","depth":3},
-  {"id":"pdk-165","categoryId":"asmara","text":"Seperti apa kehadiran yang bisa benar-benar diandalkan?","depth":3},
-  {"id":"pdk-166","categoryId":"asmara","text":"Bagaimana cara paling tulus ikut menikmati kebahagiaan seseorang?","depth":3},
-  {"id":"pdk-167","categoryId":"asmara","text":"Apa yang membuat seseorang merasa diterima tanpa harus menjadi sempurna?","depth":3},
-  {"id":"pdk-168","categoryId":"asmara","text":"Dalam hal apa dua orang bisa saling menginspirasi menjadi lebih baik?","depth":3},
-  {"id":"pdk-169","categoryId":"asmara","text":"Apa yang membuat hubungan terasa ringan tanpa kehilangan makna?","depth":3},
-  {"id":"pdk-170","categoryId":"asmara","text":"Bagaimana cara menunjukkan bahwa kamu menghargai waktu dan kesibukan seseorang?","depth":3},
-  {"id":"pdk-171","categoryId":"asmara","text":"Hal apa yang ingin kamu pelajari bersama orang yang berarti bagimu?","depth":3},
-  {"id":"pdk-172","categoryId":"asmara","text":"Obrolan tentang masa depan seperti apa yang terasa menyenangkan, bukan membebani?","depth":3},
-  {"id":"pdk-173","categoryId":"asmara","text":"Nilai baik apa yang paling ingin kamu bawa ke dalam sebuah hubungan?","depth":3},
-  {"id":"pdk-174","categoryId":"asmara","text":"Nilai baik apa yang paling kamu harapkan dari seseorang yang dekat denganmu?","depth":3},
-  {"id":"pdk-175","categoryId":"asmara","text":"Apa pertanyaan tulus yang ingin kamu tanyakan kepada seseorang yang sedang kamu kenal lebih dekat?","depth":3}
+  {
+    "id": "pdk-1",
+    "categoryId": "asmara",
+    "text": "Menurut lo, siapa yang idealnya bayar pas first date: split bill, yang ngajak yang bayar, atau gantian di tempat berikutnya?",
+    "depth": 1,
+    "followUps": [
+      "Pernah ada momen canggung pas urusan bayar-bayar?",
+      "Gimana cara lo nawarin split bill biar suasananya nggak kaku?"
+    ]
+  },
+  {
+    "id": "pdk-2",
+    "categoryId": "asmara",
+    "text": "Jujur, first impression lo pas pertama kali ketemu atau liat gue apa? Nggak usah jaim!",
+    "depth": 1,
+    "followUps": [
+      "Sekarang setelah ngobrol, pandangan lo masih sama atau beda jauh?"
+    ]
+  },
+  {
+    "id": "pdk-3",
+    "categoryId": "asmara",
+    "text": "Kalau lagi naksir orang, lo tim sat-set agresif ngasih sinyal apa pasif nunggu keajaiban?",
+    "depth": 1,
+    "followUps": [
+      "Kode paling halus yang biasanya lo lempar kayak gimana?"
+    ]
+  },
+  {
+    "id": "pdk-4",
+    "categoryId": "asmara",
+    "text": "Hal kecil apa dari seseorang yang bisa langsung bikin lo ngebatin 'wah, ini orang menarik banget'?",
+    "depth": 1,
+    "followUps": [
+      "Dari cara ngomongnya, outfit-nya, atau attitude-nya?"
+    ]
+  },
+  {
+    "id": "pdk-5",
+    "categoryId": "asmara",
+    "text": "Ide first date sederhana apa yang menurut lo seru dan anti-mainstream selain duduk di coffee shop?",
+    "depth": 1,
+    "followUps": [
+      "Night drive sambil karokean di mobil, ke pasar malam, atau hunting street food?"
+    ]
+  },
+  {
+    "id": "pdk-6",
+    "categoryId": "asmara",
+    "text": "Lo tipe orang yang kalau dichat langsung fast response atau suka sengaja nunggu beberapa menit biar nggak keliatan ngebet?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-7",
+    "categoryId": "asmara",
+    "text": "Kalau gebetan nge-share lagu di story IG atau Spotify, lo tipe yang langsung dengerin buat nyari kode nggak?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-8",
+    "categoryId": "asmara",
+    "text": "Pilih mana pas kencan pertama: ngobrol berdua di tempat sepi atau seru-seruan di tempat yang rame?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-9",
+    "categoryId": "asmara",
+    "text": "Kebiasaan kecil apa dari lawan jenis yang paling gampang bikin lo salting brutal?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-10",
+    "categoryId": "asmara",
+    "text": "Gimana cara lo ngasih kode kalau lo sebenernya pengen banget diajak jalan lagi?",
+    "depth": 1,
+    "followUps": [
+      "Nge-share reels tempat lucu atau nyeletuk langsung?"
+    ]
+  },
+  {
+    "id": "pdk-11",
+    "categoryId": "asmara",
+    "text": "Menurut lo, saling kirim voice note itu seru bikin akrab atau malah mager dengerinnya?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-12",
+    "categoryId": "asmara",
+    "text": "Hal paling konyol apa yang pernah lo lakuin demi bisa ngobrol atau di-notice crush?",
+    "depth": 1,
+    "followUps": [
+      "Waktu itu misi lo berhasil nggak?"
+    ]
+  },
+  {
+    "id": "pdk-13",
+    "categoryId": "asmara",
+    "text": "Spill satu lagu yang menurut lo punya vibe paling pas buat nemenin night drive berdua!",
+    "depth": 1
+  },
+  {
+    "id": "pdk-14",
+    "categoryId": "asmara",
+    "text": "Lo lebih gampang naksir orang yang misterius dan bikin penasaran atau yang humble dan rame?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-15",
+    "categoryId": "asmara",
+    "text": "Kalau lagi jalan berdua, lo tipe yang doyan foto-foto atau mending nikmatin momen tanpa megang HP?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-16",
+    "categoryId": "asmara",
+    "text": "Apa topik obrolan paling ampuh buat mecahin suasana canggung pas lagi berdua?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-17",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo overthinking cuma gara-gara gaya ketikan atau emoji yang dikirim gebetan?",
+    "depth": 1,
+    "followUps": [
+      "Kata atau emoji apa yang paling sering bikin lo mikir aneh-aneh?"
+    ]
+  },
+  {
+    "id": "pdk-18",
+    "categoryId": "asmara",
+    "text": "Kencan impian versi lo kalau budget lagi pas-pasan tapi pengen tetep berkesan itu kayak gimana?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-19",
+    "categoryId": "asmara",
+    "text": "Menurut lo, manggil pake nama asli atau punya panggilan khusus yang lucu lebih bikin baper?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-20",
+    "categoryId": "asmara",
+    "text": "Makanan apa yang paling haram dipesen pas first date biar nggak malu-maluin?",
+    "depth": 1,
+    "followUps": [
+      "Pernah ada pengalaman makan belepotan pas kencan?"
+    ]
+  },
+  {
+    "id": "pdk-21",
+    "categoryId": "asmara",
+    "text": "Kalau gebetan tiba-tiba inget hal sepele yang pernah lo ceritain minggu lalu, reaksi lo bakal gimana?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-22",
+    "categoryId": "asmara",
+    "text": "Menurut lo, tatapan mata yang intens pas ngobrol itu bikin deg-degan seru atau malah bikin salting parah?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-23",
+    "categoryId": "asmara",
+    "text": "Pilih mana: kencan nonton film di bioskop tapi nggak bisa ngobrol, atau nongkrong di pinggir jalan sambil jajan cimol?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-24",
+    "categoryId": "asmara",
+    "text": "Hal pertama apa yang biasanya langsung lo perhatiin dari penampilan seseorang pas ketemu?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-25",
+    "categoryId": "asmara",
+    "text": "Lo lebih suka dikirimin meme atau reels lucu tiap hari atau ditelepon singkat cuma buat nanya kabar?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-26",
+    "categoryId": "asmara",
+    "text": "Kalau lagi naksir orang, lo tipe yang heboh cerita ke bestie lo atau disimpen rapat-rapat sendiri?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-27",
+    "categoryId": "asmara",
+    "text": "Gombalan receh apa yang pernah lo denger dan anehnya malah sukses bikin lo senyum-senyum?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-28",
+    "categoryId": "asmara",
+    "text": "Pilih mana: diajak street food hunting tengah malam atau makan rapi di restoran estetik?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-29",
+    "categoryId": "asmara",
+    "text": "Menurut lo, seberapa ngaruh selera musik atau tontonan film yang nyambung pas lagi PDKT?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-30",
+    "categoryId": "asmara",
+    "text": "Hal paling random apa yang pengen banget lo lakuin bareng orang yang lo suka?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-31",
+    "categoryId": "asmara",
+    "text": "Gimana cara lo nutup chat kalau lo pengen obrolannya tetep nyambung dan lanjut lagi besok pagi?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-32",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo pura-pura suka suatu hal cuma biar bisa nyambung ngobrol sama crush lo?",
+    "depth": 1,
+    "followUps": [
+      "Waktu itu hal apa tuh?"
+    ]
+  },
+  {
+    "id": "pdk-33",
+    "categoryId": "asmara",
+    "text": "Jujur, lo tipe yang bakal nge-stalk medsos gebetan sampe ke postingan jadulnya nggak pas baru kenal?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-34",
+    "categoryId": "asmara",
+    "text": "Panggilan sayang apa yang menurut lo lucu dan manis, dan mana yang menurut lo cringe abis?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-35",
+    "categoryId": "asmara",
+    "text": "Lo lebih suka orang yang sat-set ngajak jalan duluan atau yang pelan-pelan ngasih kode dulu?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-36",
+    "categoryId": "asmara",
+    "text": "Hal kecil apa yang bisa bikin hari lo yang capek langsung berasa cerah lagi kalau dateng dari orang spesial?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-37",
+    "categoryId": "asmara",
+    "text": "Kalau diajak jalan seharian tanpa rencana sama sekali secara spontan, lo bakal seneng atau panik?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-38",
+    "categoryId": "asmara",
+    "text": "Menurut lo, momen hening berdua tanpa ada yang ngomong itu awkward atau justru adem?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-39",
+    "categoryId": "asmara",
+    "text": "Pujian tulus kayak gimana yang paling gampang bikin lo kepikiran dan senyum sendiri seharian?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-40",
+    "categoryId": "asmara",
+    "text": "Lo tipe orang yang gampang penasaran sama isi pikiran orang lain atau cuek aja?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-41",
+    "categoryId": "asmara",
+    "text": "Kalau gebetan tiba-tiba ngirimin makanan kesukaan lo lewat ojol tanpa bilang-bilang, lo bakal gimana?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-42",
+    "categoryId": "asmara",
+    "text": "Pilih mana: saling kirim pap foto random seharian atau deep talk lewat telepon pas tengah malem?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-43",
+    "categoryId": "asmara",
+    "text": "Jokes kayak gimana yang paling gampang bikin lo ketawa ngakak pas lagi ngobrol?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-44",
+    "categoryId": "asmara",
+    "text": "Gimana cara lo nunjukin kalau lo tertarik sama seseorang tanpa harus ngomong gamblang?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-45",
+    "categoryId": "asmara",
+    "text": "Menurut lo, butuh waktu berapa lama chattingan sebelum akhirnya pas buat diajak ketemuan pertama kali?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-46",
+    "categoryId": "asmara",
+    "text": "Kalau kita bikin playlist Spotify bareng sekarang, lagu pertama yang wajib lo masukin apa?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-47",
+    "categoryId": "asmara",
+    "text": "Kebiasaan unik atau aneh lo apa yang sering bikin orang lain kaget pas baru kenal?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-48",
+    "categoryId": "asmara",
+    "text": "Kencan belanja bulanan ke supermarket berdua itu seru atau biasa aja menurut lo?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-49",
+    "categoryId": "asmara",
+    "text": "Lagi jalan berdua terus tiba-tiba hujan deres: neduh ngopi dulu atau nekat ujan-ujanan seru?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-50",
+    "categoryId": "asmara",
+    "text": "Siapa yang biasanya lebih jago nebak kalau ada orang lagi naksir lo: lo sendiri atau temen tongkrongan lo?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-51",
+    "categoryId": "asmara",
+    "text": "Lebih suka morning date sarapan santai atau night date jalan malem cari angin segar?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-52",
+    "categoryId": "asmara",
+    "text": "Hal receh apa yang bisa langsung bikin lo ngerasa satu frekuensi sama lawan bicara lo?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-53",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo sengaja bolak-balik lewat depan crush cuma biar diliat?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-54",
+    "categoryId": "asmara",
+    "text": "Apa arti emoji senyum tipis menurut interpretasi lo kalau dikirim gebetan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-55",
+    "categoryId": "asmara",
+    "text": "Pilih mana: dapet kejutan hadiah kecil yang nggak ketebak atau diajak milih barang bareng?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-56",
+    "categoryId": "asmara",
+    "text": "Menurut lo, obrolan tengah malam itu beneran bikin chemistry naik drastis atau cuma bikin baper sesaat?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-57",
+    "categoryId": "asmara",
+    "text": "Hal apa yang paling seru dari fase awal PDKT yang sering bikin kangen?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-58",
+    "categoryId": "asmara",
+    "text": "Deskripsiin tipe idaman lo dalam 3 kata sifat yang paling penting!",
+    "depth": 1
+  },
+  {
+    "id": "pdk-59",
+    "categoryId": "asmara",
+    "text": "Lo tipe yang suka minjem jaket atau barang gebetan biar ada alesan ketemu lagi nggak?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-60",
+    "categoryId": "asmara",
+    "text": "Menurut lo, tukeran rekomendasi film atau playlist itu taktik PDKT yang ampuh nggak?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-61",
+    "categoryId": "asmara",
+    "text": "Reaksi pertama lo kalau tiba-tiba dipuji di depan orang banyak sama orang yang lo taksir?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-62",
+    "categoryId": "asmara",
+    "text": "Pilih mana: liat sunset di pantai atau liat pemandangan lampu kota dari atas bukit sambil ngopi?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-63",
+    "categoryId": "asmara",
+    "text": "Gimana jurus andalan lo buat nyelametin obrolan kalau kencan pertama tiba-tiba garing?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-64",
+    "categoryId": "asmara",
+    "text": "Wajar nggak sih kalau orang ngerasa deg-degan parah sebelum ketemu gebetan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-65",
+    "categoryId": "asmara",
+    "text": "Camilan wajib apa yang harus ada kalau lagi nonton film berdua santai?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-66",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo dengerin lagu galau berulang-ulang padahal suasana hati lo lagi baik-baik aja?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-67",
+    "categoryId": "asmara",
+    "text": "Lo tim kencan dengan jadwal terstruktur rapi atau tim yang serba spontan ngikutin mood?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-68",
+    "categoryId": "asmara",
+    "text": "Tanya satu hal random yang paling bikin lo penasaran tentang orang di depan lo sekarang!",
+    "depth": 1
+  },
+  {
+    "id": "pdk-69",
+    "categoryId": "asmara",
+    "text": "Gesture kecil apa yang menurut lo paling manis pas lagi jalan kaki berdua?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-70",
+    "categoryId": "asmara",
+    "text": "Momen kencan paling berkesan yang pernah lo alamin itu suasananya kayak gimana?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-71",
+    "categoryId": "asmara",
+    "text": "Lo tipe yang kalau suka sama orang langsung keliatan dari tingkah lakunya atau jago pasang muka lempeng?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-72",
+    "categoryId": "asmara",
+    "text": "Pilih mana: gebetan yang wangi banget tapi pendiem, atau yang penampilannya santai tapi super humoris?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-73",
+    "categoryId": "asmara",
+    "text": "Spill satu hal yang menurut lo dinilai terlalu berlebihan dalam gaya pacaran zaman sekarang!",
+    "depth": 1
+  },
+  {
+    "id": "pdk-74",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo salting gara-gara tatap-tatapan nggak sengaja sama seseorang?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-75",
+    "categoryId": "asmara",
+    "text": "Kalau diajak main kartu tanya jawab kayak gini pas first date, lo bakal ngerasa seru atau kaget?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-76",
+    "categoryId": "asmara",
+    "text": "Lo lebih suka orang yang manggil lo dengan nada manja atau yang manggil santai kayak bestie?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-77",
+    "categoryId": "asmara",
+    "text": "Apa hal pertama yang bakal lo cek kalau baru di-follow sama orang yang lo taksir?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-78",
+    "categoryId": "asmara",
+    "text": "Pilih mana: gebetan yang jago masak buat lo atau yang selalu tau tempat makan enak tersembunyi?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-79",
+    "categoryId": "asmara",
+    "text": "Gimana reaksi lo kalau gebetan lo ternyata punya selera jokes yang super receh dan garing?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-80",
+    "categoryId": "asmara",
+    "text": "Lo tim yang suka dikabarin tiap pindah lokasi atau tim yang santai asal di akhir hari ada kabar?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-81",
+    "categoryId": "asmara",
+    "text": "Hal apa yang paling bikin lo ngerasa nyaman pas lagi jalan bareng?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-82",
+    "categoryId": "asmara",
+    "text": "Kalau ada orang yang tiba-tiba minjemin jaketnya pas lo kedinginan, tingkat baper lo naik berapa persen?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-83",
+    "categoryId": "asmara",
+    "text": "Menurut lo, ngajak temen nongkrong pas first date itu ide bagus atau malah bikin canggung?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-84",
+    "categoryId": "asmara",
+    "text": "Pilih mana: dikirimin voice note nyanyi fals tapi lucu atau chat puitis yang manis?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-85",
+    "categoryId": "asmara",
+    "text": "Apa topik obrolan yang bisa bikin lo ngomong antusias tanpa henti berjam-jam?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-86",
+    "categoryId": "asmara",
+    "text": "Lo tipe yang gampang baper sama tindakan nyata atau kata-kata manis yang menenangkan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-87",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo sengaja posting story cuma demi dilihat sama satu akun gebetan doang?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-88",
+    "categoryId": "asmara",
+    "text": "Kalau gebetan lo minta rekomendasi tempat ngopi favorit lo, lo bakal ngajak bareng atau cuma kasih nama tempatnya?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-89",
+    "categoryId": "asmara",
+    "text": "Menurut lo, orang yang jago dengerin cerita itu punya daya tarik tersendiri nggak?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-90",
+    "categoryId": "asmara",
+    "text": "Apa hal paling receh yang pernah bikin lo ketawa bareng gebetan pas lagi jalan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-91",
+    "categoryId": "asmara",
+    "text": "Lo lebih nyaman ngobrol lewat chat dulu berhari-hari atau langsung ketemu tatap muka?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-92",
+    "categoryId": "asmara",
+    "text": "Pilih mana: menjalin hubungan sama orang seumuran, lebih muda, atau lebih dewasa?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-93",
+    "categoryId": "asmara",
+    "text": "Hal apa yang biasanya bikin lo langsung mundur teratur dari fase pendekatan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-94",
+    "categoryId": "asmara",
+    "text": "Kalau disuruh milih, lo lebih suka photobox bareng yang fotonya lucu-lucu atau foto candid random?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-95",
+    "categoryId": "asmara",
+    "text": "Apa reaksi lo kalau orang yang lo taksir tiba-tiba ngajak ketemu sekarang juga secara mendadak?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-96",
+    "categoryId": "asmara",
+    "text": "Menurut lo, wajar nggak kalau orang punya rasa gengsi buat chat duluan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-97",
+    "categoryId": "asmara",
+    "text": "Pilih mana: kencan pameran seni yang tenang atau kencan nonton konser musik yang heboh?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-98",
+    "categoryId": "asmara",
+    "text": "Apa hal paling manis yang pernah seseorang lakuin buat lo tanpa lo minta sama sekali?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-99",
+    "categoryId": "asmara",
+    "text": "Lo tipe orang yang gampang cerita tentang keseharian lo ke orang baru atau tertutup?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-100",
+    "categoryId": "asmara",
+    "text": "Kalau lagi naksir seseorang, lagu apa yang biasanya paling sering lo putar berulang-ulang?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-101",
+    "categoryId": "asmara",
+    "text": "Menurut lo, gombalan itu aslinya bikin senyum atau malah bikin geli?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-102",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo salah tingkah pas lagi pesen menu makanan di depan gebetan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-103",
+    "categoryId": "asmara",
+    "text": "Lo lebih suka orang yang percaya diri tinggi atau yang rada pemalu tapi manis?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-104",
+    "categoryId": "asmara",
+    "text": "Apa hal yang paling bikin lo males pas lagi chattingan sama gebetan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-105",
+    "categoryId": "asmara",
+    "text": "Kalau diajak main game bareng, lo tipe yang bakal ngalah atau tetep kompetitif pengen menang?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-106",
+    "categoryId": "asmara",
+    "text": "Menurut lo, seberapa penting punya selera humor yang nyambung pas lagi deket sama orang?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-107",
+    "categoryId": "asmara",
+    "text": "Pilih mana: jalan-jalan naik motor sore hari nikmatin angin atau naik mobil santai dengerin musik?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-108",
+    "categoryId": "asmara",
+    "text": "Apa panggilan akrab yang paling lo suka saat dipanggil sama orang terdekat?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-109",
+    "categoryId": "asmara",
+    "text": "Gimana cara lo ngalihin pandangan kalau lagi ketahuan curi-curi pandang ke gebetan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-110",
+    "categoryId": "asmara",
+    "text": "Menurut lo, kencan pertama yang ideal itu durasinya berapa jam sih?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-111",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo ngerasa nyaman banget ngobrol sama orang baru padahal baru kenal hitungan jam?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-112",
+    "categoryId": "asmara",
+    "text": "Hal apa yang paling bikin lo ngerasa nyambung pas pertama kali kenalan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-113",
+    "categoryId": "asmara",
+    "text": "Lo tipe yang suka ngasih hadiah buatan tangan sendiri atau beli barang yang fungsional?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-114",
+    "categoryId": "asmara",
+    "text": "Pilih mana: liburan bareng ke tempat baru atau nongkrong santai di tempat langganan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-115",
+    "categoryId": "asmara",
+    "text": "Apa reaksi lo kalau gebetan lo tiba-tiba nanyain zodiak atau kepribadian lo?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-116",
+    "categoryId": "asmara",
+    "text": "Menurut lo, pertemanan yang berubah jadi cinta itu seru atau berisiko?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-117",
+    "categoryId": "asmara",
+    "text": "Hal apa yang paling bikin lo senyum pas lagi baca ulang riwayat chat sama orang yang lo taksir?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-118",
+    "categoryId": "asmara",
+    "text": "Kalau diajak karaokean berdua, lagu duet apa yang wajib banget dinyanyiin bareng?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-119",
+    "categoryId": "asmara",
+    "text": "Lo lebih suka orang yang punya banyak kesamaan sama lo atau yang beda biar saling melengkapi?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-120",
+    "categoryId": "asmara",
+    "text": "Apa hal paling berkesan dari orang yang lagi ngobrol sama lo sekarang?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-121",
+    "categoryId": "asmara",
+    "text": "Pilih mana: dapet ucapan selamat pagi tiap hari atau ucapan selamat istirahat sebelum tidur?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-122",
+    "categoryId": "asmara",
+    "text": "Menurut lo, kebiasaan ngabarin hal-hal random seharian itu bentuk perhatian manis atau berlebihan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-123",
+    "categoryId": "asmara",
+    "text": "Apa hal kecil yang bisa bikin lo langsung ngerasa dihargai pas lagi ngobrol bareng?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-124",
+    "categoryId": "asmara",
+    "text": "Kalau ada satu hal yang pengen lo coba lakuin berdua minggu ini, lo mau ngajak ke mana?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-125",
+    "categoryId": "asmara",
+    "text": "Tebak satu hal tentang orang di hadapan lo yang menurut lo bener, terus tanyain langsung ke dia!",
+    "depth": 1
+  },
+  {
+    "id": "pdk-126",
+    "categoryId": "asmara",
+    "text": "Hal sepele apa yang bisa langsung bikin lo ilfeel seketika pas lagi deket sama seseorang?",
+    "depth": 2,
+    "followUps": [
+      "Pernah ngalamin kejadian nyata kayak gitu?",
+      "Masih ada toleransi nggak kalau orangnya punya sifat lain yang baik?"
+    ]
+  },
+  {
+    "id": "pdk-127",
+    "categoryId": "asmara",
+    "text": "Sikap atau perilaku apa dari seseorang yang menurut lo adalah definisi green flag paling memikat?",
+    "depth": 2,
+    "followUps": [
+      "Kapan terakhir kali lo nemuin hal itu di dunia nyata?"
+    ]
+  },
+  {
+    "id": "pdk-128",
+    "categoryId": "asmara",
+    "text": "Kalau lagi bad mood atau kesel, lo lebih butuh ditanya terus dan ditemani atau dikasih ruang sendiri dulu?",
+    "depth": 2,
+    "followUps": [
+      "Gimana cara terbaik buat ngasih tahu pasangan tanpa bikin salah paham?"
+    ]
+  },
+  {
+    "id": "pdk-129",
+    "categoryId": "asmara",
+    "text": "Menurut lo, punya sahabat lawan jenis yang super nempel pas udah punya pacar itu wajar atau bisa jadi masalah?",
+    "depth": 2,
+    "followUps": [
+      "Batasan apa yang wajib dijaga biar nggak saling curiga?"
+    ]
+  },
+  {
+    "id": "pdk-130",
+    "categoryId": "asmara",
+    "text": "Apa love language utama lo, dan love language apa yang menurut lo paling susah lo pahamin dari orang lain?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-131",
+    "categoryId": "asmara",
+    "text": "Soal gengsi dalam hubungan: lo tipe yang berani ngaku kangen duluan atau nunggu disenggol dulu?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-132",
+    "categoryId": "asmara",
+    "text": "Menurut lo, posting pasangan di medsos itu penting banget atau nggak perlu diributkan?",
+    "depth": 2,
+    "followUps": [
+      "Kalau pasangan nggak pernah posting lo sama sekali di akunnya, lo bakal mikir gimana?"
+    ]
+  },
+  {
+    "id": "pdk-133",
+    "categoryId": "asmara",
+    "text": "Apa perbedaan paling terasa antara orang yang beneran naksir tulus sama orang yang cuma sekadar penasaran atau gabut?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-134",
+    "categoryId": "asmara",
+    "text": "Pernah berada dalam hubungan tanpa status yang nggak jelas arahnya? Apa pelajaran terbesar yang lo dapet?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-135",
+    "categoryId": "asmara",
+    "text": "Seberapa penting keterbukaan soal lingkaran pertemanan masing-masing saat mulai serius menjalin hubungan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-136",
+    "categoryId": "asmara",
+    "text": "Hal apa yang menurut lo sering bikin dua orang yang saling suka akhirnya gagal buat jadian?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-137",
+    "categoryId": "asmara",
+    "text": "Kalau ada kebiasaan pasangan yang kurang lo suka, lo bakal langsung omongin atau nunggu momen yang pas?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-138",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apa arti usaha nyata dalam sebuah hubungan? Kasih contoh sederhananya.",
+    "depth": 2
+  },
+  {
+    "id": "pdk-139",
+    "categoryId": "asmara",
+    "text": "Gimana cara lo ngebedain antara orang yang perhatian tulus sama yang cuma jago merangkai kata manis?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-140",
+    "categoryId": "asmara",
+    "text": "Apakah lo percaya konsep waktu yang tepat dalam memulai sebuah hubungan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-141",
+    "categoryId": "asmara",
+    "text": "Hal apa yang paling bikin lo ngerasa beneran dihargai dan dianggap penting sama orang yang deket sama lo?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-142",
+    "categoryId": "asmara",
+    "text": "Menurut lo, seberapa penting punya waktu buat diri sendiri pas udah punya pasangan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-143",
+    "categoryId": "asmara",
+    "text": "Kalau lo ngerasa obrolan sama gebetan mulai satu arah dan hambar, apa yang biasanya lo lakuin?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-144",
+    "categoryId": "asmara",
+    "text": "Apa tanda paling jelas kalau chemistry antara dua orang itu beneran alami dan bukan dipaksakan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-145",
+    "categoryId": "asmara",
+    "text": "Bagaimana cara lo merespons penolakan secara tenang tanpa merusak hubungan pertemanan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-146",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apakah pasangan harus punya hobi yang sama, atau perbedaan justru bikin hubungan lebih berwarna?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-147",
+    "categoryId": "asmara",
+    "text": "Sikap seperti apa yang nunjukin kalau seseorang punya kedewasaan dalam menyelesaikan salah paham?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-148",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo ngerasa suka sama seseorang, tapi sadar kalau prinsip hidup kalian terlalu berseberangan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-149",
+    "categoryId": "asmara",
+    "text": "Apa batasan privasi yang menurut lo tetep harus dijaga, misalnya soal isi HP atau akun pribadi?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-150",
+    "categoryId": "asmara",
+    "text": "Gimana pandangan lo tentang orang yang selalu butuh kabar tiap jam vs orang yang santai berjam-jam tanpa kabar?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-151",
+    "categoryId": "asmara",
+    "text": "Hal apa yang paling gampang membuat rasa percaya kepada seseorang perlahan-lahan pudar?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-152",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apakah wajar meminta kejelasan status hubungan setelah beberapa bulan intens jalan bareng?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-153",
+    "categoryId": "asmara",
+    "text": "Apa cara paling sehat buat menyampaikan rasa cemburu tanpa terkesan posesif atau curiga berlebihan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-154",
+    "categoryId": "asmara",
+    "text": "Gimana cara lo ngebagi waktu antara ngejar impian pribadi sama meluangkan waktu buat pasangan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-155",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apakah selera humor yang sefrekuensi itu pondasi utama hubungan yang awet?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-156",
+    "categoryId": "asmara",
+    "text": "Sikap apa dari pasangan yang bisa bikin lo langsung ngerasa tenang setelah ngelewatin hari yang berat?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-157",
+    "categoryId": "asmara",
+    "text": "Gimana pendapat lo tentang pasangan yang suka ngebandingin hubungannya sama apa yang diliat di media sosial?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-158",
+    "categoryId": "asmara",
+    "text": "Kapan waktu yang paling pas menurut lo buat ngenalin pasangan ke lingkaran temen-temen tongkrongan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-159",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apa tanda kalau seseorang bener-bener nyimak pas lo lagi cerita isi hati lo?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-160",
+    "categoryId": "asmara",
+    "text": "Hal apa yang bikin sebuah hubungan berasa ringan, adem, dan nggak membebani pikiran?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-161",
+    "categoryId": "asmara",
+    "text": "Hal apa tentang diri lo yang orang lain sering salah paham, tapi lo pengen banget pasangan lo beneran ngerti?",
+    "depth": 3,
+    "followUps": [
+      "Kenapa hal itu penting banget buat lo?"
+    ]
+  },
+  {
+    "id": "pdk-162",
+    "categoryId": "asmara",
+    "text": "Kapan lo ngerasa paling aman secara emosional dan nggak takut dihakimi pas lagi bareng seseorang?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-163",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apa perbedaan paling mendasar antara beneran sayang sama sekadar takut kesepian?",
+    "depth": 3,
+    "followUps": [
+      "Pernah nggak lo berada di posisi kedua tanpa sadar?"
+    ]
+  },
+  {
+    "id": "pdk-164",
+    "categoryId": "asmara",
+    "text": "Pas rasa jenuh atau hambar mulai dateng di hubungan, apa yang bikin lo milih buat tetep bertahan dan berusaha?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-165",
+    "categoryId": "asmara",
+    "text": "Hal apa yang paling bikin lo yakin buat ngebuka hati sepenuhnya ke seseorang?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-166",
+    "categoryId": "asmara",
+    "text": "Gimana cara lo nunjukin sisi rapuh lo ke orang yang lo percaya tanpa ngerasa cemas?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-167",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apa definisi komitmen yang sejati di zaman yang serba cepet berubah ini?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-168",
+    "categoryId": "asmara",
+    "text": "Kapan momen di mana lo ngerasa bener-bener diterima apa adanya dengan segala kelebihan dan kekurangan lo?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-169",
+    "categoryId": "asmara",
+    "text": "Apa ketakutan terbesar yang diam-diam sering muncul di pikiran lo pas mulai sayang banget sama seseorang?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-170",
+    "categoryId": "asmara",
+    "text": "Menurut lo, gimana cara dua orang tetep saling milih tiap hari meski fase awal jatuh cinta udah lewat?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-171",
+    "categoryId": "asmara",
+    "text": "Kualitas kepribadian apa yang menurut lo paling esensial biar sebuah hubungan bisa bertahan dalam jangka panjang?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-172",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apa arti punya pasangan yang bisa jadi tempat pulang paling menenangkan?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-173",
+    "categoryId": "asmara",
+    "text": "Bagaimana lo mendefinisikan kedamaian dalam sebuah hubungan yang harmonis?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-174",
+    "categoryId": "asmara",
+    "text": "Hal apa yang membuat lo percaya bahwa rasa sayang yang tulus selalu layak buat diperjuangkan?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-175",
+    "categoryId": "asmara",
+    "text": "Apa satu pertanyaan paling jujur dari lubuk hati lo yang pengen lo tanyain ke orang di hadapan lo sekarang?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-176",
+    "categoryId": "asmara",
+    "text": "Kalau gebetan nge-like foto Instagram lo yang diposting 3 tahun lalu, itu kode keras atau kepencet doang?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-177",
+    "categoryId": "asmara",
+    "text": "Lo lebih suka dipeluk pas lagi capek atau diajak makan enak biar mood balik?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-178",
+    "categoryId": "asmara",
+    "text": "Menurut lo, panggilan 'Beb' sama 'Sayang' itu beda level baper atau sama aja?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-179",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo ngerasa deg-degan banget cuma gara-gara tangan kalian nggak sengaja senggolan pas jalan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-180",
+    "categoryId": "asmara",
+    "text": "Kalau lo punya pacar, lo tipe yang suka pamer kemesraan di medsos (Bucin) atau tipe low-profile?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-181",
+    "categoryId": "asmara",
+    "text": "Pilih mana: gebetan yang wangi parfumnya semerbak atau yang outfit-nya selalu rapi dan matching?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-182",
+    "categoryId": "asmara",
+    "text": "Menurut lo, jalan berdua keliling kota tanpa tujuan (night drive) itu romantis atau buang bensin?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-183",
+    "categoryId": "asmara",
+    "text": "Apa hal pertama yang lo bayangin pas pertama kali denger nama orang yang lagi lo taksir?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-184",
+    "categoryId": "asmara",
+    "text": "Lo lebih suka dapet hadiah barang impian atau tiket jalan-jalan liburan berdua?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-185",
+    "categoryId": "asmara",
+    "text": "Kalau diajak makan malam di warung tenda pinggir jalan pas lagi gerimis, lo mau nggak?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-186",
+    "categoryId": "asmara",
+    "text": "Menurut lo, tanda paling jelas kalau seseorang lagi cemburu tapi gengsi buat ngaku apa?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-187",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo ngerasa salting sampe nggak fokus seharian gara-gara chat manis dari seseorang?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-188",
+    "categoryId": "asmara",
+    "text": "Kalau kita nonton konser musik bareng, lo tipe yang nyanyi jingkrak-jingkrak atau nikmatin santai?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-189",
+    "categoryId": "asmara",
+    "text": "Apa menu minuman boba atau kopi favorit lo yang wajib dipesenin gebetan biar lo hepi?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-190",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apakah tatapan mata lebih jujur daripada kata-kata manis yang diucapin langsung?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-191",
+    "categoryId": "asmara",
+    "text": "Kalau lo lagi kangen banget sama seseorang tapi gengsi buat ngomong, apa yang biasanya lo lakuin?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-192",
+    "categoryId": "asmara",
+    "text": "Pilih mana: ditemenin nonton film horor sambil jerit-jerit atau nonton komedi sambil ngakak bareng?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-193",
+    "categoryId": "asmara",
+    "text": "Apa hal paling manis yang pernah lo liat dilakuin pasangan kakek-nenek di tempat umum?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-194",
+    "categoryId": "asmara",
+    "text": "Menurut lo, wajar nggak kalau seseorang ngerasa cemburu sama idola atau artis favorit pasangannya?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-195",
+    "categoryId": "asmara",
+    "text": "Kalau lo disuruh bikin satu janji kencan santai buat minggu depan bareng orang di depan lo, mau ke mana?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-196",
+    "categoryId": "asmara",
+    "text": "Lo lebih suka dipuji 'pinter dan seru' atau dipuji 'manis dan menarik'?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-197",
+    "categoryId": "asmara",
+    "text": "Pernah nggak lo kepikiran gebetan pas lagi dengerin lagu random di radio mobil?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-198",
+    "categoryId": "asmara",
+    "text": "Menurut lo, first date yang sukses itu tolak ukurnya apa: obrolan nyambung atau ada janji kencan kedua?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-199",
+    "categoryId": "asmara",
+    "text": "Kalau lo bisa masak satu menu spesial buat gebetan lo di rumah, lo bakal masak apa?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-200",
+    "categoryId": "asmara",
+    "text": "Sebutkan satu hal unik dari orang di depan lo yang menurut lo paling memikat!",
+    "depth": 1
+  },
+  {
+    "id": "pdk-201",
+    "categoryId": "asmara",
+    "text": "Lo tipe yang kalau jalan berdua gandengan tangan terus atau jalan santai bersebelahan?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-202",
+    "categoryId": "asmara",
+    "text": "Menurut lo, seberapa penting punya selera humor receh yang sama pas lagi deket?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-203",
+    "categoryId": "asmara",
+    "text": "Pilih mana: dikirimin voice note pas bangun tidur atau ditelepon sebelum tidur malam?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-204",
+    "categoryId": "asmara",
+    "text": "Kalau gebetan lo punya kebiasaan nyanyi fals tapi pede banget, respon lo bakal gimana?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-205",
+    "categoryId": "asmara",
+    "text": "Apa panggilan sayang yang paling bikin lo geli kalau denger orang lain manggil gitu di mall?",
+    "depth": 1
+  },
+  {
+    "id": "pdk-206",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apakah wajar kalau pasangan punya password HP satu sama lain atau harus saling jaga privasi?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-207",
+    "categoryId": "asmara",
+    "text": "Sikap apa dari pasangan yang bisa bikin lo ngerasa bener-bener diprioritaskan di tengah kesibukannya?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-208",
+    "categoryId": "asmara",
+    "text": "Kalau ada masalah dalam hubungan, lo tipe yang harus selesai malam itu juga atau tidur dulu biar kepala dingin?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-209",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apa perbedaan paling mendasar antara cinta yang dewasa sama cinta yang sekadar nafsu?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-210",
+    "categoryId": "asmara",
+    "text": "Gimana cara lo mengatasi rasa insecure pas ngerasa gebetan lo disukai banyak orang lain?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-211",
+    "categoryId": "asmara",
+    "text": "Seberapa penting kecocokan visi masa depan saat hubungan udah berjalan lebih dari setahun?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-212",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apakah dua orang yang kepribadiannya sama-sama keras kepala bisa cocok jangka panjang?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-213",
+    "categoryId": "asmara",
+    "text": "Hal apa yang paling bikin lo ngerasa aman dan tenang saat pasangan lagi nongkrong bareng temen-temennya?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-214",
+    "categoryId": "asmara",
+    "text": "Bagaimana cara lo menyampaikan kalau lo lagi butuh dipeluk tanpa harus merasa malu?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-215",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apa peran penting kejujuran saat perasaan bosan mulai melanda hubungan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-216",
+    "categoryId": "asmara",
+    "text": "Sikap seperti apa yang nunjukin kalau seseorang bener-bener siap buat komitmen jangka panjang?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-217",
+    "categoryId": "asmara",
+    "text": "Bagaimana caramu menjaga percikan chemistry agar tetap menyala di tengah rutinitas yang padat?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-218",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apakah memaafkan kesalahan kecil pasangan adalah kunci kelanggengan hubungan?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-219",
+    "categoryId": "asmara",
+    "text": "Hal apa yang paling lo kagumi dari cara seseorang memperlakukan keluarganya sendiri?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-220",
+    "categoryId": "asmara",
+    "text": "Bagaimana lo mendefinisikan rasa saling percaya yang kokoh tanpa perlu saling mengekang?",
+    "depth": 2
+  },
+  {
+    "id": "pdk-221",
+    "categoryId": "asmara",
+    "text": "Kapan momen di mana lo merasa benar-benar bersyukur telah memilih orang yang tepat?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-222",
+    "categoryId": "asmara",
+    "text": "Menurut lo, apa yang membuat dua orang bisa tetap setia meski banyak godaan di luar sana?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-223",
+    "categoryId": "asmara",
+    "text": "Hal apa yang paling pengen lo bangun bersama pasangan demi masa depan yang tenang dan damai?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-224",
+    "categoryId": "asmara",
+    "text": "Bagaimana lo mendefinisikan cinta yang mampu bertahan melewati suka dan duka kehidupan?",
+    "depth": 3
+  },
+  {
+    "id": "pdk-225",
+    "categoryId": "asmara",
+    "text": "Tatap mata orang di hadapan lo, lalu sampaikan satu harapan manis lo untuk hubungan kalian ke depan!",
+    "depth": 3
+  }
 ]
