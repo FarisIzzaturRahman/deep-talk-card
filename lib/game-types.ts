@@ -26,6 +26,7 @@ export interface GameSession {
     turnOrder: string[];
     roundCount: number;
     decks: Record<string, CategoryDeck>;
+    cardsSinceWildcard?: number;
 }
 
 export interface RoundState {

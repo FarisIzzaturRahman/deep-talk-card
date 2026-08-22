@@ -3,9 +3,10 @@ import type { CategoryDeck, GameConfig, GameState, Player } from "./game-types";
 import { shuffleArray } from "./utils";
 
 const WILDCARD_CATEGORY_ID = "wildcard";
+const MIN_CARDS_BETWEEN_WILDCARDS = 8;
 const WILDCARD_PROBABILITY = {
-    SHARED: 0.15,
-    DRAFT: 0.25,
+    SHARED: 0.06,
+    DRAFT: 0.12,
 } as const;
 
 interface DrawResult {
@@ -22,6 +23,7 @@ export function createGameState(config: GameConfig, players: Player[]): GameStat
             turnOrder: [],
             roundCount: 0,
             decks: {},
+            cardsSinceWildcard: MIN_CARDS_BETWEEN_WILDCARDS,
         },
         round: {
             phase: "IDLE",
@@ -97,7 +99,9 @@ function drawCategoryCards(
 export function startRound(state: GameState, allQuestions: Question[]): GameState {
     const { config, players } = state.session;
     const cardsNeeded = config.mode === "DRAFT" ? players.length : 1;
-    const includeWildcard = Math.random() < WILDCARD_PROBABILITY[config.mode];
+    const cardsSinceWildcard = state.session.cardsSinceWildcard ?? MIN_CARDS_BETWEEN_WILDCARDS;
+    const canIncludeWildcard = cardsSinceWildcard >= MIN_CARDS_BETWEEN_WILDCARDS;
+    const includeWildcard = canIncludeWildcard && Math.random() < WILDCARD_PROBABILITY[config.mode];
     const decks = { ...state.session.decks };
     let cards: Question[];
 
@@ -137,6 +141,7 @@ export function startRound(state: GameState, allQuestions: Question[]): GameStat
                 : players.map((player) => player.id),
             roundCount: state.session.roundCount + 1,
             decks,
+            cardsSinceWildcard: includeWildcard ? 0 : cardsSinceWildcard + 1,
         },
         round: {
             phase: config.mode === "DRAFT" ? "DRAFTING" : "ANSWERING",

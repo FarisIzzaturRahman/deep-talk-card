@@ -22,20 +22,20 @@ export function Card() {
 
     return (
         <div className="relative mx-auto w-full max-w-3xl perspective-1000">
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait" initial={false}>
 
                 {/* Main Card State */}
                 {!activeFollowUp ? (
                     <motion.div
                         key={currentQuestion.id}
-                        initial={{ opacity: 0, x: 50, rotate: 2 }}
-                        animate={{ opacity: 1, x: 0, rotate: 0 }}
-                        exit={{ opacity: 0, x: -50, rotate: -2 }}
-                        transition={{ type: "spring", stiffness: 200, damping: 25 }}
+                        initial={{ opacity: 0, y: 16, scale: 0.97 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: -16, scale: 0.97 }}
+                        transition={{ duration: 0.18, ease: [0.16, 1, 0.3, 1] }}
                         className="aspect-[4/5] w-full sm:aspect-[4/3] lg:aspect-[16/10]"
                     >
                         <div className={cn(
-                            "relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-3xl border bg-gradient-to-br p-6 text-center shadow-2xl transition-all duration-700 sm:p-10 lg:p-14",
+                            "relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-3xl border bg-gradient-to-br p-6 text-center shadow-2xl transition-colors duration-300 sm:p-10 lg:p-14",
                             currentQuestion.type === 'wildcard'
                                 ? "border-amber-300/80 shadow-amber-950/30 saturate-[1.15]"
                                 : "border-white/15 shadow-black/30",
