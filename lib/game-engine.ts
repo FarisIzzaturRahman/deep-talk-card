@@ -72,11 +72,8 @@ function drawCategoryCards(
         const repeatedIds = nextCycle.slice(0, cardsFromNextCycle);
 
         drawnIds = [...remaining, ...repeatedIds];
-        nextRemaining = shuffleArray([
-            ...nextCycle.slice(cardsFromNextCycle),
-            ...remaining,
-        ]);
-        nextUsed = repeatedIds;
+        nextRemaining = nextCycle.slice(cardsFromNextCycle);
+        nextUsed = drawnIds;
     }
 
     const cards = drawnIds.map((id) => {
@@ -141,7 +138,7 @@ export function startRound(state: GameState, allQuestions: Question[]): GameStat
                 : players.map((player) => player.id),
             roundCount: state.session.roundCount + 1,
             decks,
-            cardsSinceWildcard: includeWildcard ? 0 : cardsSinceWildcard + 1,
+            cardsSinceWildcard: includeWildcard ? 0 : cardsSinceWildcard + cardsNeeded,
         },
         round: {
             phase: config.mode === "DRAFT" ? "DRAFTING" : "ANSWERING",

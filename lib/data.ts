@@ -4,6 +4,11 @@ export interface Category {
     description: string;
     color: string;
     gradient: string;
+    surfaceBg: string;
+    surfaceEdge: string;
+    surfaceInk: string;
+    badgeColor: string;
+    isDarkSurface?: boolean;
 }
 
 export interface Question {
@@ -21,43 +26,68 @@ export const CATEGORIES: Category[] = [
         id: "ice-breaker",
         label: "Ice Breaker",
         description: "Pemanasan dulu gais, biar nggak kaku.",
-        color: "bg-blue-500",
-        gradient: "from-blue-400 to-blue-600"
+        color: "bg-[var(--cat-ice-badge)]",
+        gradient: "bg-[var(--cat-ice-bg)]",
+        surfaceBg: "var(--cat-ice-bg)",
+        surfaceEdge: "var(--cat-ice-edge)",
+        surfaceInk: "var(--cat-ice-ink)",
+        badgeColor: "var(--cat-ice-badge)",
     },
     {
         id: "deep-talk",
         label: "Deep Talk",
         description: "Ngobrolin perasaan, mimpi, dan realita hidup.",
-        color: "bg-purple-500",
-        gradient: "from-purple-400 to-purple-600"
+        color: "bg-[var(--cat-deep-bg)]",
+        gradient: "bg-[var(--cat-deep-bg)]",
+        surfaceBg: "var(--cat-deep-bg)",
+        surfaceEdge: "var(--cat-deep-edge)",
+        surfaceInk: "var(--cat-deep-ink)",
+        badgeColor: "var(--cat-deep-badge)",
+        isDarkSurface: true,
     },
     {
         id: "reflection",
         label: "Refleksi Diri",
         description: "Flashback bentar, evaluasi diri sendiri.",
-        color: "bg-emerald-500",
-        gradient: "from-emerald-400 to-emerald-600"
+        color: "bg-[var(--cat-reflect-badge)]",
+        gradient: "bg-[var(--cat-reflect-bg)]",
+        surfaceBg: "var(--cat-reflect-bg)",
+        surfaceEdge: "var(--cat-reflect-edge)",
+        surfaceInk: "var(--cat-reflect-ink)",
+        badgeColor: "var(--cat-reflect-badge)",
     },
     {
         id: "nostalgia",
         label: "Nostalgia",
         description: "Masa kecil, jajan SD, dan momen alay dulu.",
-        color: "bg-amber-500",
-        gradient: "from-amber-400 to-amber-600"
+        color: "bg-[var(--cat-nostalgia-badge)]",
+        gradient: "bg-[var(--cat-nostalgia-bg)]",
+        surfaceBg: "var(--cat-nostalgia-bg)",
+        surfaceEdge: "var(--cat-nostalgia-edge)",
+        surfaceInk: "var(--cat-nostalgia-ink)",
+        badgeColor: "var(--cat-nostalgia-badge)",
     },
     {
         id: "fun",
         label: "Fun & Random",
         description: "Halu dikit nggak ngaruh, seru-seruan aja.",
-        color: "bg-pink-500",
-        gradient: "from-pink-400 to-pink-600"
+        color: "bg-[var(--color-accent)]",
+        gradient: "bg-[var(--cat-fun-bg)]",
+        surfaceBg: "var(--cat-fun-bg)",
+        surfaceEdge: "var(--cat-fun-edge)",
+        surfaceInk: "var(--cat-fun-ink)",
+        badgeColor: "var(--cat-fun-badge)",
     },
     {
         id: "asmara",
         label: "PDKT & Chemistry",
         description: "Kenalan lebih dekat, cari chemistry, dan ngobrol manis tanpa bikin risih.",
-        color: "bg-rose-500",
-        gradient: "from-rose-400 to-rose-600"
+        color: "bg-[var(--cat-asmara-badge)]",
+        gradient: "bg-[var(--cat-asmara-bg)]",
+        surfaceBg: "var(--cat-asmara-bg)",
+        surfaceEdge: "var(--cat-asmara-edge)",
+        surfaceInk: "var(--cat-asmara-ink)",
+        badgeColor: "var(--cat-asmara-badge)",
     },
 ];
 

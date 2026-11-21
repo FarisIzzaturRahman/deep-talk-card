@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useRef, useState } from "react";
+import React, { createContext, useContext, useRef, useState } from "react";
 import { CATEGORIES, type Category, type Question } from "./data";
 import {
     confirmTurn,
@@ -32,15 +32,12 @@ interface GameContextType {
     skipQuestion: () => void;
     endGame: () => void;
     resetGame: () => void;
-    favorites: string[];
-    toggleFavorite: (id: string) => void;
     activeFollowUp: string | null;
     showFollowUp: (text: string) => void;
     closeFollowUp: () => void;
 }
 
 const GameContext = createContext<GameContextType | undefined>(undefined);
-const STORAGE_KEY = "deep-talk-session-v1";
 const DEFAULT_CONFIG: GameConfig = {
     mode: "SHARED",
     categoryId: "default",
@@ -51,27 +48,10 @@ function createInitialGame(): GameState {
     return createGameState(DEFAULT_CONFIG, DEFAULT_PLAYERS);
 }
 
-function readStoredFavorites(): string[] {
-    if (typeof window === "undefined") return [];
-
-    try {
-        const savedState = localStorage.getItem(STORAGE_KEY);
-        if (!savedState) return [];
-
-        const favorites = (JSON.parse(savedState) as { favorites?: unknown }).favorites;
-        if (!Array.isArray(favorites)) return [];
-
-        return favorites.filter((favorite): favorite is string => typeof favorite === "string");
-    } catch {
-        return [];
-    }
-}
-
 export function GameProvider({ children }: { children: React.ReactNode }) {
     const [gameStatus, setGameStatus] = useState<GameStatus>("LOBBY");
     const [currentCategory, setCurrentCategory] = useState<Category | null>(null);
     const [game, setGame] = useState<GameState>(createInitialGame);
-    const [favorites, setFavorites] = useState<string[]>(readStoredFavorites);
     const [activeFollowUp, setActiveFollowUp] = useState<string | null>(null);
     const [questionLoadStatus, setQuestionLoadStatus] = useState<QuestionLoadStatus>("IDLE");
     const [loadedQuestions, setLoadedQuestions] = useState<{
@@ -155,20 +135,6 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         setGame(createInitialGame());
     };
 
-    const toggleFavorite = (id: string) => {
-        setFavorites((currentFavorites) => currentFavorites.includes(id)
-            ? currentFavorites.filter((favoriteId) => favoriteId !== id)
-            : [...currentFavorites, id]);
-    };
-
-    useEffect(() => {
-        try {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify({ favorites }));
-        } catch {
-            // Favorites remain usable for this session when storage is unavailable.
-        }
-    }, [favorites]);
-
     const currentPlayerId = game.session.turnOrder[game.round.currentTurnIndex];
     const currentPlayer = game.session.players.find(
         (player) => player.id === currentPlayerId,
@@ -194,8 +160,6 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
             skipQuestion: skipCurrentQuestion,
             endGame,
             resetGame,
-            favorites,
-            toggleFavorite,
             activeFollowUp,
             showFollowUp: setActiveFollowUp,
             closeFollowUp: () => setActiveFollowUp(null),

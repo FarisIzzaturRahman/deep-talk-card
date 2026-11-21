@@ -16,64 +16,57 @@ import { SaweriaSupportLink } from "./SaweriaSupportLink";
 export function GameLayout() {
     const { currentCategory, gameStatus, round, session } = useGame();
 
-    const isDraftMode = session.config.mode === 'DRAFT';
-    const isDrafting = isDraftMode && round.phase === 'DRAFTING';
-    const isRoundComplete = isDraftMode && round.phase === 'COMPLETE';
+    const isDraftMode = session.config.mode === "DRAFT";
+    const isDrafting = isDraftMode && round.phase === "DRAFTING";
+    const isRoundComplete = isDraftMode && round.phase === "COMPLETE";
 
     return (
-        <div className="relative min-h-screen min-h-[100dvh] w-full overflow-x-hidden bg-slate-950 font-sans text-slate-50 selection:bg-rose-500/30">
-            <div className="pointer-events-none fixed inset-0 overflow-hidden" aria-hidden="true">
-                <div className="absolute left-1/2 top-[-18rem] h-[42rem] w-[42rem] -translate-x-1/2 rounded-full bg-indigo-500/10 blur-[140px]" />
-                <div className="absolute bottom-[-20rem] right-[-12rem] h-[36rem] w-[36rem] rounded-full bg-rose-500/5 blur-[140px]" />
-            </div>
-
-            <div className="relative z-10 mx-auto flex min-h-screen min-h-[100dvh] w-full max-w-[1440px] flex-col px-4 sm:px-6 lg:px-8 xl:px-12">
-                <AnimatePresence>
-                    {gameStatus === 'SETUP' && <GameSetupModal />}
-                </AnimatePresence>
+        <div className="paper-surface relative min-h-screen min-h-[100dvh] w-full overflow-x-clip">
+            <div className="relative z-10 mx-auto flex min-h-screen min-h-[100dvh] w-full max-w-[1440px] flex-col px-4 sm:px-6 lg:px-10 xl:px-16">
+                {gameStatus === "SETUP" && <GameSetupModal />}
 
                 <AnimatePresence mode="wait">
-                    {gameStatus === 'LOBBY' ? (
+                    {gameStatus === "LOBBY" ? (
                         <motion.div
                             key="selector"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0, y: -20, filter: "blur(10px)" }}
-                            transition={{ duration: 0.5 }}
-                            className="flex flex-1 py-6 sm:py-10 lg:py-12"
+                            initial={{ opacity: 0, y: 12 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -12 }}
+                            transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+                            className="flex flex-1 flex-col justify-center py-8 sm:py-10 lg:py-12"
                         >
                             <CategorySelector />
                         </motion.div>
-                    ) : gameStatus === 'PLAYING' ? (
+                    ) : gameStatus === "PLAYING" ? (
                         <motion.div
                             key="game"
-                            initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
-                            animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                            exit={{ opacity: 0, scale: 1.05, filter: "blur(10px)" }}
-                            transition={{ duration: 0.5, delay: 0.1 }}
-                            className="flex w-full flex-1 flex-col py-4 sm:py-6 lg:py-8"
+                            initial={{ opacity: 0, y: 12 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -12 }}
+                            transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+                            className="flex w-full flex-1 flex-col py-5 sm:py-7 lg:py-8"
                         >
-                            <header className="mb-5 flex items-center justify-between gap-4 border-b border-white/10 pb-4 sm:mb-7 sm:pb-5">
+                            <header className="mb-6 flex items-center justify-between gap-4 border-b border-[var(--color-rule)] pb-4 sm:mb-8 sm:pb-5">
                                 <div className="min-w-0">
-                                    <p className="text-xs font-bold tracking-[0.18em] text-yellow-300">
+                                    <p className="text-sm font-semibold text-[var(--color-muted)]">
                                         ajakBicara
                                     </p>
-                                    <h1 className="mt-1 truncate text-xl font-semibold text-white sm:text-2xl">
+                                    <h1 className="mt-0.5 truncate text-2xl font-semibold text-[var(--color-ink)] sm:text-3xl">
                                         {currentCategory?.label ?? "Permainan"}
                                     </h1>
                                 </div>
-                                <div className="shrink-0 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-bold uppercase tracking-[0.14em] text-slate-300 sm:px-4">
+                                <div className="shrink-0 rounded-full border border-[var(--color-rule)] bg-[var(--color-paper-2)] px-4 py-2 text-sm font-medium text-[var(--color-ink-2)]">
                                     {isDraftMode ? (
                                         <>
-                                            <span className="sm:hidden">Giliran · R{session.roundCount}</span>
-                                            <span className="hidden sm:inline">Giliran Kartu · Ronde {session.roundCount}</span>
+                                            <span className="sm:hidden">Ronde {session.roundCount}</span>
+                                            <span className="hidden sm:inline">Giliran kartu, ronde {session.roundCount}</span>
                                         </>
-                                    ) : "Main Bareng"}
+                                    ) : "Main bareng"}
                                 </div>
                             </header>
 
                             <div className={cn(
-                                "grid flex-1 items-start gap-5 lg:gap-8 xl:gap-10",
+                                "grid flex-1 items-start gap-6 lg:gap-8 xl:gap-10",
                                 isDraftMode
                                     ? "lg:grid-cols-[minmax(0,1fr)_18rem] xl:grid-cols-[minmax(0,1fr)_20rem]"
                                     : "lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-center xl:grid-cols-[minmax(0,1fr)_22rem]",
@@ -82,7 +75,7 @@ export function GameLayout() {
                                     aria-label={isDraftMode ? "Area giliran kartu" : "Kartu pertanyaan"}
                                     className={cn(
                                         "min-w-0",
-                                        !isDraftMode && "flex flex-col justify-center lg:min-h-[calc(100dvh-12rem)]",
+                                        !isDraftMode && "flex flex-col justify-center lg:min-h-[calc(100dvh-13rem)]",
                                     )}
                                 >
                                     {isDrafting ? (
@@ -93,7 +86,7 @@ export function GameLayout() {
                                         <Card />
                                     )}
 
-                                    <div className="mt-5 lg:hidden">
+                                    <div className="mt-6 lg:hidden">
                                         <Controls />
                                     </div>
                                 </section>
@@ -104,21 +97,23 @@ export function GameLayout() {
                                 </aside>
                             </div>
                         </motion.div>
-                    ) : gameStatus === 'FINISHED' ? (
+                    ) : gameStatus === "FINISHED" ? (
                         <motion.div
                             key="finish"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
+                            transition={{ duration: 0.24 }}
                             className="flex flex-1"
                         >
                             <EmotionalClosing />
                         </motion.div>
                     ) : null}
                 </AnimatePresence>
+
                 {gameStatus === "LOBBY" && (
-                    <footer className="flex w-full flex-col items-center gap-3 py-6 text-center text-xs tracking-[0.18em] text-slate-600">
-                        <p>ajakBicara • Tanpa Login</p>
+                    <footer className="mt-auto flex w-full flex-col items-start justify-between gap-4 border-t border-[var(--color-rule)] py-6 text-sm text-[var(--color-muted)] sm:flex-row sm:items-center">
+                        <p>ajakBicara — permainan kartu percakapan tanpa login.</p>
                         <SaweriaSupportLink />
                     </footer>
                 )}

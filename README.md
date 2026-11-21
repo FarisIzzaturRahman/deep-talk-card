@@ -48,9 +48,8 @@ Mode ini cocok untuk bermain santai dalam kelompok, berdua, atau sendiri.
 1. Satu kartu pertanyaan akan tampil di layar.
 2. Bacakan pertanyaannya dan beri kesempatan kepada semua orang untuk menjawab.
 3. Tekan **Perdalam Topik** jika ingin melanjutkan obrolan dengan pertanyaan tambahan.
-4. Tekan ikon hati untuk menyimpan pertanyaan favorit di browser yang sedang digunakan.
-5. Tekan **Lewati** jika pertanyaannya tidak ingin dijawab.
-6. Pilih **Pertanyaan Baru** saat semua orang siap melanjutkan.
+4. Tekan **Lewati** jika pertanyaannya tidak ingin dijawab.
+5. Pilih **Pertanyaan Baru** saat semua orang siap melanjutkan.
 
 ### Giliran Kartu — satu kartu untuk setiap giliran
 
@@ -77,7 +76,7 @@ Koleksi pertanyaan ajakBicara dirancang agar tetap ramah dan nyaman, tanpa perta
 
 ## Obrolanmu tetap milikmu
 
-ajakBicara tidak meminta akun dan tidak menyediakan kolom untuk merekam jawaban. Cerita cukup disampaikan langsung di antara para pemain. Pertanyaan yang kamu tandai sebagai favorit hanya disimpan di browser pada perangkat yang digunakan.
+ajakBicara tidak meminta akun dan tidak menyediakan kolom untuk merekam jawaban. Cerita cukup disampaikan langsung di antara para pemain.
 
 ## Suka dengan ajakBicara?
 

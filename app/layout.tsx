@@ -32,6 +32,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: "#f5f3ea",
 };
 
 export default function RootLayout({
@@ -41,9 +42,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body
-        className="font-sans"
-      >
+      <head>
+        <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="anonymous" />
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=chillax@500,600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-screen flex flex-col">
         {children}
         <SpeedInsights />
       </body>
