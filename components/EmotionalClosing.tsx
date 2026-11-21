@@ -1,6 +1,7 @@
 import { CLOSING_MESSAGES } from "@/lib/data";
 import { shareRecapCardImage } from "@/lib/share-card";
 import { useGame } from "@/lib/store";
+import { track } from "@vercel/analytics";
 import { motion } from "framer-motion";
 import { Check, Coffee, Home, Share2 } from "lucide-react";
 import { useState } from "react";
@@ -35,6 +36,11 @@ export function EmotionalClosing() {
                 durationLabel,
             });
             if (outcome === "downloaded" || outcome === "shared") {
+                track("card_shared", {
+                    type: "recap",
+                    category: currentCategory?.id ?? "unknown",
+                    method: outcome,
+                });
                 setShareFeedback("done");
                 setTimeout(() => setShareFeedback("idle"), 2000);
                 return;

@@ -1,5 +1,6 @@
 import { useGame } from "@/lib/store";
 import { shareQuestionCardImage } from "@/lib/share-card";
+import { track } from "@vercel/analytics";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Check, Flame, MessageCircle, Share2, SkipForward, Sparkles, Zap } from "lucide-react";
 import { useState } from "react";
@@ -29,6 +30,11 @@ export function Card() {
         try {
             const outcome = await shareQuestionCardImage(currentQuestion, currentCategory);
             if (outcome === "downloaded" || outcome === "shared") {
+                track("card_shared", {
+                    type: "question",
+                    category: currentCategory.id,
+                    method: outcome,
+                });
                 setShareFeedback("done");
                 setTimeout(() => setShareFeedback("idle"), 2000);
                 return;

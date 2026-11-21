@@ -1,6 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useRef, useState } from "react";
+import { track } from "@vercel/analytics";
 import { CATEGORIES, type Category, type Question } from "./data";
 import {
     confirmTurn,
@@ -100,6 +101,11 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         setEndedAt(null);
         setActiveFollowUp(null);
         setGameStatus("PLAYING");
+        track("game_started", {
+            mode: config.mode,
+            category: config.categoryId,
+            playerCount: config.mode === "DRAFT" ? players.length : 1,
+        });
     };
 
     const beginNextRound = () => {
@@ -127,7 +133,17 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     };
 
     const endGame = () => {
-        setEndedAt(Date.now());
+        const finishedAt = Date.now();
+        const durationMinutes = Math.floor(Math.max(0, finishedAt - game.session.startedAt) / 60_000);
+        track("game_finished", {
+            mode: game.session.config.mode,
+            category: game.session.config.categoryId,
+            playerCount: game.session.config.mode === "DRAFT" ? game.session.players.length : 1,
+            answeredCount: game.session.answeredCount,
+            skippedCount: game.session.skippedCount,
+            durationMinutes,
+        });
+        setEndedAt(finishedAt);
         setActiveFollowUp(null);
         setGameStatus("FINISHED");
     };
