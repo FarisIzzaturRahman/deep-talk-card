@@ -209,6 +209,7 @@ export function GameSetupModal() {
                                             <input
                                                 aria-label={`Nama pemain ${idx + 1}`}
                                                 type="text"
+                                                maxLength={32}
                                                 value={name}
                                                 onChange={(e) => handleNameChange(idx, e.target.value)}
                                                 placeholder={`Pemain ${idx + 1}`}
