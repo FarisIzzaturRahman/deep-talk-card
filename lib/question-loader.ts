@@ -1,7 +1,7 @@
 import type { Question } from "./data";
 
 // Bump this whenever a question bank changes because responses are cached as immutable.
-export const QUESTION_DATA_VERSION = "v2";
+export const QUESTION_DATA_VERSION = "v3";
 const QUESTION_DATA_BASE_PATH = `/questions/${QUESTION_DATA_VERSION}`;
 
 type QuestionFetcher = (input: string) => Promise<Pick<Response, "ok" | "json">>;

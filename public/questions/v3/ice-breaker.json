@@ -1078,18 +1078,6 @@
     "depth": 1
   },
   {
-    "id": "ib-174",
-    "categoryId": "ice-breaker",
-    "text": "Tantang orang di sebelah kanan lo buat kasih tebak-tebakan receh sekarang juga!",
-    "depth": 1
-  },
-  {
-    "id": "ib-175",
-    "categoryId": "ice-breaker",
-    "text": "Tunjuk satu orang di sini yang menurut lo paling cocok jadi duta kuliner serba pedas!",
-    "depth": 1
-  },
-  {
     "id": "ib-176",
     "categoryId": "ice-breaker",
     "text": "Kalau disuruh milih, lo lebih milih hidup tanpa kopi seumur hidup atau tanpa koneksi WiFi?",
@@ -1381,12 +1369,6 @@
     "id": "ib-224",
     "categoryId": "ice-breaker",
     "text": "Sebutkan satu hal kecil yang hari ini bikin lo ngerasa mood lo langsung naik!",
-    "depth": 1
-  },
-  {
-    "id": "ib-225",
-    "categoryId": "ice-breaker",
-    "text": "Tunjuk satu orang di sini yang menurut lo paling jago bikin suasana jadi cair dan ceria!",
     "depth": 1
   }
 ]

@@ -1074,24 +1074,6 @@
     "depth": 2
   },
   {
-    "id": "ns-173",
-    "categoryId": "nostalgia",
-    "text": "Tantang orang di depan lo buat nyanyiin reff satu lagu lawas era 2000-an sekarang juga!",
-    "depth": 1
-  },
-  {
-    "id": "ns-174",
-    "categoryId": "nostalgia",
-    "text": "Tunjuk satu orang di ruangan ini yang menurut lo auranya paling awet muda kayak masih anak sekolahan!",
-    "depth": 1
-  },
-  {
-    "id": "ns-175",
-    "categoryId": "nostalgia",
-    "text": "Sebutkan satu kata yang paling mewakili seluruh kenangan masa kecil dan masa sekolah lo!",
-    "depth": 1
-  },
-  {
     "id": "ns-176",
     "categoryId": "nostalgia",
     "text": "Masih inget nggak dulu pas jaman rental komik, komik apa yang paling sering lo sewa berhari-hari?",
@@ -1378,17 +1360,5 @@
     "categoryId": "nostalgia",
     "text": "Apa hal yang paling pengen lo ucapkan ke sosok diri lo yang dulu pas lagi berjuang di masa sekolah?",
     "depth": 2
-  },
-  {
-    "id": "ns-224",
-    "categoryId": "nostalgia",
-    "text": "Tantang orang di depan lo buat sebutkan 3 jajanan jadul SD dalam waktu 5 detik!",
-    "depth": 1
-  },
-  {
-    "id": "ns-225",
-    "categoryId": "nostalgia",
-    "text": "Sebutkan satu kata yang paling mewakili kehangatan dan keseruan masa muda lo!",
-    "depth": 1
   }
 ]

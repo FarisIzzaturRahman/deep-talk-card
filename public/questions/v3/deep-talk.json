@@ -1,0 +1,1400 @@
+[
+  {
+    "id": "dt-1",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa arti 'rumah' yang sebenernya? Bukan cuma sekadar bangunan fisik.",
+    "depth": 3,
+    "followUps": [
+      "Siapa orang atau di mana tempat yang bikin lo ngerasa pulang?"
+    ]
+  },
+  {
+    "id": "dt-2",
+    "categoryId": "deep-talk",
+    "text": "Kapan terakhir kali lo ngerasa bener-bener dicintai dan diterima tanpa syarat?",
+    "depth": 3,
+    "followUps": [
+      "Siapa orang yang bikin lo ngerasain itu, dan apa hal kecil yang dia lakuin?"
+    ]
+  },
+  {
+    "id": "dt-3",
+    "categoryId": "deep-talk",
+    "text": "Apa nasihat tentang cinta atau hidup yang menurut lo paling klise dan omong kosong?",
+    "depth": 2,
+    "followUps": [
+      "Lo sendiri pernah ketipu atau kecewa gara-gara percaya sama nasihat itu?"
+    ]
+  },
+  {
+    "id": "dt-4",
+    "categoryId": "deep-talk",
+    "text": "Di usia lo sekarang, lo ngerasa udah jadi versi diri yang lo harapkan pas zaman sekolah dulu belum?",
+    "depth": 3,
+    "followUps": [
+      "Bagian mana yang paling beda dari bayangan masa kecil lo?"
+    ]
+  },
+  {
+    "id": "dt-5",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo jujur, apakah uang dan materi beneran bisa beli kebahagiaan sejati?",
+    "depth": 2,
+    "followUps": [
+      "Kalau lo udah di titik aman secara materi, hal apa yang menurut lo tetep nggak bisa dibeli?"
+    ]
+  },
+  {
+    "id": "dt-6",
+    "categoryId": "deep-talk",
+    "text": "Apa pujian paling tulus dan berkesan yang pernah lo terima dan masih nempel di ingatan?",
+    "depth": 2,
+    "followUps": [
+      "Kenapa pujian itu kerasa beda banget dibanding pujian biasa?"
+    ]
+  },
+  {
+    "id": "dt-7",
+    "categoryId": "deep-talk",
+    "text": "Definisi 'rasa cukup' dan tenang buat lo pribadi itu kayak gimana sih?",
+    "depth": 3,
+    "followUps": [
+      "Menurut lo, sekarang lo udah deket sama titik cukup itu atau masih jauh?"
+    ]
+  },
+  {
+    "id": "dt-8",
+    "categoryId": "deep-talk",
+    "text": "Kalau lo bisa mengulang satu hari dalam hidup lo buat dinikmati sekali lagi, hari yang mana?",
+    "depth": 2,
+    "followUps": [
+      "Ada detail kecil di hari itu yang paling pengen lo rasain lagi?"
+    ]
+  },
+  {
+    "id": "dt-9",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling gampang bikin lo kehilangan respect ke seseorang?",
+    "depth": 2,
+    "followUps": [
+      "Kalau itu kejadian sama temen deket sendiri, lo bakal langsung tegur atau pelan-pelan jaga jarak?"
+    ]
+  },
+  {
+    "id": "dt-10",
+    "categoryId": "deep-talk",
+    "text": "Gimana cara lo mengekspresikan rasa sayang ke orang-orang terdekat lo?",
+    "depth": 2,
+    "followUps": [
+      "Menurut lo, orang-orang terdekat lo sadar nggak kalau itu cara lo nunjukin sayang?"
+    ]
+  },
+  {
+    "id": "dt-11",
+    "categoryId": "deep-talk",
+    "text": "Momen masa kecil apa yang tanpa sadar ngubah cara pandang lo tentang dunia?",
+    "depth": 3,
+    "followUps": [
+      "Kalau lo inget lagi sekarang, lo bersyukur pernah ngalamin momen itu?"
+    ]
+  },
+  {
+    "id": "dt-12",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apakah memaafkan kesalahan seseorang berarti kita harus tetap berteman sama dia?",
+    "depth": 3,
+    "followUps": [
+      "Lo sendiri pernah di posisi udah maafin tapi tetep milih jaga jarak?"
+    ]
+  },
+  {
+    "id": "dt-13",
+    "categoryId": "deep-talk",
+    "text": "Gimana lo pengen dikenang oleh sahabat-sahabat terdekat lo kelak?",
+    "depth": 2,
+    "followUps": [
+      "Satu hal apa dari lo sekarang yang menurut lo udah bikin temen-temen inget terus?"
+    ]
+  },
+  {
+    "id": "dt-14",
+    "categoryId": "deep-talk",
+    "text": "Nasihat apa yang sering lo kasih ke temen lo tapi lo sendiri paling susah ngejalaninnya?",
+    "depth": 2,
+    "followUps": [
+      "Kenapa ya menurut lo, nasihat itu gampang banget dikasih ke orang lain tapi susah buat diri sendiri?"
+    ]
+  },
+  {
+    "id": "dt-15",
+    "categoryId": "deep-talk",
+    "text": "Apa arti keberhasilan hidup yang sesungguhnya buat lo di luar urusan harta dan jabatan?",
+    "depth": 3,
+    "followUps": [
+      "Kapan lo mulai sadar kalau sukses buat lo bukan cuma soal itu?"
+    ]
+  },
+  {
+    "id": "dt-16",
+    "categoryId": "deep-talk",
+    "text": "Hal apa yang paling lo rindukan dari versi diri lo yang dulu pas masih polos?",
+    "depth": 3,
+    "followUps": [
+      "Ada bagian dari versi diri lo yang dulu yang pengen banget lo bawa balik ke sekarang?"
+    ]
+  },
+  {
+    "id": "dt-17",
+    "categoryId": "deep-talk",
+    "text": "Kesalahan apa yang pernah lo buat yang ngajarin lo pelajaran paling berharga seumur hidup?",
+    "depth": 3,
+    "followUps": [
+      "Butuh waktu berapa lama buat lo akhirnya bisa berdamai sama kesalahan itu?"
+    ]
+  },
+  {
+    "id": "dt-18",
+    "categoryId": "deep-talk",
+    "text": "Adegan atau topik film apa yang paling gampang bikin lo terharu dan berkaca-kaca?",
+    "depth": 2,
+    "followUps": [
+      "Kenapa topik itu selalu gampang kena ke hati lo?"
+    ]
+  },
+  {
+    "id": "dt-19",
+    "categoryId": "deep-talk",
+    "text": "Lo percaya pada kesempatan kedua dalam hubungan pertemanan? Kenapa?",
+    "depth": 2,
+    "followUps": [
+      "Batasnya sampai mana sebelum lo bilang 'oke, kali ini cukup'?"
+    ]
+  },
+  {
+    "id": "dt-20",
+    "categoryId": "deep-talk",
+    "text": "Apa yang bikin lo ngerasa aman secara emosional pas lagi cerita rahasia ke seseorang?",
+    "depth": 3,
+    "followUps": [
+      "Respon kayak gimana dari temen cerita yang malah bikin lo langsung nutup diri?"
+    ]
+  },
+  {
+    "id": "dt-21",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling lo syukuri hari ini tapi sering banget lo lupakan karena kesibukan?",
+    "depth": 2,
+    "followUps": [
+      "Apa satu hal kecil hari ini yang pengen lo syukurin sekarang juga?"
+    ]
+  },
+  {
+    "id": "dt-22",
+    "categoryId": "deep-talk",
+    "text": "Apa definisi cinta dan kepedulian yang tulus menurut sudut pandang lo?",
+    "depth": 3,
+    "followUps": [
+      "Dari semua orang di hidup lo, siapa yang paling ngegambarin definisi itu?"
+    ]
+  },
+  {
+    "id": "dt-23",
+    "categoryId": "deep-talk",
+    "text": "Sikap seperti apa yang bisa langsung merusak rasa percaya lo ke teman dekat?",
+    "depth": 2,
+    "followUps": [
+      "Kalau kepercayaan itu udah retak, menurut lo bisa balik 100% lagi nggak?"
+    ]
+  },
+  {
+    "id": "dt-24",
+    "categoryId": "deep-talk",
+    "text": "Kalau lo bisa nulis surat pendek buat diri lo 5 tahun lalu, pesan utamanya apa?",
+    "depth": 3,
+    "followUps": [
+      "Kira-kira diri lo 5 tahun lalu bakal percaya nggak sama kondisi lo sekarang?"
+    ]
+  },
+  {
+    "id": "dt-25",
+    "categoryId": "deep-talk",
+    "text": "Secara jujur, apakah lo bener-bener bahagia dan damai dengan hidup lo sekarang?",
+    "depth": 3,
+    "followUps": [
+      "Satu hal kecil apa yang kalau berubah sekarang, bakal bikin hidup lo jauh lebih tenang?"
+    ]
+  },
+  {
+    "id": "dt-26",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, hal apa yang paling pengen lo ubah dari cara masyarakat memandang arti kesuksesan?",
+    "depth": 2,
+    "followUps": [
+      "Lo sendiri masih suka kebawa standar sukses orang lain nggak kadang-kadang?"
+    ]
+  },
+  {
+    "id": "dt-27",
+    "categoryId": "deep-talk",
+    "text": "Kenangan paling manis apa yang selalu berhasil bikin hati lo hangat pas lagi ngerasa sepi?",
+    "depth": 2,
+    "followUps": [
+      "Siapa aja yang ada di kenangan manis itu?"
+    ]
+  },
+  {
+    "id": "dt-28",
+    "categoryId": "deep-talk",
+    "text": "Siapa sosok orang yang paling lo percaya di dunia ini buat lo ceritain apa aja tanpa filter?",
+    "depth": 2,
+    "followUps": [
+      "Apa yang bikin lo ngerasa aman banget sama orang itu?"
+    ]
+  },
+  {
+    "id": "dt-29",
+    "categoryId": "deep-talk",
+    "text": "Perlakuan kecil apa dari seseorang yang bikin lo ngerasa bener-bener dihargai keberadaannya?",
+    "depth": 2,
+    "followUps": [
+      "Lo sendiri sering nggak ngelakuin hal kecil yang sama ke orang lain?"
+    ]
+  },
+  {
+    "id": "dt-30",
+    "categoryId": "deep-talk",
+    "text": "Apa arti keluarga buat lo pribadi? Apakah cuma ikatan darah atau lebih dari itu?",
+    "depth": 3,
+    "followUps": [
+      "Ada nggak temen yang rasanya udah kayak keluarga sendiri buat lo?"
+    ]
+  },
+  {
+    "id": "dt-31",
+    "categoryId": "deep-talk",
+    "text": "Dari banyak hal, apa yang paling lo banggain dari perjalanan hidup lo sampai titik ini?",
+    "depth": 2,
+    "followUps": [
+      "Kalau boleh tepuk bahu diri sendiri hari ini, lo mau bilang apa?"
+    ]
+  },
+  {
+    "id": "dt-32",
+    "categoryId": "deep-talk",
+    "text": "Momen apa yang bikin lo ngerasa bener-bener nyambung dan satu frekuensi sama orang lain?",
+    "depth": 2,
+    "followUps": [
+      "Biasanya butuh waktu lama nggak buat lo ngerasa klik sama orang baru?"
+    ]
+  },
+  {
+    "id": "dt-33",
+    "categoryId": "deep-talk",
+    "text": "Belakangan ini, kapan terakhir lo ngerasa bener-bener damai tanpa ada beban pikiran yang ngejar?",
+    "depth": 2
+  },
+  {
+    "id": "dt-34",
+    "categoryId": "deep-talk",
+    "text": "Alasan apa yang bikin lo tetep semangat buat bangun dan berjuang setiap pagi?",
+    "depth": 2
+  },
+  {
+    "id": "dt-35",
+    "categoryId": "deep-talk",
+    "text": "Kualitas apa yang paling lo hargai dari seorang sahabat sejati?",
+    "depth": 2
+  },
+  {
+    "id": "dt-36",
+    "categoryId": "deep-talk",
+    "text": "Mimpi besar apa yang diam-diam masih lo simpan rapat-rapat di hati lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-37",
+    "categoryId": "deep-talk",
+    "text": "Apa hal baru yang lo pelajari tentang sifat dan batasan diri lo tahun ini?",
+    "depth": 2
+  },
+  {
+    "id": "dt-38",
+    "categoryId": "deep-talk",
+    "text": "Hal apa yang bikin lo tetep optimis saat keadaan di sekitar lo lagi nggak menentu?",
+    "depth": 2
+  },
+  {
+    "id": "dt-39",
+    "categoryId": "deep-talk",
+    "text": "Kenangan apa dari masa kanak-kanak yang paling sering bikin lo rindu ingin balik ke masa itu?",
+    "depth": 2
+  },
+  {
+    "id": "dt-40",
+    "categoryId": "deep-talk",
+    "text": "Biasanya gimana cara lo bangkit dari rasa kecewa saat rencana besar lo kandas di tengah jalan?",
+    "depth": 3
+  },
+  {
+    "id": "dt-41",
+    "categoryId": "deep-talk",
+    "text": "Kapan lo ngerasa paling rapuh, dan siapa yang biasanya ada di samping lo saat itu?",
+    "depth": 3
+  },
+  {
+    "id": "dt-42",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang ngebedain antara teman nongkrong biasa sama sahabat sejati?",
+    "depth": 2
+  },
+  {
+    "id": "dt-43",
+    "categoryId": "deep-talk",
+    "text": "Dari banyak hal, apa yang paling lo takutin hilang dari hidup lo sekarang?",
+    "depth": 3
+  },
+  {
+    "id": "dt-44",
+    "categoryId": "deep-talk",
+    "text": "Gimana lo mendefinisikan ketulusan yang sesungguhnya dalam sebuah hubungan?",
+    "depth": 3
+  },
+  {
+    "id": "dt-45",
+    "categoryId": "deep-talk",
+    "text": "Kapan ada momen pas lo ngerasa usaha keras lo bener-bener membuahkan hasil manis?",
+    "depth": 2
+  },
+  {
+    "id": "dt-46",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, hal apa yang paling pengen lo sembuhkan dari kekecewaan masa lalu lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-47",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apakah kebahagiaan itu tujuan akhir atau proses yang harus dinikmati tiap hari?",
+    "depth": 3
+  },
+  {
+    "id": "dt-48",
+    "categoryId": "deep-talk",
+    "text": "Siapa sosok yang pengorbanannya buat lo paling bikin lo berhutang budi seumur hidup?",
+    "depth": 3
+  },
+  {
+    "id": "dt-49",
+    "categoryId": "deep-talk",
+    "text": "Gimana biasanya lo jaga biar rasa empati lo nggak dimanfaatkan oleh orang lain?",
+    "depth": 2
+  },
+  {
+    "id": "dt-50",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, hal apa yang paling bikin lo ngerasa hidup ini punya makna yang lebih dalam?",
+    "depth": 2
+  },
+  {
+    "id": "dt-51",
+    "categoryId": "deep-talk",
+    "text": "Belakangan ini, kapan terakhir lo ngerasa bener-bener bersyukur hanya karena bisa bernapas dan nikmatin hari?",
+    "depth": 2
+  },
+  {
+    "id": "dt-52",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa hal tersulit dari proses menjadi orang dewasa seutuhnya?",
+    "depth": 3
+  },
+  {
+    "id": "dt-53",
+    "categoryId": "deep-talk",
+    "text": "Gimana biasanya lo menerima kekurangan diri sendiri yang nggak bisa diubah?",
+    "depth": 3
+  },
+  {
+    "id": "dt-54",
+    "categoryId": "deep-talk",
+    "text": "Apa yang bikin lo yakin bahwa badai kehidupan selalu punya ujung dan pelangi?",
+    "depth": 2
+  },
+  {
+    "id": "dt-55",
+    "categoryId": "deep-talk",
+    "text": "Pernah nggak ada momen pas lo ngerasa bener-bener jadi diri sendiri tanpa perlu pura-pura kuat?",
+    "depth": 3
+  },
+  {
+    "id": "dt-56",
+    "categoryId": "deep-talk",
+    "text": "Hal apa yang paling pengen lo wariskan sebagai teladan bagi generasi berikutnya?",
+    "depth": 2
+  },
+  {
+    "id": "dt-57",
+    "categoryId": "deep-talk",
+    "text": "Gimana lo menyikapi perpisahan dengan orang yang dulu bener-bener berarti dalam hidup lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-58",
+    "categoryId": "deep-talk",
+    "text": "Apa bentuk dukungan emosional yang paling lo butuhkan saat sedang berada di titik terendah?",
+    "depth": 3
+  },
+  {
+    "id": "dt-59",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa arti kejujuran yang tetap jaga perasaan orang lain?",
+    "depth": 2
+  },
+  {
+    "id": "dt-60",
+    "categoryId": "deep-talk",
+    "text": "Kapan lo pertama kali menyadari bahwa orang tua lo juga manusia biasa yang punya kelemahan?",
+    "depth": 3
+  },
+  {
+    "id": "dt-61",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa terhubung kembali dengan harapan dan mimpi lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-62",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat rasa cinta biar tetap hangat dalam hubungan yang sudah lama?",
+    "depth": 2
+  },
+  {
+    "id": "dt-63",
+    "categoryId": "deep-talk",
+    "text": "Dari banyak hal, apa yang paling lo syukuri dari setiap persahabatan yang bertahan sampai hari ini?",
+    "depth": 2
+  },
+  {
+    "id": "dt-64",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak kapan terakhir kali lo ngerasa terbebas dari rasa cemas akan masa depan?",
+    "depth": 2
+  },
+  {
+    "id": "dt-65",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin sebuah percakapan berdua terasa bener-bener berharga?",
+    "depth": 2
+  },
+  {
+    "id": "dt-66",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, hal apa yang paling pengen lo pelajari dari orang-orang bijak yang lo temui?",
+    "depth": 2
+  },
+  {
+    "id": "dt-67",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo ngapain biar hati lo tetap lapang saat menerima kekecewaan?",
+    "depth": 3
+  },
+  {
+    "id": "dt-68",
+    "categoryId": "deep-talk",
+    "text": "Apa arti kedamaian batin bagi lo yang hidup di tengah dunia yang serba bising?",
+    "depth": 3
+  },
+  {
+    "id": "dt-69",
+    "categoryId": "deep-talk",
+    "text": "Kapan ada momen pas lo ngerasa berhasil meruntuhkan ego lo demi kebaikan bersama?",
+    "depth": 2
+  },
+  {
+    "id": "dt-70",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau hidup ini selalu patut untuk disyukuri?",
+    "depth": 2
+  },
+  {
+    "id": "dt-71",
+    "categoryId": "deep-talk",
+    "text": "Gimana lo mendefinisikan rasa setia kawan yang tanpa syarat?",
+    "depth": 2
+  },
+  {
+    "id": "dt-72",
+    "categoryId": "deep-talk",
+    "text": "Kapan lo ngerasa paling bangga sama perjuangan orang tua lo dalam membesarkan lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-73",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling pengen lo sampaikan kepada orang yang pernah menyakiti lo tapi udah lo maafkan?",
+    "depth": 3
+  },
+  {
+    "id": "dt-74",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa peran keikhlasan dalam jaga ketenangan jiwa sehari-hari?",
+    "depth": 3
+  },
+  {
+    "id": "dt-75",
+    "categoryId": "deep-talk",
+    "text": "Lo punya cara sendiri nggak buat merawat rasa syukur saat impian lo belum terwujud sepenuhnya?",
+    "depth": 2
+  },
+  {
+    "id": "dt-76",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau kehadiran lo berarti bagi orang-orang sekitar?",
+    "depth": 2
+  },
+  {
+    "id": "dt-77",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak momen pas lo ngerasa benar-benar didengar dan dimengerti oleh teman lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-78",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin sebuah janji memiliki nilai yang bener-bener sakral?",
+    "depth": 2
+  },
+  {
+    "id": "dt-79",
+    "categoryId": "deep-talk",
+    "text": "Lo punya cara sendiri nggak buat ngatasin rasa rindu pada orang yang sudah tidak bisa lo temui lagi?",
+    "depth": 3
+  },
+  {
+    "id": "dt-80",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang paling bikin lo ngerasa kalau cinta yang sejati selalu membebaskan, bukan mengekang?",
+    "depth": 3
+  },
+  {
+    "id": "dt-81",
+    "categoryId": "deep-talk",
+    "text": "Belakangan ini, kapan terakhir lo ngerasa terharu ngeliat perjuangan seseorang demi orang yang dia sayangi?",
+    "depth": 2
+  },
+  {
+    "id": "dt-82",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, hal apa yang paling pengen lo bangun untuk masa depan keluarga lo kelak?",
+    "depth": 2
+  },
+  {
+    "id": "dt-83",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo ngapain biar rasa optimis tetap hidup di masa-masa sulit?",
+    "depth": 2
+  },
+  {
+    "id": "dt-84",
+    "categoryId": "deep-talk",
+    "text": "Apa arti ketulusan dalam memberi tanpa mengharapkan balasan apa pun bagi lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-85",
+    "categoryId": "deep-talk",
+    "text": "Pernah nggak ada momen pas lo ngerasa berhasil melepaskan hal yang memang bukan rezeki lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-86",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang paling bikin lo ngerasa kalau kebaikan kecil selalu punya dampak besar?",
+    "depth": 2
+  },
+  {
+    "id": "dt-87",
+    "categoryId": "deep-talk",
+    "text": "Lo punya cara sendiri nggak buat jaga kehangatan hubungan pertemanan biar tidak luntur oleh waktu?",
+    "depth": 2
+  },
+  {
+    "id": "dt-88",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa bersyukur atas setiap jalan berliku yang lo lewati?",
+    "depth": 2
+  },
+  {
+    "id": "dt-89",
+    "categoryId": "deep-talk",
+    "text": "Kapan terakhir kali lo ngerasa bener-bener damai saat memandang langit malam yang tenang?",
+    "depth": 1
+  },
+  {
+    "id": "dt-90",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang paling penting untuk dijaga dalam setiap hubungan antarmanusia?",
+    "depth": 2
+  },
+  {
+    "id": "dt-91",
+    "categoryId": "deep-talk",
+    "text": "Lo punya cara sendiri nggak buat ngehargain setiap orang yang hadir dan ngasih warna dalam hidup lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-92",
+    "categoryId": "deep-talk",
+    "text": "Hal apa yang paling pengen lo sampaikan ke sahabat terdekat lo sekarang juga?",
+    "depth": 2
+  },
+  {
+    "id": "dt-93",
+    "categoryId": "deep-talk",
+    "text": "Kapan ada momen pas lo ngerasa bener-bener bersyukur atas keberadaan orang-orang yang tulus menyayangi lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-94",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau hidup ini adalah perjalanan yang indah untuk dinikmati?",
+    "depth": 2
+  },
+  {
+    "id": "dt-95",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo ngapain biar rasa syukur selalu menjadi landasan setiap langkah hidup lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-96",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki sahabat yang bisa diajak tertawa lepas sekaligus berbagi tangis bagi lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-97",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak kapan terakhir kali lo ngerasa bener-bener terharu oleh kebaikan sederhana dari orang lain?",
+    "depth": 2
+  },
+  {
+    "id": "dt-98",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang paling bikin lo ngerasa kalau lo tidak pernah benar-benar sendirian di dunia ini?",
+    "depth": 3
+  },
+  {
+    "id": "dt-99",
+    "categoryId": "deep-talk",
+    "text": "Lo punya cara sendiri nggak buat merawat harapan biar tetap bersinar terang dalam jiwa lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-100",
+    "categoryId": "deep-talk",
+    "text": "Hal apa yang paling pengen lo katakan sebagai ungkapan terima kasih terdalam kepada orang tua lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-101",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak momen pas lo ngerasa bener-bener tenang dan yakin bahwa semua akan baik-baik saja pada waktunya?",
+    "depth": 3
+  },
+  {
+    "id": "dt-102",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin sebuah persahabatan bisa bertahan puluhan tahun tanpa pudar?",
+    "depth": 2
+  },
+  {
+    "id": "dt-103",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo ngapain biar api semangat dalam mengejar impian tidak padam oleh rasa lelah?",
+    "depth": 2
+  },
+  {
+    "id": "dt-104",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang paling bikin lo ngerasa kalau setiap detik waktu bersama orang tersayang adalah anugerah?",
+    "depth": 2
+  },
+  {
+    "id": "dt-105",
+    "categoryId": "deep-talk",
+    "text": "Belakangan ini, kapan terakhir lo ngerasa bener-bener bersyukur atas ketulusan hati yang lo miliki?",
+    "depth": 2
+  },
+  {
+    "id": "dt-106",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, hal apa yang paling pengen lo bangun untuk mewujudkan kehidupan yang damai dan bermakna?",
+    "depth": 2
+  },
+  {
+    "id": "dt-107",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo ngapain biar cinta kasih selalu mengalir dalam setiap tindakan lo sehari-hari?",
+    "depth": 2
+  },
+  {
+    "id": "dt-108",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki seseorang yang selalu percaya pada mimpi lo bahkan saat lo sendiri ragu?",
+    "depth": 3
+  },
+  {
+    "id": "dt-109",
+    "categoryId": "deep-talk",
+    "text": "Pernah nggak ada momen pas lo ngerasa berhasil nemuin makna sejati dari memaafkan?",
+    "depth": 3
+  },
+  {
+    "id": "dt-110",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang paling bikin lo ngerasa kalau ketenangan hati adalah kekayaan tertinggi dalam hidup?",
+    "depth": 3
+  },
+  {
+    "id": "dt-111",
+    "categoryId": "deep-talk",
+    "text": "Lo punya cara sendiri nggak buat merawat rasa hormat kepada orang lain di tengah perbedaan pandangan?",
+    "depth": 2
+  },
+  {
+    "id": "dt-112",
+    "categoryId": "deep-talk",
+    "text": "Hal apa yang paling pengen lo sampaikan sebagai pengingat saat lo sedang ngerasa kehilangan arah?",
+    "depth": 2
+  },
+  {
+    "id": "dt-113",
+    "categoryId": "deep-talk",
+    "text": "Kapan terakhir kali lo ngerasa bener-bener bahagia hanya dengan nikmatin secangkir teh atau kopi bersama sahabat?",
+    "depth": 1
+  },
+  {
+    "id": "dt-114",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin sebuah pelukan dari orang terdekat terasa begitu menenangkan?",
+    "depth": 2
+  },
+  {
+    "id": "dt-115",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo ngapain biar rasa syukur tidak memudar di tengah rutinitas yang sibuk?",
+    "depth": 2
+  },
+  {
+    "id": "dt-116",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang paling bikin lo ngerasa kalau lo telah berjuang dengan sebaik-baiknya hari ini?",
+    "depth": 2
+  },
+  {
+    "id": "dt-118",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling pengen lo rayakan bersama sahabat-sahabat lo saat impian besar kalian tercapai?",
+    "depth": 1
+  },
+  {
+    "id": "dt-119",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar ikatan persaudaraan dan pertemanan tetap abadi selamanya?",
+    "depth": 2
+  },
+  {
+    "id": "dt-120",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki ruang aman untuk berbagi cerita tanpa takut dihakimi bagi lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-121",
+    "categoryId": "deep-talk",
+    "text": "Belakangan ini, kapan terakhir lo ngerasa bener-bener bersyukur atas setiap pelajaran berharga yang hidup berikan?",
+    "depth": 2
+  },
+  {
+    "id": "dt-122",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau cinta dan kebaikan selalu menang pada akhirnya?",
+    "depth": 2
+  },
+  {
+    "id": "dt-123",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat ketulusan biar tidak tercemar oleh ego dan kepentingan pribadi?",
+    "depth": 3
+  },
+  {
+    "id": "dt-124",
+    "categoryId": "deep-talk",
+    "text": "Dari banyak hal, apa yang paling pengen lo sampaikan ke diri lo sebagai tanda penghargaan atas ketangguhan lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-125",
+    "categoryId": "deep-talk",
+    "text": "Pernah nggak ada momen pas lo ngerasa benar-benar bersatu dengan kedamaian semesta?",
+    "depth": 3
+  },
+  {
+    "id": "dt-126",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin rasa syukur mampu melipatgandakan kebahagiaan dalam hidup?",
+    "depth": 2
+  },
+  {
+    "id": "dt-127",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar senyuman hangat selalu menghiasi wajah lo dalam setiap situasi?",
+    "depth": 1
+  },
+  {
+    "id": "dt-128",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau hidup ini selalu menawarkan keindahan di setiap sudutnya?",
+    "depth": 2
+  },
+  {
+    "id": "dt-129",
+    "categoryId": "deep-talk",
+    "text": "Kapan terakhir kali lo ngerasa bener-bener damai saat dengerin suara hujan yang menyejukkan?",
+    "depth": 1
+  },
+  {
+    "id": "dt-130",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling pengen lo wujudkan demi membahagiakan orang-orang yang lo cintai?",
+    "depth": 2
+  },
+  {
+    "id": "dt-131",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar rasa percaya kepada sesama tetap tumbuh subur di dalam hati?",
+    "depth": 2
+  },
+  {
+    "id": "dt-132",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki tujuan hidup yang jelas dan bermakna bagi perjalanan jiwa lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-133",
+    "categoryId": "deep-talk",
+    "text": "Kapan ada momen pas lo ngerasa bener-bener bersyukur atas setiap kebaikan tak terduga yang datang menghampiri?",
+    "depth": 2
+  },
+  {
+    "id": "dt-134",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau setiap insan manusia memiliki keunikan dan keindahan tersendiri?",
+    "depth": 2
+  },
+  {
+    "id": "dt-135",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat keteguhan hati saat sedang memperjuangkan apa yang lo yakini benar?",
+    "depth": 2
+  },
+  {
+    "id": "dt-136",
+    "categoryId": "deep-talk",
+    "text": "Dari banyak hal, apa yang paling pengen lo bagikan sebagai inspirasi bagi sahabat-sahabat lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-137",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak kapan terakhir kali lo ngerasa bener-bener terharu oleh kesetiaan seorang sahabat yang tak pernah meninggalkan lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-138",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin sebuah kenangan bersama orang tersayang begitu abadi di dalam ingatan?",
+    "depth": 2
+  },
+  {
+    "id": "dt-139",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar kehangatan cinta kasih selalu hadir dalam keluarga lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-140",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau hidup ini adalah anugerah terindah yang harus dirawat?",
+    "depth": 2
+  },
+  {
+    "id": "dt-141",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak momen pas lo ngerasa berhasil nemuin ketenangan di tengah hiruk-pikuk kehidupan?",
+    "depth": 3
+  },
+  {
+    "id": "dt-142",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling pengen lo sampaikan sebagai ucapan rasa syukur kepada Sang Pencipta atas perjalanan hidup lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-143",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar rasa kasih sayang selalu menjadi lentera dalam melangkah?",
+    "depth": 2
+  },
+  {
+    "id": "dt-144",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki ketenangan jiwa saat memikirkan masa depan bagi kebahagiaan lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-145",
+    "categoryId": "deep-talk",
+    "text": "Belakangan ini, kapan terakhir lo ngerasa bener-bener bersyukur atas setiap pelukan hangat dari keluarga lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-146",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau setiap insan layak mendapatkan kesempatan untuk bahagia?",
+    "depth": 2
+  },
+  {
+    "id": "dt-147",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat rasa damai biar senantiasa bersemayam di dalam hati lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-148",
+    "categoryId": "deep-talk",
+    "text": "Dari banyak hal, apa yang paling pengen lo wujudkan untuk membawa senyum kebahagiaan bagi banyak orang?",
+    "depth": 2
+  },
+  {
+    "id": "dt-149",
+    "categoryId": "deep-talk",
+    "text": "Pernah nggak ada momen pas lo ngerasa bener-bener bersyukur atas persaudaraan yang tulus tanpa memandang perbedaan?",
+    "depth": 2
+  },
+  {
+    "id": "dt-150",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin kebaikan sederhana mampu menghangatkan hati yang sedang gundah?",
+    "depth": 2
+  },
+  {
+    "id": "dt-151",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar rasa percaya diri selalu berakar pada ketulusan budi pekerti?",
+    "depth": 2
+  },
+  {
+    "id": "dt-152",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau setiap hembusan napas adalah peluang untuk berbuat baik?",
+    "depth": 2
+  },
+  {
+    "id": "dt-153",
+    "categoryId": "deep-talk",
+    "text": "Kapan terakhir kali lo ngerasa bener-bener bahagia hanya dengan menyaksikan tawa lepas sahabat-sahabat lo?",
+    "depth": 1
+  },
+  {
+    "id": "dt-154",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling pengen lo tinggalkan sebagai warisan kebaikan bagi dunia ini?",
+    "depth": 2
+  },
+  {
+    "id": "dt-155",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar rasa syukur senantiasa terpancar dari setiap tutur kata lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-156",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki keteguhan tekad dalam menggapai cita-cita luhur bagi jiwa lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-157",
+    "categoryId": "deep-talk",
+    "text": "Kapan ada momen pas lo ngerasa bener-bener terharu oleh keajaiban cinta kasih yang tulus?",
+    "depth": 3
+  },
+  {
+    "id": "dt-158",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau hidup ini selalu penuh dengan keberkahan yang melimpah?",
+    "depth": 2
+  },
+  {
+    "id": "dt-159",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat ketulusan hati biar tetap murni di tengah berbagai godaan dunia?",
+    "depth": 3
+  },
+  {
+    "id": "dt-160",
+    "categoryId": "deep-talk",
+    "text": "Dari banyak hal, apa yang paling pengen lo sampaikan sebagai pesan cinta bagi orang-orang terkasih lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-161",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak kapan terakhir kali lo ngerasa bener-bener damai saat merenungi perjalanan hidup yang telah lo lalui?",
+    "depth": 2
+  },
+  {
+    "id": "dt-162",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin sebuah ketulusan mampu meluluhkan segala kekakuan hati?",
+    "depth": 2
+  },
+  {
+    "id": "dt-163",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar harapan selalu mekar di setiap musim kehidupan lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-164",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau persahabatan adalah pelabuhan hati yang paling teduh?",
+    "depth": 3
+  },
+  {
+    "id": "dt-165",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak momen pas lo ngerasa bener-bener bersyukur atas setiap teguran kasih yang menyelamatkan langkah lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-166",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling pengen lo rajut bersama sahabat-sahabat lo untuk masa depan yang gemilang?",
+    "depth": 2
+  },
+  {
+    "id": "dt-167",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat rasa syukur biar selalu menjadi pelita dalam setiap kegelapan?",
+    "depth": 2
+  },
+  {
+    "id": "dt-168",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki hati yang senantiasa dipenuhi oleh rasa cinta dan kedamaian bagi lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-169",
+    "categoryId": "deep-talk",
+    "text": "Belakangan ini, kapan terakhir lo ngerasa bener-bener terharu oleh indahnya sebuah pengampunan yang tulus?",
+    "depth": 3
+  },
+  {
+    "id": "dt-170",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau setiap insan terlahir untuk membawa kebaikan di muka bumi?",
+    "depth": 2
+  },
+  {
+    "id": "dt-171",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar kehangatan jiwa selalu terpancar dalam setiap perbuatan lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-176",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin seseorang rela berkorban demi kebahagiaan orang yang dia cintai?",
+    "depth": 3
+  },
+  {
+    "id": "dt-177",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak kapan terakhir kali lo ngerasa kalau doa dan harapan tulus lo dijawab dengan cara yang tak terduga?",
+    "depth": 2
+  },
+  {
+    "id": "dt-178",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki seseorang yang tetap berdiri di samping lo saat seluruh dunia meragukan lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-179",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar rasa cinta kepada sesama tidak terkikis oleh kerasnya realita kehidupan?",
+    "depth": 3
+  },
+  {
+    "id": "dt-180",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau setiap pertemuan dalam hidup ini bukanlah suatu kebetulan?",
+    "depth": 2
+  },
+  {
+    "id": "dt-181",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak momen pas lo ngerasa berhasil nemuin arti sejati dari sebuah ketulusan?",
+    "depth": 3
+  },
+  {
+    "id": "dt-182",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang paling berharga dari sebuah percakapan hangat dari hati ke hati di malam hari?",
+    "depth": 2
+  },
+  {
+    "id": "dt-183",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat ingatan indah tentang orang-orang tercinta yang telah berpulang atau berpisah?",
+    "depth": 3
+  },
+  {
+    "id": "dt-184",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki pelabuhan hati yang aman untuk bersandar saat lo sedang ngerasa lelah duniawi?",
+    "depth": 3
+  },
+  {
+    "id": "dt-185",
+    "categoryId": "deep-talk",
+    "text": "Belakangan ini, kapan terakhir lo ngerasa terharu oleh kesederhanaan cinta yang ditunjukkan oleh orang tua lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-186",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau harapan adalah lentera yang tak boleh padam dalam jiwa?",
+    "depth": 2
+  },
+  {
+    "id": "dt-187",
+    "categoryId": "deep-talk",
+    "text": "Gimana lo mendefinisikan persahabatan yang mampu melampaui jarak, waktu, dan perbedaan status?",
+    "depth": 3
+  },
+  {
+    "id": "dt-188",
+    "categoryId": "deep-talk",
+    "text": "Dari banyak hal, apa yang paling pengen lo sampaikan kepada orang yang selalu mendukung lo di balik layar?",
+    "depth": 2
+  },
+  {
+    "id": "dt-189",
+    "categoryId": "deep-talk",
+    "text": "Pernah nggak ada momen pas lo ngerasa bener-bener bersyukur atas kesempatan untuk mencintai dan dicintai?",
+    "depth": 3
+  },
+  {
+    "id": "dt-190",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa rahasia dari ketenangan hati yang hakiki saat ngadepin ketidakpastian hari esok?",
+    "depth": 3
+  },
+  {
+    "id": "dt-191",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar rasa empati selalu memandu setiap keputusan penting dalam hidup lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-192",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau hidup ini adalah rangkaian anugerah yang tak terhingga?",
+    "depth": 2
+  },
+  {
+    "id": "dt-193",
+    "categoryId": "deep-talk",
+    "text": "Kapan terakhir kali lo ngerasa bener-bener damai saat merenungi arti keberadaan dan tujuan hidup lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-194",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling pengen lo persembahkan sebagai bukti cinta dan baktimu kepada keluarga?",
+    "depth": 3
+  },
+  {
+    "id": "dt-195",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat ketulusan biar senantiasa menjadi pelindung jiwa lo dari keangkuhan?",
+    "depth": 3
+  },
+  {
+    "id": "dt-196",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki sahabat yang selalu mengingatkan lo untuk tetap rendah hati dan bersyukur?",
+    "depth": 2
+  },
+  {
+    "id": "dt-197",
+    "categoryId": "deep-talk",
+    "text": "Kapan ada momen pas lo ngerasa berhasil ngubah rasa sakit menjadi kekuatan untuk bangkit kembali?",
+    "depth": 3
+  },
+  {
+    "id": "dt-198",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin sebuah kehangatan keluarga begitu dirindukan saat kita sedang jauh?",
+    "depth": 2
+  },
+  {
+    "id": "dt-199",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar rasa percaya pada kebaikan manusia tetap kokoh di dalam hati?",
+    "depth": 2
+  },
+  {
+    "id": "dt-200",
+    "categoryId": "deep-talk",
+    "text": "Hal apa sih yang langsung bikin lo ngerasa kalau setiap langkah perjuangan lo membawa berkah bagi sesama?",
+    "depth": 2
+  },
+  {
+    "id": "dt-201",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak kapan terakhir kali lo ngerasa bener-bener terharu oleh keajaiban kata maaf yang tulus?",
+    "depth": 3
+  },
+  {
+    "id": "dt-202",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling pengen lo ukir dalam ingatan orang-orang tersayang sebagai kenangan terindah?",
+    "depth": 2
+  },
+  {
+    "id": "dt-203",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat rasa syukur biar tidak pudar saat diuji oleh kesuksesan maupun kesulitan?",
+    "depth": 2
+  },
+  {
+    "id": "dt-204",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki hati yang senantiasa lapang menerima segala ketentuan takdir bagi lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-205",
+    "categoryId": "deep-talk",
+    "text": "Inget nggak momen pas lo ngerasa bener-bener bersyukur atas setiap persahabatan yang tulus tanpa kepalsuan?",
+    "depth": 2
+  },
+  {
+    "id": "dt-206",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin cinta sejati selalu mampu mendatangkan kedamaian di dalam jiwa?",
+    "depth": 3
+  },
+  {
+    "id": "dt-207",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar tutur katamu selalu menjadi penyejuk bagi hati yang sedang gundah?",
+    "depth": 2
+  },
+  {
+    "id": "dt-208",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang paling bikin lo ngerasa kalau kebaikan kecil yang lo tebar akan kembali dalam bentuk berkah?",
+    "depth": 2
+  },
+  {
+    "id": "dt-209",
+    "categoryId": "deep-talk",
+    "text": "Belakangan ini, kapan terakhir lo ngerasa bener-bener damai saat memejamkan mata dan melepaskan semua kekhawatiran?",
+    "depth": 2
+  },
+  {
+    "id": "dt-210",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling pengen lo bangun bersama sahabat-sahabat sejati lo untuk hari tua kelak?",
+    "depth": 2
+  },
+  {
+    "id": "dt-211",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat keharmonisan jiwa di tengah hiruk pikuk kesibukan modern?",
+    "depth": 3
+  },
+  {
+    "id": "dt-212",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki seseorang yang mampu ngeliat keindahan jiwa lo di balik segala kekurangan lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-213",
+    "categoryId": "deep-talk",
+    "text": "Pernah nggak ada momen pas lo ngerasa berhasil nemuin makna sejati dari sebuah rasa cukup?",
+    "depth": 3
+  },
+  {
+    "id": "dt-214",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa yang bikin ikatan batin antarmanusia bisa begitu kuat walau tak terucap kata?",
+    "depth": 3
+  },
+  {
+    "id": "dt-215",
+    "categoryId": "deep-talk",
+    "text": "Lo punya trik sendiri nggak biar rasa cinta tanah air dan kepedulian sosial tetap hidup di dada lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-216",
+    "categoryId": "deep-talk",
+    "text": "Biasanya apa sih yang paling bikin lo ngerasa kalau hidup ini adalah mahakarya indah yang patut disyukuri?",
+    "depth": 2
+  },
+  {
+    "id": "dt-217",
+    "categoryId": "deep-talk",
+    "text": "Kapan terakhir kali lo ngerasa bener-bener terharu oleh ketulusan doa dari orang-orang yang lo sayangi?",
+    "depth": 3
+  },
+  {
+    "id": "dt-218",
+    "categoryId": "deep-talk",
+    "text": "Apa sih yang paling pengen lo sampaikan sebagai janji suci untuk jaga kebaikan dalam diri lo?",
+    "depth": 3
+  },
+  {
+    "id": "dt-219",
+    "categoryId": "deep-talk",
+    "text": "Biasanya lo gimana biar bisa merawat keteguhan iman dan prinsip saat dunia di sekitarmu berubah cepat?",
+    "depth": 3
+  },
+  {
+    "id": "dt-220",
+    "categoryId": "deep-talk",
+    "text": "Apa arti memiliki kedamaian hati yang tak tergoyahkan oleh pujian maupun celaan orang lain?",
+    "depth": 3
+  },
+  {
+    "id": "dt-221",
+    "categoryId": "deep-talk",
+    "text": "Kapan ada momen pas lo ngerasa bener-bener bersyukur atas setiap kesempatan kedua yang hadir dalam hidup lo?",
+    "depth": 2
+  },
+  {
+    "id": "dt-222",
+    "categoryId": "deep-talk",
+    "text": "Menurut lo, apa warisan nilai moral terbaik yang ingin lo tinggalkan bagi generasi penerus?",
+    "depth": 3
+  }
+]
