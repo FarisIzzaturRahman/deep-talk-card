@@ -1,7 +1,8 @@
 import { CLOSING_MESSAGES } from "@/lib/data";
+import { shareRecapCardImage } from "@/lib/share-card";
 import { useGame } from "@/lib/store";
 import { motion } from "framer-motion";
-import { Coffee, Home } from "lucide-react";
+import { Check, Coffee, Home, Share2 } from "lucide-react";
 import { useState } from "react";
 import { SaweriaSupportLink } from "./SaweriaSupportLink";
 
@@ -18,7 +19,31 @@ export function EmotionalClosing() {
         return CLOSING_MESSAGES[randomIndex];
     });
     const [fallbackEndTime] = useState(() => Date.now());
+    const [shareFeedback, setShareFeedback] = useState<"idle" | "busy" | "done">("idle");
     const durationLabel = formatDuration(session.startedAt, endedAt ?? fallbackEndTime);
+    const categoryLabel = currentCategory?.label ?? "Obrolan";
+
+    const handleShareRecap = async () => {
+        if (shareFeedback === "busy") return;
+        setShareFeedback("busy");
+        try {
+            const outcome = await shareRecapCardImage({
+                categoryLabel,
+                message,
+                answeredCount: session.answeredCount,
+                skippedCount: session.skippedCount,
+                durationLabel,
+            });
+            if (outcome === "downloaded" || outcome === "shared") {
+                setShareFeedback("done");
+                setTimeout(() => setShareFeedback("idle"), 2000);
+                return;
+            }
+        } catch {
+            // Keep closing screen uninterrupted if sharing fails.
+        }
+        setShareFeedback("idle");
+    };
 
     return (
         <div className="paper-surface fixed inset-0 z-50 flex flex-col items-center justify-center overflow-y-auto p-5 text-center sm:p-8">
@@ -62,14 +87,29 @@ export function EmotionalClosing() {
                 </dl>
 
                 <div className="flex flex-col items-center gap-4">
-                    <button
-                        type="button"
-                        onClick={resetGame}
-                        className="btn-primary flex cursor-pointer items-center gap-2.5 px-7 py-3.5 text-base"
-                    >
-                        <Home className="h-4 w-4" aria-hidden="true" />
-                        <span>Kembali ke awal</span>
-                    </button>
+                    <div className="flex flex-wrap items-center justify-center gap-3">
+                        <button
+                            type="button"
+                            onClick={handleShareRecap}
+                            disabled={shareFeedback === "busy"}
+                            className="btn-stock flex cursor-pointer items-center gap-2 px-6 py-3.5 text-base disabled:opacity-60"
+                        >
+                            {shareFeedback === "done" ? (
+                                <Check className="h-4 w-4" aria-hidden="true" />
+                            ) : (
+                                <Share2 className="h-4 w-4" aria-hidden="true" />
+                            )}
+                            <span>{shareFeedback === "done" ? "Ringkasan tersimpan" : "Bagikan ringkasan"}</span>
+                        </button>
+                        <button
+                            type="button"
+                            onClick={resetGame}
+                            className="btn-primary flex cursor-pointer items-center gap-2.5 px-7 py-3.5 text-base"
+                        >
+                            <Home className="h-4 w-4" aria-hidden="true" />
+                            <span>Kembali ke awal</span>
+                        </button>
+                    </div>
 
                     <SaweriaSupportLink />
                     <p className="max-w-sm text-sm leading-relaxed text-[var(--color-muted)]">

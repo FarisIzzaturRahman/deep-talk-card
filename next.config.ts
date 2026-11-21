@@ -1,17 +1,21 @@
 import type { NextConfig } from "next";
 
+const isVercel = process.env.VERCEL === "1";
+
 const contentSecurityPolicy = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com",
   "style-src 'self' 'unsafe-inline' https://api.fontshare.com",
-  "font-src 'self' https://cdn.fontshare.com",
+  isVercel
+    ? "font-src 'self' https://cdn.fontshare.com"
+    : "font-src 'self' https://cdn.fontshare.com http://cdn.fontshare.com",
   "img-src 'self' data:",
   "connect-src 'self' https://vitals.vercel-insights.com",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
   "frame-ancestors 'none'",
-  "upgrade-insecure-requests",
+  ...(isVercel ? ["upgrade-insecure-requests"] : []),
 ].join("; ");
 
 const securityHeaders = [

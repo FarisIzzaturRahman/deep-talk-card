@@ -1,6 +1,8 @@
 import { useGame } from "@/lib/store";
+import { shareQuestionCardImage } from "@/lib/share-card";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, Flame, MessageCircle, SkipForward, Sparkles, Zap } from "lucide-react";
+import { ArrowRight, Check, Flame, MessageCircle, Share2, SkipForward, Sparkles, Zap } from "lucide-react";
+import { useState } from "react";
 
 function WildcardIcon({ intensity }: { intensity?: 1 | 2 | 3 }) {
     if (intensity === 3) return <Flame className="h-4 w-4" aria-hidden="true" />;
@@ -17,8 +19,25 @@ export function Card() {
         showFollowUp,
         skipQuestion,
     } = useGame();
+    const [shareFeedback, setShareFeedback] = useState<"idle" | "busy" | "done">("idle");
 
     if (!currentQuestion || !currentCategory) return null;
+
+    const handleShare = async () => {
+        if (shareFeedback === "busy") return;
+        setShareFeedback("busy");
+        try {
+            const outcome = await shareQuestionCardImage(currentQuestion, currentCategory);
+            if (outcome === "downloaded" || outcome === "shared") {
+                setShareFeedback("done");
+                setTimeout(() => setShareFeedback("idle"), 2000);
+                return;
+            }
+        } catch {
+            // Keep play uninterrupted if sharing fails.
+        }
+        setShareFeedback("idle");
+    };
 
     const followUps = currentQuestion.followUps ?? [];
     const hasFollowUps = followUps.length > 0;
@@ -100,6 +119,20 @@ export function Card() {
                                         <span className="hidden sm:inline">Perdalam topik</span>
                                     </button>
                                 )}
+                                <button
+                                    type="button"
+                                    onClick={handleShare}
+                                    disabled={shareFeedback === "busy"}
+                                    aria-label="Bagikan kartu pertanyaan sebagai gambar"
+                                    className="btn-stock flex min-h-11 cursor-pointer items-center gap-2 px-5 py-2.5 text-sm disabled:opacity-60"
+                                >
+                                    {shareFeedback === "done" ? (
+                                        <Check className="h-4 w-4" aria-hidden="true" />
+                                    ) : (
+                                        <Share2 className="h-4 w-4" aria-hidden="true" />
+                                    )}
+                                    <span>{shareFeedback === "done" ? "Tersimpan" : "Bagikan"}</span>
+                                </button>
                                 <button
                                     type="button"
                                     onClick={skipQuestion}
