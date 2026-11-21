@@ -27,6 +27,9 @@ export interface GameSession {
     roundCount: number;
     decks: Record<string, CategoryDeck>;
     cardsSinceWildcard?: number;
+    startedAt: number;
+    answeredCount: number;
+    skippedCount: number;
 }
 
 export interface RoundState {

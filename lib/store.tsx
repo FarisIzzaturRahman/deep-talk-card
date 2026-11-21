@@ -5,6 +5,7 @@ import { CATEGORIES, type Category, type Question } from "./data";
 import {
     confirmTurn,
     createGameState,
+    nextQuestion,
     pickCard,
     skipQuestion as skipGameQuestion,
     startRound,
@@ -32,6 +33,7 @@ interface GameContextType {
     skipQuestion: () => void;
     endGame: () => void;
     resetGame: () => void;
+    endedAt: number | null;
     activeFollowUp: string | null;
     showFollowUp: (text: string) => void;
     closeFollowUp: () => void;
@@ -52,6 +54,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     const [gameStatus, setGameStatus] = useState<GameStatus>("LOBBY");
     const [currentCategory, setCurrentCategory] = useState<Category | null>(null);
     const [game, setGame] = useState<GameState>(createInitialGame);
+    const [endedAt, setEndedAt] = useState<number | null>(null);
     const [activeFollowUp, setActiveFollowUp] = useState<string | null>(null);
     const [questionLoadStatus, setQuestionLoadStatus] = useState<QuestionLoadStatus>("IDLE");
     const [loadedQuestions, setLoadedQuestions] = useState<{
@@ -94,6 +97,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
 
         const newGame = createGameState(config, players);
         setGame(startRound(newGame, loadedQuestions.questions));
+        setEndedAt(null);
         setActiveFollowUp(null);
         setGameStatus("PLAYING");
     };
@@ -101,7 +105,9 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     const beginNextRound = () => {
         if (!loadedQuestions) return;
 
-        setGame((currentGame) => startRound(currentGame, loadedQuestions.questions));
+        setGame((currentGame) => currentGame.session.config.mode === "SHARED"
+            ? nextQuestion(currentGame, loadedQuestions.questions)
+            : startRound(currentGame, loadedQuestions.questions));
         setActiveFollowUp(null);
     };
 
@@ -121,6 +127,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     };
 
     const endGame = () => {
+        setEndedAt(Date.now());
         setActiveFollowUp(null);
         setGameStatus("FINISHED");
     };
@@ -129,6 +136,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         questionRequestId.current += 1;
         setGameStatus("LOBBY");
         setCurrentCategory(null);
+        setEndedAt(null);
         setActiveFollowUp(null);
         setQuestionLoadStatus("IDLE");
         setLoadedQuestions(null);
@@ -160,6 +168,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
             skipQuestion: skipCurrentQuestion,
             endGame,
             resetGame,
+            endedAt,
             activeFollowUp,
             showFollowUp: setActiveFollowUp,
             closeFollowUp: () => setActiveFollowUp(null),

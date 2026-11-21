@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import type { Question } from "../lib/data";
-import { createGameState, pickCard, skipQuestion, startRound } from "../lib/game-engine";
+import { confirmTurn, createGameState, nextQuestion, pickCard, skipQuestion, startRound } from "../lib/game-engine";
 
 const QUESTIONS: Question[] = [
     { id: "fun-1", categoryId: "fun", text: "Pertanyaan pertama", depth: 1 },
@@ -161,4 +161,35 @@ test("wildcard cooldown in Giliran Kartu counts drawn cards instead of rounds", 
     const round4 = withRandom(0.01, () => startRound(round3, eightQuestions));
     assert.ok(round4.round.availableCards.some((card) => card.type === "wildcard"));
     assert.equal(round4.session.cardsSinceWildcard, 0);
+});
+
+test("tracks answered and skipped counts separately in both modes", () => {
+    withoutWildcard(() => {
+        const sharedInit = createGameState(
+            { mode: "SHARED", categoryId: "fun" },
+            [{ id: "group", name: "Semua" }],
+        );
+        const sharedStart = startRound(sharedInit, QUESTIONS);
+        const sharedAnswered = nextQuestion(sharedStart, QUESTIONS);
+        const sharedSkipped = skipQuestion(sharedAnswered, QUESTIONS);
+
+        assert.equal(sharedSkipped.session.answeredCount, 1);
+        assert.equal(sharedSkipped.session.skippedCount, 1);
+
+        const draftInit = createGameState(
+            { mode: "DRAFT", categoryId: "fun" },
+            [
+                { id: "p-1", name: "Pemain 1" },
+                { id: "p-2", name: "Pemain 2" },
+            ],
+        );
+        const draftStart = startRound(draftInit, QUESTIONS);
+        const turn1Reveal = pickCard(draftStart, draftStart.round.availableCards[0].id);
+        const turn1Done = confirmTurn(turn1Reveal);
+        const turn2Reveal = pickCard(turn1Done, turn1Done.round.availableCards[0].id);
+        const turn2Skipped = skipQuestion(turn2Reveal, QUESTIONS);
+
+        assert.equal(turn2Skipped.session.answeredCount, 1);
+        assert.equal(turn2Skipped.session.skippedCount, 1);
+    });
 });

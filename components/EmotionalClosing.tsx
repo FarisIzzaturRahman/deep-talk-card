@@ -5,12 +5,20 @@ import { Coffee, Home } from "lucide-react";
 import { useState } from "react";
 import { SaweriaSupportLink } from "./SaweriaSupportLink";
 
+function formatDuration(startedAt: number, endedAt: number): string {
+    const minutes = Math.floor(Math.max(0, endedAt - startedAt) / 60_000);
+    if (minutes < 1) return "Kurang dari 1 menit";
+    return `${minutes} menit`;
+}
+
 export function EmotionalClosing() {
-    const { resetGame } = useGame();
+    const { currentCategory, endedAt, resetGame, session } = useGame();
     const [message] = useState(() => {
         const randomIndex = Math.floor(Math.random() * CLOSING_MESSAGES.length);
         return CLOSING_MESSAGES[randomIndex];
     });
+    const [fallbackEndTime] = useState(() => Date.now());
+    const durationLabel = formatDuration(session.startedAt, endedAt ?? fallbackEndTime);
 
     return (
         <div className="paper-surface fixed inset-0 z-50 flex flex-col items-center justify-center overflow-y-auto p-5 text-center sm:p-8">
@@ -28,7 +36,30 @@ export function EmotionalClosing() {
                     &ldquo;{message}&rdquo;
                 </h1>
 
-                <div className="h-px w-16 bg-[var(--color-rule)]" aria-hidden="true" />
+                <dl
+                    aria-label="Ringkasan sesi"
+                    className="grid w-full max-w-md grid-cols-2 gap-3 rounded-2xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-4 text-left sm:grid-cols-3"
+                >
+                    <div className="min-w-0">
+                        <dt className="text-xs font-medium text-[var(--color-muted)]">Topik</dt>
+                        <dd className="mt-0.5 truncate text-sm font-semibold text-[var(--color-ink)]">
+                            {currentCategory?.label ?? "Obrolan"}
+                        </dd>
+                    </div>
+                    <div className="min-w-0">
+                        <dt className="text-xs font-medium text-[var(--color-muted)]">Dijawab</dt>
+                        <dd className="num mt-0.5 text-sm font-semibold text-[var(--color-ink)]">
+                            {session.answeredCount} kartu
+                            {session.skippedCount > 0 ? ` (${session.skippedCount} dilewati)` : ""}
+                        </dd>
+                    </div>
+                    <div className="col-span-2 min-w-0 sm:col-span-1">
+                        <dt className="text-xs font-medium text-[var(--color-muted)]">Durasi</dt>
+                        <dd className="num mt-0.5 text-sm font-semibold text-[var(--color-ink)]">
+                            {durationLabel}
+                        </dd>
+                    </div>
+                </dl>
 
                 <div className="flex flex-col items-center gap-4">
                     <button

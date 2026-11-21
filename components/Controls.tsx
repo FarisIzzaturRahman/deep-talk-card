@@ -40,7 +40,7 @@ export function Controls() {
                         className="btn-primary group flex flex-1 cursor-pointer items-center justify-center gap-2.5 px-5 py-3.5 text-base"
                     >
                         <span>
-                            {isSharedMode ? "Pertanyaan baru" : "Mulai ronde baru"}
+                            {isSharedMode ? "Selesai, kartu baru" : "Mulai ronde baru"}
                         </span>
                         <ArrowRight className="h-5 w-5 transition-transform duration-150 group-hover:translate-x-1" aria-hidden="true" />
                     </button>

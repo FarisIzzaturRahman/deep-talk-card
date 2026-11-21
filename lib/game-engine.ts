@@ -24,6 +24,9 @@ export function createGameState(config: GameConfig, players: Player[]): GameStat
             roundCount: 0,
             decks: {},
             cardsSinceWildcard: MIN_CARDS_BETWEEN_WILDCARDS,
+            startedAt: Date.now(),
+            answeredCount: 0,
+            skippedCount: 0,
         },
         round: {
             phase: "IDLE",
@@ -172,7 +175,10 @@ export function pickCard(state: GameState, cardId: string): GameState {
     };
 }
 
-export function confirmTurn(state: GameState): GameState {
+function advanceDraftTurn(
+    state: GameState,
+    outcome: "answered" | "skipped",
+): GameState {
     if (
         state.round.phase !== "DRAFTING"
         || state.round.turnStatus !== "REVEALED"
@@ -184,13 +190,42 @@ export function confirmTurn(state: GameState): GameState {
     const roundComplete = nextTurnIndex >= state.session.players.length;
 
     return {
-        ...state,
+        session: {
+            ...state.session,
+            answeredCount: state.session.answeredCount + (outcome === "answered" ? 1 : 0),
+            skippedCount: state.session.skippedCount + (outcome === "skipped" ? 1 : 0),
+        },
         round: {
             ...state.round,
             phase: roundComplete ? "COMPLETE" : "DRAFTING",
             currentQuestion: null,
             currentTurnIndex: nextTurnIndex,
             turnStatus: "PICKING",
+        },
+    };
+}
+
+export function confirmTurn(state: GameState): GameState {
+    return advanceDraftTurn(state, "answered");
+}
+
+export function nextQuestion(
+    state: GameState,
+    allQuestions: Question[],
+): GameState {
+    if (
+        state.session.config.mode !== "SHARED"
+        || state.round.phase !== "ANSWERING"
+    ) {
+        return state;
+    }
+
+    const nextState = startRound(state, allQuestions);
+    return {
+        ...nextState,
+        session: {
+            ...nextState.session,
+            answeredCount: nextState.session.answeredCount + 1,
         },
     };
 }
@@ -203,11 +238,18 @@ export function skipQuestion(
         state.session.config.mode === "SHARED"
         && state.round.phase === "ANSWERING"
     ) {
-        return startRound(state, allQuestions);
+        const nextState = startRound(state, allQuestions);
+        return {
+            ...nextState,
+            session: {
+                ...nextState.session,
+                skippedCount: nextState.session.skippedCount + 1,
+            },
+        };
     }
 
     if (state.session.config.mode === "DRAFT") {
-        return confirmTurn(state);
+        return advanceDraftTurn(state, "skipped");
     }
 
     return state;
